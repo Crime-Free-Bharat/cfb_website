@@ -10,16 +10,17 @@
     overflow: hidden;
     padding: 1vw 2vw 1vw 4vw;
     margin: 0px;
+    align-content: space-around;
   }
   
   .nav1 p {
     font-weight: lighter;
+    line-height: normal;
     font-size: 15px;
     float: left;
     margin: 0px;
-  
   }
-  
+
   .nav1 a:hover {
 
     color: rgb(231, 0, 0);
@@ -27,7 +28,25 @@
   
   .nav1-right {
     float: right;
+    display: flex;
+    padding: 0vw 1vw;
   }
+  .navsocial a,.navsocial{
+
+      margin: 5px 10px;
+  }
+  .lang, .login{
+      background-color: #100051;
+      color: white;
+      padding: 5px 15px;
+      border-radius: 50px;
+      margin: 0px 10px;
+  }
+.login a{
+    color: white;
+    text-decoration: none;
+}
+  
   @media screen and (max-width: 500px) {
     .nav1 a {
       float: none;
@@ -38,6 +57,9 @@
       float: none;
     }
   }
+  /*Header desigining end*/
+
+
 /*footer desigining start*/
 
 /*footer desigining end*/
