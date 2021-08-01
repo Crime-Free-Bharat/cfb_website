@@ -1,0 +1,43 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* header designing start*/
+.nav1 {
+    overflow: hidden;
+    padding: 1vw 2vw 1vw 4vw;
+    margin: 0px;
+  }
+  
+  .nav1 p {
+    font-weight: lighter;
+    font-size: 15px;
+    float: left;
+    margin: 0px;
+  
+  }
+  
+  .nav1 a:hover {
+
+    color: rgb(231, 0, 0);
+  }
+  
+  .nav1-right {
+    float: right;
+  }
+  @media screen and (max-width: 500px) {
+    .nav1 a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .nav1-right {
+      float: none;
+    }
+  }
+/*footer desigining start*/
+
+/*footer desigining end*/
