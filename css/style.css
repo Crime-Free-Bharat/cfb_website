@@ -4,21 +4,28 @@
     padding: 0px;
     box-sizing: border-box;
 }
-
+body{
+    font-family: 'Roboto', sans-serif;
+}
 /* header designing start*/
 .nav1 {
     overflow: hidden;
-    padding: 1vw 2vw 1vw 4vw;
+    padding: 1vh 2vw 1vh 6vw;
     margin: 0px;
-    align-content: space-around;
+    align-content: space-around, space-between ;
+    border-width: 0px 0px 1px 0px;
+    border-style: none none solid none ;
   }
   
   .nav1 p {
     font-weight: lighter;
     line-height: normal;
-    font-size: 15px;
+    font-size: 12px;
     float: left;
     margin: 0px;
+    text-align: center;
+    padding-top: 10px;
+    
   }
 
   .nav1 a:hover {
@@ -35,14 +42,20 @@
 
       margin: 5px 10px;
   }
-  .lang, .login{
+  .nav1lang{
+      background-color: #e5e5e5;
+  }
+  .nav1login{
       background-color: #100051;
       color: white;
-      padding: 5px 15px;
+  }
+  .nav1lang, .nav1login{
+      
+      padding: 5px 20px;
       border-radius: 50px;
       margin: 0px 10px;
   }
-.login a{
+.nav1login a{
     color: white;
     text-decoration: none;
 }
@@ -57,6 +70,18 @@
       float: none;
     }
   }
+
+  /*nav 2 main*/
+ .nav2{ overflow: hidden;
+  padding: 0vw 2vw 1vw 6vw;
+  margin: 0px;
+  align-content: space-around;
+ }
+.nav2 img{
+    height: 17%;
+    float: left;
+}
+
   /*Header desigining end*/
 
 
