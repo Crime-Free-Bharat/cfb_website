@@ -13,8 +13,7 @@ body{
     padding: 1vh 2vw 1vh 6vw;
     margin: 0px;
     align-content: space-around, space-between ;
-    border-width: 0px 0px 1px 0px;
-    border-style: none none solid none ;
+    border-bottom: rgb(219, 219, 219) solid 1px;
   }
   
   .nav1 p {
@@ -50,13 +49,15 @@ body{
       color: white;
   }
   .nav1lang, .nav1login{
-      
       padding: 5px 20px;
       border-radius: 50px;
       margin: 0px 10px;
   }
 header a{
     text-decoration: none;
+}
+header{
+    box-shadow: 1px 1px 10px rgba(25, 3, 49, 0.432);
 }
   
   @media screen and (max-width: 500px) {
@@ -75,8 +76,7 @@ header a{
   padding: 0vw 2vw 0vw 6vw;
   margin: 0px;
   align-content: space-around;
-  border-width: 0px 0px 1px 0px;
-  border-style: none none solid none ;
+  border-bottom: rgb(219, 219, 219) solid 1px;
  }
 .nav2 img{
     height: 17%;
