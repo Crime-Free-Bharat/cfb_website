@@ -18,7 +18,7 @@ body{
   }
   
   .nav1 p {
-    font-weight: lighter;
+    font-weight: normal;
     line-height: normal;
     font-size: 12px;
     float: left;
@@ -55,8 +55,7 @@ body{
       border-radius: 50px;
       margin: 0px 10px;
   }
-.nav1login a{
-    color: white;
+header a{
     text-decoration: none;
 }
   
@@ -73,14 +72,41 @@ body{
 
   /*nav 2 main*/
  .nav2{ overflow: hidden;
-  padding: 0vw 2vw 1vw 6vw;
+  padding: 0vw 2vw 0vw 6vw;
   margin: 0px;
   align-content: space-around;
+  border-width: 0px 0px 1px 0px;
+  border-style: none none solid none ;
  }
 .nav2 img{
     height: 17%;
     float: left;
+    width: fit-content;
 }
+
+.menu{
+    text-align: center;
+    float: right;
+   padding-left: 4vw;
+   width: auto;
+    display: flex;
+    
+}
+.menu p{
+    padding-top: 0.5vw;
+}
+.about, .service, .division, .act, .report, .media, .activity, .contact{
+    padding: 1.5vw 1vh 1vh 1vh;  
+     font-weight: 350;
+     width: 8vw;
+     height: 100px;
+     margin: 1vh 0vh;
+ }
+.about:hover, .service:hover, .division:hover, .act:hover, .report:hover, .media:hover, .activity:hover, .contact:hover{
+    background-color: rgb(250, 240, 240);
+}
+
+
 
   /*Header desigining end*/
 
@@ -88,6 +114,9 @@ body{
 /*footer desigining start*/
 
 /*footer desigining end*/
+
+
+
 /* @extend display-flex; */
 display-flex, .display-flex, .display-flex-center, .signup-content, .signin-content, .social-login, .socials {
   display: flex;
