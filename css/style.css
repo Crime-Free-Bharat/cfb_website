@@ -559,3 +559,62 @@ label.valid {
       box-sizing: border-box;
       border-radius: 50px;
   }
+  .section{
+    padding-top: 50px;
+    background-image: url(../img/background1.png);
+    padding-bottom: 50px;
+  }
+  .bgcont{
+    background-image: url(../img/background1.png);
+  }
+  .sectionhead{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 35px;
+    color: #1D0871;
+    font: roboto;
+  }
+  .sectionpara{
+    font-weight: bold;
+    font: roboto;
+    color: black;
+    font-size: 40px;
+  }
+  .sectionpara2{
+    font-weight: bold;
+    font: roboto;
+    color: black;
+    font-size: 20px;
+  }
+  .stctionimg{
+    height: 300px;
+  }
+  .secondsec{
+    padding-top:80px;
+  }
+  .sendbtn{
+    font-style: normal;
+    background: #1D0871;
+    color: white;
+    font-weight: normal;
+    display: flex;
+    font-size: 20px;
+    align-items: center;
+    text-align: center;
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-left:50px;
+    padding-right:50px;
+    border: 1px solid #1D0871;
+    box-sizing: border-box;
+    border-radius: 50px;
+  }
+  .sendbtn:hover{
+    opacity: 0.9;
+  }
+  @media screen and (max-width: 768px) {
+    .secondsec{
+      padding-top:0px;
+    }
+  }
+  
