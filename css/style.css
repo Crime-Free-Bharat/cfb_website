@@ -14,16 +14,18 @@ body{
     margin: 0px;
     align-content: space-around, space-between ;
     border-bottom: rgb(219, 219, 219) solid 1px;
+    font-size: 1vw;
   }
   
   .nav1 p {
     font-weight: normal;
     line-height: normal;
-    font-size: 12px;
+    
     float: left;
     margin: 0px;
     text-align: center;
-    padding-top: 10px;
+    padding-top: 1vh;
+    font-size: 0.8vw;
     
   }
 
@@ -63,7 +65,6 @@ header{
   @media screen and (max-width: 500px) {
     .nav1 a {
       float: none;
-      display: block;
       text-align: left;
     }
     .nav1-right {
@@ -79,9 +80,9 @@ header{
   border-bottom: rgb(219, 219, 219) solid 1px;
  }
 .nav2 img{
-    height: 17%;
+    width: 20vw;
     float: left;
-    width: fit-content;
+    
 }
 
 .menu{
@@ -93,13 +94,14 @@ header{
     
 }
 .menu p{
-    padding-top: 0.5vw;
+    padding-top: 1vw;
+    font-size: 1vw;
 }
 .about, .service, .division, .act, .report, .media, .activity, .contact{
-    padding: 1.5vw 1vh 1vh 1vh;  
+    padding: 2.5vw 1vh 1vh 1vh;  
      font-weight: 350;
      width: 8vw;
-     height: 100px;
+     height: 8vw;
      margin: 1vh 0vh;
  }
 .about:hover, .service:hover, .division:hover, .act:hover, .report:hover, .media:hover, .activity:hover, .contact:hover{
