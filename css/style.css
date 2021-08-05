@@ -611,6 +611,29 @@ label.valid {
     color: black;
     font-size: 40px;
   }
+  .sectionheadreport{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 35px;
+    color: #1D0871;
+    font: roboto;
+    text-align: center;
+  }
+  .sectionparareport{
+    font-weight: bold;
+    font: roboto;
+    color: black;
+    font-size: 15px;
+    text-align: center;
+  }
+  .boxstyle{
+    text-align: center;
+    color: white;
+    background-color: #FF6F61;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+  }
   .sectionpara2{
     font-weight: bold;
     font: roboto;

@@ -1,0 +1,107 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report A Crime</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h3 class="sectionheadreport">Report a Crime</h3>
+                    <p class="sectionparareport">The effectiveness of police activities is enhanced by the support of citizens in<br> every community that wants to feel safe and secure.</p>
+                </div>
+                <div class="col-sm-12">
+                    <div class="row">
+                        <div class="col-12 boxstyle">
+                            <h3>Complain Details</h3>
+                        </div>
+                    </div>
+                    <form>
+                        <div class="row">
+                          <div class="col-6">
+                            <select type="text" class="form-control" placeholder="Category of Complain">
+                                <option value="" disabled selected>Category of Complain</option>
+                                <option value="">Category of Complain</option>
+                            </select>
+                          </div>
+                          <div class="col-6">
+                            <input type="date" class="form-control">
+                          </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-6">
+                                <select type="text" class="form-control" placeholder="Select State">
+                                    <option value="" >Select State</option>
+                                </select>
+                            </div>
+                            <div class="col-6">
+                                <select type="text" class="form-control" placeholder="State">
+                                    <option value="" disabled selected>Select District</option>
+                                </select>
+                            </div>
+                        </div>
+                          <br>
+                        <div class="row">
+                            <div class="col-6">
+                                <select type="text" class="form-control" placeholder="State">
+                                  <option value="" disabled selected>Select Police Station</option>
+                                </select>
+                              </div>
+                              <div class="col-6">
+                                <input type="file" class="form-control">
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-12">
+                                <textarea type="text" class="form-control" rows="5">
+                                    Please provide aditional Information about the crime
+                                </textarea>
+                                <br>
+                            </div>
+                        </div>
+                      </form>
+                </div>
+                <div class="col-sm-12">
+                    <div class="row">
+                        <div class="col-12 boxstyle">
+                            <h3>Suspect Details</h3>
+                        </div>
+                    </div>
+                    <form>
+                        <div class="row">
+                          <div class="col-6">
+                            <input type="text" class="form-control" placeholder="Suspect Name">
+                          </div>
+                          <div class="col-6">
+                            <input type="file" class="form-control">
+                          </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-12">
+                                <textarea type="text" class="form-control" rows="5">
+                                    Please provide aditional Information about the suspect
+                                </textarea>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-12">
+                                <button type="submit" class="sendbtn">Submit</button>
+                            </div>
+                        </div>
+                      </form>
+                </div>
+            </div>
+        </div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
