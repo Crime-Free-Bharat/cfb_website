@@ -114,7 +114,55 @@ header{
 
 
 /*footer desigining start*/
+       
+        .footer li a{
+            text-decoration: none;
+            color: black;
 
+        }
+        
+        .footer.ul {
+            border: 1px solid #ccc;
+            border-width: 1px 0;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+       .footer .ul li {
+            display: inline;
+        }
+
+        .footer.ul a {
+            display: inline-block;
+            padding: 10px;
+        }
+        .footer.content img{
+            width: 80px;
+            height: 80px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .footer.content p{
+            text-align: center;
+        }
+       .footer .container{
+            display : flex;
+            flex-direction : row;
+            margin-left: 390px;
+            margin-top: 20px;
+        }
+        .footer.container div{
+            padding: 20px 20px;
+        }
+        .vertical-line{
+        display: inline-block;
+        border-left: 1px solid #ccc;
+        margin: 0 10px;
+        height: 125px;
+        }
 /*footer desigining end*/
 
 
