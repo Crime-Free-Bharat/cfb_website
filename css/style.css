@@ -611,6 +611,21 @@ label.valid {
     color: black;
     font-size: 40px;
   }
+  .sectionheadact{
+    font-style: normal;
+    font-weight: bold;
+    text-align: center;
+    font-size: 40px;
+    color: #1D0871;
+    font: roboto;
+  }
+  .sectionparaact{
+    font-weight: bold;
+    font: roboto;
+    text-align: center;
+    color: black;
+    font-size: 25px;
+  }
   .sectionheadreport{
     font-style: normal;
     font-weight: bold;
@@ -722,8 +737,6 @@ label.valid {
     padding: 1vw;
     color: #100051;
 }
-
-
-
-
-/*Services end*/
+.nextsecn{
+    margin-top: 30px;
+}
