@@ -38,5 +38,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "crime_free_bharat",
+  "main": "index.js",
+  "author": "cfb",
+  "license": "ISC"
 }
