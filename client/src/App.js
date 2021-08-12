@@ -9,7 +9,7 @@ import Report_crime from "./components/Report_crime";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Services from "./components/Services";
-
+import Footer from "./components/Footer";
 const App = () => {
   return (
     <>
@@ -22,6 +22,7 @@ const App = () => {
         <Route exact path="/contact" component={Contact} />
         <Route exact path="/services" component={Services} />
       </Switch>
+      <Footer />
     </>
   );
 };
