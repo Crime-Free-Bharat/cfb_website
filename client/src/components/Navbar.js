@@ -51,7 +51,7 @@ const Navbar = () => {
         </div>
 
         <div className="nav2 main">
-          <NavLink to="#">
+          <NavLink to="/">
             <img src={logo} alt="logo_crime_free_bharat" />
           </NavLink>
 
