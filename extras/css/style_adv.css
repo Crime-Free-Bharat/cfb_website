@@ -492,6 +492,346 @@ label.valid:after {
   font-size: 18px;
 }
 
+.signin-content {
+  padding-top: 67px;
+  padding-bottom: 87px;
+}
+
+.social-login {
+  align-items: center;
+  -moz-align-items: center;
+  -webkit-align-items: center;
+  -o-align-items: center;
+  -ms-align-items: center;
+  margin-top: 80px;
+}
+
+.social-label {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.socials li {
+  padding: 5px;
+}
+.socials li:last-child {
+  margin-right: 0px;
+}
+.socials li a {
+  text-decoration: none;
+}
+.socials li a i {
+  width: 30px;
+  height: 30px;
+  color: #fff;
+  font-size: 14px;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.socials li:hover a i {
+  -webkit-transform: scale(1.3) translateZ(0);
+  transform: scale(1.3) translateZ(0);
+}
+
+.zmdi-facebook {
+  background: #3b5998;
+}
+
+.zmdi-twitter {
+  background: #1da0f2;
+}
+
+.zmdi-google {
+  background: #e72734;
+}
+
+.signin-form {
+  margin-right: 90px;
+  margin-left: 80px;
+}
+
+.signin-image {
+  margin-left: 110px;
+  margin-right: 20px;
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    width: calc(100% - 30px);
+    max-width: 100%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .signup-content,
+  .signin-content {
+    flex-direction: column;
+    -moz-flex-direction: column;
+    -webkit-flex-direction: column;
+    -o-flex-direction: column;
+    -ms-flex-direction: column;
+    justify-content: center;
+    -moz-justify-content: center;
+    -webkit-justify-content: center;
+    -o-justify-content: center;
+    -ms-justify-content: center;
+  }
+
+  .signup-form {
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 0px;
+    /* box-sizing: border-box; */
+    padding: 0 30px;
+  }
+
+  .signin-image {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 50px;
+    order: 2;
+    -moz-order: 2;
+    -webkit-order: 2;
+    -o-order: 2;
+    -ms-order: 2;
+  }
+
+  .signup-form,
+  .signup-image,
+  .signin-form,
+  .signin-image {
+    width: auto;
+  }
+
+  .social-login {
+    justify-content: center;
+    -moz-justify-content: center;
+    -webkit-justify-content: center;
+    -o-justify-content: center;
+    -ms-justify-content: center;
+  }
+
+  .form-button {
+    text-align: center;
+  }
+
+  .signin-form {
+    order: 1;
+    -moz-order: 1;
+    -webkit-order: 1;
+    -o-order: 1;
+    -ms-order: 1;
+    margin-right: 0px;
+    margin-left: 0px;
+    padding: 0 30px;
+  }
+
+  .form-title {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 400px) {
+  .social-login {
+    flex-direction: column;
+    -moz-flex-direction: column;
+    -webkit-flex-direction: column;
+    -o-flex-direction: column;
+    -ms-flex-direction: column;
+  }
+
+  .social-label {
+    margin-right: 0px;
+    margin-bottom: 10px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
+.vl {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  border: 1px solid rgb(129, 120, 120);
+  height: 300px;
+}
+
+/* text inside the vertical line */
+.vl-innertext {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  padding: 8px 10px;
+}
+@media screen and (max-width: 768px) {
+  .vl {
+    display: none;
+  }
+}
+
+.btn {
+  width: 80%;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  margin: 5px 0;
+  opacity: 0.85;
+  display: inline-block;
+  font-size: 17px;
+  line-height: 20px;
+  text-decoration: none; /* remove underline from anchors */
+}
+
+input:hover,
+.btn:hover {
+  opacity: 1;
+}
+
+/* add appropriate colors to fb, twitter and google buttons */
+#fb {
+  background-color: #3b5998;
+  color: white;
+}
+
+#google {
+  background-color: #dd4b39;
+  color: white;
+}
+
+.signbtn {
+  font-style: normal;
+  color: #1d0871;
+  font-weight: normal;
+  display: flex;
+  font-size: 20px;
+  align-items: center;
+  text-align: center;
+  background: #ffffff;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
+  border: 1px solid #1d0871;
+  box-sizing: border-box;
+  border-radius: 50px;
+}
+.section {
+  padding-top: 50px;
+  background-image: url(../img/background1.png);
+  padding-bottom: 50px;
+}
+.bgcont {
+  background-image: url(../img/background1.png);
+}
+.sectionhead {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 35px;
+  color: #1d0871;
+  font: roboto;
+}
+.sectionpara {
+  font-weight: bold;
+  font: roboto;
+  color: black;
+  font-size: 40px;
+}
+.sectionheadact {
+  font-style: normal;
+  font-weight: bold;
+  text-align: center;
+  font-size: 40px;
+  color: #1d0871;
+  font: roboto;
+}
+.sectionparaact {
+  font-weight: bold;
+  font: roboto;
+  text-align: center;
+  color: black;
+  font-size: 25px;
+}
+.sectionheadreport {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 35px;
+  color: #1d0871;
+  font: roboto;
+  text-align: center;
+}
+.sectionparareport {
+  font-weight: bold;
+  font: roboto;
+  color: black;
+  font-size: 15px;
+  text-align: center;
+}
+.boxstyle {
+  text-align: center;
+  color: white;
+  background-color: #ff6f61;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+}
+.sectionpara2 {
+  font-weight: bold;
+  font: roboto;
+  color: black;
+  font-size: 20px;
+}
+.stctionimg {
+  height: 300px;
+}
+.secondsec {
+  padding-top: 80px;
+}
+.sendbtn {
+  font-style: normal;
+  background: #1d0871;
+  color: white;
+  font-weight: normal;
+  display: flex;
+  font-size: 20px;
+  align-items: center;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
+  border: 1px solid #1d0871;
+  box-sizing: border-box;
+  border-radius: 50px;
+}
+.sendbtn:hover {
+  opacity: 0.9;
+}
+@media screen and (max-width: 768px) {
+  .secondsec {
+    padding-top: 0px;
+  }
+}
+
 /* Services Section */
 #services {
   background-color: #100051;
