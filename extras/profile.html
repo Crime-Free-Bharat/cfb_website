@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>Your Profile</title>
+<link rel="stylesheet" href="css/style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+</head>
+
+<body>
+    <div class="profile">
+        <div class="alert">
+            <span class="closebtn">&times;</span>  
+            <strong>NOTE!</strong> Please verify your account. <a href="#" style="color:#3806c2;">Resend Verification Code</a>
+        </div>
+        <table>
+            <tr>
+                <td>
+                    <section>
+                        <label for="fileToUpload">
+
+                            <i class="fa fa-camera"></i>
+
+                            <input type="file" id="fileToUpload" style="visibility:hidden;" accept=".png,.jpg,jpeg,.PNG,.JPEG" name="fileToUpload" onchange="document.getElementById('profile-photo').src = window.URL.createObjectURL(this.files[0])">
+
+                        </label>
+
+                        <img src="img/20943953.jpg" id="profile-photo" alt="Avatar">
+
+                    </section>
+
+                    <h1>Bharadwaj</h1>
+
+                    <h3>Web Designer & Developer</h3>
+
+                </td>
+
+                <td>
+
+                    <ul>
+
+                        <li><b>Full name</b> <input type="text" name="fname" id="fname" maxlength="100" value="Your Name" required /> <i class="fa fa-edit" id="edit1" onclick="document.getElementById('fname').style.pointerEvents='auto';document.getElementById('fname').focus();this.style.display='none'; document.getElementById('check1').style.display='inline-block';"></i> <i class="fa fa-check" style="display:none;" id="check1" onclick="document.getElementById('edit1').style.display='inline-block';this.style.display='none';document.getElementById('fname').style.pointerEvents='none';"></i></li>
+
+                        <li><b>Email</b> <input type="email" name="email" id="email" maxlength="150" value="username@mail.com" required /></li>
+
+                        <li><b>Contact number</b> <input type="tel" name="mobile" id="mobile" maxlength="10" value="+910123456789" required /> <i class="fa fa-edit" id="edit2" onclick="document.getElementById('mobile').style.pointerEvents='auto';document.getElementById('mobile').focus();this.style.display='none'; document.getElementById('check2').style.display='inline-block';"></i> <i class="fa fa-check" style="display:none;" id="check2" onclick="document.getElementById('edit2').style.display='inline-block';document.getElementById('mobile').style.pointerEvents='none';this.style.display='none';"></i></li>
+
+                        <li><b>Address</b> <input type="text" name="address" id="address" maxlength="250" value="Your Address here" required /> <i class="fa fa-edit" id="edit3" onclick="document.getElementById('address').style.pointerEvents='auto';document.getElementById('address').focus();this.style.display='none'; document.getElementById('check3').style.display='inline-block';"></i> <i class="fa fa-check" style="display:none;" id="check3" onclick="document.getElementById('edit3').style.display='inline-block';document.getElementById('address').style.pointerEvents='none';this.style.display='none';"></i></li>
+
+                    </ul>
+
+                </td>
+
+            </tr>
+
+        </table>
+
+    </div>
+
+
+<script src="js/custom.js"></script>
+<script>
+function editdetails2(){
+}
+
+var close = document.getElementsByClassName("closebtn");
+var i;
+
+for (i = 0; i < close.length; i++) {
+  close[i].onclick = function(){
+    var div = this.parentElement;
+    div.style.opacity = "0";
+    setTimeout(function(){ div.style.display = "none"; }, 600);
+  }
+}
+</script>
+</body>
+</html>
