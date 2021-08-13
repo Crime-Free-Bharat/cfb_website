@@ -3,10 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zunan's Profile Page</title>
-    <script src="app.js"></script>
+    <title>Profile Page</title>
+    <script src="profilejs.js"></script>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon">
 </head>
 <body>
     <div class="container text-center">
@@ -28,7 +27,7 @@
         <div class="container">
             <div class="row">
                 <div class="about-left">
-                    <img class="about-img" src="assets/images/10.JPG" alt="Profile Photo"></img>
+                    <img class="about-img" src="img/10.jpg" alt="Profile Photo"></img>
                 </div>
                 <div class="about-right">
                     <h2>name xyz</h2>
@@ -66,45 +65,13 @@
               </div>
               <div class="row">
                 <div class="col-25">
-                  <label for="country">Country</label>
-                </div>
-                <div class="col-75">
-                  <select id="country" name="country">
-                    <option value="australia">India</option>
-                    <option value="canada">Canada</option>
-                    <option value="usa">USA</option>
-                  </select>
-                </div>
-              </div>
-              
-              <div class="row">
-                <div class="col-25">
                   <label for="fname">Address</label>
                 </div>
                 <div class="col-75">
                   <input type="text" id="fname" name="address" placeholder="Your address..">
                 </div>
               </div>
-              <div class="row">
-                <div class="col-25">
-                  <label for="lname">Last Name</label>
-                </div>
-                <div class="col-75">
-                  <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-25">
-                  <label for="country">State</label>
-                </div>
-                <div class="col-75">
-                  <select id="country" name="country">
-                    <option value="australia">MP</option>
-                    <option value="canada">Rajasthan</option>
-                    <option value="usa">Gujrat</option>
-                  </select>
-                </div>
-              </div>
+          
               <div class="row">
                 <div class="col-25">
                   <label for="subject">Subject</label>
@@ -121,16 +88,16 @@
 
     <br><br>
 
-    <footer class="footer">
+    <div class="profile_footer">
         <div class="container">
             <p class="center">Contact Me <p>          
             <div class="row content-center">
-                <a href="linkedin url of person" target="#"><img class="footer-img" src="assets/icon/linkedin.png" alt=""></a>
-                <a href="instagram url of person" target="#"><img class="footer-img" src="assets/icon/instagram.png" alt=""></a>
-                <a href="github url" target="#"><img class="footer-img" src="assets/icon/github.png" alt=""></a>
+                <a href="#" target="#"><i class="bi bi-instagram"></i></a>
+                <a href="#" target="#"><i class="bi bi-linkedin"></i></a>
+                <a href="#" target="#"><i class="bi bi-github"></i></a>
             </div>
            <br><br>
         </div>
-    </footer>
+      </div>
 </body>
 </html>

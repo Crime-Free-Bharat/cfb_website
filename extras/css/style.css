@@ -264,7 +264,6 @@ h2 {
 }
 
 .container {
-  width: 900px;
   background: #fff;
   margin: 0 auto;
 }
@@ -426,18 +425,6 @@ input:focus:-moz-placeholder {
 .agree-term {
   display: inline-block;
   width: auto;
-}
-
-label {
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  color: #222;
 }
 
 .label-has-error {
@@ -731,16 +718,11 @@ a {
 }
 
 /* About section */
-.about-left {
-  text-align: left;
-  width: 30%;
-  padding-left: 10%;
-}
-
 .about-right {
   text-align: left;
   width: 70%;
-  padding-right: 10%;
+  padding-left: 2vw;
+  align-content: space-between;
 }
 
 .about-img {
@@ -750,46 +732,21 @@ a {
   object-fit: cover;
 }
 
-/* Content */
-.title-content {
-  padding-left: 5%;
-}
-
-.par-content {
-  padding-left: 10%;
-  color: grey;
-}
-
-.date {
-  font-weight: 50;
-  font-style: italic;
-  font-size: medium;
-  color: darkslategray;
-}
-
-/* Footer */
-.footer {
+.profile_footer {
   font-family: "Roboto", sans-serif;
   background-color: blue;
-  margin: 0px auto;
-  padding: 20px 100px 20px 100px;
 }
 
-.footer p {
+.profile_footer p {
   text-align: center;
   color: white;
 }
 
-.footer a {
+.profile_footer a {
   color: white;
   text-align: center;
 }
 
-.footer-img {
-  width: 3vmax;
-  height: 3vmax;
-  margin: 10px;
-}
 /* form css */
 input[type="text"],
 select,
@@ -802,13 +759,11 @@ textarea {
   resize: vertical;
 }
 
-/* Style the label to display next to the inputs */
 label {
   padding: 12px 12px 12px 0;
   display: inline-block;
 }
 
-/* Style the submit button */
 input[type="submit"] {
   background-color: #04aa6d;
   color: white;
@@ -819,40 +774,34 @@ input[type="submit"] {
   float: right;
 }
 
-/* Style the container */
 .mycontainer {
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 20px;
 }
 
-/* Floating column for labels: 25% width */
 .col-25 {
   float: left;
-  width: 25%;
+  width: 25vw;
   margin-top: 6px;
 }
 
-/* Floating column for inputs: 75% width */
 .col-75 {
   float: left;
-  width: 75%;
+  width: 75vw;
   margin-top: 6px;
 }
 
-/* Clear floats after the columns */
 .row:after {
   content: "";
   display: table;
   clear: both;
 }
-
-/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
   .col-25,
   .col-75,
   input[type="submit"] {
     width: 100%;
-    margin-top: 0;
+    display: block;
   }
 }
