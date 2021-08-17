@@ -33,6 +33,7 @@ exports.login = async (req, res, next) => {
 
     const theToken = jwt.sign({ id: row[0].id }, process.env.SECERT_KEY, {
       expiresIn: "1h",
+      httpOnly: true,
     });
 
     return res.json({
