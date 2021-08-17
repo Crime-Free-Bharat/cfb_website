@@ -10,8 +10,7 @@ import service2 from "../img/service2.svg";
 const aboutSection = {
   color: "#fff",
   fontWeight: "bolder",
-  margin: "2rem",
-  fontSize: "3rem",
+  margin: "2rem"
 };
 const upperSection = {
   width: "100%",
@@ -19,14 +18,14 @@ const upperSection = {
   fontFamily: "Roboto,Sans-serif",
   background: "rgba(29, 8, 113, 1)",
   color: "#fff",
-  textAlign: "center",
+  textAlign: "center"
 };
 
 const upperCards = {
   margin: "1rem",
   border: "2px solid white",
   borderRadius: "45px",
-  background: "rgba(29, 8, 113, 1)",
+  background: "rgba(29, 8, 113, 1)"
 };
 const cardImg = {
   background: "#fff",
@@ -34,31 +33,30 @@ const cardImg = {
   padding: "4px",
   width: "80px",
   height: "80px",
-  margin: "0.5rem",
+  margin: "0.5rem"
 };
 const click = {
   color: "#fff",
-  textDecoration: "none",
+  textDecoration: "none"
 };
 
 const Services = () => {
   return (
     <Container fluid style={upperSection}>
-      <Row>
+        <Row>
         <Col xs={3} md={2} lg={2}>
-          <img src={service1} alt="serivces1" />
+            < img  src = {service1} alt="serivces1" />
         </Col>
         <Col xs={6} md={8} lg={8}>
-          <h5 style={aboutSection}>Our Services</h5>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Dolor
-            sit amet consectetur adipiscing elit duis tristique sollicitudin.
-          </p>
-        </Col>
-        <Col xs={3} md={2} lg={2}>
-          <img src={service2} alt="services2" />
-        </Col>
+      <h5 style={aboutSection}>Our Services</h5>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Dolor sit amet
+        consectetur adipiscing elit duis tristique sollicitudin.
+      </p></Col>
+      <Col xs={3} md={2} lg={2}>
+      < img  src = {service2} alt="services2" />
+      </Col>
       </Row>
       <Row xs={1} md={2} lg={3}>
         <Col>
@@ -71,7 +69,7 @@ const Services = () => {
                   src="https://img.icons8.com/material-rounded/2x/fine-print.png"
                   alt="Report Image"
                 />
-                <Card.Title>Report Crime Online</Card.Title>
+                <Card.Title>Report a Crime Online</Card.Title>
               </Button>
               <Card.Text>
                 Crime Free Bharat is dolor sit amet, consectetur adipiscing

@@ -51,7 +51,7 @@ const Navbar = () => {
         </div>
 
         <div className="nav2 main">
-          <NavLink to="/">
+          <NavLink to="#">
             <img src={logo} alt="logo_crime_free_bharat" />
           </NavLink>
 
@@ -76,7 +76,7 @@ const Navbar = () => {
                 <p>CFB division</p>
               </div>
             </NavLink>
-            <NavLink to="#">
+            <NavLink to="/anr">
               <div className="act">
                 <i className="bi bi-file-earmark-ruled"></i> <br />
                 <p>Act and Regulations</p>
@@ -92,7 +92,7 @@ const Navbar = () => {
                 <i className="bi bi-soundwave"></i> <br /> <p>Media</p>
               </div>
             </NavLink>
-            <NavLink to="#">
+            <NavLink to="/activity">
               <div className="activity">
                 <i className="bi bi-hand-index-thumb"></i>
                 <br /> <p>CFB Activities</p>

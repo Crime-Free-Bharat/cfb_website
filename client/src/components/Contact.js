@@ -50,7 +50,7 @@ const Contact = () => {
             <div className="col-sm-6">
               <h3 className="sectionhead">Contact Us</h3>
               <p className="sectionpara">
-                Fell free to keep in
+                Feel free to keep in
                 <br /> touch with us!
               </p>
               <img

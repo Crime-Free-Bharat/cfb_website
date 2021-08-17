@@ -88,7 +88,7 @@ const Report_crime = () => {
                             <br />
                             <div className="row">
                                 <div className="col-12">
-                                    <button type="submit" className="sendbtn m-4">Submit</button>
+                                    <button type="submit" className="sendbtn">Submit</button>
                                 </div>
                             </div>
                         </form>

@@ -9,7 +9,9 @@ import Report_crime from "./components/Report_crime";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Services from "./components/Services";
-import Footer from "./components/Footer";
+import AnR from "./components/AnR";
+import Activities from "./components/Activities";
+
 const App = () => {
   return (
     <>
@@ -21,8 +23,9 @@ const App = () => {
         <Route exact path="/about" component={About} />
         <Route exact path="/contact" component={Contact} />
         <Route exact path="/services" component={Services} />
+        <Route exact path="/anr" component={AnR} />
+        <Route exact path="/activity" component={Activities} /> 
       </Switch>
-      <Footer />
     </>
   );
 };
