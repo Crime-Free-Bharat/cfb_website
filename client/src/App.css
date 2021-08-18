@@ -718,3 +718,55 @@ input:hover,
     padding-top: 0px;
   }
 }
+
+/* ====================================== Footer ========================================== */
+.footer li a {
+  text-decoration: none;
+  color: black;
+}
+
+.ul-list {
+  border: 1px solid #ccc;
+  border-width: 1px 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.ul-list li {
+  display: inline;
+}
+
+.ul-list a {
+  display: inline-block;
+  padding: 10px;
+}
+.content__footer img {
+  width: 80px;
+  height: 80px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.content__footer .footer__para {
+  text-align: center;
+}
+.container__footer .footer__div .footer__para {
+  color: #222;
+}
+.container__footer {
+  display: flex;
+  flex-direction: row;
+  margin-left: 390px;
+  margin-top: 20px;
+}
+.container__footer .footer__div {
+  padding: 20px 20px;
+}
+.vertical-line__footer {
+  display: inline-block;
+  border-left: 1px solid #ccc;
+  margin: 0 10px;
+  height: 125px;
+}

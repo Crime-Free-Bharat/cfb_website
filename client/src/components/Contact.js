@@ -116,7 +116,7 @@ const Contact = () => {
                     <textarea
                       type="text"
                       className="form-control"
-                      placeholder="Message "
+                      placeholder="Message"
                       rows="7"
                       name="message"
                       value={user.message}
