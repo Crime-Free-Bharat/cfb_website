@@ -1,38 +1,30 @@
-const { validationResult } = require("express-validator");
-const bcrypt = require("bcryptjs");
-const conn = require("../db/conn").promise();
-
-exports.signup = async (req, res, next) => {
-  const errors = validationResult(req);
-
-  if (!errors.isEmpty()) {
-    return res.status(422).json({ errors: errors.array() });
+require("../db/conn");
+const authenticate = require("../middleware/authenticate");
+const User = require("../models/userschema");
+exports.signup = async (req, res) => {
+  const { name, email, phone, password, cpassword } = req.body;
+  if (!name || !email || !phone || !password || !cpassword) {
+    return res.status(422).json({ error: "data is not inserted" });
   }
-
   try {
-    const [row] = await conn.execute(
-      "SELECT `email` FROM `register` WHERE `email`=?",
-      [req.body.email]
-    );
+    const userExist = await User.findOne({ email: email });
+    if (userExist) {
+      console.log("me email chal gya");
+      return res.status(422).json({ error: "email already exist" });
+    } else if (password != cpassword) {
+      console.log("me chal gya password vala");
+      return res.status(422).json({ error: "recheck password" });
+    } else {
+      const user = new User({ name, email, phone, password, cpassword });
 
-    if (row.length > 0) {
-      return res.status(201).json({
-        message: "The E-mail already in use",
-      });
-    }
-
-    const hashPass = await bcrypt.hash(req.body.password, 12);
-    const hashPass1 = await bcrypt.hash(req.body.cpassword, 12);
-
-    const [rows] = await conn.execute(
-      "INSERT INTO `register`(`name`,`email`,`phone`,`password`,`cpassword`,`date`) VALUES(?,?,?,?,?,CURDATE ())",
-      [req.body.name, req.body.email, req.body.phone, hashPass, hashPass1]
-    );
-
-    if (rows.affectedRows === 1) {
-      return res.status(201).json({
-        message: "The user has been successfully inserted.",
-      });
+      // const userRegister = await user.save();
+      // =============================hasing =============================
+      await user.save();
+      console.log("me chal gya");
+      res.status(201).json({ message: "successfully saved." });
+      //  if(userRegister){
+      //   res.status(201).json({ message: "successfully saved." });
+      //  }
     }
   } catch (err) {
     next(err);

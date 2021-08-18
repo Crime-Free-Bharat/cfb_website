@@ -1,10 +1,10 @@
 const express = require("express");
 const router = express.Router();
 const { body } = require("express-validator");
-
+const authenticate = require("../middleware/authenticate");
 const { signup } = require("../controllers/registerController");
 const { login } = require("../controllers/loginController");
-const { getUser } = require("../controllers/getUserController");
+
 const { contact } = require("../controllers/contactController");
 router.post(
   "/signup",
@@ -49,13 +49,22 @@ router.post(
       .isLength({ min: 3 }),
     body("email", "Invalid email address").notEmpty().escape().trim().isEmail(),
     body("phone").notEmpty().escape().trim().isLength({ min: 10 }),
-    body("subject", "must contain 3 characters").notEmpty().escape().trim().isLength({ min: 3 }),
-    body("message", "must contain 10 characters").notEmpty().escape().trim().isLength({ min: 10}), 
+    body("subject", "must contain 3 characters")
+      .notEmpty()
+      .escape()
+      .trim()
+      .isLength({ min: 3 }),
+    body("message", "must contain 10 characters")
+      .notEmpty()
+      .escape()
+      .trim()
+      .isLength({ min: 10 }),
   ],
   contact
 );
-
-
-router.get("/getuser", getUser);
+router.get("/about", authenticate, (req, res) => {
+  console.log("hello i am about");
+  res.send(req.UserRoot);
+});
 
 module.exports = router;

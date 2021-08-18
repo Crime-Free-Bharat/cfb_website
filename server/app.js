@@ -2,7 +2,7 @@ const express = require("express");
 const dotenv = require("dotenv");
 const app = express();
 // ======================================dotenv ==================================
-dotenv.config({ path: "./config.env" })
+dotenv.config({ path: "./config.env" });
 //====================================== express middleware (link router file) ==============================
 app.use(express.json());
 app.use(require("./router/routes"));
