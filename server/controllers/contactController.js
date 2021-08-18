@@ -1,6 +1,6 @@
 const { validationResult } = require("express-validator");
 const bcrypt = require("bcryptjs");
-const conn = require("../db/conn").promise();
+const conn = require("../db/conn");
 
 exports.contact = async (req, res, next) => {
   const errors = validationResult(req);

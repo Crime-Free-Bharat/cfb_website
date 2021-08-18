@@ -2,44 +2,39 @@ const jwt = require("jsonwebtoken");
 const bcrypt = require("bcryptjs");
 const dotenv = require("dotenv");
 dotenv.config({ path: "./config.env" });
-const { validationResult } = require("express-validator");
-const conn = require("../db/conn").promise();
+require("../db/conn");
+const User = require("../models/userschema");
 
-exports.login = async (req, res, next) => {
-  const errors = validationResult(req);
-
-  if (!errors.isEmpty()) {
-    return res.status(422).json({ errors: errors.array() });
-  }
-
+exports.login = async (req, res) => {
+  let token;
   try {
-    const [row] = await conn.execute(
-      "SELECT * FROM `register` WHERE `email`=?",
-      [req.body.email]
-    );
-
-    if (row.length === 0) {
-      return res.status(422).json({
-        message: "Invalid email address",
-      });
+    const { email, password } = req.body;
+    if (!email || !password) {
+      return res.status(400).json({ error: "please fill data" });
     }
+    const userlogin = await User.findOne({ email: email });
+    // console.log(userlogin);
 
-    const passMatch = await bcrypt.compare(req.body.password, row[0].password);
-    if (!passMatch) {
-      return res.status(422).json({
-        message: "Incorrect password",
+    if (userlogin) {
+      const isMatch = await bcrypt.compare(password, userlogin.password);
+
+      // =====================================  token ============================
+      token = await userlogin.generateAuthToken();
+      console.log(token);
+
+      res.cookie("jwtoken", token, {
+        expires: new Date(Date.now() + 2589200000),
+        httpOnly: true,
       });
+      if (!isMatch) {
+        res.status(400).json({ error: "invaild ho bhia tum" });
+      } else {
+        res.json({ message: "successfully login h tu bhia khush hoja" });
+      }
+    } else {
+      res.status(400).json({ error: "invaild h bhia tu" });
     }
-
-    const theToken = jwt.sign({ id: row[0].id }, process.env.SECERT_KEY, {
-      expiresIn: "1h",
-      httpOnly: true,
-    });
-
-    return res.json({
-      token: theToken,
-    });
   } catch (err) {
-    next(err);
+    console.log(err);
   }
 };
