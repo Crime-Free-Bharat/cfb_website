@@ -850,3 +850,14 @@ input[type="submit"] {
   margin: 0;
   z-index: 0;
 }
+
+.homecarousel img {
+  height: 500px;
+  width: auto;
+}
+
+.carousel-item {
+  height: 500px;
+  vertical-align: middle;
+  transition: 3s;
+}
