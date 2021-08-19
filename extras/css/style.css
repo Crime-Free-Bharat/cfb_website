@@ -59,45 +59,7 @@ header {
   z-index: 500;
 }
 
-@media screen and (max-width: 480px) {
-  .nav1 a {
-    float: none;
-    text-align: left;
-  }
-  .nav1-right {
-    float: none;
-  }
-  .nav2 .menu {
-    display: none;
-  }
-  .nav2 a.nav {
-    background-color: rgba(255, 255, 255, 0);
-    display: block;
-    position: absolute;
-    right: 10;
-    top: 10;
-  }
-
-  .menu p {
-    font-size: 100px;
-  }
-  .about,
-  .service,
-  .division,
-  .act,
-  .report,
-  .media,
-  .activity,
-  .contact {
-    padding: 2.5vw 1vh 1vh 1vh;
-    font-weight: 350;
-    width: 100vw;
-    height: 100px;
-    margin: 1vh 0vh;
-  }
-}
-
-.nav {
+.navmenu {
   display: none;
 }
 
@@ -128,7 +90,7 @@ header {
 }
 .menu p {
   padding-top: 1vw;
-  font-size: 15px;
+  font-size: 1vw;
 }
 .about,
 .service,
@@ -140,8 +102,8 @@ header {
 .contact {
   padding: 2.5vw 5px 5px 5px;
   font-weight: 350;
-  width: 110px;
-  height: 110px;
+  width: 8vw;
+  height: 8vw;
   margin: 1vh 0vh;
 }
 .about:hover,
@@ -155,6 +117,48 @@ header {
   background-color: rgb(250, 240, 240);
 }
 
+@media screen and (max-width: 750px) {
+  .nav1 a {
+    float: none;
+    text-align: left;
+  }
+  .nav1-right {
+    float: none;
+  }
+  .navmenu {
+    display: block;
+    background-color: rgba(255, 255, 255, 0);
+    position: absolute;
+    right: 10;
+    top: 10;
+  }
+
+  .about,
+  .service,
+  .division,
+  .act,
+  .report,
+  .media,
+  .activity,
+  .contact {
+    padding: 2.5vw 1vh 1vh 1vh;
+    font-weight: 350;
+    width: 20vw;
+    height: fit-content;
+    margin: 0vh 0vh;
+  }
+  .menu p {
+    padding-top: 1vw;
+    font-size: 2vw;
+  }
+  .menu {
+    display: none;
+    height: fit-content;
+    z-index: 100;
+    margin-right: 4vw;
+    margin-top: 4vh;
+  }
+}
 /*Header desigining end*/
 
 /*footer desigining start*/
@@ -287,7 +291,6 @@ figure {
 p {
   margin-bottom: 0px;
   font-size: 15px;
-  color: #777;
 }
 
 h2 {
@@ -851,13 +854,19 @@ input[type="submit"] {
   z-index: 0;
 }
 
-.homecarousel img {
+.item img {
   height: 500px;
-  width: auto;
+  width: 100vw;
+  object-fit: cover;
 }
 
-.carousel-item {
+.item {
   height: 500px;
-  vertical-align: middle;
+  vertical-align: top;
   transition: 3s;
+}
+@media screen and (max-width: 800px) {
+  .carousel-item {
+    height: auto;
+  }
 }
