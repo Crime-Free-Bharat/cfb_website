@@ -11,7 +11,6 @@ body {
   overflow: hidden;
   padding: 1vh 2vw 1vh 6vw;
   margin: 0px;
-  align-content: space-around, space-between;
   border-bottom: rgb(219, 219, 219) solid 1px;
   font-size: 1vw;
 }
@@ -32,7 +31,7 @@ body {
 .nav1-right {
   float: right;
   display: flex;
-  padding: 0vw 1vw;
+  padding: 0vw 1v w;
 }
 .navsocial a,
 .navsocial {
@@ -59,7 +58,7 @@ header {
   background-color: white;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 480px) {
   .nav1 a {
     float: none;
     text-align: left;
@@ -67,9 +66,46 @@ header {
   .nav1-right {
     float: none;
   }
+  .nav2 .menu {
+    display: none;
+  }
+  .nav2 a.nav {
+    background-color: rgba(255, 255, 255, 0);
+    display: block;
+    position: absolute;
+    right: 10;
+    top: 10;
+  }
+
+  .menu p {
+    font-size: 100px;
+  }
+  .about,
+  .service,
+  .division,
+  .act,
+  .report,
+  .media,
+  .activity,
+  .contact {
+    padding: 2.5vw 1vh 1vh 1vh;
+    font-weight: 350;
+    width: 100vw;
+    height: 100px;
+    margin: 1vh 0vh;
+  }
+}
+
+.nav {
+  display: none;
 }
 
 /*nav 2 main*/
+
+#sticky {
+  position: sticky;
+  top: 0;
+}
 .nav2 {
   overflow: hidden;
   padding: 0vw 2vw 0vw 6vw;
@@ -91,7 +127,7 @@ header {
 }
 .menu p {
   padding-top: 1vw;
-  font-size: 1vw;
+  font-size: 15px;
 }
 .about,
 .service,
@@ -101,10 +137,10 @@ header {
 .media,
 .activity,
 .contact {
-  padding: 2.5vw 1vh 1vh 1vh;
+  padding: 2.5vw 5px 5px 5px;
   font-weight: 350;
-  width: 8vw;
-  height: 8vw;
+  width: 110px;
+  height: 110px;
   margin: 1vh 0vh;
 }
 .about:hover,

@@ -20,10 +20,12 @@
                 </div>
             </div>
             
-            <div class="nav2 main">
+            <div class="nav2 main" id="sticky">
                 <a href="#"><img src="img/logo2.png"></a>
+                
+                <a href="javascript:void(0);" class="nav" onclick="menu()"><i class="bi bi-list"></i></a> 
         
-                <div class="menu">
+                <div class="menu" id="menu">
                     <a href="#"><div class="about"><i class="bi bi-person-lines-fill"></i><br><p>About us</p></div></a>
                     <a href="#"><div class="service"><i class="bi bi-gear-wide-connected"></i> <br> <p>Services</p></div></a>
                     <a href="#"><div class="division"><i class="bi bi-diagram-3"></i><br><p>CFB division</p></div></a>
@@ -36,8 +38,9 @@
                 </div>
             </div>
             
+            
         </header>
-
+<div style="height: 100vh;"></div>
         
         <footer class="footer">
             <div class="ul">
@@ -62,5 +65,18 @@
             </div>
             </div>
         </footer>
+
+        <!-- js-->
+        <script>
+            function menu() {
+                var x = document.getElementById("menu");
+                if (x.style.display === "block") {
+                    x.style.display = "none";
+                } else {
+                    x.style.display = "block";
+                }
+            }
+            
+        </script>
     </BODY>
 </html>
