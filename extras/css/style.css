@@ -56,6 +56,7 @@ header a {
 header {
   box-shadow: 1px 1px 10px rgba(25, 3, 49, 0.432);
   background-color: white;
+  z-index: 500;
 }
 
 @media screen and (max-width: 480px) {
@@ -840,4 +841,12 @@ input[type="submit"] {
     width: 100%;
     display: block;
   }
+}
+
+/*carouse home*/
+
+.homecarousel {
+  padding: 0;
+  margin: 0;
+  z-index: 0;
 }
