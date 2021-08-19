@@ -10,7 +10,8 @@ import service2 from "../img/service2.svg";
 const aboutSection = {
   color: "#fff",
   fontWeight: "bolder",
-  margin: "2rem"
+  margin: "2rem",
+  fontSize:"35px"
 };
 const upperSection = {
   width: "100%",
@@ -24,16 +25,11 @@ const upperSection = {
 const upperCards = {
   margin: "1rem",
   border: "2px solid white",
-  borderRadius: "45px",
+  borderRadius: "15%",
   background: "rgba(29, 8, 113, 1)"
 };
 const cardImg = {
-  background: "#fff",
-  borderRadius: "40px",
-  padding: "4px",
-  width: "80px",
-  height: "80px",
-  margin: "0.5rem"
+  fontSize: "60px",
 };
 const click = {
   color: "#fff",
@@ -43,32 +39,30 @@ const click = {
 const Services = () => {
   return (
     <Container fluid style={upperSection}>
+      
         <Row>
-        <Col xs={3} md={2} lg={2}>
-            < img  src = {service1} alt="serivces1" />
+        <Col md={2} lg={3}>
+            < img style={{height:"200px"}} src = {service1} alt="serivces1" />
         </Col>
-        <Col xs={6} md={8} lg={8}>
+        <Col xs={12} md={8} lg={6}>
       <h5 style={aboutSection}>Our Services</h5>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Dolor sit amet
         consectetur adipiscing elit duis tristique sollicitudin.
       </p></Col>
-      <Col xs={3} md={2} lg={2}>
-      < img  src = {service2} alt="services2" />
+      <Col md={2} lg={3}>
+      < img style={{height:"200px"}} src = {service2} alt="services2" />
       </Col>
       </Row>
-      <Row xs={1} md={2} lg={3}>
+      < br / > < br / >
+      <Row md={2} lg={3}>
         <Col>
           <Card style={upperCards}>
             <Card.Body>
               <Button variant="link" style={click}>
-                <Card.Img
-                  style={cardImg}
-                  variant="top"
-                  src="https://img.icons8.com/material-rounded/2x/fine-print.png"
-                  alt="Report Image"
-                />
+                <i style={cardImg} class="bi bi-journal-check"></i>
+                
                 <Card.Title>Report a Crime Online</Card.Title>
               </Button>
               <Card.Text>
@@ -83,12 +77,7 @@ const Services = () => {
           <Card style={upperCards}>
             <Card.Body>
               <Button variant="link" style={click}>
-                <Card.Img
-                  style={cardImg}
-                  variant="top"
-                  src="https://image.shutterstock.com/image-vector/high-detailed-vector-map-india-260nw-151001708.jpg"
-                  alt="Report Image"
-                />
+                <i style={cardImg} class="bi bi-award"></i>
                 <Card.Title>Crime Mukt Bharat</Card.Title>
               </Button>
               <Card.Text>
@@ -103,12 +92,7 @@ const Services = () => {
           <Card style={upperCards}>
             <Card.Body>
               <Button variant="link" style={click}>
-                <Card.Img
-                  style={cardImg}
-                  variant="top"
-                  src="https://img.icons8.com/material-rounded/2x/micro.png"
-                  alt="Report Image"
-                />
+                <i style={cardImg} class="bi bi-chat-square-quote"></i>
                 <Card.Title>Interaction with IPS</Card.Title>
               </Button>
               <Card.Text>
@@ -123,12 +107,7 @@ const Services = () => {
           <Card style={upperCards}>
             <Card.Body>
               <Button variant="link" style={click}>
-                <Card.Img
-                  style={cardImg}
-                  variant="top"
-                  src="https://img.icons8.com/material-rounded/2x/cyber-security.png"
-                  alt="Report Image"
-                />
+                <i style={cardImg} class="bi bi-window"></i>
                 <Card.Title>Cyber Crime</Card.Title>
               </Button>
               <Card.Text>
@@ -143,12 +122,7 @@ const Services = () => {
           <Card style={upperCards}>
             <Card.Body>
               <Button variant="link" style={click}>
-                <Card.Img
-                  style={cardImg}
-                  variant="top"
-                  src="https://img.icons8.com/material-rounded/2x/railway-station.png"
-                  alt="Report Image"
-                />
+                <i style={cardImg}class="bi bi-shield-lock"></i>
                 <Card.Title>Railway Crime</Card.Title>
               </Button>
               <Card.Text>
@@ -163,12 +137,7 @@ const Services = () => {
           <Card style={upperCards}>
             <Card.Body>
               <Button variant="link" style={click}>
-                <Card.Img
-                  style={cardImg}
-                  variant="top"
-                  src="https://img.icons8.com/material-rounded/2x/cloud-network.png"
-                  alt="Report Image"
-                />
+                <i style={cardImg} class="bi bi-laptop"></i>
                 <Card.Title>Web Portal</Card.Title>
               </Button>
               <Card.Text>
