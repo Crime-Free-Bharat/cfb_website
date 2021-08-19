@@ -870,3 +870,24 @@ input[type="submit"] {
     height: auto;
   }
 }
+
+.homesec1 {
+  float: left;
+  display: flex;
+  padding: 2vh 8vw;
+  width: 100vw;
+  background-color: rgb(231, 231, 231);
+}
+
+.homesec1 .div1 {
+  width: 20vw;
+  padding: 10px;
+  margin: 1vw;
+}
+.homesec1 .div1 img {
+  width: 15vw;
+}
+.homesec1 .div2 {
+  width: 50vw;
+  padding-left: 2vw;
+}
