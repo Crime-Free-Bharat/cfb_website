@@ -901,19 +901,19 @@ input[type="submit"] {
   z-index: 0;
 }
 
-.item img {
+.carousel1 img {
   height: 500px;
   width: 100vw;
   object-fit: cover;
 }
 
-.item {
+.carousel1 {
   height: 500px;
   vertical-align: top;
   transition: 3s;
 }
 @media screen and (max-width: 800px) {
-  .item {
+  .carousel1 {
     height: auto;
   }
 }
@@ -921,7 +921,6 @@ input[type="submit"] {
 .homesec1 {
   display: flex;
   padding: 2vh 8vw;
-  width: 100vw;
   background-color: rgb(231, 231, 231);
 }
 
@@ -934,7 +933,7 @@ input[type="submit"] {
   width: 15vw;
 }
 .homesec1 .div2 {
-  width: 60vw;
+  width: 50vw;
   padding-left: 2vw;
 }
 
@@ -944,6 +943,7 @@ input[type="submit"] {
   width: 26vw;
   padding: 1vh 1vw;
   margin: 0vh 1vw;
+  background-color: #100051;
 }
 .updates li {
   list-style: inside;
@@ -954,4 +954,14 @@ input[type="submit"] {
   display: flex;
   width: fit-content;
   margin: auto;
+}
+
+.notice span {
+  border-bottom: 2px solid red;
+  padding-bottom: 5px;
+}
+
+.videogallery {
+  background-color: #100051;
+  display: block;
 }
