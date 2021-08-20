@@ -27,6 +27,7 @@ body {
 
 .nav1 a:hover {
   color: rgb(231, 0, 0);
+  text-decoration: none;
 }
 .nav1-right {
   float: right;
@@ -50,10 +51,7 @@ body {
   border-radius: 50px;
   margin: 0px 10px;
 }
-header a {
-  text-decoration: none;
-}
-header {
+.header {
   box-shadow: 1px 1px 10px rgba(25, 3, 49, 0.432);
   background-color: white;
   z-index: 500;
@@ -61,6 +59,7 @@ header {
 
 .navmenu {
   display: none;
+  font-size: 4vw;
 }
 
 /*nav 2 main*/
@@ -75,12 +74,19 @@ header {
   margin: 0px;
   align-content: space-around;
   border-bottom: rgb(219, 219, 219) solid 1px;
+  position: sticky;
+  top: 0;
 }
 .nav2 img {
-  width: 20vw;
+  width: 15vw;
   float: left;
 }
-
+.nav2 a:hover {
+  text-decoration: none;
+}
+.header .nav2 .menu a {
+  color: #100051;
+}
 .menu {
   text-align: center;
   float: right;
@@ -97,13 +103,13 @@ header {
 .division,
 .act,
 .report,
-.media,
+.mediapage,
 .activity,
 .contact {
-  padding: 2.5vw 5px 5px 5px;
+  padding: 1vw 5px 5px 5px;
   font-weight: 350;
   width: 8vw;
-  height: 8vw;
+  height: 7vw;
   margin: 1vh 0vh;
 }
 .about:hover,
@@ -111,7 +117,7 @@ header {
 .division:hover,
 .act:hover,
 .report:hover,
-.media:hover,
+.mediapage:hover,
 .activity:hover,
 .contact:hover {
   background-color: rgb(250, 240, 240);
@@ -138,7 +144,55 @@ header {
   .division,
   .act,
   .report,
-  .media,
+  .mediapage,
+  .activity,
+  .contact {
+    padding: 2.5vw 1vh 1vh 2vh;
+    font-weight: 350;
+    width: 80vw;
+    height: fit-content;
+    margin: auto;
+    align-content: center;
+    display: flex;
+    align-items: center;
+  }
+  .menu p {
+    padding-top: 1vw;
+    font-size: 2vw;
+    padding-left: 2vw;
+  }
+  .menu {
+    display: none;
+    height: fit-content;
+    z-index: 100;
+    margin-right: 4vw;
+    margin-top: 2vh;
+    width: fit-content;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .nav1 a {
+    float: none;
+    text-align: left;
+  }
+  .nav1-right {
+    float: none;
+  }
+  .navmenu {
+    display: block;
+    background-color: rgba(255, 255, 255, 0);
+    position: absolute;
+    right: 8;
+    top: 8;
+  }
+
+  .about,
+  .service,
+  .division,
+  .act,
+  .report,
+  .mediapage,
   .activity,
   .contact {
     padding: 2.5vw 1vh 1vh 1vh;
@@ -150,13 +204,6 @@ header {
   .menu p {
     padding-top: 1vw;
     font-size: 2vw;
-  }
-  .menu {
-    display: none;
-    height: fit-content;
-    z-index: 100;
-    margin-right: 4vw;
-    margin-top: 4vh;
   }
 }
 /*Header desigining end*/
@@ -866,13 +913,12 @@ input[type="submit"] {
   transition: 3s;
 }
 @media screen and (max-width: 800px) {
-  .carousel-item {
+  .item {
     height: auto;
   }
 }
 
 .homesec1 {
-  float: left;
   display: flex;
   padding: 2vh 8vw;
   width: 100vw;
@@ -888,6 +934,24 @@ input[type="submit"] {
   width: 15vw;
 }
 .homesec1 .div2 {
-  width: 50vw;
+  width: 60vw;
   padding-left: 2vw;
+}
+
+.updates,
+.videogallery,
+.photogallery {
+  width: 26vw;
+  padding: 1vh 1vw;
+  margin: 0vh 1vw;
+}
+.updates li {
+  list-style: inside;
+  font-size: medium;
+}
+.notice {
+  padding: 2vh 8vw;
+  display: flex;
+  width: fit-content;
+  margin: auto;
 }
