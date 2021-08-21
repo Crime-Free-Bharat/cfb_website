@@ -874,6 +874,37 @@ input[type="submit"] {
   padding-bottom: 10px;
 }
 
+.homecard {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 1vw;
+  width: fit-content;
+  margin: auto;
+}
+
+.homecard .card {
+  width: 26vw;
+  border: 1px solid rgb(224, 219, 219);
+  padding: 0px;
+}
+.homecard .card .img img {
+  width: 100%;
+}
+
+#cards {
+  display: block;
+  margin: auto;
+  width: fit-content;
+  padding: 4vw 0vh;
+}
+#cards h2 {
+  text-align: center;
+  font-weight: bold;
+}
+
+.cardcontent {
+  padding: 0vh 5px;
+}
 /*responsiveness*/
 
 @media screen and (max-width: 720px) {
