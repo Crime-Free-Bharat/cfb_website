@@ -220,6 +220,7 @@ body {
   color: white;
   display: inline-block;
   padding: 1vw 01.5vw;
+  margin-left: 3px;
 }
 .footer ul {
   margin-bottom: 0;
