@@ -213,26 +213,30 @@ body {
 .footer {
   width: 100%;
   font-size: 1vw;
-  padding: 1vw;
-  background-color: white;
+  background-image: linear-gradient(#6a1b4d, #222222);
 }
 .footer ul li a {
   text-decoration: none;
-  color: black;
+  color: white;
   display: inline-block;
   padding: 1vw 01.5vw;
 }
-
+.footer ul {
+  margin-bottom: 0;
+}
 .footer ul li a:hover {
   background-color: rgb(250, 240, 240);
+  color: #100051;
 }
 .footer ul li {
   display: inline;
+  border-left: 1px white solid;
 }
 .footer .ul {
   margin: auto;
   width: fit-content;
-  margin-bottom: 1vh;
+  align-items: center;
+  margin-bottom: 0;
 }
 
 .footer .content img {
@@ -245,6 +249,7 @@ body {
   align-items: center;
   margin: auto;
   width: fit-content;
+  padding: 1vw;
 }
 
 .vertical-line {
@@ -259,8 +264,14 @@ body {
   margin: 0px;
   padding: 0px;
   font-size: 1vw;
+  color: white;
 }
 
+.footer1 {
+  background-color: #222222;
+  align-items: center;
+  padding: 5px;
+}
 /*footer desigining end*/
 
 /* @extend display-flex; */
@@ -351,7 +362,6 @@ h2 {
 }
 
 .container {
-  background: #fff;
   margin: 0 auto;
 }
 
@@ -938,30 +948,44 @@ input[type="submit"] {
 }
 
 .updates,
-.videogallery,
-.photogallery {
-  width: 26vw;
-  padding: 1vh 1vw;
+.video {
+  width: 40vw;
+  padding: 0vh 0vw;
   margin: 0vh 1vw;
-  background-color: #100051;
+  background-color: #242b2e;
+  color: white;
 }
 .updates li {
   list-style: inside;
   font-size: medium;
 }
 .notice {
-  padding: 2vh 8vw;
+  padding: 2vh 7vw;
   display: flex;
   width: fit-content;
   margin: auto;
 }
 
-.notice span {
+.notice h4 span {
+  margin-bottom: 0;
+  margin-left: 1vw;
+}
+.updates h4 {
   border-bottom: 2px solid red;
-  padding-bottom: 5px;
+  padding: 2vh 0px;
+  margin: 0px 1vw;
 }
 
-.videogallery {
-  background-color: #100051;
+.video {
   display: block;
+}
+
+.notice marquee {
+  margin: 1vh 1vw;
+}
+.notice marquee li a {
+  color: white;
+}
+.notice marquee li {
+  padding-bottom: 10px;
 }
