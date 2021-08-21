@@ -78,7 +78,7 @@ body {
   top: 0;
 }
 .nav2 img {
-  width: 15vw;
+  width: 20vw;
   float: left;
 }
 .nav2 a:hover {
@@ -912,13 +912,11 @@ input[type="submit"] {
 }
 
 .carousel1 img {
-  height: 500px;
   width: 100vw;
   object-fit: cover;
 }
 
 .carousel1 {
-  height: 500px;
   vertical-align: top;
   transition: 3s;
 }
