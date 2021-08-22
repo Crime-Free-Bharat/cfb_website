@@ -1168,7 +1168,7 @@ input[type=submit] {
   background-color: red;
 }
 
-
+/* interection with ips */
 @media only screen and (min-width: 600px)
 {
 #university-section {
