@@ -18,3 +18,8 @@ const PORT = process.env.PORT;
 app.listen(PORT, () => {
   console.log(`server is running at port ${PORT}`);
 });
+
+app.get('/cors', (req, res) => {
+  res.set('Access-Control-Allow-Origin', '*');
+  res.send({ "msg": "This has CORS enabled" })
+  })
