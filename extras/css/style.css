@@ -660,9 +660,6 @@ label.valid:after {
 /*profile page end*/
 
 /* Gereral */
-a {
-  text-decoration: none;
-}
 
 .container {
   font-family: "Roboto", sans-serif;
@@ -843,14 +840,14 @@ input[type="submit"] {
   list-style: inside;
   font-size: medium;
 }
-.notice {
-  padding: 2vh 7vw;
+.homesec2 {
+  padding: 7vh 7vw;
   display: flex;
   width: fit-content;
   margin: auto;
 }
 
-.notice h4 span {
+.homesec2 h4 span {
   margin-bottom: 0;
   margin-left: 1vw;
 }
@@ -864,13 +861,13 @@ input[type="submit"] {
   display: block;
 }
 
-.notice marquee {
+.homesec2 marquee {
   margin: 1vh 1vw;
 }
-.notice marquee li a {
+.homesec2 marquee li a {
   color: white;
 }
-.notice marquee li {
+.homesec2 marquee li {
   padding-bottom: 10px;
 }
 
@@ -878,14 +875,11 @@ input[type="submit"] {
   display: grid;
   grid-template-columns: auto auto auto;
   grid-gap: 1vw;
-  width: fit-content;
-  margin: auto;
 }
 
 .homecard .card {
   width: 26vw;
   border: 1px solid rgb(224, 219, 219);
-  padding: 0px;
 }
 .homecard .card .img img {
   width: 100%;
@@ -895,7 +889,6 @@ input[type="submit"] {
   display: block;
   margin: auto;
   width: fit-content;
-  padding: 4vw 0vh;
 }
 #cards h2 {
   text-align: center;
@@ -905,6 +898,15 @@ input[type="submit"] {
 .cardcontent {
   padding: 0vh 5px;
 }
+
+.homesec3 {
+  background-color: rgb(231, 231, 231);
+}
+
+.homesec3 h5 {
+  font-weight: bold;
+}
+
 /*responsiveness*/
 
 @media screen and (max-width: 720px) {
@@ -1032,19 +1034,15 @@ input[type="submit"] {
 }
 /* interection with ips */
 /* Gereral */
-a{
-  text-decoration: none;
-}
-
 .container {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   margin-right: auto; /* 1 */
-  margin-left:  auto; /* 1 */
+  margin-left: auto; /* 1 */
 
   max-width: 960px; /* 2 */
 
   padding-right: 10px; /* 3 */
-  padding-left:  10px; /* 3 */
+  padding-left: 10px; /* 3 */
 }
 
 .row {
@@ -1061,47 +1059,37 @@ a{
 }
 
 /* Navigation bar */
-.nav{
-  font-family: 'Roboto', sans-serif;
-  border:1px solid #ccc;
-  border-width:1px 0;
-  list-style:none;
-  margin:0;
-  padding:0;
-  text-align:center;
+.nav {
+  font-family: "Roboto", sans-serif;
+  border: 1px solid #ccc;
+  border-width: 1px 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
   background-color: rgb(121, 121, 202);
 }
 
-
-
-
-
-
 /* Footer */
-.footer {
-  font-family: 'Roboto', sans-serif;
-  background-color: blue;
-  margin: 0px auto;
-  padding: 20px 100px 20px 100px;
-}
 
 .footer p {
-  text-align: center;
   color: white;
 }
 
-.footer a{
+.footer a {
   color: white;
   text-align: center;
 }
 
 .footer-img {
   width: 3vmax;
-  height:3vmax;
+  height: 3vmax;
   margin: 10px;
 }
 /* form css */
-input[type=text], select, textarea{
+input[type="text"],
+select,
+textarea {
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
@@ -1117,8 +1105,8 @@ label {
 }
 
 /* Style the submit button */
-input[type=submit] {
-  background-color: #04AA6D;
+input[type="submit"] {
+  background-color: #04aa6d;
   color: white;
   padding: 12px 20px;
   border: none;
@@ -1157,101 +1145,98 @@ input[type=submit] {
 
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
-  .col-25, .col-75, input[type=submit] {
+  .col-25,
+  .col-75,
+  input[type="submit"] {
     width: 100%;
     margin-top: 0;
   }
 }
-.container text-center.box{
+.container text-center.box {
   height: 30px;
   width: 100%;
   background-color: red;
 }
 
 /* interection with ips */
-@media only screen and (min-width: 600px)
-{
-#university-section {
-  width: 100%;
-  color: rgb(8, 8, 8);
-}
-#university-section::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 10%;
-  z-index: -1;
-  opacity: 0.9;
-}
-#university-section div {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 1vw;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-style: italic;
-}
-.universitycontainer h2 {
-  color: rgb(0, 0, 0);
-  font-size: medium;
-  font-weight: bold;
-  font-style: italic;
+@media only screen and (min-width: 600px) {
+  #university-section {
+    width: 100%;
+    color: rgb(8, 8, 8);
+  }
+  #university-section::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 10%;
+    z-index: -1;
+    opacity: 0.9;
+  }
+  #university-section div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1vw;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    font-style: italic;
+  }
+  .universitycontainer h2 {
+    color: rgb(0, 0, 0);
+    font-size: medium;
+    font-weight: bold;
+    font-style: italic;
+  }
+
+  .universityinfo img {
+    width: 20vw;
+    left: 0;
+    margin: auto;
+  }
+  .universityinfo {
+    display: flex;
+    width: 95vw;
+    margin: 1vw;
+  }
+  .universitycontainer {
+    width: 50vw;
+    padding: 1vw;
+    margin: auto;
+  }
 }
 
-.universityinfo img {
-  width: 20vw;
-  left: 0;
-  margin: auto;
-}
-.universityinfo {
-  display: flex;
-  width: 95vw;
-  margin: 1vw;
-}
-.universitycontainer {
-  width: 50vw;
-  padding: 1vw;
-  margin: auto;
-}
-
-  
-}
-
-@media only screen and (min-width: 280px) and (max-width:600px)
-{
-.universityinfo img {
+@media only screen and (min-width: 280px) and (max-width: 600px) {
+  .universityinfo img {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
-
-    
-}
-.universitycontainer h2 {
-  color: rgb(0, 0, 0);
-  font-size: medium;
-  font-weight: bold;
-  font-style: italic;
-  padding: 5px;
-}
-#university-section div {
-  margin: auto;
-  width: 50%;
-  padding: 3px;
-  font-size: 13px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-style: italic;
-}
-.universityinfo p{
-  padding: 5px;
-  line-height: 1.5rem;
-}
-.container h2{
-  color: rgb(0, 0, 0);
-  font-size: medium;
-  font-weight: bold;
-  font-style: italic;
-  padding: 5px;
-
-}
+  }
+  .universitycontainer h2 {
+    color: rgb(0, 0, 0);
+    font-size: medium;
+    font-weight: bold;
+    font-style: italic;
+    padding: 5px;
+  }
+  #university-section div {
+    margin: auto;
+    width: 50%;
+    padding: 3px;
+    font-size: 13px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    font-style: italic;
+  }
+  .universityinfo p {
+    padding: 5px;
+    line-height: 1.5rem;
+  }
+  .container h2 {
+    color: rgb(0, 0, 0);
+    font-size: medium;
+    font-weight: bold;
+    font-style: italic;
+    padding: 5px;
+  }
 }
