@@ -56,7 +56,7 @@ const Services = () => {
       </Col>
       </Row>
       < br / > < br / >
-      <Row md={2} lg={3}>
+      <Row xs={1} md={2} lg={3}>
         <Col>
           <Card style={upperCards}>
             <Card.Body>
