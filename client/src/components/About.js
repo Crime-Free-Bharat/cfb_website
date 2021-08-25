@@ -17,7 +17,7 @@ const aboutTagline = {
 };
 const upperSection = {
   width: "80%",
-  fontFamily: "Roboto,Sans-serif"
+  fontFamily: "Roboto,Sans-serif",
 };
 
 const upperCards = {
