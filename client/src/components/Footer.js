@@ -1,6 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import logo from "../img/logo3.png";
+import FAQ from "./FAQ";
 const Footer = () => {
   return (
     <>
@@ -11,7 +12,7 @@ const Footer = () => {
               <NavLink to="#">Terms & Conditions</NavLink>
             </li>
             <li>
-              <NavLink to="#">FAQ</NavLink>
+              <NavLink to="/FAQ">FAQ</NavLink>
             </li>
             <li>
               <NavLink to="#">Policies</NavLink>
