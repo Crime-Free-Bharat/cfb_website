@@ -13,6 +13,7 @@ import AnR from "./components/AnR";
 import Activities from "./components/Activities";
 import Footer from "./components/Footer";
 import FAQ from "./components/FAQ";
+import TnC from "./components/TnC";
 
 const App = () => {
   return (
@@ -28,6 +29,7 @@ const App = () => {
         <Route exact path="/anr" component={AnR} />
         <Route exact path="/activity" component={Activities} />
         <Route exact path="/FAQ" component={FAQ} />
+        <Route exact path="/TnC" component={TnC} />
       </Switch>
       <Footer />
     </>

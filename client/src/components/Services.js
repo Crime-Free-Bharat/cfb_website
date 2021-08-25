@@ -26,8 +26,8 @@ const servicesimg ={
 }
 const upperCards = {
   margin: "1rem",
-  border: "2px solid white",
-  borderRadius: "15%",
+  border: "4px solid white",
+  borderRadius: "20%",
   background: "rgba(29, 8, 113, 1)"
 };
 const cardImg = {
@@ -57,7 +57,7 @@ const Services = () => {
       < img style={{height:"200px"}} src = {service2} alt="services2" />
       </Col>
       </Row>
-      < br / > < br / >
+      < br /> < br />
       <Row xs={1} md={2} lg={3}>
         <Col>
           <Card style={upperCards}>

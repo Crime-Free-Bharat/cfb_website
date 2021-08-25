@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="footer">
           <ul className="ul-list">
             <li>
-              <NavLink to="#">Terms & Conditions</NavLink>
+              <NavLink to="/TnC">Terms & Conditions</NavLink>
             </li>
             <li>
               <NavLink to="/FAQ">FAQ</NavLink>
