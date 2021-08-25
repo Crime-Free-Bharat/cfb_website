@@ -1,13 +1,15 @@
 <html>
     <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="css/style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,300&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        
     </head>
     <BODY>
         <div class="header">
@@ -45,37 +47,31 @@
         </div>
         <div class="homecarousel" >
             <div id="myCarousel" class="carousel slide" data-ride="carousel">
-              <!-- Indicators -->
-              <ol class="carousel-indicators">
-                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                <li data-target="#myCarousel" data-slide-to="1"></li>
-                <li data-target="#myCarousel" data-slide-to="2"></li>
-              </ol>
-          
+    
               <!-- Wrapper for slides -->
               <div class="carousel-inner">
-                <div class="item active carousel1">
+                <div class="carousel-item active carousel1" >
                   <img src="img/header1.jpg" alt="Crime Free Bharat" style="width:100%;">
                 </div>
           
-                <div class="item carousel1">
+                <div class="carousel-item carousel1">
                   <img src="img/poster.png" alt="Crime Free Bharat" style="width:100%;">
                 </div>
               
-                <div class="item carousel1">
+                <div class="carousel-item carousel1" >
                   <img src="img/cfb3.png" alt="Crime Free Bharat " style="width:100%;">
                 </div>
               </div>
           
               <!-- Left and right controls -->
-              <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-                <span class="glyphicon glyphicon-chevron-left"></span>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a class="right carousel-control" href="#myCarousel" data-slide="next">
-                <span class="glyphicon glyphicon-chevron-right"></span>
-                <span class="sr-only">Next</span>
-              </a>
+              <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
             </div>
         </div>
         <section>
@@ -93,21 +89,21 @@
                     <a href="about.html">Read More...</a><br>
                     <br>
                     
-                    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#ipsmessage">View Message</button>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ipsmessage">View Message</button>
 
                     <div class="modal fade" id="ipsmessage" role="dialog">
                       <div class="modal-dialog">
                       
                         <div class="modal-content">
                           <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                            <h4 class="modal-title">Message From IPS</h4>
+                             <h4 class="modal-title">Message From IPS</h4>
+                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                           </div>
                           <div class="modal-body">
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ex massa, commodo sit amet neque eget, gravida tempor est. Integer condimentum ipsum eu ex ornare, vel ullamcorper turpis faucibus. Fusce fermentum enim et lectus porta, ut faucibus magna sollicitudin. Duis et neque ut odio aliquam auctor a nec nisl. </p>
                           </div>
                           <div class="modal-footer">
-                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-default" data-bs-dismiss="modal">Close</button>
                           </div>
                         </div>
                         
@@ -124,26 +120,26 @@
                     <h4><span> Video Gallery</span></h4>
                     <div id="videogallery" class="carousel slide" data-ride="carousel" data-interval="0">
                         <div class="carousel-inner">
-                          <div class="item active">
+                          <div class="carousel-item active">
                             <iframe width="620vw" height="270vw" src="https://www.youtube.com/embed/ky5JsWhlhNk" title="YouTube video player" ></iframe>
                           </div>
                       
-                          <div class="item">
+                          <div class="carousel-item">
                             <iframe width="620vw" height="270vw" src="https://www.youtube.com/embed/XpVNIE88SXE" title="YouTube video player"  ></iframe>
                           </div>
                       
-                          <div class="item">
+                          <div class="carousel-item">
                             <iframe  width="620vw" height="270vw" src="https://www.youtube.com/embed/VK0yooK6G0w" title="YouTube video player"  ></iframe>
                           </div>
                         </div>
-                        <a class="left carousel-control" href="#videogallery" data-slide="prev">
-                          <span class="glyphicon glyphicon-chevron-left"></span>
-                          <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="right carousel-control" href="#videogallery" data-slide="next">
-                          <span class="glyphicon glyphicon-chevron-right"></span>
-                          <span class="sr-only">Next</span>
-                        </a>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#videogallery" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                          </button>
+                          <button class="carousel-control-next" type="button" data-bs-target="#videogallery" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                          </button>
                       </div>
                 </div>
                 <div class="updates">
@@ -295,5 +291,6 @@
             }
             
         </script>
+        
     </BODY>
 </html>

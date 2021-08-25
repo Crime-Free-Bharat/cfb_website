@@ -6,6 +6,10 @@
 body {
   font-family: "Roboto", sans-serif;
 }
+
+a {
+  text-decoration: none;
+}
 /* header designing start*/
 .nav1 {
   overflow: hidden;
@@ -71,16 +75,18 @@ body {
 .nav2 {
   overflow: hidden;
   padding: 0vw 2vw 0vw 6vw;
-  margin: 0px;
+  margin: auto;
   align-content: space-around;
   border-bottom: rgb(219, 219, 219) solid 1px;
   position: sticky;
   top: 0;
+  display: flex;
 }
 .nav2 img {
   width: 20vw;
   float: left;
 }
+
 .nav2 a:hover {
   text-decoration: none;
 }
@@ -91,7 +97,9 @@ body {
   text-align: center;
   float: right;
   padding-left: 4vw;
-  width: auto;
+  width: fit-content;
+  margin: auto;
+  align-content: center;
   display: flex;
 }
 .menu p {
@@ -825,7 +833,8 @@ input[type="submit"] {
 }
 .homesec1 .div2 {
   width: 50vw;
-  padding-left: 2vw;
+  padding: 10px 2vw;
+  margin: 1vw;
 }
 
 .updates,
@@ -853,7 +862,7 @@ input[type="submit"] {
 }
 .updates h4 {
   border-bottom: 2px solid red;
-  padding: 2vh 0px;
+  padding: 1vh 0px;
   margin: 0px 1vw;
 }
 
