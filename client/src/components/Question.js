@@ -1,16 +1,23 @@
 import React, { useState } from "react";
-// import { AiOutlineMinus, AiOutlinePlus } from "react-icons/ai";
 import Button from "react-bootstrap/Button";
 //styles
 const ques = {
   color: "rgba(16, 0, 81, 1)",
   fontSize: "22px",
+  fontWeight: "bold",
   display: "inline"
 };
+const ans = {
+  color:"#000" ,
+  marginRight: "20%",
+  fontSize: "15px"
+}
 const btn = {
   backgroundColor: "#fff",
   borderColor: "#fff",
-  color: "#23f"
+  borderRadius: "100%",
+  color: "#23f",
+  width: '12%'
 };
 const head = {
   display: "flex",
@@ -20,15 +27,15 @@ const head = {
 const Question = ({ title, info }) => {
   const [showinfo, setShowInfo] = useState(false);
   return (
-    <article className="question">
+    <article>
       <header style={head}>
-        <h4 style={ques}>{title}</h4>
+        <span style={ques}>{title}</span>
 
-        <Button style={btn} onClick={() => setShowInfo(!showinfo)}>
+        <Button style={btn}  onClick={() => setShowInfo(!showinfo)}>
           {showinfo ? '-' : '+'}
         </Button>
       </header>
-      {showinfo && <p style={{ marginRight: "20%" }}>{info}</p>}
+      {showinfo && <p style={ans}>{info}</p>}
       <hr style={{ marginRight: "20%" }} />
     </article>
   );

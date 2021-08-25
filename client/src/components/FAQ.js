@@ -31,7 +31,9 @@ const infor = {
 const btn = {
   borderRadius: "100%",
   borderColor: "#fff",
-  backgroundColor: "rgba(76, 0, 185, 1)"
+  backgroundColor: "rgba(76, 0, 185, 1)",
+  width: '10%',
+  color : "#fff"
 };
 const pagination = {
   padding: "1%",
@@ -103,6 +105,7 @@ function FAQ() {
               <Button
                 variant="info"
                 style={btn}
+                size = 'sm'
                 onClick={previous}
                 disabled={currentPage === 1}
               >
@@ -116,6 +119,7 @@ function FAQ() {
 
               <Button
                 variant="info"
+                size = 'sm'
                 style={btn}
                 onClick={next}
                 disabled={currentPage === totalPages}

@@ -12,6 +12,7 @@ import Services from "./components/Services";
 import AnR from "./components/AnR";
 import Activities from "./components/Activities";
 import Footer from "./components/Footer";
+import FAQ from "./components/FAQ";
 
 const App = () => {
   return (
@@ -26,6 +27,7 @@ const App = () => {
         <Route exact path="/services" component={Services} />
         <Route exact path="/anr" component={AnR} />
         <Route exact path="/activity" component={Activities} />
+        <Route exact path="/FAQ" component={FAQ} />
       </Switch>
       <Footer />
     </>
