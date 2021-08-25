@@ -65,7 +65,7 @@ const Services = () => {
               <Button variant="link" style={click}>
                 <i style={cardImg} class="bi bi-journal-check"></i>
                 
-                <Card.Title>Report a Crime Online</Card.Title>
+                <Card.Title>Report Crime Online</Card.Title>
               </Button>
               <Card.Text>
                 Crime Free Bharat is dolor sit amet, consectetur adipiscing
