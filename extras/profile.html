@@ -8,6 +8,132 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<style>
+          /*Profile Page*/
+
+.profile ul li {
+  padding: 20px 0;
+  color: #100051;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  list-style: none;
+}
+
+.profile b {
+  color: #100051;
+}
+
+.profile .fa {
+  color: #7ed321;
+  cursor: pointer;
+}
+
+.profile {
+  width: 90%;
+  margin: 10vh auto;
+}
+
+.profile table {
+  width: 100%;
+}
+
+.profile table td {
+  margin: 30px;
+  border-radius: 5px;
+  box-shadow: 0px 6px 16px -6px rgba(1, 1, 1, 0.5);
+  padding: 30px;
+  background-color: #e5e5e5;
+  color: #100051;
+  vertical-align: top;
+}
+
+.profile table td:nth-child(1) {
+  text-align: Center;
+}
+
+.profile table td:nth-child(2) .fa {
+  float: right;
+}
+
+.profile table td:nth-child(2) input {
+  background: none;
+  outline: none;
+  border: 0;
+  color: gray;
+
+  pointer-events: none;
+}
+
+.profile table td:nth-child(1) section {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: 5vh auto;
+}
+
+.profile table td:nth-child(1) .fa {
+  position: absolute;
+  top: -50px;
+  right: 150px;
+  font-size: 2em;
+}
+
+.profile table td img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.profile table td h3 {
+  color: gray;
+  font-weight: normal;
+}
+
+.profile table textarea {
+  width: 90%;
+  resize: none;
+  outline: none;
+  border: 0;
+  background: #1e1e1e;
+  color: gray;
+  padding: 20px;
+}
+
+.profile .alert {
+  padding: 20px;
+  background-color: #f44336;
+  color: white;
+  opacity: 1;
+  transition: opacity 0.6s;
+  margin-bottom: 15px;
+}
+
+.profile .alert.success {
+  background-color: #04aa6d;
+}
+.profile .alert.info {
+  background-color: #2196f3;
+}
+.profile .alert.warning {
+  background-color: #ff9800;
+}
+
+.profile .closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.profile .closebtn:hover {
+  color: black;
+}
+
+/*profile page end*/
+</style>
 </head>
 
 <body>
