@@ -8,6 +8,91 @@
   <script src="app.js"></script>
   <link rel="stylesheet" href="./css/style.css">
   <link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon">
+  <style>
+    /* interection with ips */
+@media only screen and (min-width: 600px) {
+  #interection-section {
+    width: 100%;
+    color: rgb(8, 8, 8);
+  }
+  #interection-section::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 10%;
+    z-index: -1;
+    opacity: 0.9;
+  }
+  #interection-section div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1vw;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    font-style: italic;
+  }
+  .interection-container h2 {
+    color: rgb(0, 0, 0);
+    font-size: medium;
+    font-weight: bold;
+    font-style: italic;
+  }
+
+  .interection-info img {
+    width: 20vw;
+    left: 0;
+    margin: auto;
+  }
+  .interection-info {
+    display: flex;
+    width: 95vw;
+    margin: 1vw;
+  }
+  .interection-container {
+    width: 50vw;
+    padding: 1vw;
+    margin: auto;
+  }
+}
+
+@media only screen and (min-width: 280px) and (max-width: 600px) {
+  .interection-info img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+  .interection-container h2 {
+    color: rgb(0, 0, 0);
+    font-size: medium;
+    font-weight: bold;
+    font-style: italic;
+    padding: 5px;
+  }
+  #interection-section div {
+    margin: auto;
+    width: 50%;
+    padding: 3px;
+    font-size: 13px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    font-style: italic;
+  }
+  .interection-info p {
+    padding: 5px;
+    line-height: 1.5rem;
+  }
+  .container h2 {
+    color: rgb(0, 0, 0);
+    font-size: medium;
+    font-weight: bold;
+    font-style: italic;
+    padding: 5px;
+  }
+}
+
+  </style>
 </head>
 
 <body>
@@ -15,14 +100,14 @@
   <ul class="nav">
     <span class="txt-rotate" data-period="2000" data-rotate='[ "Interaction.", "With.", "IPS."]'></span>
   </ul>
-  <section id="university-section">
+  <section id="interection-section">
     <div>
-      <h2 class="University center">Interection With IPS</h2>
+      <h2 class="interection-center">Interection With IPS</h2>
     </div>
   </section>
-  <section class="universityinfo">
+  <section class="interection-info">
     <img src="./img/sir.png" alt="IPS">
-    <div class="universitycontainer" id="unibox">
+    <div class="interection-container" id="interection-box">
       <h2>Maithili Sharan Gupta</h2>
       <p>
         INFO ABOUT chanceller consectetur adipisicing elit. Excepturi pariatur quis rerum vitae mollitia asperiores, et,

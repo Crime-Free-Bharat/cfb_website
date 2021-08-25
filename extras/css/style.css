@@ -1210,7 +1210,7 @@ input[type="submit"] {
 }
 
 /* interection with ips */
-@media only screen and (min-width: 600px) {
+/* @media only screen and (min-width: 600px) {
   #university-section {
     width: 100%;
     color: rgb(8, 8, 8);
@@ -1290,4 +1290,4 @@ input[type="submit"] {
     font-style: italic;
     padding: 5px;
   }
-}
+} */
