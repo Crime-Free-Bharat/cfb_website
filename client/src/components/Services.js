@@ -4,7 +4,7 @@ import Button from "react-bootstrap/Button";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
-import service1 from "../img/service1.svg";
+import service1 from "../img/service3.svg";
 import service2 from "../img/service2.svg";
 
 const aboutSection = {
@@ -21,7 +21,9 @@ const upperSection = {
   color: "#fff",
   textAlign: "center"
 };
-
+const servicesimg ={
+  height:"200px"
+}
 const upperCards = {
   margin: "1rem",
   border: "2px solid white",
@@ -42,7 +44,7 @@ const Services = () => {
       
         <Row>
         <Col md={2} lg={3}>
-            < img style={{height:"200px"}} src = {service1} alt="serivces1" />
+            <img style={servicesimg} src = {service1} alt="serivces1" />
         </Col>
         <Col xs={12} md={8} lg={6}>
       <h5 style={aboutSection}>Our Services</h5>
@@ -63,7 +65,7 @@ const Services = () => {
               <Button variant="link" style={click}>
                 <i style={cardImg} class="bi bi-journal-check"></i>
                 
-                <Card.Title>Report a Crime Online</Card.Title>
+                <Card.Title>Report Crime Online</Card.Title>
               </Button>
               <Card.Text>
                 Crime Free Bharat is dolor sit amet, consectetur adipiscing

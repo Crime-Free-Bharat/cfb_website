@@ -880,6 +880,9 @@ input[type="submit"] {
 .homecard .card {
   width: 26vw;
   border: 1px solid rgb(224, 219, 219);
+  padding-bottom: 5px;
+  background-color: white;
+  box-shadow: 2px 5px 8px #b4b0b0;
 }
 .homecard .card .img img {
   width: 100%;
@@ -896,17 +899,56 @@ input[type="submit"] {
 }
 
 .cardcontent {
-  padding: 0vh 5px;
+  padding: 0vh 10px;
+  padding-bottom: 10px;
+  color: #a0aca8;
+  height: 150px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+
+.readmore {
+  color: purple;
+  border: 1px solid #d5d5d5;
+  padding: 10px 20px;
+  margin-top: 0;
+  width: fit-content;
+  border-radius: 5px;
+  background-color: #3300fd;
+}
+.readmore:hover {
+  background-color: #004074;
+}
+.readmore a {
+  color: white;
+}
+.readmore a:hover {
+  color: white;
+  text-decoration: none;
 }
 
 .homesec3 {
   background-color: rgb(231, 231, 231);
+  padding: 10px;
 }
 
+.homesec3 h5,
+.homesec3 p,
+.homesec3 a {
+  width: 100%;
+}
+.homesec3 p {
+  height: 50px;
+  font-weight: 100;
+  font-size: 15px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 .homesec3 h5 {
   font-weight: bold;
+  color: #000;
 }
-
 /*responsiveness*/
 
 @media screen and (max-width: 720px) {
