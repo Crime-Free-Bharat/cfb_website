@@ -7,7 +7,7 @@ import Card from "react-bootstrap/Card";
 import Image from "react-bootstrap/Image";
 
 const Section = {
-  color: "rgba(11, 94, 205, 1)",
+  color: "#1d0871",
   fontSize: "2rem",
   margin: "2rem",
   fontWeight: "bolder"
@@ -86,7 +86,7 @@ const Activities = () => {
 
       <br />
       <br />
-      <h4>Our Other Posts</h4>
+      <h4 style={Section}>Our Other Posts</h4>
       <Row xs={1} md={2} lg={3}>
         {Array.from({ length: 6 }).map((_, idx) => (
           <Col>

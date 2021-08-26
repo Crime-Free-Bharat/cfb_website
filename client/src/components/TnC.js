@@ -6,7 +6,7 @@ function TnC(){
             <br />
             <div className="row">
                 <div className="col-sm-12">
-                    <h3 className="sectionheadact">Terms Conditions</h3>
+                    <h3 className="sectionheadact">Terms and Conditions</h3>
                     <p className="sectionparaact">When you disobey the rule, you sell your freedom.</p>
                 </div>
             </div>
