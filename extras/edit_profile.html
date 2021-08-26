@@ -12,6 +12,7 @@
     <style>
 .row {
   display: flex;
+  --bs-gutter-x: 0rem;
 }
 .cover {
   background-image: url(https://images.unsplash.com/photo-1530305408560-82d13781b33a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1352&q=80);
@@ -22,7 +23,10 @@
 
 body {
   overflow-x: hidden;
+
 }
+
+
 
 .profile-head {
   transform: translateY(5rem);
@@ -88,37 +92,51 @@ input[type="submit"] {
 .rounded img{
   width: 150px;
 }
-    </style>
+.image{
+  
+  object-fit: cover;
+  width: 150px;
+  height: 150px;
+
+}
+.p-4{
+width: 75vw;
+padding: 10px 0px!important;
+}
+.submit{
+  width:  150px;
+  margin-top: 1vh;
+  padding: 1vh 3vh;
+  
+}
+</style>
 </head>
 <body>
     
   <div class="bg-white shadow rounded ">
     <div class="px-4 pt-0 pb-4 cover">
         <div class="profile-head">
-            <div >
-              <img src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80" alt="..." width="130" class="rounded mb-2 img-thumbnail">
+            <div>
+              <img src="img/10.jpg" alt="..." width="130" class="mb-2 img-thumbnail image" >
               
               </div>
             <div class="profile_content">
-                <h4>Mark Williams</h4>
-                <p>New York</p>
-                <a href="#" class="btn btn-outline-light btn-sm btn-block">Edit profile</a>
+                <h4>Mr. XYz abcd</h4>
+                <p>Bhopal</p>
+                <a href="#edit_profile" class="btn btn-outline-light btn-sm btn-block">Edit profile</a>
             </div>
         </div>
     </div>
     <div class="px-4 py-3">
         <h5 class="mb-0">About</h5>
         <div class="p-4 ">
-            <p class="font-italic mb-0">Web Developer</p>
-            <p class="font-italic mb-0">Lives in New York</p>
-            <p class="font-italic mb-0">Photographer</p>
+            <p class="font-italic mb-0">Student and Experienced Mentor with a demonstrated history of working in the non-profit organization management industry. Skilled in Trigonometry, Mathematics, Calculus, Cascading Style Sheets (CSS), and Arithmetic. Strong professional with a Bachelor of Technology - BTech focused on Computer Science from Medi-Caps University.</p>
+            
         </div>
     </div>
-
-    
     <br><br>
 
-    <div class="container" id="experience">
+    <div class="container" id="edit_profile">
         <h2>Edit Profile</h2>
         <div class="mycontainer">
             <form action="action_page.php">
@@ -140,10 +158,10 @@ input[type="submit"] {
               </div>
               <div class="row">
                 <div class="col-25">
-                  <label for="fname">Address</label>
+                  <label for="fname">City</label>
                 </div>
                 <div class="col-75">
-                  <input type="text" id="fname" name="address" placeholder="Your address..">
+                  <input type="text" id="fname" name="address" placeholder="Your city..">
                 </div>
               </div>
           
@@ -156,7 +174,7 @@ input[type="submit"] {
                 </div>
               </div>
               <div class="row">
-                <input type="submit" value="Submit">
+                <input type="submit" value="Submit" class="submit">
               </div>
               
     </div>
