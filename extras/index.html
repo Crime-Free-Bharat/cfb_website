@@ -462,6 +462,7 @@
 </style>
     </head>
     <BODY>
+      
         <div class="header">
             <div class="nav1" id="nav1">
                 <p>DEPARTMENT OF THE NATIONAL TECHNICAL RESEARCH & DEVELOPMENT COMMITTEE</p>
@@ -497,18 +498,23 @@
         </div>
         <div class="homecarousel" >
             <div id="myCarousel" class="carousel slide" data-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
     
               <!-- Wrapper for slides -->
               <div class="carousel-inner">
-                <div class="carousel-item active carousel1" >
+                <div class="carousel-item active carousel1" data-bs-interval="2000" >
                   <img src="img/header1.jpg" alt="Crime Free Bharat" style="width:100%;">
                 </div>
           
-                <div class="carousel-item carousel1">
+                <div class="carousel-item carousel1" data-bs-interval="2000">
                   <img src="img/poster.png" alt="Crime Free Bharat" style="width:100%;">
                 </div>
               
-                <div class="carousel-item carousel1" >
+                <div class="carousel-item carousel1" data-bs-interval="2000">
                   <img src="img/cfb3.png" alt="Crime Free Bharat " style="width:100%;">
                 </div>
               </div>
