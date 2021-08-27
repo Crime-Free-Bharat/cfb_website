@@ -9,8 +9,8 @@ import SingleQuestion from "./Question";
 
 // styles
 const container = {
-  padding: "2%",
-  margin: "2%"
+  padding: "1.5% auto",
+  margin: "1.5%"
 };
 
 const faqHeading = {
@@ -32,7 +32,7 @@ const btn = {
   borderRadius: "100%",
   borderColor: "#fff",
   backgroundColor: "rgba(76, 0, 185, 1)",
-  width: '10%',
+  width: "auto",
   color : "#fff"
 };
 const pagination = {
@@ -88,7 +88,7 @@ function FAQ() {
           />
         </Col>
         <Col xs={7} md={7} lg={7} style={infor}>
-          <h3 style={faqHeading}>FAQs</h3>
+          <h3 style={faqHeading}>Frequently Asked Questions</h3>
           <section>
             <input
               style={{ margin: "3% auto" }}
@@ -105,7 +105,6 @@ function FAQ() {
               <Button
                 variant="info"
                 style={btn}
-                size = 'sm'
                 onClick={previous}
                 disabled={currentPage === 1}
               >
@@ -119,7 +118,6 @@ function FAQ() {
 
               <Button
                 variant="info"
-                size = 'sm'
                 style={btn}
                 onClick={next}
                 disabled={currentPage === totalPages}

@@ -6,14 +6,15 @@ import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
 
 const aboutSection = {
-  color: "rgba(11, 94, 205, 1)",
+  color: "rgba(16, 0, 81, 1)",
   fontWeight: "bolder",
   margin: "2rem"
 };
 const aboutTagline = {
   fontSize: "1.5rem",
   margin: "2rem",
-  textShadow: "2px 0.8px"
+  color:"#000",
+  fontWeight: "bold",
 };
 const upperSection = {
   width: "80%",
@@ -46,10 +47,14 @@ const bottomCards = {
   boxSizing: "border-box"
 };
 
+const cardHead = {
+  color : "rgba(16, 0, 81, 1)",
+}
+
 const About = () => {
   return (
     <Container fluid style={upperSection}>
-      <h5 style={aboutSection}>About us</h5>
+      <h1 style={aboutSection}>About Us</h1>
       <p style={aboutTagline}>Crime Free Bharat is a Creative Flow Bharat</p>
       <Row xs={1} md={2} lg={3}>
         {Array.from({ length: 6 }).map((_, idx) => (
@@ -58,7 +63,7 @@ const About = () => {
               {/* <Card.Img variant="top" src="" alt="" /> */}
               <Card.Body>
                 <Card.Title
-                  style={{ textShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)" }}
+                  style={cardHead}
                 >
                   What is CFB?
                 </Card.Title>

@@ -17,7 +17,7 @@ const btn = {
   borderColor: "#fff",
   borderRadius: "100%",
   color: "#23f",
-  width: '12%'
+  width: 'auto'
 };
 const head = {
   display: "flex",
@@ -28,13 +28,13 @@ const Question = ({ title, info }) => {
   const [showinfo, setShowInfo] = useState(false);
   return (
     <article>
-      <header style={head}>
+      <div style={head}>
         <span style={ques}>{title}</span>
 
         <Button style={btn}  onClick={() => setShowInfo(!showinfo)}>
           {showinfo ? '-' : '+'}
         </Button>
-      </header>
+      </div>
       {showinfo && <p style={ans}>{info}</p>}
       <hr style={{ marginRight: "20%" }} />
     </article>

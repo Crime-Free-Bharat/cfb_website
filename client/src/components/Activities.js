@@ -15,7 +15,8 @@ const Section = {
 const Tagline = {
   fontSize: "1.5rem",
   margin: "2rem",
-  textShadow: "2px 0.8px"
+  textTransform: "capitalize",
+  color:"#000"
 };
 const upperSection = {
   width: "80%",
@@ -30,9 +31,7 @@ const upperCards = {
 const Activities = () => {
   return (
     <Container fluid style={upperSection}>
-      <h5 style={Section}>CFB Activites</h5>
-      <br />
-      <h4>Our Latest Post</h4>
+      <h4 style={Section}>Our Latest Post</h4>
       <Row style={{ textAlign: "center" }}>
         <Col>
           <p style={Tagline}>massa vitae tortor condimentum lacinia quis</p>
@@ -94,7 +93,7 @@ const Activities = () => {
               <Card.Img variant="top" src="https://picsum.photos/500" alt="" />
               <Card.Body>
                 <Card.Title
-                  style={{ textShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)" }}
+                  style={{ textShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)", textTransform:"capitalize"  }}
                 >
                   massa vitae tortor condimentum lacinia quis aliquam purus.
                 </Card.Title>
@@ -116,7 +115,7 @@ const Activities = () => {
             <Card.Img variant="top" src="https://picsum.photos/500" alt="" />
             <Card.Body>
               <Card.Title
-                style={{ textShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)" }}
+                style={{ textShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)", textTransform:"capitalize" }}
               >
                 An individual card for reference
               </Card.Title>
