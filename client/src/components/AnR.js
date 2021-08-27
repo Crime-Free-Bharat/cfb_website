@@ -1,15 +1,18 @@
 import React from "react";
 import acts from "../img/acts.svg";
 import act2 from "../img/act2.svg";
+
+
+
 function AnR() {
   return (
     <div>
-      <section id="" className="section">
-        <div className="container">
+      <section id="" className="section sectionactnreg">
+        <div className="container containeractnreg">
           <br />
           <div className="row">
-            <div className="col-sm-12" style={{textAlign: "center"}}>
-              <h3 className="sectionheadact">Acts & Regulations</h3>
+            <div className="col-sm-12">
+              <h3 className="sectionheadact">Acts {'&'} Regulations</h3>
               <p className="sectionparaact">
                 When you disobey the rule, you sell your freedom.
               </p>

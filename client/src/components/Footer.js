@@ -23,7 +23,7 @@ const Footer = () => {
               <NavLink to="#">Join Us</NavLink>
             </li>
             <li>
-              <NavLink to="#">Feedback</NavLink>
+              <NavLink to="/Feedback">Feedback</NavLink>
             </li>
           </ul>
         </div>
