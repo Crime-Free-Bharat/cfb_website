@@ -8,7 +8,7 @@ import data from "./data";
 import SingleQuestion from "./Question";
 
 // styles
-const container = {
+const containers = {
   padding: "1.5% auto",
   margin: "1.5%"
 };
@@ -28,7 +28,7 @@ const infor = {
   fontFamily: "Roboto, Sans-Serif"
 };
 
-const btn = {
+const btns = {
   borderRadius: "100%",
   borderColor: "#fff",
   backgroundColor: "rgba(76, 0, 185, 1)",
@@ -79,7 +79,7 @@ function FAQ() {
     setCurrentPage(navigator);
   };
   return (
-    <Container fluid style={container}>
+    <Container fluid style={containers}>
       <Row>
         <Col xs={4} md={4} lg={4} style={infor}>
           <Image
@@ -104,7 +104,7 @@ function FAQ() {
             <div style={pagination}>
               <Button
                 variant="info"
-                style={btn}
+                style={btns}
                 onClick={previous}
                 disabled={currentPage === 1}
               >
@@ -118,7 +118,7 @@ function FAQ() {
 
               <Button
                 variant="info"
-                style={btn}
+                style={btns}
                 onClick={next}
                 disabled={currentPage === totalPages}
               >
