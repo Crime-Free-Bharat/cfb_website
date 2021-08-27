@@ -841,17 +841,6 @@ body {
 
 /* Gereral */
 
-.container {
-  font-family: "Roboto", sans-serif;
-  margin-right: auto; /* 1 */
-  margin-left: auto; /* 1 */
-
-  max-width: 960px; /* 2 */
-
-  padding-right: 10px; /* 3 */
-  padding-left: 10px; /* 3 */
-}
-
 .row {
   display: flex;
 }
@@ -920,7 +909,7 @@ body {
   text-align: center;
 }
 
-/* form css */
+form css
 input[type="text"],
 select,
 textarea {
@@ -1267,19 +1256,6 @@ input[type="submit"] {
 
   padding-right: 10px; /* 3 */
   padding-left: 10px; /* 3 */
-}
-
-.row {
-  display: flex;
-}
-
-.text-center {
-  text-align: center;
-}
-
-.content-center {
-  margin: 0 auto;
-  justify-content: center;
 }
 
 /* Navigation bar */

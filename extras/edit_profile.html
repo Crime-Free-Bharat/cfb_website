@@ -5,37 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile Page</title>
     <script src="profilejs.js"></script>
-    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  
     <style>
-      .about-right {
-  text-align: left;
-  width: 70%;
+.row {
+  display: flex;
+  --bs-gutter-x: 0rem;
+}
+.cover {
+  background-image: url(https://images.unsplash.com/photo-1530305408560-82d13781b33a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1352&q=80);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+body {
+  overflow-x: hidden;
+
+}
+
+
+
+.profile-head {
+  transform: translateY(5rem);
+  display: flex;
+  color: white;
+  margin-bottom: 100px;
+  align-items: center;
+}
+.profile_content {
   padding-left: 2vw;
-  align-content: space-between;
 }
-
-.about-img {
-  width: 14vmax;
-  height: 14vmax;
-  border-radius: 50%;
-  object-fit: cover;
-}
-
-.profile_footer {
-  font-family: "Roboto", sans-serif;
-  background-color: blue;
-}
-
-.profile_footer p {
-  text-align: center;
-  color: white;
-}
-
-.profile_footer a {
-  color: white;
-  text-align: center;
-}
-
 /* form css */
 input[type="text"],
 select,
@@ -48,10 +50,6 @@ textarea {
   resize: vertical;
 }
 
-label {
-  padding: 12px 12px 12px 0;
-  display: inline-block;
-}
 
 input[type="submit"] {
   background-color: #04aa6d;
@@ -86,45 +84,59 @@ input[type="submit"] {
   display: table;
   clear: both;
 }
-    </style>
+.rounded{
+  width: 85vw;
+  margin: auto;
+}
+
+.rounded img{
+  width: 150px;
+}
+.image{
+  
+  object-fit: cover;
+  width: 150px;
+  height: 150px;
+
+}
+.p-4{
+width: 75vw;
+padding: 10px 0px!important;
+}
+.submit{
+  width:  150px;
+  margin-top: 1vh;
+  padding: 1vh 3vh;
+  
+}
+</style>
 </head>
 <body>
-    <div class="container text-center">
-        <h3>Profile Page</h3>
-        <h1>CRIME FREE BHARAT</h1>
-    </div>
-
     
-    <!-- Top navigation -->
-    <ul class="nav">
-        <li><a href="#about_me">About</a></li>
-        <li><a href="#experience">Edit Profile</a></li>
-    </ul>
-
-    <br><br>
-
-    <div class="container" id="about_me">
-        <h2>About Me</h2>
-        <div class="container">
-            <div class="row">
-                <div class="about-left">
-                    <img class="about-img" src="img/10.jpg" alt="Profile Photo"></img>
-                </div>
-                <div class="about-right">
-                    <h2>name xyz</h2>
-                    <div class="source-sans-light">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis hic exercitationem quaerat optio temporibus nesciunt.</p>
-                        <p>xyz@gmail.com</p>
-                    </div>
-                </div>
+  <div class="bg-white shadow rounded ">
+    <div class="px-4 pt-0 pb-4 cover">
+        <div class="profile-head">
+            <div>
+              <img src="img/10.jpg" alt="..." width="130" class="mb-2 img-thumbnail image" >
+              
+              </div>
+            <div class="profile_content">
+                <h4>Mr. XYz abcd</h4>
+                <p>Bhopal</p>
+                <a href="#edit_profile" class="btn btn-outline-light btn-sm btn-block">Edit profile</a>
             </div>
         </div>
     </div>
-    
+    <div class="px-4 py-3">
+        <h5 class="mb-0">About</h5>
+        <div class="p-4 ">
+            <p class="font-italic mb-0">Student and Experienced Mentor with a demonstrated history of working in the non-profit organization management industry. Skilled in Trigonometry, Mathematics, Calculus, Cascading Style Sheets (CSS), and Arithmetic. Strong professional with a Bachelor of Technology - BTech focused on Computer Science from Medi-Caps University.</p>
+            
+        </div>
+    </div>
     <br><br>
 
-    <div class="container" id="experience">
+    <div class="container" id="edit_profile">
         <h2>Edit Profile</h2>
         <div class="mycontainer">
             <form action="action_page.php">
@@ -146,10 +158,10 @@ input[type="submit"] {
               </div>
               <div class="row">
                 <div class="col-25">
-                  <label for="fname">Address</label>
+                  <label for="fname">City</label>
                 </div>
                 <div class="col-75">
-                  <input type="text" id="fname" name="address" placeholder="Your address..">
+                  <input type="text" id="fname" name="address" placeholder="Your city..">
                 </div>
               </div>
           
@@ -162,23 +174,11 @@ input[type="submit"] {
                 </div>
               </div>
               <div class="row">
-                <input type="submit" value="Submit">
+                <input type="submit" value="Submit" class="submit">
               </div>
               
     </div>
+  </div>
 
-    <br><br>
-
-    <div class="profile_footer">
-        <div class="container">
-            <p class="center">Contact Me <p>          
-            <div class="row content-center">
-                <a href="#" target="#"><i class="bi bi-instagram"></i></a>
-                <a href="#" target="#"><i class="bi bi-linkedin"></i></a>
-                <a href="#" target="#"><i class="bi bi-github"></i></a>
-            </div>
-           <br><br>
-        </div>
-      </div>
 </body>
 </html>
