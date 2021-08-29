@@ -36,7 +36,7 @@ body {
   align-items: center;
 }
 .profile_content {
-  padding-left: 2vw;
+  padding-left: 5vw;
 }
 /* form css */
 input[type="text"],
@@ -85,7 +85,8 @@ input[type="submit"] {
   clear: both;
 }
 .rounded{
-  width: 85vw;
+  width: 70vw;
+  height: 85vh;
   margin: auto;
 }
 
@@ -100,7 +101,7 @@ input[type="submit"] {
 
 }
 .p-4{
-width: 75vw;
+width: 60vw;
 padding: 10px 0px!important;
 }
 .submit{
@@ -112,7 +113,8 @@ padding: 10px 0px!important;
 </style>
 </head>
 <body>
-    
+
+  <div>
   <div class="bg-white shadow rounded ">
     <div class="px-4 pt-0 pb-4 cover">
         <div class="profile-head">
@@ -123,7 +125,7 @@ padding: 10px 0px!important;
             <div class="profile_content">
                 <h4>Mr. XYz abcd</h4>
                 <p>Bhopal</p>
-                <a href="#edit_profile" class="btn btn-outline-light btn-sm btn-block">Edit profile</a>
+                <button  type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#editprofile">Edit profile</button>
             </div>
         </div>
     </div>
@@ -136,49 +138,64 @@ padding: 10px 0px!important;
     </div>
     <br><br>
 
-    <div class="container" id="edit_profile">
-        <h2>Edit Profile</h2>
-        <div class="mycontainer">
-            <form action="action_page.php">
-              <div class="row">
-                <div class="col-25">
-                  <label for="fname">First Name</label>
+
+    <div class="modal fade" id="editprofile" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog  modal-lg modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Edit Profile</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="mycontainer">
+              <form action="#">
+                <div class="row">
+                  <div class="col-25">
+                    <label for="fname">First Name</label>
+                  </div>
+                  <div class="col-75">
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                  </div>
                 </div>
-                <div class="col-75">
-                  <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                <div class="row">
+                  <div class="col-25">
+                    <label for="lname">Last Name</label>
+                  </div>
+                  <div class="col-75">
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                  </div>
                 </div>
-              </div>
-              <div class="row">
-                <div class="col-25">
-                  <label for="lname">Last Name</label>
+                <div class="row">
+                  <div class="col-25">
+                    <label for="fname">City</label>
+                  </div>
+                  <div class="col-75">
+                    <input type="text" id="fname" name="address" placeholder="Your city..">
+                  </div>
                 </div>
-                <div class="col-75">
-                  <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+            
+                <div class="row">
+                  <div class="col-25">
+                    <label for="subject">About</label>
+                  </div>
+                  <div class="col-75">
+                    <textarea id="subject" name="About me" placeholder="Write something.." style="height:200px"></textarea>
+                  </div>
                 </div>
-              </div>
-              <div class="row">
-                <div class="col-25">
-                  <label for="fname">City</label>
+                <div class="row">
+                  <input type="submit" value="Save" class="submit">
                 </div>
-                <div class="col-75">
-                  <input type="text" id="fname" name="address" placeholder="Your city..">
-                </div>
-              </div>
-          
-              <div class="row">
-                <div class="col-25">
-                  <label for="subject">About</label>
-                </div>
-                <div class="col-75">
-                  <textarea id="subject" name="About me" placeholder="Write something.." style="height:200px"></textarea>
-                </div>
-              </div>
-              <div class="row">
-                <input type="submit" value="Submit" class="submit">
-              </div>
-              
-    </div>
+                
+      </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
   </div>
+  </div>
+</div>
 
 </body>
 </html>
