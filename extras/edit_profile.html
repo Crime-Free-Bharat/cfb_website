@@ -100,6 +100,12 @@ input[type="submit"] {
   height: 150px;
 
 }
+.left{
+  width: 30%;
+  font-weight: bold;
+  float: left;
+}
+
 .p-4{
 width: 60vw;
 padding: 10px 0px!important;
@@ -148,6 +154,7 @@ padding: 10px 0px!important;
                 <h4>Mr. XYz abcd</h4>
                 <p>Bhopal</p>
                 <button  type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#editprofile">Edit profile</button>
+                <button  type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#viewprofile">View more</button>
             </div>
         </div>
     </div>
@@ -157,15 +164,41 @@ padding: 10px 0px!important;
             <p class="font-italic mb-0">Student and Experienced Mentor with a demonstrated history of working in the non-profit organization management industry. Skilled in Trigonometry, Mathematics, Calculus, Cascading Style Sheets (CSS), and Arithmetic. Strong professional with a Bachelor of Technology - BTech focused on Computer Science from Medi-Caps University.</p>
             
         </div>
+    
+    
+  </div>
+
+
+  <!--View More-->
+  <div class="modal fade" id="viewprofile" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog  modal-lg modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">More Information</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="about_content">
+            <div><div class="left">Contact Number:</div> +919876543210</div><br>
+            <div><div class="left">Email Id:</div> +919876543210</div><br>
+            <div><div class="left">Address:</div>64, Jawahar marg, Bhopal (M.P.)</div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
     </div>
+</div>`
     <br><br>
 
 
-    <div class="modal fade" id="editprofile" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+    <div class="modal fade" id="editprofile" tabindex="-1" aria-hidden="true">
       <div class="modal-dialog  modal-lg modal-dialog-scrollable">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Edit Profile</h5>
+            <h5 class="modal-title">Edit Profile</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
