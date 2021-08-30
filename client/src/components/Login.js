@@ -22,11 +22,11 @@ const Login = () => {
 
     const data = await res.json();
 
-    if (!data || res.status === 422) {
+    if (!data || res.status === 400) {
       window.alert("invalid hai bhai tu");
       console.log("invalid credentials");
     } else {
-      window.alert("perfect hai bhai tu");
+      window.alert("perfect credentials");
       console.log("successful credentials");
       history.push("/");
     }
@@ -38,7 +38,7 @@ const Login = () => {
           <h4 className="text-center mt-5 fs-5">
             Already have an account?
             <NavLink to="/signup" className="login">
-               Sign up
+              Sign up
             </NavLink>
           </h4>
           <div className="signup-content">

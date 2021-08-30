@@ -39,7 +39,7 @@ const Signup = () => {
       window.alert("invalid data");
       console.log("invalid registration");
     } else {
-      window.alert("Nach le bhai error resolved");
+      window.alert("Registration Succesfull");
       history.push("/login");
     }
   };
