@@ -1,43 +1,14 @@
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Media And Gallery</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css"rel="stylesheet"/>
-    <style>
-        .sectionmedia {
-            padding-top: 50px;
-            background-image: url(img/background1.png);
-            padding-bottom: 50px;
-          }
-          .sectionheadact {
-            font-style: normal;
-            font-weight: bold;
-            text-align: center;
-            font-size: 40px;
-            color: #1d0871;
-            font: roboto;
-          }
-          .sectionparaact {
-            font-weight: bold;
-            font: roboto;
-            text-align: center;
-            color: black;
-            font-size: 25px;
-          }
-          .containermedia {
-            width: 100%;
-            background: #fff;
-            margin: 0 auto;
-          }
-    </style>
-</head>
-<body>
-    <section id="" class="section sectionmedia">
+import React from "react";
+import cfb1 from "../img/cfb1.png";
+import cfb2 from "../img/cfb2.png";
+import cfb3 from "../img/cfb3.png";
+import cfb4 from "../img/cfb4.png";
+import cfb5 from "../img/cfb5.png";
+import cfb6 from "../img/cfb6.png";
+import cfb7 from "../img/cfb7.png";
+
+function Media(){
+    return <section id="" class="section sectionmedia">
         <div class="containermdia">
             <br/>
             <div class="row">
@@ -49,10 +20,10 @@
             <br/>
             <div class="row">
                 <div class="col-sm-12">
-                    <h5 class="sectionheadact" style="font-size: 28px">Youtube Vedios</h5>
+                    <h5 class="sectionheadact" style={{fontSize: "28px"}}>Youtube Vedios</h5>
                 </div>
-                <!-- Modal gallery -->
-                <!-- Section: Images -->
+                {/* <!-- Modal gallery --> */}
+                {/* <!-- Section: Images --> */}
                 <section class="">
                 <div class="row">
                     <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
@@ -61,11 +32,11 @@
                         data-ripple-color="light"
                     >
                         <img
-                        src="img/cfb1.png"
+                        src={cfb1}
                         class="w-100"
                         />
                         <a href="#!" data-mdb-toggle="modal" data-mdb-target="#exampleModal1">
-                        <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
+                        <div class="mask" style={{backgroundColor: "rgba(251, 251, 251, 0.2)"}}></div>
                         </a>
                     </div>
                     </div>
@@ -76,11 +47,11 @@
                         data-ripple-color="light"
                     >
                         <img
-                        src="img/cfb2.png"
+                        src={cfb2}
                         class="w-100"
                         />
                         <a href="#!" data-mdb-toggle="modal" data-mdb-target="#exampleModal2">
-                        <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
+                        <div class="mask" style={{backgroundColor: "rgba(251, 251, 251, 0.2)"}}></div>
                         </a>
                     </div>
                     </div>
@@ -91,21 +62,21 @@
                         data-ripple-color="light"
                     >
                         <img
-                        src="img/cfb3.png"
+                        src={cfb3}
                         class="w-100"
                         />
                         <a href="#!" data-mdb-toggle="modal" data-mdb-target="#exampleModal3">
-                        <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
+                        <div class="mask" style={{backgroundColor: "rgba(251, 251, 251, 0.2)"}}></div>
                         </a>
                     </div>
                     </div>
                 </div>
                 </section>
-                <!-- Section: Images -->
+                {/* <!-- Section: Images --> */}
             
-                <!-- Section: Modals -->
+                {/* <!-- Section: Modals --> */}
                 <section class="">
-                <!-- Modal 1 -->
+                {/* <!-- Modal 1 --> */}
                 <div
                     class="modal fade"
                     id="exampleModal1"
@@ -127,7 +98,7 @@
                     </div>
                     </div>
                 </div>
-                <!-- Modal 2 -->
+                {/* <!-- Modal 2 --> */}
                 <div
                     class="modal fade"
                     id="exampleModal2"
@@ -149,7 +120,7 @@
                     </div>
                     </div>
                 </div>
-                <!-- Modal 3 -->
+                {/* <!-- Modal 3 --> */}
                 <div
                     class="modal fade"
                     id="exampleModal3"
@@ -172,38 +143,31 @@
                     </div>
                 </div>
                 </section>
-                <!-- Modal gallery -->
+                {/* <!-- Modal gallery --> */}
             </div>
             <br/><br/>
             <div class="row">
                 <div class="col-sm-12">
-                    <h5 class="sectionheadact" style="font-size: 28px">CFB Gallery</h5>
+                    <h5 class="sectionheadact" style={{fontSize: "28px"}}>CFB Gallery</h5>
                 </div>
-                <!-- Gallery -->
+                {/* <!-- Gallery --> */}
                 <div class="row">
                     <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
-                        <img src="img/cfb1.png"class="w-100 shadow-1-strong rounded mb-4"alt=""/>
-                        <img src="img/cfb2.png"class="w-100 shadow-1-strong rounded mb-4"alt=""/>
+                        <img src={cfb1} class="w-100 shadow-1-strong rounded mb-4"alt=""/>
+                        <img src={cfb2} class="w-100 shadow-1-strong rounded mb-4"alt=""/>
                     </div>
                     <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
-                        <img src="img/cfb3.png"class="w-100 shadow-1-strong rounded mb-4"alt=""/>
-                        <img src="img/cfb4.png"class="w-100 shadow-1-strong rounded mb-4"alt=""/>
+                        <img src={cfb3} class="w-100 shadow-1-strong rounded mb-4"alt=""/>
+                        <img src={cfb4} class="w-100 shadow-1-strong rounded mb-4"alt=""/>
                     </div>
                     <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
-                        <img src="img/cfb5.png"class="w-100 shadow-1-strong rounded mb-4"alt=""/>
-                        <img src="img/cfb6.png"class="w-100 shadow-1-strong rounded mb-4"alt=""/>
+                        <img src={cfb5} class="w-100 shadow-1-strong rounded mb-4"alt=""/>
+                        <img src={cfb6} class="w-100 shadow-1-strong rounded mb-4"alt=""/>
                     </div>
                 </div>
-                <!-- Gallery -->
+                {/* <!-- Gallery --> */}
             </div>
         </div>
     </section>
-
-    <!-- MDB -->
-<script
-type="text/javascript"
-src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js"
-></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-</body>
-</html>
+}
+export default Media;

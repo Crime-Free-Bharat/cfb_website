@@ -905,3 +905,32 @@ input:hover,
   height: 300px;
 }
 /*=========================================================== Feedback styling end ==========================================================*/
+
+/*=========================================================== Media styling Start ==========================================================*/
+
+.sectionmedia {
+  padding-top: 50px;
+  background-image: url(img/background1.png);
+  padding-bottom: 50px;
+}
+.sectionheadact {
+  font-style: normal;
+  font-weight: bold;
+  text-align: center;
+  font-size: 40px;
+  color: #1d0871;
+  font: roboto;
+}
+.sectionparaact {
+  font-weight: bold;
+  font: roboto;
+  text-align: center;
+  color: black;
+  font-size: 25px;
+}
+.containermedia {
+  width: 100%;
+  background: #fff;
+  margin: 0 auto;
+}
+/*=========================================================== Media styling end ==========================================================*/

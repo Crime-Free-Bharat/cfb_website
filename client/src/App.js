@@ -15,6 +15,7 @@ import Footer from "./components/Footer";
 import FAQ from "./components/FAQ";
 import TnC from "./components/TnC";
 import Feedback from "./components/Feedback";
+import Media from "./components/Media";
 
 const App = () => {
   return (
@@ -32,6 +33,7 @@ const App = () => {
         <Route exact path="/FAQ" component={FAQ} />
         <Route exact path="/TnC" component={TnC} />
         <Route exact path="/Feedback" component={Feedback} />
+        <Route exact path="/media" component={Media} />
       </Switch>
       <Footer />
     </>
