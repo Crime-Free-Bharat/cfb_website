@@ -87,7 +87,7 @@ const Navbar = () => {
                 <i className="bi bi-flag"></i> <br /> <p>Report a Crime</p>
               </div>
             </NavLink>
-            <NavLink to="#">
+            <NavLink to="/media">
               <div className="media">
                 <i className="bi bi-soundwave"></i> <br /> <p>Media</p>
               </div>
