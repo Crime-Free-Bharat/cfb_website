@@ -1,99 +1,232 @@
 <html>
-    <head>
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="policy.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,300&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-    </head>
-    <BODY>
-        <header>
-            <div class="nav1">
-                <p>DEPARTMENT OF THE NATIONAL TECHNICAL RESEARCH & DEVELOPMENT COMMITTEE</p>
 
-                <div class="nav1-right">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <style>
+        .Policies {
+            margin-top: 1em;
+            margin-bottom: 1em;
+            height: 60vw;
+            margin-left: 4em;
+            margin-right: 4em;
+        }
+
+        .Policies a {
+            color: #f7505a;
+        }
+
+        a {
+            color: black;
+            text-decoration: none;
+        }
+
+        p {
+            color: black;
+            font-size: small;
+        }
+
+        .currentpage {
+            display: flex;
+            font-size: small;
+        }
+
+        .list {
+            height: 58vw;
+        }
+
+        #heading {
+            margin-top: 1em;
+            font-size: 1.3em;
+            border-bottom: 3px solid #f7505a;
+            width: 7.3em;
+            padding-bottom: 0.3em;
+            color: #2f2f2f;
+        }
+
+        .policygrid {
+            margin-top: 1em;
+            display: grid;
+            height: 22vw;
+            grid-template-rows: 1fr;
+            grid-row-gap: 2em;
+        }
+
+        .item h3 {
+            font-size: 1em;
+            color: #2f2f2f;
+        }
+
+        .item p {
+            color: #000000;
+            text-align: justify;
+            margin-top: 1em;
+            font-size: 0.8em;
+        }
+    </style>
+</head>
+
+<BODY>
+    <header>
+        <div class="nav1">
+            <p>DEPARTMENT OF THE NATIONAL TECHNICAL RESEARCH & DEVELOPMENT COMMITTEE</p>
+
+            <div class="nav1-right">
                 <div class="navsocial">
-                    <a href="https://twitter.com/bharat_free?s=20" target="_blank"><i class="bi bi-twitter"></i></a> <a href="https://www.instagram.com/crimefreebharat_official/" target="_blank"> <i class="bi bi-instagram"></i></a> <a href="https://www.linkedin.com/company/crimefreebharat/mycompany/" target="_blank"><i class="bi bi-linkedin"></i></a> <a href="https://www.youtube.com/channel/UCAmspcG5fQmPgi1LxBprpRg" target="_blank"> <i class="bi bi-youtube"></i></a> 
+                    <a href="https://twitter.com/bharat_free?s=20" target="_blank"><i class="bi bi-twitter"></i></a> <a
+                        href="https://www.instagram.com/crimefreebharat_official/" target="_blank"> <i
+                            class="bi bi-instagram"></i></a> <a
+                        href="https://www.linkedin.com/company/crimefreebharat/mycompany/" target="_blank"><i
+                            class="bi bi-linkedin"></i></a> <a
+                        href="https://www.youtube.com/channel/UCAmspcG5fQmPgi1LxBprpRg" target="_blank"> <i
+                            class="bi bi-youtube"></i></a>
                 </div>
-                <a href="#"> <div class="nav1lang">language</div></a>
-                <a href=#><div class="nav1login">Login / Signup</div></a>
-                </div>
+                <a href="#">
+                    <div class="nav1lang">language</div>
+                </a>
+                <a href=#>
+                    <div class="nav1login">Login / Signup</div>
+                </a>
             </div>
-            
-            <div class="nav2 main">
-                <a href="#"><img src="img/logo2.png"></a>
-        
-                <div class="menu">
-                    <a href="#"><div class="about"><i class="bi bi-person-lines-fill"></i><br><p>About us</p></div></a>
-                    <a href="#"><div class="service"><i class="bi bi-gear-wide-connected"></i> <br> <p>Services</p></div></a>
-                    <a href="#"><div class="division"><i class="bi bi-diagram-3"></i><br><p>CFB division</p></div></a>
-                    <a href="#"><div class="act"><i class="bi bi-file-earmark-ruled"></i> <br> <p>Act and Regulations</p></div></a>
-                    <a href="#"><div class="report"><i class="bi bi-flag"></i> <br> <p>Report a Crime</p></div></a>
-                    <a href="#"><div class="media"><i class="bi bi-soundwave"></i> <br> <p>Media</p></div></a>
-                    <a href="#"><div class="activity"><i class="bi bi-hand-index-thumb"></i><br> <p>CFB Activities</p></div></a>
-                    <a href="#"><div class="contact"><i class="bi bi-telephone-plus"></i><br><p>Contact Us</p></div></a>
+        </div>
 
-                </div>
+        <div class="nav2 main">
+            <a href="#"><img src="img/logo2.png"></a>
+
+            <div class="menu">
+                <a href="#">
+                    <div class="about"><i class="bi bi-person-lines-fill"></i><br>
+                        <p>About us</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="service"><i class="bi bi-gear-wide-connected"></i> <br>
+                        <p>Services</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="division"><i class="bi bi-diagram-3"></i><br>
+                        <p>CFB division</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="act"><i class="bi bi-file-earmark-ruled"></i> <br>
+                        <p>Act and Regulations</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="report"><i class="bi bi-flag"></i> <br>
+                        <p>Report a Crime</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="media"><i class="bi bi-soundwave"></i> <br>
+                        <p>Media</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="activity"><i class="bi bi-hand-index-thumb"></i><br>
+                        <p>CFB Activities</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="contact"><i class="bi bi-telephone-plus"></i><br>
+                        <p>Contact Us</p>
+                    </div>
+                </a>
+
             </div>
-            
-        </header>
-        <div class="policies">
+        </div>
+
+    </header>
+    <div class="policies">
 
         <div class="currentpage">
             <a href="#">Home>></a>
             <p>Website Policy</p>
         </div>
 
-         <div class="list">
-        <h1 id="heading">Website Policy</h1>   
-         <div class="policygrid">
-             <div class="item">
-                 <h3>1.Copyright Policy</h3>
-                 <p>Material featured on this Website may be reproduced free of charge after taking proper permission by sending a mail to us. However, the material has to be reproduced accurately and not to be used in a derogatory manner or in a misleading context. Wherever the material is being published or issued to others, the source must be prominently acknowledged. However, the permission to reproduce this material shall not extend to any material which is identified as being copyright of a third party. Authorisation to reproduce such material must be obtained from the departments/copyright holders concerned.<br>
-                    These terms and conditions shall be governed by and construed in accordance with the Indian Laws. Any dispute arising under these terms and conditions shall be subject to the exclusive jurisdiction of the courts of India.</p>
-             </div>
-             <div class="item">
-                <h3>2.Hyperlinking policy</h3>
-                <p>Links to external websites/portals<br>
-                    At many places in this Website, you shall find links to other websites/portals. This links have been placed for your convenience. [Department] is not responsible for the contents and reliability of the linked websites and does not necessarily endorse the views expressed in them. Mere presence of the link or its listing on this website should not be assumed as endorsement of any kind. We can not guarantee that these links will work all the time and we have no control over availability of linked pages.</p>
+        <div class="list">
+            <h1 id="heading">Website Policy</h1>
+            <div class="policygrid">
+                <div class="item">
+                    <h3>1.Copyright Policy</h3>
+                    <p>Material featured on this Website may be reproduced free of charge after taking proper permission
+                        by sending a mail to us. However, the material has to be reproduced accurately and not to be
+                        used in a derogatory manner or in a misleading context. Wherever the material is being published
+                        or issued to others, the source must be prominently acknowledged. However, the permission to
+                        reproduce this material shall not extend to any material which is identified as being copyright
+                        of a third party. Authorisation to reproduce such material must be obtained from the
+                        departments/copyright holders concerned.<br>
+                        These terms and conditions shall be governed by and construed in accordance with the Indian
+                        Laws. Any dispute arising under these terms and conditions shall be subject to the exclusive
+                        jurisdiction of the courts of India.</p>
+                </div>
+                <div class="item">
+                    <h3>2.Hyperlinking policy</h3>
+                    <p>Links to external websites/portals<br>
+                        At many places in this Website, you shall find links to other websites/portals. This links have
+                        been placed for your convenience. [Department] is not responsible for the contents and
+                        reliability of the linked websites and does not necessarily endorse the views expressed in them.
+                        Mere presence of the link or its listing on this website should not be assumed as endorsement of
+                        any kind. We can not guarantee that these links will work all the time and we have no control
+                        over availability of linked pages.</p>
+                </div>
+                <div class="item">
+                    <h3>Links to our website by other websites</h3>
+                    <p>We do not object to you linking directly to the information that is hosted on this website and no
+                        prior permission is required for the same. However, we would like you to inform us about any
+                        links provided to this website so that you can be informed of any changes or updations therein.
+                        Also, we do not permit our pages to be loaded into frames on your site. The pages belonging to
+                        this website must load into a newly opened browser window of the User.</p>
+                </div>
+                <div class="item">
+                    <h3>3.Privacy policy</h3>
+                    <p>This website does not automatically capture any specific personal information from you, (like
+                        name, phone number or e-mail address), that allows us to identify you individually.
+                        Wherever the Website requests you to provide personal information, you will be informed for the
+                        particular purposes for which the information is gathered and adequate security measures will be
+                        taken to protect your personal information.<br>
+                        We do not sell or share any personally identifiable information volunteered on the website site
+                        to any third party (public/private). Any information provided to this Website will be protected
+                        from loss, misuse, unauthorized access or disclosure, alteration, or destruction.<br>
+                        We gather certain information about the User, such as Internet protocol (IP) addresses, domain
+                        name, browser type, operating system, the date and time of the visit and the pages visited. We
+                        make no attempt to link these addresses with the identity of individuals visiting our site
+                        unless an attempt to damage the site has been detected.</p>
+                </div>
             </div>
-            <div class="item">
-                <h3>Links to our website by other websites</h3>
-                <p>We do not object to you linking directly to the information that is hosted on this website and no prior permission is required for the same. However, we would like you to inform us about any links provided to this website so that you can be informed of any changes or updations therein. Also, we do not permit our pages to be loaded into frames on your site. The pages belonging to this website must load into a newly opened browser window of the User.</p>
-            </div>
-            <div class="item">
-                <h3>3.Privacy policy</h3>
-                <p>This website does not automatically capture any specific personal information from you, (like name, phone number or e-mail address), that allows us to identify you individually.
-                    Wherever the Website requests you to provide personal information, you will be informed for the particular purposes for which the information is gathered and adequate security measures will be taken to protect your personal information.<br>
-                    We do not sell or share any personally identifiable information volunteered on the website site to any third party (public/private). Any information provided to this Website will be protected from loss, misuse, unauthorized access or disclosure, alteration, or destruction.<br>
-                    We gather certain information about the User, such as Internet protocol (IP) addresses, domain name, browser type, operating system, the date and time of the visit and the pages visited. We make no attempt to link these addresses with the identity of individuals visiting our site unless an attempt to damage the site has been detected.</p>
-            </div>
-         </div>
-          </div>
         </div>
-        <footer class="footer">
-            <div class="ul">
-                <ul >
-                    <li><a href="#">Terms & Conditions</a></li>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">Policies</a></li>
-                    <li><a href="#">Help</a></li>
-                    <li><a href="#">Join Us</a></li>
-                    <li><a href="#">Feedback</a></li>
-                </ul>
-            </div>
-            <div class="container">
+    </div>
+    <footer class="footer">
+        <div class="ul">
+            <ul>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Policies</a></li>
+                <li><a href="#">Help</a></li>
+                <li><a href="#">Join Us</a></li>
+                <li><a href="#">Feedback</a></li>
+            </ul>
+        </div>
+        <div class="container">
             <div class="content">
                 <img src="img/logo3.png" alt="logo">
             </div>
             <span class="vertical-line"></span>
             <div>
                 <p>
-                    Web Content Developed and Managed by National Technical Research & Development Committee, Crime Free Bharat
+                    Web Content Developed and Managed by National Technical Research & Development Committee, Crime Free
+                    Bharat
                 </p>
             </div>
-            </div>
-        </footer>
-    </BODY>
+        </div>
+    </footer>
+</BODY>
+
 </html>
