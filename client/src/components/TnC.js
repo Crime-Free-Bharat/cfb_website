@@ -3,8 +3,8 @@ import terms from "../img/terms.svg"
 import terms2 from "../img/terms2.svg"
 function TnC(){
     return <div>
-        <section id="" className="section">
-        <div className="container">
+        <section id="" className="section sectionterms">
+        <div className="container containerterms" >
             <br />
             <div className="row">
                 <div className="col-sm-12">

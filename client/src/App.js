@@ -16,6 +16,8 @@ import FAQ from "./components/FAQ";
 import TnC from "./components/TnC";
 import Feedback from "./components/Feedback";
 import Media from "./components/Media";
+import Policies from "./components/Policies";
+import RTI from "./components/RTI";
 
 const App = () => {
   return (
@@ -34,6 +36,8 @@ const App = () => {
         <Route exact path="/TnC" component={TnC} />
         <Route exact path="/Feedback" component={Feedback} />
         <Route exact path="/media" component={Media} />
+        <Route exact path="/Policies" component={Policies} />
+        <Route exact path="/RTI" component={RTI} />
       </Switch>
       <Footer />
     </>

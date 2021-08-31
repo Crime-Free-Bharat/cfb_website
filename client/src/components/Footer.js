@@ -8,16 +8,16 @@ const Footer = () => {
         <div className="footer">
           <ul className="ul-list">
             <li>
-              <NavLink to="/TnC">Terms & Conditions</NavLink>
+              <NavLink to="/TnC">Terms {'&'} Conditions</NavLink>
             </li>
             <li>
               <NavLink to="/FAQ">FAQ</NavLink>
             </li>
             <li>
-              <NavLink to="#">Policies</NavLink>
+              <NavLink to="/Policies">Policies</NavLink>
             </li>
             <li>
-              <NavLink to="#">Help</NavLink>
+              <NavLink to="/RTI">RTI</NavLink>
             </li>
             <li>
               <NavLink to="#">Join Us</NavLink>
