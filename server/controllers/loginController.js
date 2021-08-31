@@ -21,7 +21,7 @@ exports.login = async (req, res) => {
       // =====================================  token ============================
 
       if (!isMatch) {
-        res.status(400).json({ error: "invaild ho bhia tum" });
+        res.status(400).json({ error: "invaild credetials" });
       } else {
         token = await userlogin.generateAuthToken();
         console.log(token);
@@ -33,7 +33,7 @@ exports.login = async (req, res) => {
         res.json({ message: "successfully login h tu bhia khush hoja" });
       }
     } else {
-      res.status(400).json({ error: "invaild h bhia tu" });
+      res.status(400).json({ error: "invaild data details" });
     }
     // ==============================bycript for login functionality =================================
   } catch (err) {

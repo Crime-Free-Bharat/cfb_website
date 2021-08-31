@@ -23,7 +23,7 @@ const Login = () => {
     const data = await res.json();
 
     if (!data || res.status === 400) {
-      window.alert("invalid hai bhai tu");
+      window.alert("invalid credentials");
       console.log("invalid credentials");
     } else {
       window.alert("perfect credentials");
