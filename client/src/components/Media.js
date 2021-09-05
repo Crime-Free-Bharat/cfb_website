@@ -20,7 +20,7 @@ function Media(){
             <br/>
             <div class="row">
                 <div class="col-sm-12">
-                    <h5 class="sectionheadact" style={{fontSize: "28px"}}>Youtube Vedios</h5>
+                    <h5 class="sectionheadact" style={{fontSize: "28px"}}>Youtube Videos</h5>
                 </div>
                 {/* <!-- Modal gallery --> */}
                 {/* <!-- Section: Images --> */}
