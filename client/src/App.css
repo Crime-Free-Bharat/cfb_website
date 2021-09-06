@@ -391,7 +391,7 @@ label {
 .login {
   text-decoration: none;
 }
-.login:hover{
+.login:hover {
   text-decoration: underline;
 }
 
@@ -720,58 +720,72 @@ input:hover,
 }
 
 /* ====================================== Footer ========================================== */
-.footer li a {
+.footer {
+  width: 100%;
+  background: linear-gradient(#6a1b4d, #222222);
+}
+.footer ul li a {
   text-decoration: none;
-  color: black;
-}
-
-.ul-list {
-  border: 1px solid #ccc;
-  border-width: 1px 0;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-}
-
-.ul-list li {
-  display: inline;
-}
-
-.ul-list a {
+  color: white;
   display: inline-block;
-  padding: 10px;
+  padding: 1vw 01.5vw;
+  margin-left: 3px;
 }
-.content__footer img {
-  width: 80px;
-  height: 80px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+.footer ul {
+  margin-bottom: 0;
 }
-.content__footer .footer__para {
-  text-align: center;
+.footer ul li a:hover {
+  background-color: rgb(250, 240, 240);
+  color: #100051;
 }
-.container__footer .footer__div .footer__para {
-  color: #222;
+.footer ul li {
+  display: inline;
+  border-left: 1px white solid;
 }
-.container__footer {
+.footer .ul {
+  margin: auto;
+  width: fit-content;
+  align-items: center;
+  margin-bottom: 0;
+}
+.libg {
+  border-right: 1px #ffffff solid;
+}
+
+.footer .content img {
+  width: 100px;
+  height: 100px;
+}
+
+.footer .container {
   display: flex;
-  flex-direction: row;
-  margin-left: 390px;
-  margin-top: 20px;
+  align-items: center;
+  margin: auto;
+  width: fit-content;
+  padding: 1vw;
+  background: linear-gradient(#6a1b4d, #222222);
 }
-.container__footer .footer__div {
-  padding: 20px 20px;
-}
-.vertical-line__footer {
+
+.vertical-line {
   display: inline-block;
   border-left: 1px solid #ccc;
-  margin: 0 10px;
-  height: 125px;
+  margin: 1vh 2vh;
+  height: 4vw;
+}
+
+.footer p {
+  width: 300px;
+  margin: 0px;
+  padding: 0px;
+  color: white;
+}
+
+.footer1 {
+  background-color: #222222;
+  align-items: center;
+  padding: 5px;
 }
 /* ================================================ Footer styling ends ======================================================*/
-
 
 /* ================================================ AnR styling begins ======================================================*/
 

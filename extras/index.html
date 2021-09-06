@@ -1,752 +1,858 @@
 <html>
-    <head>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,300&display=swap" rel="stylesheet">
-        
-        <style>
-            a{
-                text-decoration: none;
-            }
-            .nav1 {
-  overflow: hidden;
-  padding: 1vh 2vw 1vh 6vw;
-  margin: 0px;
-  border-bottom: rgb(219, 219, 219) solid 1px;
-  font-size: 1vw;
-}
 
-.nav1 p {
-  font-weight: normal;
-  line-height: normal;
-  float: left;
-  margin: 0px;
-  text-align: center;
-  padding-top: 1vh;
-  font-size: 0.8vw;
-}
+<head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+    crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,300&display=swap"
+    rel="stylesheet">
 
-.nav1 a:hover {
-  color: rgb(231, 0, 0);
-  text-decoration: none;
-}
-.nav1-right {
-  float: right;
-  display: flex;
-  padding: 0vw 1v w;
-}
-.navsocial a,
-.navsocial {
-  margin: 5px 1vh;
-}
-.nav1lang {
-  background-color: #e5e5e5;
-}
-.nav1login {
-  background-color: #100051;
-  color: white;
-}
-.nav1lang,
-.nav1login {
-  padding: 5px 20px;
-  border-radius: 50px;
-  margin: 0px 10px;
-}
-.header {
-  box-shadow: 1px 1px 10px rgba(25, 3, 49, 0.432);
-  background-color: white;
-  z-index: 500;
-}
+  <style>
+    a {
+      text-decoration: none;
+    }
 
-.navmenu {
-  display: none;
-  font-size: 4vw;
-}
+    .nav1 {
+      overflow: hidden;
+      padding: 1vh 2vw 1vh 6vw;
+      margin: 0px;
+      border-bottom: rgb(219, 219, 219) solid 1px;
+      font-size: 1vw;
+    }
 
-/*nav 2 main*/
+    .nav1 p {
+      font-weight: normal;
+      line-height: normal;
+      float: left;
+      margin: 0px;
+      text-align: center;
+      padding-top: 1vh;
+      font-size: 0.8vw;
+    }
 
-#sticky {
-  position: sticky;
-  top: 0;
-}
-.nav2 {
-  overflow: hidden;
-  padding: 0vw 2vw 0vw 6vw;
-  margin: auto;
-  align-content: space-around;
-  border-bottom: rgb(219, 219, 219) solid 1px;
-  position: sticky;
-  top: 0;
-  display: flex;
-}
-.nav2 img {
-  width: 20vw;
-  float: left;
-}
+    .nav1 a:hover {
+      color: rgb(231, 0, 0);
+      text-decoration: none;
+    }
 
-.nav2 a:hover {
-  text-decoration: none;
-}
-.header .nav2 .menu a {
-  color: #100051;
-}
-.menu {
-  text-align: center;
-  float: right;
-  padding-left: 4vw;
-  width: fit-content;
-  margin: auto;
-  align-content: center;
-  display: flex;
-}
-.menu p {
-  padding-top: 1vw;
-  font-size: 1vw;
-}
-.about,
-.service,
-.division,
-.act,
-.report,
-.mediapage,
-.activity,
-.contact {
-  padding: 1vw 5px 5px 5px;
-  font-weight: 350;
-  width: 8vw;
-  height: 7vw;
-  margin: 1vh 0vh;
-}
-.about:hover,
-.service:hover,
-.division:hover,
-.act:hover,
-.report:hover,
-.mediapage:hover,
-.activity:hover,
-.contact:hover {
-  background-color: rgb(250, 240, 240);
-}
+    .nav1-right {
+      float: right;
+      display: flex;
+      padding: 0vw 1v w;
+    }
 
-            .homecarousel {
-  padding: 0;
-  margin: 0;
-  z-index: 0;
-}
+    .navsocial a,
+    .navsocial {
+      margin: 5px 1vh;
+    }
 
-.carousel1 img {
-  width: 100vw;
-  object-fit: cover;
-}
+    .nav1lang {
+      background-color: #e5e5e5;
+    }
 
-.carousel1 {
-  vertical-align: top;
-  transition: 3s;
-}
+    .nav1login {
+      background-color: #100051;
+      color: white;
+    }
 
-.homesec1 {
-  display: flex;
-  padding: 2vh 8vw;
-  background-color: rgb(231, 231, 231);
-}
+    .nav1lang,
+    .nav1login {
+      padding: 5px 20px;
+      border-radius: 50px;
+      margin: 0px 10px;
+    }
 
-.homesec1 .div1 {
-  width: 20vw;
-  padding: 10px;
-  margin: 1vw;
-}
-.homesec1 .div1 img {
-  width: 15vw;
-}
-.homesec1 .div2 {
-  width: 50vw;
-  padding: 10px 2vw;
-  margin: 1vw;
-}
+    .header {
+      box-shadow: 1px 1px 10px rgba(25, 3, 49, 0.432);
+      background-color: white;
+      z-index: 500;
+    }
 
-.updates,
-.video {
-  width: 40vw;
-  padding: 0vh 0vw;
-  margin: 0vh 1vw;
-  background-color: #242b2e;
-  color: white;
-}
-.updates li {
-  list-style: inside;
-  font-size: medium;
-}
-.homesec2 {
-  padding: 7vh 7vw;
-  display: flex;
-  width: fit-content;
-  margin: auto;
-}
+    .navmenu {
+      display: none;
+      font-size: 4vw;
+    }
 
-.homesec2 h4 span {
-  margin-bottom: 0;
-  margin-left: 1vw;
-}
-.updates h4 {
-  border-bottom: 2px solid red;
-  padding: 1vh 0px;
-  margin: 0px 1vw;
-}
+    /*nav 2 main*/
 
-.video {
-  display: block;
-}
+    #sticky {
+      position: sticky;
+      top: 0;
+    }
 
-.homesec2 marquee {
-  margin: 1vh 1vw;
-}
-.homesec2 marquee li a {
-  color: white;
-}
-.homesec2 marquee li {
-  padding-bottom: 10px;
-}
+    .nav2 {
+      overflow: hidden;
+      padding: 0vw 2vw 0vw 6vw;
+      margin: auto;
+      align-content: space-around;
+      border-bottom: rgb(219, 219, 219) solid 1px;
+      position: sticky;
+      top: 0;
+      display: flex;
+    }
 
-.homecard {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  grid-gap: 1vw;
-}
+    .nav2 img {
+      width: 20vw;
+      float: left;
+    }
 
-.homecard .card {
-  width: 26vw;
-  border: 1px solid rgb(224, 219, 219);
-  padding-bottom: 5px;
-  background-color: white;
-  box-shadow: 2px 5px 8px #b4b0b0;
-}
-.homecard .card .img img {
-  width: 100%;
-}
+    .nav2 a:hover {
+      text-decoration: none;
+    }
 
-#cards {
-  display: block;
-  margin: auto;
-  width: fit-content;
-}
-#cards h2 {
-  text-align: center;
-  font-weight: bold;
-}
+    .header .nav2 .menu a {
+      color: #100051;
+    }
 
-.cardcontent {
-  padding: 0vh 10px;
-  padding-bottom: 10px;
-  color: #a0aca8;
-  height: 150px;
-  display: flex;
-  flex-wrap: wrap;
-  align-content: space-between;
-}
+    .menu {
+      text-align: center;
+      float: right;
+      padding-left: 4vw;
+      width: fit-content;
+      margin: auto;
+      align-content: center;
+      display: flex;
+    }
 
-.readmore {
-  color: purple;
-  border: 1px solid #d5d5d5;
-  padding: 10px 20px;
-  margin-top: 0;
-  width: fit-content;
-  border-radius: 5px;
-  background-color: #3300fd;
-}
-.readmore:hover {
-  background-color: #004074;
-}
-.readmore a {
-  color: white;
-}
-.readmore a:hover {
-  color: white;
-  text-decoration: none;
-}
+    .menu p {
+      padding-top: 1vw;
+      font-size: 1vw;
+    }
 
-.homesec3 {
-  background-color: rgb(231, 231, 231);
-  padding: 10px;
-}
+    .about,
+    .service,
+    .division,
+    .act,
+    .report,
+    .mediapage,
+    .activity,
+    .contact {
+      padding: 1vw 5px 5px 5px;
+      font-weight: 350;
+      width: 8vw;
+      height: 7vw;
+      margin: 1vh 0vh;
+    }
 
-.homesec3 h5,
-.homesec3 p,
-.homesec3 a {
-  width: 100%;
-}
-.homesec3 p {
-  height: 50px;
-  font-weight: 100;
-  font-size: 15px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-.homesec3 h5 {
-  font-weight: bold;
-  color: #000;
-}
-@media screen and (max-width: 720px) {
-  .nav1 a {
-    float: none;
-    text-align: left;
-  }
-  .nav1-right {
-    float: none;
-  }
-  .navmenu {
-    display: block;
-    background-color: rgba(255, 255, 255, 0);
-    position: absolute;
-    right: 10;
-    top: 10;
-  }
+    .about:hover,
+    .service:hover,
+    .division:hover,
+    .act:hover,
+    .report:hover,
+    .mediapage:hover,
+    .activity:hover,
+    .contact:hover {
+      background-color: rgb(250, 240, 240);
+    }
 
-  .about,
-  .service,
-  .division,
-  .act,
-  .report,
-  .mediapage,
-  .activity,
-  .contact {
-    padding: 2.5vw 1vh 1vh 2vh;
-    font-weight: 350;
-    width: 80vw;
-    height: fit-content;
-    margin: auto;
-    align-content: center;
-    display: flex;
-    align-items: center;
-  }
-  .menu p {
-    padding-top: 1vw;
-    font-size: 2vw;
-    padding-left: 2vw;
-  }
-  .menu {
-    display: none;
-    height: fit-content;
-    z-index: 100;
-    margin-right: 4vw;
-    margin-top: 2vh;
-    width: fit-content;
-  }
-  .content img {
-    width: 50px;
-    height: 50px;
-  }
-  .footer .container {
-    display: block;
-    align-items: center;
-    margin: auto;
-    width: fit-content;
-    padding: 1vw;
-    text-align: center;
-  }
-  .vertical-line {
-    display: none;
-  }
+    .homecarousel {
+      padding: 0;
+      margin: 0;
+      z-index: 0;
+    }
 
-  .footer p {
-    width: 70vw;
-    margin: 0px;
-    padding: 0px;
-    font-size: 12px;
-    color: white;
-  }
-}
+    .carousel1 img {
+      width: 100vw;
+      object-fit: cover;
+    }
 
-@media screen and (max-width: 480px) {
-  .nav1 a {
-    float: none;
-    text-align: left;
-  }
-  .nav1-right {
-    float: none;
-  }
-  .navmenu {
-    display: block;
-    background-color: rgba(255, 255, 255, 0);
-    position: absolute;
-    right: 8;
-    top: 8;
-  }
+    .carousel1 {
+      vertical-align: top;
+      transition: 3s;
+    }
 
-  .about,
-  .service,
-  .division,
-  .act,
-  .report,
-  .mediapage,
-  .activity,
-  .contact {
-    padding: 2.5vw 1vh 1vh 1vh;
-    font-weight: 350;
-    width: 20vw;
-    height: fit-content;
-    margin: 0vh 0vh;
-  }
-  .menu p {
-    padding-top: 1vw;
-    font-size: 2vw;
-  }
-}
+    .homesec1 {
+      display: flex;
+      padding: 2vh 8vw;
+      background-color: rgb(231, 231, 231);
+    }
 
-/*Footer*/
-.footer {
-  width: 100%;
-  background-image: linear-gradient(#6a1b4d, #222222);
-}
-.footer ul li a {
-  text-decoration: none;
-  color: white;
-  display: inline-block;
-  padding: 1vw 01.5vw;
-  margin-left: 3px;
-}
-.footer ul {
-  margin-bottom: 0;
-}
-.footer ul li a:hover {
-  background-color: rgb(250, 240, 240);
-  color: #100051;
-}
-.footer ul li {
-  display: inline;
-  border-left: 1px white solid;
-}
-.footer .ul {
-  margin: auto;
-  width: fit-content;
-  align-items: center;
-  margin-bottom: 0;
-}
+    .homesec1 .div1 {
+      width: 20vw;
+      padding: 10px;
+      margin: 1vw;
+    }
 
-.footer .content img {
-  width: 100px;
-  height: 100px;
-}
+    .homesec1 .div1 img {
+      width: 15vw;
+    }
 
-.footer .container {
-  display: flex;
-  align-items: center;
-  margin: auto;
-  width: fit-content;
-  padding: 1vw;
-}
+    .homesec1 .div2 {
+      width: 50vw;
+      padding: 10px 2vw;
+      margin: 1vw;
+    }
 
-.vertical-line {
-  display: inline-block;
-  border-left: 1px solid #ccc;
-  margin: 1vh 2vh;
-  height: 4vw;
-}
+    .updates,
+    .video {
+      width: 40vw;
+      padding: 0vh 0vw;
+      margin: 0vh 1vw;
+      background-color: #242b2e;
+      color: white;
+    }
 
-.footer p {
-  width: 300px;
-  margin: 0px;
-  padding: 0px;
-  color: white;
-}
+    .updates li {
+      list-style: inside;
+      font-size: medium;
+    }
 
-.footer1 {
-  background-color: #222222;
-  align-items: center;
-  padding: 5px;
-}
-</style>
-    </head>
-    <BODY>
-      
-        <div class="header">
-            <div class="nav1" id="nav1">
-                <p>DEPARTMENT OF THE NATIONAL TECHNICAL RESEARCH & DEVELOPMENT COMMITTEE</p>
+    .homesec2 {
+      padding: 7vh 7vw;
+      display: flex;
+      width: fit-content;
+      margin: auto;
+    }
 
-                <div class="nav1-right">
-                <div class="navsocial" >
-                    <a href="https://twitter.com/bharat_free?s=20" target="_blank"><i class="bi bi-twitter"></i></a> <a href="https://www.instagram.com/crimefreebharat_official/" target="_blank"> <i class="bi bi-instagram"></i></a> <a href="https://www.linkedin.com/company/crimefreebharat/mycompany/" target="_blank"><i class="bi bi-linkedin"></i></a> <a href="https://www.youtube.com/channel/UCAmspcG5fQmPgi1LxBprpRg" target="_blank"> <i class="bi bi-youtube"></i></a> 
-                </div>
-                <a href="#"> <div class="nav1lang">language</div></a>
-                <a href=#><div class="nav1login">Login / Signup</div></a>
-                </div>
-            </div>
-            
-            <div class="nav2 main" id="sticky">
-                <a href="#"><img src="img/logo2.png"></a>
-                
-                <a href="javascript:void(0);" class="navmenu" onclick="menu()"><i class="bi bi-list"></i></a> 
-        
-                <div class="menu" id="menu">
-                    <a href="#"><div class="about"><i class="bi bi-person-lines-fill"></i><br><p>About us</p></div></a>
-                    <a href="#"><div class="service"><i class="bi bi-gear-wide-connected"></i> <br> <p>Services</p></div></a>
-                    <a href="#"><div class="division"><i class="bi bi-diagram-3"></i><br><p>CFB division</p></div></a>
-                    <a href="#"><div class="act"><i class="bi bi-file-earmark-ruled"></i> <br> <p>Act and Regulations</p></div></a>
-                    <a href="#"><div class="report"><i class="bi bi-flag"></i> <br> <p>Report a Crime</p></div></a>
-                    <a href="#"><div class="mediapage"><i class="bi bi-soundwave"></i> <br> <p>Media</p></div></a>
-                    <a href="#"><div class="activity"><i class="bi bi-hand-index-thumb"></i><br> <p>CFB Activities</p></div></a>
-                    <a href="#"><div class="contact"><i class="bi bi-telephone-plus"></i><br><p>Contact Us</p></div></a>
+    .homesec2 h4 span {
+      margin-bottom: 0;
+      margin-left: 1vw;
+    }
 
-                </div>
-            </div>
-            
-            
+    .updates h4 {
+      border-bottom: 2px solid red;
+      padding: 1vh 0px;
+      margin: 0px 1vw;
+    }
+
+    .video {
+      display: block;
+    }
+
+    .homesec2 marquee {
+      margin: 1vh 1vw;
+    }
+
+    .homesec2 marquee li a {
+      color: white;
+    }
+
+    .homesec2 marquee li {
+      padding-bottom: 10px;
+    }
+
+    .homecard {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      grid-gap: 1vw;
+    }
+
+    .homecard .card {
+      width: 26vw;
+      border: 1px solid rgb(224, 219, 219);
+      padding-bottom: 5px;
+      background-color: white;
+      box-shadow: 2px 5px 8px #b4b0b0;
+    }
+
+    .homecard .card .img img {
+      width: 100%;
+    }
+
+    #cards {
+      display: block;
+      margin: auto;
+      width: fit-content;
+    }
+
+    #cards h2 {
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .cardcontent {
+      padding: 0vh 10px;
+      padding-bottom: 10px;
+      color: #a0aca8;
+      height: 150px;
+      display: flex;
+      flex-wrap: wrap;
+      align-content: space-between;
+    }
+
+    .readmore {
+      color: purple;
+      border: 1px solid #d5d5d5;
+      padding: 10px 20px;
+      margin-top: 0;
+      width: fit-content;
+      border-radius: 5px;
+      background-color: #3300fd;
+    }
+
+    .readmore:hover {
+      background-color: #004074;
+    }
+
+    .readmore a {
+      color: white;
+    }
+
+    .readmore a:hover {
+      color: white;
+      text-decoration: none;
+    }
+
+    .homesec3 {
+      background-color: rgb(231, 231, 231);
+      padding: 10px;
+    }
+
+    .homesec3 h5,
+    .homesec3 p,
+    .homesec3 a {
+      width: 100%;
+    }
+
+    .homesec3 p {
+      height: 50px;
+      font-weight: 100;
+      font-size: 15px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .homesec3 h5 {
+      font-weight: bold;
+      color: #000;
+    }
+
+    @media screen and (max-width: 720px) {
+      .nav1 a {
+        float: none;
+        text-align: left;
+      }
+
+      .nav1-right {
+        float: none;
+      }
+
+      .navmenu {
+        display: block;
+        background-color: rgba(255, 255, 255, 0);
+        position: absolute;
+        right: 10;
+        top: 10;
+      }
+
+      .about,
+      .service,
+      .division,
+      .act,
+      .report,
+      .mediapage,
+      .activity,
+      .contact {
+        padding: 2.5vw 1vh 1vh 2vh;
+        font-weight: 350;
+        width: 80vw;
+        height: fit-content;
+        margin: auto;
+        align-content: center;
+        display: flex;
+        align-items: center;
+      }
+
+      .menu p {
+        padding-top: 1vw;
+        font-size: 2vw;
+        padding-left: 2vw;
+      }
+
+      .menu {
+        display: none;
+        height: fit-content;
+        z-index: 100;
+        margin-right: 4vw;
+        margin-top: 2vh;
+        width: fit-content;
+      }
+
+      .content img {
+        width: 50px;
+        height: 50px;
+      }
+
+      .footer .container {
+        display: block;
+        align-items: center;
+        margin: auto;
+        width: fit-content;
+        padding: 1vw;
+        text-align: center;
+      }
+
+      .vertical-line {
+        display: none;
+      }
+
+      .footer p {
+        width: 70vw;
+        margin: 0px;
+        padding: 0px;
+        font-size: 12px;
+        color: white;
+      }
+    }
+
+    @media screen and (max-width: 480px) {
+      .nav1 a {
+        float: none;
+        text-align: left;
+      }
+
+      .nav1-right {
+        float: none;
+      }
+
+      .navmenu {
+        display: block;
+        background-color: rgba(255, 255, 255, 0);
+        position: absolute;
+        right: 8;
+        top: 8;
+      }
+
+      .about,
+      .service,
+      .division,
+      .act,
+      .report,
+      .mediapage,
+      .activity,
+      .contact {
+        padding: 2.5vw 1vh 1vh 1vh;
+        font-weight: 350;
+        width: 20vw;
+        height: fit-content;
+        margin: 0vh 0vh;
+      }
+
+      .menu p {
+        padding-top: 1vw;
+        font-size: 2vw;
+      }
+    }
+
+    /*Footer*/
+    .footer {
+      width: 100%;
+      background-image: linear-gradient(#6a1b4d, #222222);
+    }
+
+    .footer ul li a {
+      text-decoration: none;
+      color: white;
+      display: inline-block;
+      padding: 1vw 01.5vw;
+      margin-left: 3px;
+    }
+
+    .footer ul {
+      margin-bottom: 0;
+    }
+
+    .footer ul li a:hover {
+      background-color: rgb(250, 240, 240);
+      color: #100051;
+    }
+
+    .footer ul li {
+      display: inline;
+      border-left: 1px white solid;
+    }
+
+    .footer .ul {
+      margin: auto;
+      width: fit-content;
+      align-items: center;
+      margin-bottom: 0;
+    }
+
+    .footer .content img {
+      width: 100px;
+      height: 100px;
+    }
+
+    .footer .container {
+      display: flex;
+      align-items: center;
+      margin: auto;
+      width: fit-content;
+      padding: 1vw;
+    }
+
+    .vertical-line {
+      display: inline-block;
+      border-left: 1px solid #ccc;
+      margin: 1vh 2vh;
+      height: 4vw;
+    }
+
+    .footer p {
+      width: 300px;
+      margin: 0px;
+      padding: 0px;
+      color: white;
+    }
+
+    .footer1 {
+      background-color: #222222;
+      align-items: center;
+      padding: 5px;
+    }
+  </style>
+</head>
+
+<BODY>
+
+  <div class="header">
+    <div class="nav1" id="nav1">
+      <p>DEPARTMENT OF THE NATIONAL TECHNICAL RESEARCH & DEVELOPMENT COMMITTEE</p>
+
+      <div class="nav1-right">
+        <div class="navsocial">
+          <a href="https://twitter.com/bharat_free?s=20" target="_blank"><i class="bi bi-twitter"></i></a> <a
+            href="https://www.instagram.com/crimefreebharat_official/" target="_blank"> <i
+              class="bi bi-instagram"></i></a> <a href="https://www.linkedin.com/company/crimefreebharat/mycompany/"
+            target="_blank"><i class="bi bi-linkedin"></i></a> <a
+            href="https://www.youtube.com/channel/UCAmspcG5fQmPgi1LxBprpRg" target="_blank"> <i
+              class="bi bi-youtube"></i></a>
         </div>
-        <div class="homecarousel" >
-            <div id="myCarousel" class="carousel slide" data-ride="carousel">
-              <div class="carousel-indicators">
-                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <a href="#">
+          <div class="nav1lang">language</div>
+        </a>
+        <a href=#>
+          <div class="nav1login">Login / Signup</div>
+        </a>
+      </div>
+    </div>
+
+    <div class="nav2 main" id="sticky">
+      <a href="#"><img src="img/logo2.png"></a>
+
+      <a href="javascript:void(0);" class="navmenu" onclick="menu()"><i class="bi bi-list"></i></a>
+
+      <div class="menu" id="menu">
+        <a href="#">
+          <div class="about"><i class="bi bi-person-lines-fill"></i><br>
+            <p>About us</p>
+          </div>
+        </a>
+        <a href="#">
+          <div class="service"><i class="bi bi-gear-wide-connected"></i> <br>
+            <p>Services</p>
+          </div>
+        </a>
+        <a href="#">
+          <div class="division"><i class="bi bi-diagram-3"></i><br>
+            <p>CFB division</p>
+          </div>
+        </a>
+        <a href="#">
+          <div class="act"><i class="bi bi-file-earmark-ruled"></i> <br>
+            <p>Act and Regulations</p>
+          </div>
+        </a>
+        <a href="#">
+          <div class="report"><i class="bi bi-flag"></i> <br>
+            <p>Report a Crime</p>
+          </div>
+        </a>
+        <a href="#">
+          <div class="mediapage"><i class="bi bi-soundwave"></i> <br>
+            <p>Media</p>
+          </div>
+        </a>
+        <a href="#">
+          <div class="activity"><i class="bi bi-hand-index-thumb"></i><br>
+            <p>CFB Activities</p>
+          </div>
+        </a>
+        <a href="#">
+          <div class="contact"><i class="bi bi-telephone-plus"></i><br>
+            <p>Contact Us</p>
+          </div>
+        </a>
+
+      </div>
+    </div>
+
+
+  </div>
+  <div class="homecarousel">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+          aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+        <div class="carousel-item active carousel1" data-bs-interval="2000">
+          <img src="img/header1.jpg" alt="Crime Free Bharat" style="width:100%;">
+        </div>
+
+        <div class="carousel-item carousel1" data-bs-interval="2000">
+          <img src="img/poster.png" alt="Crime Free Bharat" style="width:100%;">
+        </div>
+
+        <div class="carousel-item carousel1" data-bs-interval="2000">
+          <img src="img/cfb3.png" alt="Crime Free Bharat " style="width:100%;">
+        </div>
+      </div>
+
+      <!-- Left and right controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+  <section>
+    <div class="homesec1">
+      <div class="div1">
+        <img src="img/sir.png" alt="Maithili Sharn Gupta's image">
+        <h3>Maithili Sharn Gupta</h3>
+        <p>President of Crime Free Bharat Mission <br>Former DGP, Police Reforms, Madhya Pradesh</p><br>
+
+      </div>
+      <div class="div2">
+        <h3><span style="border-bottom: 4px red solid;">About</span> CFB</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ex massa, commodo sit amet neque eget, gravida
+          tempor est. Integer condimentum ipsum eu ex ornare, vel ullamcorper turpis faucibus. <br>
+          <br>Fusce fermentum enim et lectus porta, ut faucibus magna sollicitudin. Duis et neque ut odio aliquam auctor
+          a nec nisl. Phasellus ac tortor finibus, dapibus felis eget, elementum massa. Sed aliquet iaculis lorem sed
+          rutrum. Sed laoreet ligula quis ligula efficitur aliquam.
+        </p>
+        <a href="about.html">Read More...</a><br>
+        <br>
+
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ipsmessage">View
+          Message</button>
+
+        <div class="modal fade" id="ipsmessage" role="dialog">
+          <div class="modal-dialog">
+
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title">Message From IPS</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
-    
-              <!-- Wrapper for slides -->
-              <div class="carousel-inner">
-                <div class="carousel-item active carousel1" data-bs-interval="2000" >
-                  <img src="img/header1.jpg" alt="Crime Free Bharat" style="width:100%;">
-                </div>
-          
-                <div class="carousel-item carousel1" data-bs-interval="2000">
-                  <img src="img/poster.png" alt="Crime Free Bharat" style="width:100%;">
-                </div>
-              
-                <div class="carousel-item carousel1" data-bs-interval="2000">
-                  <img src="img/cfb3.png" alt="Crime Free Bharat " style="width:100%;">
-                </div>
+              <div class="modal-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ex massa, commodo sit amet neque eget,
+                  gravida tempor est. Integer condimentum ipsum eu ex ornare, vel ullamcorper turpis faucibus. Fusce
+                  fermentum enim et lectus porta, ut faucibus magna sollicitudin. Duis et neque ut odio aliquam auctor a
+                  nec nisl. </p>
               </div>
-          
-              <!-- Left and right controls -->
-              <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-              </button>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-bs-dismiss="modal">Close</button>
+              </div>
             </div>
+
+          </div>
         </div>
-        <section>
-            <div class="homesec1">
-            <div class="div1">
-                <img src="img/sir.png" alt="Maithili Sharn Gupta's image">
-                <h3>Maithili Sharn Gupta</h3>
-                <p>President of Crime Free Bharat Mission <br>Former DGP, Police Reforms, Madhya Pradesh</p><br>
-                
-            </div>
-            <div class="div2">
-                <h3><span style="border-bottom: 4px red solid;">About</span> CFB</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ex massa, commodo sit amet neque eget, gravida tempor est. Integer condimentum ipsum eu ex ornare, vel ullamcorper turpis faucibus. <br>
-                    <br>Fusce fermentum enim et lectus porta, ut faucibus magna sollicitudin. Duis et neque ut odio aliquam auctor a nec nisl. Phasellus ac tortor finibus, dapibus felis eget, elementum massa. Sed aliquet iaculis lorem sed rutrum. Sed laoreet ligula quis ligula efficitur aliquam.</p>
-                    <a href="about.html">Read More...</a><br>
-                    <br>
-                    
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ipsmessage">View Message</button>
-
-                    <div class="modal fade" id="ipsmessage" role="dialog">
-                      <div class="modal-dialog">
-                      
-                        <div class="modal-content">
-                          <div class="modal-header">
-                             <h4 class="modal-title">Message From IPS</h4>
-                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                          </div>
-                          <div class="modal-body">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ex massa, commodo sit amet neque eget, gravida tempor est. Integer condimentum ipsum eu ex ornare, vel ullamcorper turpis faucibus. Fusce fermentum enim et lectus porta, ut faucibus magna sollicitudin. Duis et neque ut odio aliquam auctor a nec nisl. </p>
-                          </div>
-                          <div class="modal-footer">
-                            <button type="button" class="btn btn-default" data-bs-dismiss="modal">Close</button>
-                          </div>
-                        </div>
-                        
-                      </div>
-                    </div>
-            </div>
-            </div>
-        </section>
+      </div>
+    </div>
+  </section>
 
 
-        <section>
-            <div class="homesec2">
-                <div class="video">
-                    <h4><span> Video Gallery</span></h4>
-                    <div id="videogallery" class="carousel slide" data-ride="carousel" data-interval="0">
-                        <div class="carousel-inner">
-                          <div class="carousel-item active">
-                            <iframe width="620vw" height="270vw" src="https://www.youtube.com/embed/ky5JsWhlhNk" title="YouTube video player" ></iframe>
-                          </div>
-                      
-                          <div class="carousel-item">
-                            <iframe width="620vw" height="270vw" src="https://www.youtube.com/embed/XpVNIE88SXE" title="YouTube video player"  ></iframe>
-                          </div>
-                      
-                          <div class="carousel-item">
-                            <iframe  width="620vw" height="270vw" src="https://www.youtube.com/embed/VK0yooK6G0w" title="YouTube video player"  ></iframe>
-                          </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#videogallery" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                          </button>
-                          <button class="carousel-control-next" type="button" data-bs-target="#videogallery" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                          </button>
-                      </div>
-                </div>
-                <div class="updates">
-                    <h4>
-                        <span>Updates</span>
-                    </h4>
-                    <marquee behavior="scroll" direction="up" scrollamount="3" height="70%">
-                        <ul>
-                            <li><a>Update 1</a></li>
-                            <li><a>Update 2</a></li>
-                            <li><a>Update 3</a></li>
-                            <li><a>Update 4</a></li>
-                            <li><a>Update 5</a></li>
-
-                        </ul>
-                    </marquee>
-                </div>
-                <div class="photogallery">
-
-                </div>
-            </div>
-        </section>
-
-        <section class="homesec3">
-            <div  id="cards">
-            <div>
-                <h2> Featured Activities</h2>
-            </div>
-            <div class="Homecard">
-            <div class="card">
-               <div class="img">
-                   <img src="img/cfb1.png">
-               </div>
-               <div class="cardcontent">
-                   <h5>
-                       Heading 1
-                   </h5>
-                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ex massa, commodo sit amet neque eget..</p>
-                   <div class="readmore"> <a href="#">Read More...</a></div>
-               </div>
+  <section>
+    <div class="homesec2">
+      <div class="video">
+        <h4><span> Video Gallery</span></h4>
+        <div id="videogallery" class="carousel slide" data-ride="carousel" data-interval="0">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <iframe width="620vw" height="270vw" src="https://www.youtube.com/embed/ky5JsWhlhNk"
+                title="YouTube video player"></iframe>
             </div>
 
-            <div class="card">
-                <div class="img">
-                    <img src="img/cfb3.png">
-                </div>
-                <div class="cardcontent">
-                    <h5>
-                        Heading 1
-                    </h5>
-                    <p> hello world</p>
-                    <div class="readmore"> <a href="#">Read More...</a></div>
-                </div>
-             </div>
-
-             <div class="card">
-                <div class="img">
-                    <img src="img/cfb2.png">
-                </div>
-                <div class="cardcontent">
-                    <h5>
-                        Heading 1
-                    </h5>
-                    <p></p>
-                    <div class="readmore"> <a href="#">Read More...</a></div>
-                </div>
-             </div>
-
-             <div class="card">
-                <div class="img">
-                    <img src="img/cfb7.png">
-                </div>
-                <div class="cardcontent">
-                    <h5>
-                        Heading 1
-                    </h5>
-                    <p></p>
-                    <div class="readmore"> <a href="#">Read More...</a></div>
-                </div>
-             </div>
-
-             <div class="card">
-                <div class="img">
-                    <img src="img/cfb6.png">
-                </div>
-                <div class="cardcontent">
-                    <h5>
-                        Heading 1
-                    </h5>
-                    <p></p>
-                    <div class="readmore"> <a href="#">Read More...</a></div>
-                </div>
-             </div>
-
-             <div class="card">
-                <div class="img">
-                    <img src="img/cfb2.png">
-                </div>
-                <div class="cardcontent">
-                    <h5>
-                        Heading 1
-                    </h5>
-                    <p></p>
-                    <div class="readmore"> <a href="#">Read More...</a></div>
-                    
-                </div>
-             </div>
+            <div class="carousel-item">
+              <iframe width="620vw" height="270vw" src="https://www.youtube.com/embed/XpVNIE88SXE"
+                title="YouTube video player"></iframe>
             </div>
+
+            <div class="carousel-item">
+              <iframe width="620vw" height="270vw" src="https://www.youtube.com/embed/VK0yooK6G0w"
+                title="YouTube video player"></iframe>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#videogallery" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#videogallery" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
-        </section>
+      </div>
+      <div class="updates">
+        <h4>
+          <span>Updates</span>
+        </h4>
+        <marquee behavior="scroll" direction="up" scrollamount="3" height="70%">
+          <ul>
+            <li><a>Update 1</a></li>
+            <li><a>Update 2</a></li>
+            <li><a>Update 3</a></li>
+            <li><a>Update 4</a></li>
+            <li><a>Update 5</a></li>
+
+          </ul>
+        </marquee>
+      </div>
+      <div class="photogallery">
+
+      </div>
+    </div>
+  </section>
+
+  <section class="homesec3">
+    <div id="cards">
+      <div>
+        <h2> Featured Activities</h2>
+      </div>
+      <div class="Homecard">
+        <div class="card">
+          <div class="img">
+            <img src="img/cfb1.png">
+          </div>
+          <div class="cardcontent">
+            <h5>
+              Heading 1
+            </h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ex massa, commodo sit amet neque eget..
+            </p>
+            <div class="readmore"> <a href="#">Read More...</a></div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="img">
+            <img src="img/cfb3.png">
+          </div>
+          <div class="cardcontent">
+            <h5>
+              Heading 1
+            </h5>
+            <p> hello world</p>
+            <div class="readmore"> <a href="#">Read More...</a></div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="img">
+            <img src="img/cfb2.png">
+          </div>
+          <div class="cardcontent">
+            <h5>
+              Heading 1
+            </h5>
+            <p></p>
+            <div class="readmore"> <a href="#">Read More...</a></div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="img">
+            <img src="img/cfb7.png">
+          </div>
+          <div class="cardcontent">
+            <h5>
+              Heading 1
+            </h5>
+            <p></p>
+            <div class="readmore"> <a href="#">Read More...</a></div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="img">
+            <img src="img/cfb6.png">
+          </div>
+          <div class="cardcontent">
+            <h5>
+              Heading 1
+            </h5>
+            <p></p>
+            <div class="readmore"> <a href="#">Read More...</a></div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="img">
+            <img src="img/cfb2.png">
+          </div>
+          <div class="cardcontent">
+            <h5>
+              Heading 1
+            </h5>
+            <p></p>
+            <div class="readmore"> <a href="#">Read More...</a></div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
 
 
-        <footer class="footer">
-            <div class="footer1">
-            <div class="ul">
-                <ul >
-                    <li><a href="#">Terms & Conditions</a></li>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">Policies</a></li>
-                    <li><a href="#">Help</a></li>
-                    <li><a href="#">Join Us</a></li>
-                    <li style="border-right: 1px #ffffff solid;"><a href="#" >Feedback</a></li>
-                </ul>
-            </div>
-            </div>
-            <div class="container">
-            <div class="content">
-                <img src="img/logo3.png" alt="logo">
-            </div>
-            <span class="vertical-line"></span>
-            <div>
-                <p>
-                    Web Content Developed and Managed by National Technical Research & Development Committee, Crime Free Bharat
-                </p>
-            </div>
-            </div>
-        </footer>
+  <footer class="footer">
+    <div class="footer1">
+      <div class="ul">
+        <ul>
+          <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Policies</a></li>
+          <li><a href="#">Help</a></li>
+          <li><a href="#">Join Us</a></li>
+          <li style="border-right: 1px #ffffff solid;"><a href="#">Feedback</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container">
+      <div class="content">
+        <img src="img/logo3.png" alt="logo">
+      </div>
+      <span class="vertical-line"></span>
+      <div>
+        <p>
+          Web Content Developed and Managed by National Technical Research & Development Committee, Crime Free Bharat
+        </p>
+      </div>
+    </div>
+  </footer>
 
-        <!-- js-->
-        <script>
-            function menu() {
-                var x = document.getElementById("menu");
-                if (x.style.display === "block") {
-                    x.style.display = "none";
-                } else {
-                    x.style.display = "block";
-                }
-            }
-            
-        </script>
-        
-    </BODY>
+  <!-- js-->
+  <script>
+    function menu() {
+      var x = document.getElementById("menu");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+
+  </script>
+
+</BODY>
+
 </html>
