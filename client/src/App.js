@@ -3,41 +3,64 @@ import React from "react";
 import "./App.css";
 import { Route, Switch } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import Signup from "./components/Signup";
-import Login from "./components/Login";
-import Report_crime from "./components/Report_crime";
-import About from "./components/About";
-import Contact from "./components/Contact";
-import Services from "./components/Services";
-import AnR from "./components/AnR";
-import Activities from "./components/Activities";
+import Signup from "./components/user_auth/Signup";
+import Login from "./components/user_auth/Login";
+import Report_crime from "./components/nav_pages/Report_crime";
+import About from "./components/nav_pages/About";
+import Contact from "./components/nav_pages/Contact";
+import Services from "./components/nav_pages/Services";
+import AnR from "./components/nav_pages/AnR";
+import Activities from "./components/nav_pages/Activities";
 import Footer from "./components/Footer";
-import FAQ from "./components/FAQ";
-import TnC from "./components/TnC";
-import Feedback from "./components/Feedback";
-import Media from "./components/Media";
-import Policies from "./components/Policies";
-import RTI from "./components/RTI";
+import FAQ from "./components/footer_pg/FAQ";
+import TnC from "./components/footer_pg/TnC";
+import Feedback from "./components/footer_pg/Feedback";
+import Media from "./components/nav_pages/Media";
+import Policies from "./components/footer_pg/Policies";
+import RTI from "./components/footer_pg/RTI";
+import Home from "./components/Home";
 
+const Footer_Routing = () => {
+  return (
+    <Switch>
+      <Route exact path="/Feedback" component={Feedback} />
+      <Route exact path="/Policies" component={Policies} />
+      <Route exact path="/RTI" component={RTI} />
+      <Route exact path="/FAQ" component={FAQ} />
+      <Route exact path="/TnC" component={TnC} />
+    </Switch>
+  );
+};
+
+const Nav_Routing = () => {
+  return (
+    <Switch>
+      <Route exact path="/report" component={Report_crime} />
+      <Route exact path="/about" component={About} />
+      <Route exact path="/contact" component={Contact} />
+      <Route exact path="/services" component={Services} />
+      <Route exact path="/anr" component={AnR} />
+      <Route exact path="/activity" component={Activities} />
+      <Route exact path="/media" component={Media} />
+    </Switch>
+  );
+};
+const Auth_Routing = () => {
+  return (
+    <Switch>
+      <Route exact path="/signup" component={Signup} />
+      <Route exact path="/login" component={Login} />
+    </Switch>
+  );
+};
 const App = () => {
   return (
     <>
       <Navbar />
       <Switch>
-        <Route exact path="/signup" component={Signup} />
-        <Route exact path="/login" component={Login} />
-        <Route exact path="/report" component={Report_crime} />
-        <Route exact path="/about" component={About} />
-        <Route exact path="/contact" component={Contact} />
-        <Route exact path="/services" component={Services} />
-        <Route exact path="/anr" component={AnR} />
-        <Route exact path="/activity" component={Activities} />
-        <Route exact path="/FAQ" component={FAQ} />
-        <Route exact path="/TnC" component={TnC} />
-        <Route exact path="/Feedback" component={Feedback} />
-        <Route exact path="/media" component={Media} />
-        <Route exact path="/Policies" component={Policies} />
-        <Route exact path="/RTI" component={RTI} />
+        <Nav_Routing />
+        <Auth_Routing />
+        <Footer_Routing />
       </Switch>
       <Footer />
     </>

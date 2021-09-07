@@ -1,5 +1,5 @@
 import React from "react";
-import TestAutocomplete from "./Autocomplete";
+import TestAutocomplete from "../../api/Autocomplete";
 const Report_crime = () => {
   const file = document.getElementById("upload_file");
   const handleinputs = (e) => {

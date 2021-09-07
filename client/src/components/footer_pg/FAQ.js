@@ -4,8 +4,8 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Image from "react-bootstrap/Image";
 import Button from "react-bootstrap/Button";
-import data from "./data";
-import SingleQuestion from "./Question";
+import data from "../../api/data_faq";
+import SingleQuestion from "../../api/Question";
 
 // styles
 const containers = {

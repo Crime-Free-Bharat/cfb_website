@@ -1,5 +1,5 @@
 import React from "react";
-import feedbackimg from "../img/feedback.svg"
+import feedbackimg from "../../img/feedback.svg"
 
 function Feedback(){
     return <>

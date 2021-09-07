@@ -1,6 +1,6 @@
 import React from "react";
-import terms from "../img/terms.svg"
-import terms2 from "../img/terms2.svg"
+import terms from "../../img/terms.svg"
+import terms2 from "../../img/terms2.svg"
 function TnC(){
     return <div>
         <section id="" className="section sectionterms">

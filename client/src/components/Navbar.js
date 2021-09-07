@@ -25,7 +25,6 @@ const Navbar = () => {
                 to="https://www.instagram.com/crimefreebharat_official/"
                 target="_blank"
               >
-                
                 <i className="bi bi-instagram"></i>
               </NavLink>
               <NavLink
