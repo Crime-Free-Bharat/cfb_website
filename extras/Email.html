@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <title>Email Home Page</title>
+    <script src="https://kit.fontawesome.com/4de14c5829.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: 'Poppins';
+            font-weight: bold;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-rows: 1fr;
+            grid-row-gap: 2rem;
+            text-align: center;
+        }
+
+        .logo {
+            margin-top: 2rem;
+            font-size: 5rem;
+        }
+
+        #i {
+            transform: translateY(1.5rem);
+            color: darkblue;
+            border: 2rem solid bisque;
+            background: bisque;
+            border-radius: 5rem;
+            border-bottom: none;
+        }
+
+        .title {
+            font-size: 2rem;
+        }
+        
+        .click {
+            text-decoration: none;
+            color: dodgerblue;
+
+        }
+
+        .button {
+            margin-bottom: 2rem;
+        }
+
+        .Resend {
+            color: white;
+            background: dodgerblue;
+            font-size: 1rem;
+            padding-left: 1rem;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            border: none;
+            padding-right: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid">
+        <div class="logo">
+            <i class="fas fa-envelope-open-text" id="i"></i>
+        </div>
+        <div class="title">
+            Verify your email
+        </div>
+        <div class="description">
+            We've sent an email to emailid to verify your email address and activate your account. The link in the email
+            will expire in 24 hours.
+        </div>
+        <div class="clickhere">
+            <a href="Email1.html" class="click">Click here </a>if you did not receive an email or would like to change
+            the email
+            address you signed up with.
+        </div>
+        <div class="button">
+            <button class="Resend">Resend Verification Link</button>
+        </div>
+    </div>
+</body>
+
+</html>

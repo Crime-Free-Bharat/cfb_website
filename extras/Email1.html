@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4de14c5829.js" crossorigin="anonymous"></script>
+    <title>Edit Email</title>
+    <style>
+        body {
+            font-family: 'Poppins';
+            font-weight: bold;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-rows: 1fr;
+            grid-row-gap: 1.2rem;
+            text-align: center;
+        }
+
+        .logo {
+            font-size: 5rem;
+        }
+
+        #i {
+            transform: translateY(1.5rem);
+            color: darkblue;
+            border: 2rem solid bisque;
+            background: bisque;
+            border-radius: 5rem;
+            border-bottom: none;
+        }
+
+        .title {
+            font-size: 2rem;
+        }
+
+
+        .input {
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+            padding-left: 0.5rem;
+            padding-right: 0.5rem;
+            text-align: center;
+            border: none;
+            width: 20rem;
+        }
+
+        .Back {
+            color: dodgerblue;
+            font-size: 1rem;
+            padding-left: 1rem;
+            border: none;
+            font-weight: 600;
+            margin-right: 1rem;
+            padding-top: 1rem;
+            background: white;
+            padding-bottom: 1rem;
+            padding-right: 1rem;
+        }
+
+        .Resend {
+            color: white;
+            background: dodgerblue;
+            font-size: 1rem;
+            padding-left: 1rem;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            border: none;
+            padding-right: 1rem;
+            margin-right: 1.3rem;
+        }
+
+        .anchor {
+            text-decoration: none;
+            color: dodgerblue;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="grid">
+        <div class="logo">
+            <i class="fas fa-envelope-open-text" id="i"></i>
+        </div>
+        <div class="title">
+            Didn't receive an email or want to change?
+        </div>
+        <div class="description">
+            It may take a few minutes for the email to reach your inbox or may end up in your spam folder. <br> Still
+            nothing? Re-enter your email and try again.
+        </div>
+        <div class="inputfield">
+            <p class="emailt">Email Address</p>
+            <input type="text" class="input" placeholder="emailaddress@company.com">
+        </div>
+        <div class="button">
+            <button class="Back">Back</button>
+            <button class="Resend">Send new verification link</button>
+        </div>
+        <div class="contacsupp">
+            Still not seeing it? <a href="#" class="anchor"> Contact Support</a>
+        </div>
+    </div>
+</body>
+
+</html>
