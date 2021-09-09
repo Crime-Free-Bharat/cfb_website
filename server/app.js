@@ -13,13 +13,12 @@ app.get("/", (req, res) => {
   console.log("ha bhia me hi get hu");
   res.send("hello bhia me hi hu get home vala ");
 });
-const PORT = process.env.PORT;
 
+app.get("/cors", (req, res) => {
+  res.set("Access-Control-Allow-Origin", "*");
+  res.send({ msg: "This has CORS enabled" });
+});
+const PORT = process.env.PORT;
 app.listen(PORT, () => {
   console.log(`server is running at port ${PORT}`);
 });
-
-app.get('/cors', (req, res) => {
-  res.set('Access-Control-Allow-Origin', '*');
-  res.send({ "msg": "This has CORS enabled" })
-  })

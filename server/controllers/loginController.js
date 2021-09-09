@@ -19,21 +19,23 @@ exports.login = async (req, res) => {
       const isMatch = await bcrypt.compare(password, userlogin.password);
 
       // =====================================  token ============================
-      token = await userlogin.generateAuthToken();
-      console.log(token);
 
-      res.cookie("jwtoken", token, {
-        expires: new Date(Date.now() + 2589200000),
-        httpOnly: true,
-      });
       if (!isMatch) {
-        res.status(400).json({ error: "invaild ho bhia tum" });
+        res.status(400).json({ error: "invaild credetials" });
       } else {
-        res.json({ message: "successfully login h tu bhia khush hoja" });
+        token = await userlogin.generateAuthToken();
+        console.log(token);
+
+        res.cookie("jwtoken", token, {
+          expires: new Date(Date.now() + 2589200000),
+          httpOnly: true,
+        });
+        res.json({ message: "successfully login" });
       }
     } else {
-      res.status(400).json({ error: "invaild h bhia tu" });
+      res.status(400).json({ error: "invaild data details" });
     }
+    // ==============================bycript for login functionality =================================
   } catch (err) {
     console.log(err);
   }

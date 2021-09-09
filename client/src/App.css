@@ -120,6 +120,179 @@ header {
   background-color: rgb(250, 240, 240);
 }
 /* ===================================================  login/signup ============================================================== */
+/* ===================================================  HOME ============================================================== */
+.homecarousel {
+  padding: 0;
+  margin: 0;
+  z-index: 0;
+}
+
+.carousel1 img {
+  width: 100vw;
+  object-fit: cover;
+}
+
+.carousel1 {
+  vertical-align: top;
+  transition: 3s;
+}
+
+.homesec1 {
+  display: flex;
+  padding: 2vh 8vw;
+  background-color: rgb(231, 231, 231);
+}
+
+.homesec1 .div1 {
+  width: 20vw;
+  padding: 10px;
+  margin: 1vw;
+}
+
+.homesec1 .div1 img {
+  width: 15vw;
+}
+
+.homesec1 .div2 {
+  width: 50vw;
+  padding: 10px 2vw;
+  margin: 1vw;
+}
+
+.updates,
+.video {
+  width: 40vw;
+  padding: 0vh 0vw;
+  margin: 0vh 1vw;
+  background-color: #242b2e;
+  color: white;
+}
+
+.updates li {
+  list-style: inside;
+  font-size: medium;
+}
+
+.homesec2 {
+  padding: 7vh 7vw;
+  display: flex;
+  width: fit-content;
+  margin: auto;
+}
+
+.homesec2 h4 span {
+  margin-bottom: 0;
+  margin-left: 1vw;
+}
+
+.updates h4 {
+  border-bottom: 2px solid red;
+  padding: 1vh 0px;
+  margin: 0px 1vw;
+}
+
+.video {
+  display: block;
+}
+
+.homesec2 marquee {
+  margin: 1vh 1vw;
+}
+
+.homesec2 marquee li a {
+  color: white;
+}
+
+.homesec2 marquee li {
+  padding-bottom: 10px;
+}
+
+.homecard {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 1vw;
+}
+
+.homecard .card {
+  width: 26vw;
+  border: 1px solid rgb(224, 219, 219);
+  padding-bottom: 5px;
+  background-color: white;
+  box-shadow: 2px 5px 8px #b4b0b0;
+}
+
+.homecard .card .img img {
+  width: 100%;
+}
+
+#cards {
+  display: block;
+  margin: auto;
+  width: fit-content;
+}
+
+#cards h2 {
+  text-align: center;
+  font-weight: bold;
+}
+
+.cardcontent {
+  padding: 0vh 10px;
+  padding-bottom: 10px;
+  color: #a0aca8;
+  height: 150px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+
+.readmore {
+  color: purple;
+  border: 1px solid #d5d5d5;
+  padding: 10px 20px;
+  margin-top: 0;
+  width: fit-content;
+  border-radius: 5px;
+  background-color: #3300fd;
+}
+
+.readmore:hover {
+  background-color: #004074;
+}
+
+.readmore a {
+  color: white;
+}
+
+.readmore a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.homesec3 {
+  background-color: rgb(231, 231, 231);
+  padding: 10px;
+}
+
+.homesec3 h5,
+.homesec3 p,
+.homesec3 a {
+  width: 100%;
+}
+
+.homesec3 p {
+  height: 50px;
+  font-weight: 100;
+  font-size: 15px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.homesec3 h5 {
+  font-weight: bold;
+  color: #000;
+}
+/* ===================================================  HOME ============================================================== */
 
 /* @extend display-flex; */
 display-flex,
@@ -391,7 +564,7 @@ label {
 .login {
   text-decoration: none;
 }
-.login:hover{
+.login:hover {
   text-decoration: underline;
 }
 
@@ -720,56 +893,72 @@ input:hover,
 }
 
 /* ====================================== Footer ========================================== */
-.footer li a {
+.footer {
+  width: 100%;
+  background: linear-gradient(#6a1b4d, #222222);
+}
+.footer ul li a {
   text-decoration: none;
-  color: black;
-}
-
-.ul-list {
-  border: 1px solid #ccc;
-  border-width: 1px 0;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-}
-
-.ul-list li {
-  display: inline;
-}
-
-.ul-list a {
+  color: white;
   display: inline-block;
-  padding: 10px;
+  padding: 1vw 01.5vw;
+  margin-left: 3px;
 }
-.content__footer img {
-  width: 80px;
-  height: 80px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+.footer ul {
+  margin-bottom: 0;
 }
-.content__footer .footer__para {
-  text-align: center;
+.footer ul li a:hover {
+  background-color: rgb(250, 240, 240);
+  color: #100051;
 }
-.container__footer .footer__div .footer__para {
-  color: #222;
+.footer ul li {
+  display: inline;
+  border-left: 1px white solid;
 }
-.container__footer {
+.footer .ul {
+  margin: auto;
+  width: fit-content;
+  align-items: center;
+  margin-bottom: 0;
+}
+.libg {
+  border-right: 1px #ffffff solid;
+}
+
+.footer .content img {
+  width: 100px;
+  height: 100px;
+}
+
+.footer .container {
   display: flex;
-  flex-direction: row;
-  margin-left: 390px;
-  margin-top: 20px;
+  align-items: center;
+  margin: auto;
+  width: fit-content;
+  padding: 1vw;
+  background: linear-gradient(#6a1b4d, #222222);
 }
-.container__footer .footer__div {
-  padding: 20px 20px;
-}
-.vertical-line__footer {
+
+.vertical-line {
   display: inline-block;
   border-left: 1px solid #ccc;
-  margin: 0 10px;
-  height: 125px;
+  margin: 1vh 2vh;
+  height: 4vw;
 }
+
+.footer p {
+  width: 300px;
+  margin: 0px;
+  padding: 0px;
+  color: white;
+}
+
+.footer1 {
+  background-color: #222222;
+  align-items: center;
+  padding: 5px;
+}
+/* ================================================ Footer styling ends ======================================================*/
 
 /* ================================================ AnR styling begins ======================================================*/
 
@@ -934,3 +1123,237 @@ input:hover,
   margin: 0 auto;
 }
 /*=========================================================== Media styling end ==========================================================*/
+
+/*=========================================================== TnC styling begins ==========================================================*/
+
+.sectionterms {
+  padding-top: 50px;
+  background-image: url(img/background1.png);
+  padding-bottom: 50px;
+}
+.signbtn {
+  font-style: normal;
+  color: #1d0871;
+  font-weight: normal;
+  display: flex;
+  font-size: 20px;
+  align-items: center;
+  text-align: center;
+  background: #ffffff;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
+  border: 1px solid #1d0871;
+  box-sizing: border-box;
+  border-radius: 50px;
+}
+.sectionheadact {
+  font-style: normal;
+  font-weight: bold;
+  text-align: center;
+  font-size: 40px;
+  color: #1d0871;
+  font: roboto;
+}
+.sectionparaact {
+  font-weight: bold;
+  font: roboto;
+  text-align: center;
+  color: black;
+  font-size: 25px;
+}
+.boxstyle {
+  text-align: center;
+  color: white;
+  background-color: #ff6f61;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+}
+.containerterms {
+  width: 100%;
+  background: #fff;
+  margin: 0 auto;
+}
+
+.display-flex {
+  justify-content: space-between;
+  -moz-justify-content: space-between;
+  -webkit-justify-content: space-between;
+  -o-justify-content: space-between;
+  -ms-justify-content: space-between;
+  align-items: center;
+  -moz-align-items: center;
+  -webkit-align-items: center;
+  -o-align-items: center;
+  -ms-align-items: center;
+}
+
+.display-flex-center {
+  justify-content: center;
+  -moz-justify-content: center;
+  -webkit-justify-content: center;
+  -o-justify-content: center;
+  -ms-justify-content: center;
+  align-items: center;
+  -moz-align-items: center;
+  -webkit-align-items: center;
+  -o-align-items: center;
+  -ms-align-items: center;
+}
+.sectionpara2 {
+  font-weight: bold;
+  font: roboto;
+  color: black;
+  font-size: 20px;
+}
+.stctionimg {
+  height: 300px;
+}
+/*=========================================================== TnC styling end ==========================================================*/
+
+/*=========================================================== Policies styling start ==========================================================*/
+.Policies {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  height: 80vw;
+  margin-left: 4em;
+  margin-right: 4em;
+}
+
+.Policies a {
+  color: #f7505a;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+p {
+  color: black;
+  font-size: small;
+}
+
+.currentpage {
+  display: flex;
+  /* font-size: small; */
+}
+
+.list {
+  height: 58vw;
+}
+
+#heading {
+  margin-top: 1em;
+  font-size: 1.3em;
+  border-bottom: 3px solid #f7505a;
+  width: 7.3em;
+  padding-bottom: 0.3em;
+  color: #2f2f2f;
+}
+
+.policygrid {
+  margin-top: 1em;
+  display: grid;
+  height: 22vw;
+  grid-template-rows: 1fr;
+  grid-row-gap: 2em;
+}
+
+.item h3 {
+  font-size: 1em;
+  color: #2f2f2f;
+}
+
+.item p {
+  color: #000000;
+  text-align: justify;
+  margin-top: 1em;
+  font-size: 0.8em;
+}
+/*=========================================================== Policies styling end ==========================================================*/
+
+/*=========================================================== RTI styling begin ==========================================================*/
+
+.headline {
+  background-color: #d2e5ff;
+  width: 100%;
+  padding-top: 0.3em;
+  height: 3vw;
+  margin-top: 2em;
+  padding-left: 5em;
+}
+
+.headline a {
+  color: #00588f;
+  text-decoration: none;
+}
+
+#nocolor {
+  color: black;
+  cursor: default;
+}
+
+.grid1 {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 5em;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  margin-right: 5em;
+  grid-gap: 2em;
+}
+
+.item1 {
+  padding: 3em;
+}
+
+.grid1 p {
+  text-align: justify;
+  margin-top: 1.5em;
+}
+
+#submit {
+  color: #00588f;
+}
+
+.poster {
+  margin: 1em;
+  border-radius: 10px;
+  border: 12px solid silver;
+}
+
+.grid2 {
+  margin-top: 3em;
+  margin-bottom: 3em;
+  margin-left: 5em;
+  margin-right: 5em;
+  display: grid;
+  grid-template-columns: 5fr 5fr;
+  grid-column-gap: 2em;
+  grid-row-gap: 1.2em;
+  grid-auto-rows: 5em;
+}
+
+.item3 {
+  background: #fff;
+  box-shadow: 0 0 20px rgb(0 0 0 / 20%);
+  text-align: center;
+  border-left: 5px solid #0d8ad6;
+  padding-top: 1.7em;
+  transition: 0.1s linear;
+}
+
+.item3 a {
+  text-decoration: none;
+  color: #777;
+}
+
+.item3:hover {
+  border-left: 10px solid #0d8ad6;
+  padding-left: 1em;
+}
+
+/*=========================================================== RTI styling end ==========================================================*/
