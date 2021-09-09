@@ -20,18 +20,6 @@ import Policies from "./components/footer_pg/Policies";
 import RTI from "./components/footer_pg/RTI";
 import Home from "./components/Home";
 
-const Footer_Routing = () => {
-  return (
-    <Switch>
-      <Route exact path="/Feedback" component={Feedback} />
-      <Route exact path="/Policies" component={Policies} />
-      <Route exact path="/RTI" component={RTI} />
-      <Route exact path="/FAQ" component={FAQ} />
-      <Route exact path="/TnC" component={TnC} />
-    </Switch>
-  );
-};
-
 const Nav_Routing = () => {
   return (
     <Switch>
@@ -53,15 +41,27 @@ const Auth_Routing = () => {
     </Switch>
   );
 };
+
+const Footer_Routing = () => {
+  return (
+    <Switch>
+      <Route exact path="/feedback" component={Feedback} />
+      <Route exact path="/Policies" component={Policies} />
+      <Route exact path="/RTI" component={RTI} />
+      <Route exact path="/FAQ" component={FAQ} />
+      <Route exact path="/TnC" component={TnC} />
+    </Switch>
+  );
+};
 const App = () => {
   return (
     <>
       <Navbar />
-      <Switch>
-        <Nav_Routing />
-        <Auth_Routing />
-        <Footer_Routing />
-      </Switch>
+
+      <Nav_Routing />
+      <Auth_Routing />
+      <Footer_Routing />
+
       <Footer />
     </>
   );
