@@ -1,6 +1,6 @@
 import React from "react";
 
-import "./App.css";
+import "./css/App.css";
 import { Route, Switch } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Signup from "./components/user_auth/Signup";
@@ -20,7 +20,7 @@ import Policies from "./components/footer_pg/Policies";
 import RTI from "./components/footer_pg/RTI";
 import Home from "./components/Home";
 
-const Nav_Routing = () => {
+const NavRouting = () => {
   return (
     <Switch>
       <Route exact path="/report" component={Report_crime} />
@@ -33,7 +33,7 @@ const Nav_Routing = () => {
     </Switch>
   );
 };
-const Auth_Routing = () => {
+const AuthRouting = () => {
   return (
     <Switch>
       <Route exact path="/signup" component={Signup} />
@@ -42,7 +42,7 @@ const Auth_Routing = () => {
   );
 };
 
-const Footer_Routing = () => {
+const FooterRouting = () => {
   return (
     <Switch>
       <Route exact path="/feedback" component={Feedback} />
@@ -58,9 +58,9 @@ const App = () => {
     <>
       <Navbar />
 
-      <Nav_Routing />
-      <Auth_Routing />
-      <Footer_Routing />
+      <NavRouting />
+      <AuthRouting />
+      <FooterRouting />
 
       <Footer />
     </>
