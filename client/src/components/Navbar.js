@@ -9,7 +9,7 @@ const Navbar = () => {
       <header>
         <div className="nav1">
           <p>
-            DEPARTMENT OF THE NATIONAL TECHNICAL RESEARCH & DEVELOPMENT
+            DEPARTMENT OF THE NATIONAL TECHNICAL RESEARCH {'&'} DEVELOPMENT
             COMMITTEE
           </p>
 
