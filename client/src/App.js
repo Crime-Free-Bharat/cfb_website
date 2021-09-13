@@ -19,7 +19,8 @@ import Media from "./components/nav_pages/Media";
 import Policies from "./components/footer_pg/Policies";
 import RTI from "./components/footer_pg/RTI";
 import Home from "./components/Home";
-
+import email from "./components/user_auth/Email_Res"
+import emailver from "./components/user_auth/Email_Veri"
 const NavRouting = () => {
   return (
     <Switch>
@@ -38,6 +39,11 @@ const AuthRouting = () => {
     <Switch>
       <Route exact path="/signup" component={Signup} />
       <Route exact path="/login" component={Login} />
+      <Route exact path="/email" component={email} />
+      <Route exact path="/emailver" component={emailver} />
+      
+
+
     </Switch>
   );
 };

@@ -1368,13 +1368,10 @@ p {
 
 .logo {
   margin-top: 2rem;
-
-
 }
 
 .logo img {
   width: 10rem;
-  
 }
 
 #i {
@@ -1393,7 +1390,6 @@ p {
 .click {
   text-decoration: none;
   color: dodgerblue;
-
 }
 
 .button {
@@ -1423,7 +1419,6 @@ p {
 .title {
   font-size: 2rem;
 }
-
 
 .input {
   padding-top: 0.5rem;
@@ -1465,3 +1460,4 @@ p {
   color: dodgerblue;
 }
 /*=========================================================== Email page styling end ==========================================================*/
+

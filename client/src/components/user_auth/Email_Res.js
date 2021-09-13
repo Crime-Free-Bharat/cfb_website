@@ -1,32 +1,33 @@
-import React from "react";
-
-function Email_Res(){
-    return <>
-    <div class="grid">
-        <div class="logo">
-            <i class="fas fa-envelope-open-text" id="i"></i>
+import React from 'react';
+import mailSent from "../../img/undraw_Mail_sent_re_0ofv.svg"
+const Email_Res = () => {
+    return (
+        <>
+            <div className="grid">
+        <div className="logo">
+            <img src={mailSent} alt="" srcset=""/>
         </div>
-        <div class="title">
+        <div className="title">
             Didn't receive an email or want to change?
         </div>
-        <div class="description">
-            It may take a few minutes for the email to reach your inbox or may end up in your spam folder. <br /> Still
+        <div className="description">
+            It may take a few minutes for the email to reach your inbox or may end up in your spam folder. <br/> Still
             nothing? Re-enter your email and try again.
         </div>
-        <div class="inputfield">
-            <p class="emailt">Email Address</p>
-            <input type="text" class="input" placeholder="emailaddress@company.com" /> 
+        <div className="inputfield">
+            <p className="emailt">Email Address</p>
+            <input type="text" className="input" placeholder="emailaddress@company.com"/>
         </div>
-        <div class="button">
-            <button class="Back">Back</button>
-            <button class="Resend">Send new verification link</button>
+        <div className="button">
+            <button className="Back">Back</button>
+            <button className="Resend">Send new verification link</button>
         </div>
-        <div class="contacsupp">
-            Still not seeing it? <a href="#" class="anchor"> Contact Support</a>
+        <div className="contacsupp">
+            Still not seeing it? <a href="#" className="anchor"> Contact Support</a>
         </div>
-    </div>
-    </>
-    
+    </div> 
+        </>
+    );
 }
 
 export default Email_Res;
