@@ -40,7 +40,7 @@ const Signup = () => {
       console.log("invalid registration");
     } else {
       window.alert("Registration Succesfull");
-      history.push("/login");
+      history.push("/emailver");
     }
   };
   return (
