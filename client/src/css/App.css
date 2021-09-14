@@ -1396,17 +1396,6 @@ p {
   margin-bottom: 2rem;
 }
 
-.Resend {
-  color: white;
-  background: dodgerblue;
-  font-size: 1rem;
-  padding-left: 1rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  border: none;
-  padding-right: 1rem;
-}
-
 #i {
   transform: translateY(1.5rem);
   color: darkblue;
@@ -1419,13 +1408,12 @@ p {
 .title {
   font-size: 2rem;
 }
+.inputfield {
+  display: flex;
+  justify-content: center;
+}
 
-.input {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-  text-align: center;
+.inputfield .input1 {
   border: none;
   width: 20rem;
 }
@@ -1460,4 +1448,3 @@ p {
   color: dodgerblue;
 }
 /*=========================================================== Email page styling end ==========================================================*/
-

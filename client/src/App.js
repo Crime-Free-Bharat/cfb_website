@@ -41,9 +41,6 @@ const AuthRouting = () => {
       <Route exact path="/login" component={Login} />
       <Route exact path="/email" component={email} />
       <Route exact path="/emailver" component={emailver} />
-      
-
-
     </Switch>
   );
 };
