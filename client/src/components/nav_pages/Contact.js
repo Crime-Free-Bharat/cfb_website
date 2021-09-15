@@ -1,47 +1,56 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import contactus from "../../img/contactus.svg";
 
 const Contact = () => {
-  const [user, setUser] = useState({
+  const [userData, setUserData] = useState({
     name: "",
+    phone: "",
     email: "",
     subject: "",
     message: "",
-    phone: "",
   });
-  let name, value;
+
+  //we are storing data
   const handleinputs = (e) => {
-    console.log(e);
-    name = e.target.name;
-    value = e.target.value;
-    setUser({ ...user, [name]: value });
-  };
-  const PostData = async (e) => {
-    e.preventDefault();
+    const name = e.target.name;
+    const value = e.target.value;
 
-    const { name, email, subject, message, phone } = user;
-
-    const res = await fetch("/contact", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        name,
-        email,
-        subject,
-        message,
-        phone,
-      }),
+    setUserData({
+      ...userData,
+      [name]: value,
     });
-    const data = await res.json();
-    if (!data || res.status === 422) {
-      window.alert("invalid data");
-      console.log("invalid registration");
+  };
+
+  //=== send data to backend ==========
+  const contactForm = async (e) => {
+    e.preventDefault();
+    const { name, phone, email, subject, message } = userData;
+    if (!name || !phone || !email || !subject || !message) {
+      alert("fill data");
     } else {
-      window.alert("your message has been send sucessfully");
+      const res = await fetch("/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          name,
+          phone,
+          email,
+          subject,
+          message,
+        }),
+      });
+      const data = await res.json();
+      if (!data || res.status === 400) {
+        alert("data not send");
+      } else {
+        alert("message send khush hoja");
+        setUserData({ ...userData, message: "" });
+      }
     }
   };
+
   return (
     <>
       <section id="" className="section">
@@ -68,7 +77,7 @@ const Contact = () => {
                       className="form-control"
                       placeholder="Name"
                       name="name"
-                      value={user.name}
+                      value={userData.name}
                       onChange={handleinputs}
                       required
                     />
@@ -79,7 +88,7 @@ const Contact = () => {
                       className="form-control"
                       placeholder="Phone"
                       name="phone"
-                      value={user.phone}
+                      value={userData.phone}
                       onChange={handleinputs}
                       required
                     />
@@ -93,7 +102,7 @@ const Contact = () => {
                       className="form-control"
                       placeholder="Email"
                       name="email"
-                      value={user.email}
+                      value={userData.email}
                       onChange={handleinputs}
                       required
                     />
@@ -104,7 +113,7 @@ const Contact = () => {
                       className="form-control"
                       placeholder="Subject"
                       name="subject"
-                      value={user.subject}
+                      value={userData.subject}
                       onChange={handleinputs}
                       required
                     />
@@ -119,7 +128,7 @@ const Contact = () => {
                       placeholder="Message"
                       rows="7"
                       name="message"
-                      value={user.message}
+                      value={userData.message}
                       onChange={handleinputs}
                     ></textarea>
                   </div>
@@ -132,7 +141,7 @@ const Contact = () => {
                       className="sendbtn"
                       name="submit"
                       value="submit"
-                      onClick={PostData}
+                      onClick={contactForm}
                     >
                       SUBMIT
                     </button>

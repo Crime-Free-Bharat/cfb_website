@@ -39,29 +39,8 @@ router.post(
   login
 );
 
-router.post(
-  "/contact",
-  [
-    body("name", "The name must be of minimum 3 characters length")
-      .notEmpty()
-      .escape()
-      .trim()
-      .isLength({ min: 3 }),
-    body("email", "Invalid email address").notEmpty().escape().trim().isEmail(),
-    body("phone").notEmpty().escape().trim().isLength({ min: 10 }),
-    body("subject", "must contain 3 characters")
-      .notEmpty()
-      .escape()
-      .trim()
-      .isLength({ min: 3 }),
-    body("message", "must contain 10 characters")
-      .notEmpty()
-      .escape()
-      .trim()
-      .isLength({ min: 10 }),
-  ],
-  contact
-);
+router.post("/contact",authenticate, contact);
+
 router.get("/about", authenticate, (req, res) => {
   console.log("hello i am about");
   res.send(req.UserRoot);

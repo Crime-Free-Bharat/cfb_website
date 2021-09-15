@@ -1,10 +1,13 @@
 const express = require("express");
 const dotenv = require("dotenv");
 const app = express();
+
+const cookieParser = require("cookie-parser");
 // ======================================dotenv ==================================
 dotenv.config({ path: "./config.env" });
 //====================================== express middleware (link router file) ==============================
 app.use(express.json());
+app.use(cookieParser());
 app.use(require("./router/routes"));
 // app.use('/auth',require('./route/auth'));
 // ==================================== variable use =====================================

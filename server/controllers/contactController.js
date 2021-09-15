@@ -1,19 +1,29 @@
-const { validationResult } = require("express-validator");
-const bcrypt = require("bcryptjs");
 const conn = require("../db/conn");
+const jwt = require("jsonwebtoken");
+const User = require("../models/userschema");
 
-exports.contact = async (req, res, next) => {
-  const errors = validationResult(req);
-  if (!errors.isEmpty()) {
-    return res.status(422).json({ errors: errors.array() });
-  }
-    const [rows] = await conn.execute(
-      "INSERT INTO `contact`(`name`,`email`,`subject`,`message`,`phone`) VALUES(?,?,?,?,?)",
-      [req.body.name, req.body.email,req.body.subject, req.body.message,req.body.phone]
-    );
-    if (rows.affectedRows === 1) {
-      return res.status(201).json({
-        message: "we got your application, will contact you soon.",
-      });
+exports.contact = async (req, res) => {
+  try {
+    const { name, phone, email, subject, message } = req.body;
+    if (!name || !phone || !email || !subject || !message) {
+      return res.json({ error: "plzz filled bhar do yrrr" });
+    } else {
+      const userContact = await User.findOne({ _id: req.userID });
+      if (userContact) {
+        const userMessage = await userContact.addMessage(
+          name,
+          phone,
+          email,
+          subject,
+          message
+        );
+
+        await userContact.save();
+
+        res.status(201).json({ message: "successfully saved." });
+      }
     }
+  } catch (error) {
+    console.log(error);
+  }
 };

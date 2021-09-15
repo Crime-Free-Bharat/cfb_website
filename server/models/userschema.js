@@ -24,6 +24,34 @@ const userSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
+  date: {
+    type: Date,
+    default: Date.now,
+  },
+  messages: [
+    {
+      name: {
+        type: String,
+        required: true,
+      },
+      phone: {
+        type: Number,
+        required: true,
+      },
+      email: {
+        type: String,
+        required: true,
+      },
+      subject: {
+        type: String,
+        required: true,
+      },
+      message: {
+        type: String,
+        required: true,
+      },
+    },
+  ],
   tokens: [
     {
       token: {
@@ -54,7 +82,24 @@ userSchema.methods.generateAuthToken = async function () {
     console.log(err);
   }
 };
+//===================================== store the messages ============================
+userSchema.methods.addMessage = async function (name,phone, email, subject, message) {
+  try {
+    this.messages = this.messages.concat({
+      name,
+      phone,
+      email,
+      subject,
+      message,
+    });
+    await this.save();
+    return this.messages;
+  } catch (err) {
+    console.log(err);
+  }
+};
 
+//=====================================collection creation ===============================
 const User = mongoose.model("register", userSchema);
 
 module.exports = User;
