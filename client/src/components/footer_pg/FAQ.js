@@ -6,6 +6,7 @@ import Image from "react-bootstrap/Image";
 import Button from "react-bootstrap/Button";
 import data from "../../api/data_faq";
 import SingleQuestion from "../../api/Question";
+import faqimg from "../../img/faq.svg"
 
 // styles
 const containers = {
@@ -42,7 +43,7 @@ const pagination = {
 };
 function FAQ() {
   const [currentPage, setCurrentPage] = useState(1);
-  const [questionPerPage] = useState(5);
+  const [questionPerPage] = useState(4);
   const [questions] = useState(data);
   const [searchTerm, setSearchTerm] = useState("");
 
@@ -83,7 +84,7 @@ function FAQ() {
       <Row>
         <Col xs={4} md={4} lg={4} style={infor}>
           <Image
-            src="https://image.freepik.com/free-vector/organic-flat-people-asking-questions-illustration_23-2148906283.jpg"
+            src={faqimg}
             fluid
           />
         </Col>

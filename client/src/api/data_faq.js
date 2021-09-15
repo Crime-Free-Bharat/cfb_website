@@ -59,6 +59,21 @@ const questions = [
     id: 12,
     title: "question on FAQ?",
     info: "Answer to first question of FAQ"
+  },
+  {
+    id: 13,
+    title: "what is cfb?",
+    info: "Answer to first question of FAQ"
+  }, 
+  {
+    id: 14,
+    title: "question on FAQ?",
+    info: "Answer to first question of FAQ"
+  },
+  {
+    id: 15,
+    title: "what is cfb?",
+    info: "Answer to first question of FAQ"
   }
 ];
 export default questions;
