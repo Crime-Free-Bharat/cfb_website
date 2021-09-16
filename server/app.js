@@ -1,8 +1,9 @@
 const express = require("express");
 const dotenv = require("dotenv");
 const app = express();
-
 const cookieParser = require("cookie-parser");
+const nodemailer = require("nodemailer");
+
 // ======================================dotenv ==================================
 dotenv.config({ path: "./config.env" });
 //====================================== express middleware (link router file) ==============================

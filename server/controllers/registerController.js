@@ -16,7 +16,6 @@ exports.signup = async (req, res) => {
       return res.status(422).json({ error: "recheck password" });
     } else {
       const user = new User({ name, email, phone, password, cpassword });
-
       // const userRegister = await user.save();
       // =============================hasing =============================
       await user.save();
