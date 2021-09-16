@@ -4,7 +4,6 @@ const { body } = require("express-validator");
 const authenticate = require("../middleware/authenticate");
 const { signup } = require("../controllers/registerController");
 const { login } = require("../controllers/loginController");
-
 const { contact } = require("../controllers/contactController");
 router.post(
   "/signup",

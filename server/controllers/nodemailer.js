@@ -54,3 +54,4 @@ app.get('/verify/:uniqueString',async(res,req) => {
         res.json('user not found')
     }
 })
+
