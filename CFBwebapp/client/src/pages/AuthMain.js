@@ -1,11 +1,11 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
-import Login from "../user_auth/Login";
-import Signup from "../user_auth/Signup";
-import email from "../user_auth/Email_Res";
-import emailver from "../user_auth/Email_Veri";
-import Otp from "../user_auth/Otp";
-import Otpconf from "../user_auth/Otpconf";
+import Login from "../components/user_auth/Login";
+import Signup from "../components/user_auth/Signup";
+import email from "../components/user_auth/Email_Res";
+import emailver from "../components/user_auth/Email_Veri";
+import Otp from "../components/user_auth/Otp";
+import Otpconf from "../components/user_auth/Otpconf";
 
 const AuthMain = () => (
   <>
