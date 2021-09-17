@@ -1,14 +1,14 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
-import Login from "./Login";
-import Signup from "./Signup";
-import email from "./Email_Res";
-import emailver from "./Email_Veri";
-import Otp from "./Otp";
-import Otpconf from "./Otpconf";
+import Login from "../user_auth/Login";
+import Signup from "../user_auth/Signup";
+import email from "../user_auth/Email_Res";
+import emailver from "../user_auth/Email_Veri";
+import Otp from "../user_auth/Otp";
+import Otpconf from "../user_auth/Otpconf";
 
 const AuthMain = () => (
-  <main>
+  <>
     <Switch>
       <Route exact path="/signup" component={Signup} />
       <Route exact path="/login" component={Login} />
@@ -17,7 +17,7 @@ const AuthMain = () => (
       <Route exact path="/otp" component={Otp} />
       <Route exact path="/otpconf" component={Otpconf} />
     </Switch>
-  </main>
+  </>
 );
 
 export default AuthMain;

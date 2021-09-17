@@ -1,14 +1,14 @@
 import React from 'react';
 import {Route, Switch} from 'react-router-dom';
-import Feedback from './Feedback';
-import Policies from './Policies';
-import RTI from './RTI';
-import FAQ from './FAQ';
-import TnC from './TnC';
+import Feedback from '../footer_pg/Feedback';
+import Policies from '../footer_pg/Policies';
+import RTI from '../footer_pg/RTI';
+import FAQ from '../footer_pg/FAQ';
+import TnC from '../footer_pg/TnC';
 
 const FooterMain = () => {
     return (
-    <main>
+    <>
         <Switch>
             <Route exact path="/feedback" component={Feedback} />
             <Route exact path="/Policies" component={Policies} />
@@ -16,7 +16,7 @@ const FooterMain = () => {
             <Route exact path="/FAQ" component={FAQ} />
             <Route exact path="/TnC" component={TnC} />
         </Switch>
-    </main>
+    </>
     );
 };
 
