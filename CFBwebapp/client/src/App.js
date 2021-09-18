@@ -1,9 +1,9 @@
 import React from "react";
 import "./css/App.css";
 
-import AuthMain from "./pages/AuthMain";
-import NavbarMain from "./pages/NavbarMain";
-import FooterMain from "./pages/FooterMain";
+import AuthMain from "./components/pages/AuthMain";
+import NavbarMain from "./components/pages/NavbarMain";
+import FooterMain from "./components/pages/FooterMain";
 
 const App = () => {
   return (

@@ -1,12 +1,12 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
-import Report_crime from "../components/nav_pages/Report_crime";
-import About from "../components/nav_pages/About";
-import Contact from "../components/nav_pages/Contact";
-import Services from "../components/nav_pages/Services";
-import AnR from "../components/nav_pages/AnR";
-import Activities from "../components/nav_pages/Activities";
-import Media from "../components/nav_pages/Media";
+import Report_crime from "../nav_pages/Report_crime";
+import About from "../nav_pages/About";
+import Contact from "../nav_pages/Contact";
+import Services from "../nav_pages/Services";
+import AnR from "../nav_pages/AnR";
+import Activities from "../nav_pages/Activities";
+import Media from "../nav_pages/Media";
 
 const NavbarMain = () => {
   return (
