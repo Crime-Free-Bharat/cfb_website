@@ -1,0 +1,174 @@
+/* ===================================================  HOME ============================================================== */
+.homecarousel {
+    padding: 0;
+    margin: 0;
+    z-index: 0;
+  }
+  
+  .carousel1 img {
+    width: 100vw;
+    object-fit: cover;
+  }
+  
+  .carousel1 {
+    vertical-align: top;
+    transition: 3s;
+  }
+  
+  .homesec1 {
+    display: flex;
+    padding: 2vh 8vw;
+    background-color: rgb(231, 231, 231);
+  }
+  
+  .homesec1 .div1 {
+    width: 20vw;
+    padding: 10px;
+    margin: 1vw;
+  }
+  
+  .homesec1 .div1 img {
+    width: 15vw;
+  }
+  
+  .homesec1 .div2 {
+    width: 50vw;
+    padding: 10px 2vw;
+    margin: 1vw;
+  }
+  
+  .updates,
+  .video {
+    width: 40vw;
+    padding: 0vh 0vw;
+    margin: 0vh 1vw;
+    background-color: #242b2e;
+    color: white;
+  }
+  
+  .updates li {
+    list-style: inside;
+    font-size: medium;
+  }
+  
+  .homesec2 {
+    padding: 7vh 7vw;
+    display: flex;
+    width: fit-content;
+    margin: auto;
+  }
+  
+  .homesec2 h4 span {
+    margin-bottom: 0;
+    margin-left: 1vw;
+  }
+  
+  .updates h4 {
+    border-bottom: 2px solid red;
+    padding: 1vh 0px;
+    margin: 0px 1vw;
+  }
+  
+  .video {
+    display: block;
+  }
+  
+  .homesec2 marquee {
+    margin: 1vh 1vw;
+  }
+  
+  .homesec2 marquee li a {
+    color: white;
+  }
+  
+  .homesec2 marquee li {
+    padding-bottom: 10px;
+  }
+  
+  .homecard {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 1vw;
+  }
+  
+  .homecard .card {
+    width: 26vw;
+    border: 1px solid rgb(224, 219, 219);
+    padding-bottom: 5px;
+    background-color: white;
+    box-shadow: 2px 5px 8px #b4b0b0;
+  }
+  
+  .homecard .card .img img {
+    width: 100%;
+  }
+  
+  #cards {
+    display: block;
+    margin: auto;
+    width: fit-content;
+  }
+  
+  #cards h2 {
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .cardcontent {
+    padding: 0vh 10px;
+    padding-bottom: 10px;
+    color: #a0aca8;
+    height: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+  }
+  
+  .readmore {
+    color: purple;
+    border: 1px solid #d5d5d5;
+    padding: 10px 20px;
+    margin-top: 0;
+    width: fit-content;
+    border-radius: 5px;
+    background-color: #3300fd;
+  }
+  
+  .readmore:hover {
+    background-color: #004074;
+  }
+  
+  .readmore a {
+    color: white;
+  }
+  
+  .readmore a:hover {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .homesec3 {
+    background-color: rgb(231, 231, 231);
+    padding: 10px;
+  }
+  
+  .homesec3 h5,
+  .homesec3 p,
+  .homesec3 a {
+    width: 100%;
+  }
+  
+  .homesec3 p {
+    height: 50px;
+    font-weight: 100;
+    font-size: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .homesec3 h5 {
+    font-weight: bold;
+    color: #000;
+  }
+  /* ===================================================  HOME ============================================================== */
+  
