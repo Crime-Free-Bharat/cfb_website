@@ -1,0 +1,191 @@
+
+/*====================================================================== header/navbar start =============================================================== */
+
+.nav1 {
+    overflow: hidden;
+    padding: 1vh 2vw 1vh 6vw;
+    margin: 0px;
+    align-content: space-around, space-between;
+    border-bottom: rgb(219, 219, 219) solid 1px;
+    font-size: 1vw;
+  }
+  
+  .nav1 p {
+    font-weight: normal;
+    line-height: normal;
+    float: left;
+    margin: 0px;
+    text-align: center;
+    padding-top: 1vh;
+    font-size: 0.8vw;
+  }
+  
+  .nav1 a:hover {
+    color: rgb(231, 0, 0);
+  }
+  
+  .nav1-right {
+    float: right;
+    display: flex;
+    padding: 0vw 1vw;
+  }
+  .navsocial a,
+  .navsocial {
+    margin: 5px 10px;
+  }
+  .nav1lang {
+    background-color: #e5e5e5;
+  }
+  .nav1login {
+    background-color: #100051;
+    color: white;
+  }
+  .nav1lang,
+  .nav1login {
+    padding: 5px 20px;
+    border-radius: 50px;
+    margin: 0px 10px;
+  }
+  header a {
+    text-decoration: none;
+  }
+  header {
+    box-shadow: 1px 1px 10px rgba(25, 3, 49, 0.432);
+  }
+  
+  @media screen and (max-width: 500px) {
+    .nav1 a {
+      float: none;
+      text-align: left;
+    }
+    .nav1-right {
+      float: none;
+    }
+  }
+  
+  /*nav 2 main*/
+  .nav2 {
+    overflow: hidden;
+    padding: 0vw 2vw 0vw 6vw;
+    margin: 0px;
+    align-content: space-around;
+    border-bottom: rgb(219, 219, 219) solid 1px;
+  }
+  .nav2 img {
+    width: 20vw;
+    float: left;
+  }
+  
+  .menu {
+    text-align: center;
+    float: right;
+    padding-left: 4vw;
+    width: auto;
+    display: flex;
+  }
+  .menu p {
+    padding-top: 1vw;
+    font-size: 1vw;
+  }
+  .about,
+  .service,
+  .division,
+  .act,
+  .report,
+  .media,
+  .activity,
+  .contact {
+    padding: 2.5vw 1vh 1vh 1vh;
+    font-weight: 350;
+    width: 8vw;
+    height: 8vw;
+    margin: 1vh 0vh;
+  }
+  .about:hover,
+  .service:hover,
+  .division:hover,
+  .act:hover,
+  .report:hover,
+  .media:hover,
+  .activity:hover,
+  .contact:hover {
+    background-color: rgb(250, 240, 240);
+  }
+  
+/*====================================================================== header/navbar end =============================================================== */
+
+/*=========================================================== Report styling Start ==========================================================*/
+.sectionheadreport {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 35px;
+    color: #1d0871;
+    font: roboto;
+    text-align: center;
+  }
+  .sectionparareport {
+    font-weight: bold;
+    font: roboto;
+    color: black;
+    font-size: 15px;
+    text-align: center;
+  }
+  .boxstyle {
+    text-align: center;
+    color: white;
+    background-color: #ff6f61;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+  }
+  .sendbtn {
+    font-style: normal;
+    background: #1d0871;
+    color: white;
+    font-weight: normal;
+    display: flex;
+    font-size: 20px;
+    align-items: center;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border: 1px solid #1d0871;
+    box-sizing: border-box;
+    border-radius: 50px;
+  }
+  .sendbtn:hover {
+    opacity: 0.9;
+  }
+/*=========================================================== Report styling End ==========================================================*/
+
+/*=========================================================== Media styling Start ==========================================================*/
+
+.sectionmedia {
+    padding-top: 50px;
+    background-image: url(../img/background1.png);
+    padding-bottom: 50px;
+  }
+  .sectionheadact {
+    font-style: normal;
+    font-weight: bold;
+    text-align: center;
+    font-size: 40px;
+    color: #1d0871;
+    font: roboto;
+  }
+  .sectionparaact {
+    font-weight: bold;
+    font: roboto;
+    text-align: center;
+    color: black;
+    font-size: 25px;
+  }
+  .containermedia {
+    width: 100%;
+    background: #fff;
+    margin: 0 auto;
+  }
+  /*=========================================================== Media styling end ==========================================================*/
+  
