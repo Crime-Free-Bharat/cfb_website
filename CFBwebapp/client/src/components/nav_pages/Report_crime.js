@@ -1,22 +1,7 @@
 import React from "react";
-import TestAutocomplete from "../../api/Autocomplete";
+
 const Report_crime = () => {
-  const file = document.getElementById("upload_file");
-  const handleinputs = (e) => {
-    console.log(e);
-    let ext = this.value.match(/\.([^\.]+)$/)[1];
-    switch (ext) {
-      case "pdf":
-      case "doc":
-        // case 'png':
-        // case '':
-        alert("Allowed");
-        break;
-      default:
-        alert("Not allowed");
-        this.value = "";
-    }
-  };
+ 
   return (
     <>
       <div className="container mt-4">
@@ -61,7 +46,7 @@ const Report_crime = () => {
                     className="form-control"
                     placeholder="Select State"
                     id="autocompleteState"
-                    onClick={TestAutocomplete}
+                    // onClick={TestAutocomplete}
                   />
                 </div>
                 <div className="col-6">
@@ -86,7 +71,7 @@ const Report_crime = () => {
                     type="file"
                     className="form-control"
                     id="upload_file"
-                    onChange={handleinputs}
+                    // onChange={handleinputs}
                     required
                   />
                 </div>
