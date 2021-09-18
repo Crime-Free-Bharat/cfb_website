@@ -1,10 +1,10 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
-import Feedback from "../footer_pg/Feedback";
-import Policies from "../footer_pg/Policies";
-import RTI from "../footer_pg/RTI";
-import FAQ from "../footer_pg/FAQ";
-import TnC from "../footer_pg/TnC";
+import Feedback from "../../pages/Footer_render/feedback";
+import Policies from "../../pages/Footer_render/Polices";
+import RTI from "../../pages/Footer_render/rti";
+import FAQ from "../../pages/Footer_render/faq";
+import TnC from "../../pages/Footer_render/tnc";
 
 const FooterMain = () => {
   return (
