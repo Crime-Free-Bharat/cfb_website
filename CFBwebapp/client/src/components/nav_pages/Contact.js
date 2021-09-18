@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import contactus from "../../img/contactus.svg";
 
 const Contact = () => {
