@@ -15,7 +15,7 @@ const AuthMain = () => (
       <Route exact path="/email" component={email} />
       <Route exact path="/emailver" component={emailver} />
       <Route exact path="/otp" component={Otp} />
-      <Route exact path="/otpconf" component={Otpconf} />
+      <Route exact path="/otpver" component={Otpconf} />
     </Switch>
   </>
 );
