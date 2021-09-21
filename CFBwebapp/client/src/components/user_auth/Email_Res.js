@@ -25,8 +25,8 @@ const Email_Res = () => {
           />
         </div>
         <div className="button">
-          <button className="Back">Back</button>
-          <button className="Resend">Send new verification link</button>
+          <button className="Back1">Back</button>
+          <button className="Resend1">Send new verification link</button>
         </div>
         <div className="contacsupp">
           Still not seeing it?{" "}
