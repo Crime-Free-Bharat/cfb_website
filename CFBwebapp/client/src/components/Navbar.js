@@ -56,49 +56,49 @@ const Navbar = () => {
 
           <div className="menu">
             <NavLink to="/about">
-              <div className="about">
+              <div className="about nav__items">
                 <i className="bi bi-person-lines-fill"></i>
                 <br />
                 <p>About us</p>
               </div>
             </NavLink>
-            <NavLink to="/services">
+            <NavLink to="/services nav__items">
               <div className="service">
                 <i className="bi bi-gear-wide-connected"></i> <br />
                 <p>Services</p>
               </div>
             </NavLink>
             <NavLink to="#">
-              <div className="division">
+              <div className="division nav__items">
                 <i className="bi bi-diagram-3"></i>
                 <br />
                 <p>CFB division</p>
               </div>
             </NavLink>
             <NavLink to="/anr">
-              <div className="act">
+              <div className="act nav__items">
                 <i className="bi bi-file-earmark-ruled"></i> <br />
                 <p>Act and Regulations</p>
               </div>
             </NavLink>
             <NavLink to="/report">
-              <div className="report">
+              <div className="report nav__items">
                 <i className="bi bi-flag"></i> <br /> <p>Report a Crime</p>
               </div>
             </NavLink>
             <NavLink to="/media">
-              <div className="media">
+              <div className="media nav__items">
                 <i className="bi bi-soundwave"></i> <br /> <p>Media</p>
               </div>
             </NavLink>
             <NavLink to="/activity">
-              <div className="activity">
+              <div className="activity nav__items">
                 <i className="bi bi-hand-index-thumb"></i>
                 <br /> <p>CFB Activities</p>
               </div>
             </NavLink>
             <NavLink to="/contact">
-              <div className="contact">
+              <div className="contact nav__items">
                 <i className="bi bi-telephone-plus"></i>
                 <br />
                 <p>Contact Us</p>

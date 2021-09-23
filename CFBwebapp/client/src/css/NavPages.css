@@ -87,28 +87,14 @@
     padding-top: 1vw;
     font-size: 1vw;
   }
-  .about,
-  .service,
-  .division,
-  .act,
-  .report,
-  .media,
-  .activity,
-  .contact {
+  .nav__items{
     padding: 2.5vw 1vh 1vh 1vh;
     font-weight: 350;
     width: 8vw;
     height: 8vw;
     margin: 1vh 0vh;
   }
-  .about:hover,
-  .service:hover,
-  .division:hover,
-  .act:hover,
-  .report:hover,
-  .media:hover,
-  .activity:hover,
-  .contact:hover {
+  .nav__items:hover {
     background-color: rgb(250, 240, 240);
   }
   
@@ -147,10 +133,7 @@
     font-size: 20px;
     align-items: center;
     text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding: 10px 50px;
     border: 1px solid #1d0871;
     box-sizing: border-box;
     border-radius: 50px;
@@ -233,7 +216,7 @@
     padding-bottom: 5px;
     margin-bottom: 15px;
   }
-  .container {
+  .containeractnreg {
     width: 100%;
     background: #fff;
     margin: 0 auto;
@@ -256,9 +239,46 @@
     color: black;
     font-size: 20px;
   }
-  .stctionimg {
+  .stctionimgact {
     height: 300px;
   }
 
 /*=========================================================== Act Reg styling end ==========================================================*/
-  
+
+/*=========================================================== Contact styling start ==========================================================*/
+
+.sendbtn {
+  font-style: normal;
+  background: #1d0871;
+  color: white;
+  font-weight: normal;
+  display: flex;
+  font-size: 20px;
+  align-items: center;
+  text-align: center;
+  padding: 10px 50px;
+  border: 1px solid #1d0871;
+  box-sizing: border-box;
+  border-radius: 50px;
+}
+.sendbtn:hover {
+  opacity: 0.9;
+}
+.sectionhead {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 35px;
+  color: #1d0871;
+  font: roboto;
+}
+.sectionpara {
+  font-weight: bold;
+  font: roboto;
+  color: black;
+  font-size: 45px;
+}
+.stctionimg {
+  height: 250px;
+}
+
+/*=========================================================== Contact styling end ==========================================================*/
