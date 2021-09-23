@@ -1,5 +1,5 @@
 import React from "react";
-import "./css/AuthPages.css";
+import "./css/App.css";
 
 import AuthMain from "./components/pages/AuthMain";
 import NavbarMain from "./components/pages/NavbarMain";

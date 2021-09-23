@@ -53,15 +53,6 @@
     box-shadow: 1px 1px 10px rgba(25, 3, 49, 0.432);
   }
   
-  @media screen and (max-width: 500px) {
-    .nav1 a {
-      float: none;
-      text-align: left;
-    }
-    .nav1-right {
-      float: none;
-    }
-  }
   
   /*nav 2 main*/
   .nav2 {
