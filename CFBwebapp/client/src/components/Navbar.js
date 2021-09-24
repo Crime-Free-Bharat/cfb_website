@@ -62,8 +62,8 @@ const Navbar = () => {
                 <p>About us</p>
               </div>
             </NavLink>
-            <NavLink to="/services nav__items">
-              <div className="service">
+            <NavLink to="/services ">
+              <div className="service nav__items">
                 <i className="bi bi-gear-wide-connected"></i> <br />
                 <p>Services</p>
               </div>
