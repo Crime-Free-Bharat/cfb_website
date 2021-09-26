@@ -2,6 +2,7 @@ import React from "react";
 import otpimg from "../../img/Vikru/undraw_authentication_fsn5.svg";
 
 const Otp = () => {
+  
   return (
     <>
       <div className="gridotp2">
@@ -13,10 +14,10 @@ const Otp = () => {
           </h2>
           <p className="ceotp">You will receive a confirmation email soon.</p>
           <i className="bi bi-calendar"></i>
-          Current Date
+          <p className="cd">Current Date</p>
           <br />
           <i className="bi bi-alarm"></i>
-          Current Time
+          <p className="ct">Current Time</p>
           <button className="gtvotp2">Go to homepage</button>
         </div>
         <div className="ref2otp2">

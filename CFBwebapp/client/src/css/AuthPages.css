@@ -4,6 +4,7 @@
   grid-template-rows: 1fr;
   grid-row-gap: 2rem;
   text-align: center;
+  transform: translateY(5vw);
 }
 
 .logo {
@@ -118,6 +119,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   text-align: left;
+  transform: translate(3vw, 6vw);
   font-size: 1rem;
   margin-left: 8rem;
   margin-top: 2.5rem;
@@ -132,6 +134,7 @@
 .vcotp {
   color: midnightblue;
   -webkit-text-stroke-width: thin;
+  margin-bottom: 1.5rem;
 }
 
 .descriptionotp {
@@ -198,11 +201,12 @@ input:focus {
   margin-left: 10rem;
   margin-top: 4.5rem;
   margin-bottom: 3rem;
-  margin-right: 10rem;
+  margin-right: 14rem;
+  transform: translateY(5vw);
 }
 
 .ref1otp2 {
-  margin-left: 3rem;
+  margin-left: 10rem;
 }
 
 .vcotp2 {
@@ -210,8 +214,22 @@ input:focus {
   -webkit-text-stroke-width: thin;
 }
 
+.cd{
+  display: inline;
+  margin-left: 1rem;
+  font-size: x-large;
+}
+
+.ct{
+  display: inline;
+  margin-left: 1rem;
+  font-size: x-large;
+}
+
 .ceotp2 {
   font-size: small;
+  margin-top: none;
+  margin-bottom: 2rem;
 }
 
 .bi-calendar {
@@ -221,6 +239,7 @@ input:focus {
   border-radius: 5rem;
   margin-top: 1rem;
   margin-bottom: 1.5rem;
+  display: inline-block;
 }
 
 .bi-alarm {
@@ -229,6 +248,7 @@ input:focus {
   border: 10px solid cyan;
   border-radius: 5rem;
   margin-bottom: 2rem;
+  display: inline-block;
 }
 
 .descriptionotp2 {
@@ -246,10 +266,10 @@ input:focus {
   border: none;
   width: 15rem;
   background: midnightblue;
+  display: block;
 }
 
 .logootp2 {
-  width: 23rem;
-  margin-top: 2rem;
+  width: 30rem;
 }
 /* ================================otp 1 page styling start ============================ */
