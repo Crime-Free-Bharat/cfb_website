@@ -21,7 +21,7 @@ function AnR() {
           <br />
           <div className="row">
             <div className="col-sm-4">
-              <img src={acts} class="img-responsive stctionimgact" />
+              <img src={acts} class="img-responsive stctionimgact"  alt="acts"/>
             </div>
             <div class="col-sm-8">
               <p>
@@ -88,7 +88,7 @@ function AnR() {
               </ul>
             </div>
             <div className="col-sm-4">
-              <img src={act2} class="img-responsive stctionimgact" />
+              <img src={act2} class="img-responsive stctionimgact" alt="atcs"/>
             </div>
           </div>
           <br />

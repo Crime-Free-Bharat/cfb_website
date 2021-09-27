@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import mailSent from "../../img/undraw_Mail_sent_re_0ofv.svg";
 const Email_Res = () => {
   return (
@@ -30,10 +31,10 @@ const Email_Res = () => {
         </div>
         <div className="contacsupp">
           Still not seeing it?{" "}
-          <a href="#" className="anchor">
+          <NavLink href="#" className="anchor">
             {" "}
             Contact Support
-          </a>
+          </NavLink>
         </div>
       </div>
     </>

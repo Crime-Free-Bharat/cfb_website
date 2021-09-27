@@ -1,11 +1,12 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import cfb1 from "../../img/cfb1.png";
 import cfb2 from "../../img/cfb2.png";
 import cfb3 from "../../img/cfb3.png";
 import cfb4 from "../../img/cfb4.png";
 import cfb5 from "../../img/cfb5.png";
 import cfb6 from "../../img/cfb6.png";
-import cfb7 from "../../img/cfb7.png";
+
 
 function Media() {
   return (
@@ -37,8 +38,8 @@ function Media() {
                   class="bg-image hover-overlay ripple shadow-1-strong rounded"
                   data-ripple-color="light"
                 >
-                  <img src={cfb1} class="w-100" />
-                  <a
+                  <img src={cfb1} class="w-100" alt=""/>
+                  <NavLink
                     href="#!"
                     data-mdb-toggle="modal"
                     data-mdb-target="#exampleModal1"
@@ -47,7 +48,7 @@ function Media() {
                       class="mask"
                       style={{ backgroundColor: "rgba(251, 251, 251, 0.2)" }}
                     ></div>
-                  </a>
+                  </NavLink>
                 </div>
               </div>
 
@@ -56,8 +57,8 @@ function Media() {
                   class="bg-image hover-overlay ripple shadow-1-strong rounded"
                   data-ripple-color="light"
                 >
-                  <img src={cfb2} class="w-100" />
-                  <a
+                  <img src={cfb2} class="w-100" alt=""/>
+                  <NavLink
                     href="#!"
                     data-mdb-toggle="modal"
                     data-mdb-target="#exampleModal2"
@@ -66,7 +67,7 @@ function Media() {
                       class="mask"
                       style={{ backgroundColor: "rgba(251, 251, 251, 0.2)" }}
                     ></div>
-                  </a>
+                  </NavLink>
                 </div>
               </div>
 
@@ -75,8 +76,8 @@ function Media() {
                   class="bg-image hover-overlay ripple shadow-1-strong rounded"
                   data-ripple-color="light"
                 >
-                  <img src={cfb3} class="w-100" />
-                  <a
+                  <img src={cfb3} class="w-100" alt=""/>
+                  <NavLink
                     href="#!"
                     data-mdb-toggle="modal"
                     data-mdb-target="#exampleModal3"
@@ -85,7 +86,7 @@ function Media() {
                       class="mask"
                       style={{ backgroundColor: "rgba(251, 251, 251, 0.2)" }}
                     ></div>
-                  </a>
+                  </NavLink>
                 </div>
               </div>
             </div>

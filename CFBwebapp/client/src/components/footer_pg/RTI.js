@@ -1,13 +1,13 @@
 import React from "react";
 import rtiImg from "../../img/rti-poster-img.jpg";
-
+import { NavLink } from "react-router-dom";
 function RTI() {
   return (
     <div>
       <div class="grid1">
         <div class="item2">
           <div class="poster">
-            <img src={rtiImg} alt="rti image" />
+            <img src={rtiImg} alt="rti" />
           </div>
         </div>
         <div class="item1">
@@ -27,30 +27,30 @@ function RTI() {
 
       <div class="grid2">
         <div class="item3">
-          <a href="#">Public Authorities under DRDO</a>
+          <NavLink to="#">Public Authorities under DRDO</NavLink>
         </div>
         <div class="item3">
-          <a href="#">RTI Act, 2005 (Ministry of Law and Justice) </a>
+          <NavLink to="#">RTI Act, 2005 (Ministry of Law and Justice) </NavLink>
         </div>
         <div class="item3">
-          <a href="#">Exemption under RTI Act, 2005 </a>
+          <NavLink to="#">Exemption under RTI Act, 2005 </NavLink>
         </div>
         <div class="item3">
-          <a href="#">
+          <NavLink to="#">
             Guidelines for Information Seekers (English {"&"} Hindi)
-          </a>
+          </NavLink>
         </div>
         <div class="item3">
-          <a href="#">How to submit RTI Application </a>
+          <NavLink to="#">How to submit RTI Application </NavLink>
         </div>
         <div class="item3">
-          <a href="#">Frequently Asked Questions on RTI </a>
+          <NavLink to="#">Frequently Asked Questions on RTI </NavLink>
         </div>
         <div class="item3">
-          <a href="#">Suo Motu disclosures u/s 4(1)(b) of the ACT </a>
+          <NavLink to="#">Suo Motu disclosures u/s 4(1)(b) of the ACT </NavLink>
         </div>
         <div class="item3">
-          <a href="#">Important Decisions/orders </a>
+          <NavLink to="#">Important Decisions/orders </NavLink>
         </div>
       </div>
     </div>

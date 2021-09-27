@@ -21,7 +21,7 @@ const Otp = () => {
           <button className="gtvotp2">Go to homepage</button>
         </div>
         <div className="ref2otp2">
-          <img className="logootp2" src={otpimg} />
+          <img className="logootp2" src={otpimg} alt="" />
         </div>
       </div>
     </>

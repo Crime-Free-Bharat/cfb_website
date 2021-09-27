@@ -13,7 +13,7 @@ function Feedback() {
                 Your feedback is valuable to us.
                 <br /> Thank you for your time!
               </p>
-              <img src={feedbackimg} class="img-responsive stctionimg" />
+              <img src={feedbackimg} class="img-responsive stctionimg" alt="feedback" />
             </div>
             <div class="col-sm-6 secondsec">
               <form>
