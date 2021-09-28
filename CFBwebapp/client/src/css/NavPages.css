@@ -167,7 +167,7 @@
   
   .section {
     padding-top: 50px;
-    background-image: url(img/background1.png);
+    background-image: url(../img/background1.png);
     padding-bottom: 50px;
   }
   .signbtn {

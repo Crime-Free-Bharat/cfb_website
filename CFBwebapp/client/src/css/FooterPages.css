@@ -165,28 +165,13 @@
 
 .display-flex {
   justify-content: space-between;
-  -moz-justify-content: space-between;
-  -webkit-justify-content: space-between;
-  -o-justify-content: space-between;
-  -ms-justify-content: space-between;
   align-items: center;
-  -moz-align-items: center;
-  -webkit-align-items: center;
-  -o-align-items: center;
-  -ms-align-items: center;
 }
 
 .display-flex-center {
   justify-content: center;
-  -moz-justify-content: center;
-  -webkit-justify-content: center;
-  -o-justify-content: center;
-  -ms-justify-content: center;
   align-items: center;
-  -moz-align-items: center;
-  -webkit-align-items: center;
-  -o-align-items: center;
-  -ms-align-items: center;
+  
 }
 .sectionpara2 {
   font-weight: bold;

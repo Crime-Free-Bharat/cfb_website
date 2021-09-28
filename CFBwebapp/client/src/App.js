@@ -1,5 +1,8 @@
 import React from "react";
 import "./css/AuthPages.css";
+import "./css/FooterPages.css";
+import "./css/NavPages.css";
+import "./css/Home.css";
 // import "./css/App.css";
 
 import AuthMain from "./components/pages/AuthMain";
