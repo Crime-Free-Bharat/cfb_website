@@ -8,8 +8,8 @@ const Otpconf = () => {
             <h2 class="vcotp">Enter verification code</h2>
                 <p class="descriptionotp">We have just sent a verification code to lorenzo@gmail.com and +39 2345174297</p>
                 <input class="codeotp" type="text" placeholder="Enter Code" maxlength="4"/>
-                <NavLink href="#" id="scotp">Send the code again</NavLink>
-                <NavLink href="#" id="scotp">Change phone number</NavLink>
+                <NavLink to="#" id="scotp">Send the code again</NavLink>
+                <NavLink to="#" id="scotp">Change phone number</NavLink>
                 <button class="verifyotp">Verify</button>
         </div>
         <div class="ref2otp">

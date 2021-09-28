@@ -40,7 +40,7 @@ function Media() {
                 >
                   <img src={cfb1} class="w-100" alt=""/>
                   <NavLink
-                    href="#!"
+                    to="#!"
                     data-mdb-toggle="modal"
                     data-mdb-target="#exampleModal1"
                   >
@@ -59,7 +59,7 @@ function Media() {
                 >
                   <img src={cfb2} class="w-100" alt=""/>
                   <NavLink
-                    href="#!"
+                    to="#!"
                     data-mdb-toggle="modal"
                     data-mdb-target="#exampleModal2"
                   >
@@ -78,7 +78,7 @@ function Media() {
                 >
                   <img src={cfb3} class="w-100" alt=""/>
                   <NavLink
-                    href="#!"
+                    to="#!"
                     data-mdb-toggle="modal"
                     data-mdb-target="#exampleModal3"
                   >
