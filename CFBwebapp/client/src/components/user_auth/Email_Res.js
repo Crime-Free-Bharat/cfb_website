@@ -30,9 +30,8 @@ const Email_Res = () => {
           <button className="Resend1">Send new verification link</button>
         </div>
         <div className="contacsupp">
-          Still not seeing it?{" "}
-          <NavLink href="#" className="anchor">
-            {" "}
+          Still not seeing it?
+          <NavLink to="#" className="anchor">
             Contact Support
           </NavLink>
         </div>
