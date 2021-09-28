@@ -6,12 +6,12 @@ import Image from "react-bootstrap/Image";
 import Button from "react-bootstrap/Button";
 import data from "../../api/data_faq";
 import SingleQuestion from "../../api/Question";
-import faqimg from "../../img/faq.svg"
+import faqimg from "../../img/faq.svg";
 
 // styles
 const containers = {
   padding: "1.5% auto",
-  margin: "1.5%"
+  margin: "1.5%",
 };
 
 const faqHeading = {
@@ -20,13 +20,13 @@ const faqHeading = {
   fontSize: "32px",
   lineHeight: "35px",
   fontWeight: "bold",
-  margin: "2rem auto"
+  margin: "2rem auto",
 };
 
 const infor = {
   margin: "3rem auto",
   padding: "3%",
-  fontFamily: "Roboto, Sans-Serif"
+  fontFamily: "Roboto, Sans-Serif",
 };
 
 const btns = {
@@ -34,12 +34,12 @@ const btns = {
   borderColor: "#fff",
   backgroundColor: "rgba(76, 0, 185, 1)",
   width: "auto",
-  color : "#fff"
+  color: "#fff",
 };
 const pagination = {
   padding: "1%",
   textAlign: "right",
-  marginRight: "20%"
+  marginRight: "20%",
 };
 function FAQ() {
   const [currentPage, setCurrentPage] = useState(1);
@@ -83,10 +83,7 @@ function FAQ() {
     <Container fluid style={containers}>
       <Row>
         <Col xs={4} md={4} lg={4} style={infor}>
-          <Image
-            src={faqimg}
-            fluid
-          />
+          <Image src={faqimg} fluid />
         </Col>
         <Col xs={7} md={7} lg={7} style={infor}>
           <h3 style={faqHeading}>Frequently Asked Questions</h3>
