@@ -1,6 +1,5 @@
 import React from "react";
 
-
 import "./css/App.css";
 
 import AuthMain from "./components/pages/AuthMain";
