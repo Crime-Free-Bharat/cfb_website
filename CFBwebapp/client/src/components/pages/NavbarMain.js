@@ -7,12 +7,14 @@ import Services from "../../pages/Navbar_render/Services";
 import AnR from "../../pages/Navbar_render/Anr";
 import Media from "../../pages/Navbar_render/Media";
 import Activities from "../../pages/Navbar_render/Activity";
+import Home from "../../pages/Navbar_render/Home";
 
 
 const NavbarMain = () => {
   return (
     <>
       <Switch>
+        <Route exact path="/" component={Home}/>
         <Route exact path="/report" component={Report_crime} />
         <Route exact path="/about" component={About} />
         <Route exact path="/contact" component={Contact} />
