@@ -3,14 +3,14 @@ import { NavLink } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle";
 import logo from "../img/logo2.png";
-import '../css/NavPages.css'
+
 const Navbar = () => {
   return (
     <>
       <header>
         <div className="nav1">
           <p>
-            DEPARTMENT OF THE NATIONAL TECHNICAL RESEARCH {'&'} DEVELOPMENT
+            DEPARTMENT OF THE NATIONAL TECHNICAL RESEARCH {"&"} DEVELOPMENT
             COMMITTEE
           </p>
 

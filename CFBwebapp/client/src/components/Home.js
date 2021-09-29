@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import items from "../api/homecards";
 const Home = () => {
   return (
@@ -64,7 +65,7 @@ const Home = () => {
           </button>
         </div>
       </div>
-      <section></section>
+      
       {/* section second start  */}
 
       <section id="aboutsection">
@@ -81,7 +82,7 @@ const Home = () => {
           <div class="div2">
             <h2>
               <span>About</span> CFB
-            </h2>{" "}
+            </h2>
             <hr />
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ex
@@ -95,7 +96,7 @@ const Home = () => {
               Sed aliquet iaculis lorem sed rutrum. Sed laoreet ligula quis
               ligula efficitur aliquam.
             </p>
-            <a href="./about"> Read More...</a>
+            <NavLink to="./about"> Read More...</NavLink>
             <br />
             <br />
             <button
@@ -229,19 +230,19 @@ const Home = () => {
               >
                 <ul>
                   <li>
-                    <a href="#">Update 1</a>
+                    <NavLink to="#">Update 1</NavLink>
                   </li>
                   <li>
-                    <a href="#">Update 2</a>
+                    <NavLink to="#">Update 2</NavLink>
                   </li>
                   <li>
-                    <a href="#">Update 3</a>
+                    <NavLink to="#">Update 3</NavLink>
                   </li>
                   <li>
-                    <a href="#">Update 4</a>
+                    <NavLink to="#">Update 4</NavLink>
                   </li>
                   <li>
-                    <a href="#">Update 5</a>
+                    <NavLink to="#">Update 5</NavLink>
                   </li>
                 </ul>
               </marquee>
@@ -271,7 +272,7 @@ const Home = () => {
                       <h5>{heading}</h5>
                       <p>{paragraph}</p>
                       <div class="readmore">
-                        <a href={hyperLinkRefernce}>Read More...</a>
+                        <NavLink to={hyperLinkRefernce}>Read More...</NavLink>
                       </div>
                     </div>
                   </div>
