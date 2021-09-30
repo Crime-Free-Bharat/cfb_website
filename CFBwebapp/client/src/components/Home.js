@@ -1,6 +1,10 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import items from "../api/homecards";
+import header from "../img/header1.jpg";
+import header1 from "../img/poster.png";
+import header2 from "../img/cfb3.png";
+import sirimg from "../img/sir.png";
 const Home = () => {
   return (
     <>
@@ -32,15 +36,15 @@ const Home = () => {
           {/* <!-- Wrapper for slides --> */}
           <div class="carousel-inner">
             <div class="carousel-item active carousel1" data-bs-interval="2000">
-              <img src="img/header1.jpg" alt="Crime Free Bharat" />
+              <img src={header} alt="Crime Free Bharat" />
             </div>
 
             <div class="carousel-item carousel1" data-bs-interval="2000">
-              <img src="img/poster.png" alt="Crime Free Bharat" />
+              <img src={header1} alt="Crime Free Bharat" />
             </div>
 
             <div class="carousel-item carousel1" data-bs-interval="2000">
-              <img src="img/cfb3.png" alt="Crime Free Bharat " />
+              <img src={header2} alt="Crime Free Bharat " />
             </div>
           </div>
 
@@ -65,13 +69,13 @@ const Home = () => {
           </button>
         </div>
       </div>
-      
+
       {/* section second start  */}
 
       <section id="aboutsection">
         <div class="homesec1">
           <div class="div1">
-            <img src="img/sir.png" alt="Maithili Sharn Gupta's " />
+            <img src={sirimg} alt="Maithili Sharn Gupta's " />
             <h3>Maithili Sharn Gupta</h3>
             <p>
               President of Crime Free Bharat Mission <br />

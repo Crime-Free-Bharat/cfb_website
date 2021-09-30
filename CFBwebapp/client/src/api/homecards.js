@@ -1,7 +1,17 @@
+import img1 from "../img/cfb1.png"
+import img2 from "../img/cfb2.png"
+import img3 from "../img/cfb3.png"
+import img4 from "../img/cfb4.png"
+import img5 from "../img/cfb5.png"
+import img6 from "../img/cfb6.png"
+import img7 from "../img/cfb7.png"
+
+
+
 const homecard = [
   {
     id: 1,
-    image: "img/cfb1.png",
+     image: img1,
     heading: "heading 1",
     alt: "cfb1",
     paragraph:
@@ -10,7 +20,7 @@ const homecard = [
   },
   {
     id: 2,
-    image: "img/cfb2.png",
+     image: img2,
     heading: "heading 2",
     alt: "cfb2",
     paragraph:
@@ -19,7 +29,7 @@ const homecard = [
   },
   {
     id: 3,
-    image: "img/cfb3.png",
+     image: img3,
     heading: "heading 3",
     alt: "cfb3",
     paragraph:
@@ -28,7 +38,7 @@ const homecard = [
   },
   {
     id: 4,
-    image: "img/cfb4.png",
+     image: img4,
     heading: "heading 4",
     alt: "cfb4",
     paragraph:
@@ -37,7 +47,7 @@ const homecard = [
   },
   {
     id: 5,
-    image: "img/cfb5.png",
+     image:img5,
     heading: "heading 5",
     alt: "cfb5",
     paragraph:
@@ -46,7 +56,7 @@ const homecard = [
   },
   {
     id: 6,
-    image: "img/cfb6.png",
+     image: img6,
     heading: "heading 6",
     alt: "cfb6",
     paragraph:
@@ -55,7 +65,7 @@ const homecard = [
   },
   {
     id: 7,
-    image: "img/cfb7.png",
+     image: img7,
     heading: "heading 7",
     alt: "cfb7",
     paragraph:
@@ -64,8 +74,8 @@ const homecard = [
   },
   {
     id: 8,
-    image: "img/cfb2.png",
-    heading: "heading 7",
+     image: img1,
+    heading: "heading 8",
     alt: "cfb8",
     paragraph:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate ipsum rerum illum omnis in sapiente ullam soluta enim eaque. Illum obcaecati aliquid minus iure ad? Aperiam obcaecati quod quidem deleniti.",
@@ -73,8 +83,8 @@ const homecard = [
   },
   {
     id: 9,
-    image: "img/cfb2.png",
-    heading: "heading 7",
+     image: img2,
+    heading: "heading 9",
     alt: "cfb8",
     paragraph:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate ipsum rerum illum omnis in sapiente ullam soluta enim eaque. Illum obcaecati aliquid minus iure ad? Aperiam obcaecati quod quidem deleniti.",
