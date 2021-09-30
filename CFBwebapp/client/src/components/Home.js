@@ -8,14 +8,14 @@ import sirimg from "../img/sir.png";
 const Home = () => {
   return (
     <>
-      <div class="homecarousel">
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
-          <div class="carousel-indicators">
+      <div className="homecarousel">
+        <div id="myCarousel" className="carousel slide" data-ride="carousel">
+          <div className="carousel-indicators">
             <button
               type="button"
               data-bs-target="#myCarousel"
               data-bs-slide-to="0"
-              class="active"
+              className="active"
               aria-current="true"
               aria-label="Slide 1"
             ></button>
@@ -34,38 +34,38 @@ const Home = () => {
           </div>
 
           {/* <!-- Wrapper for slides --> */}
-          <div class="carousel-inner">
-            <div class="carousel-item active carousel1" data-bs-interval="2000">
+          <div className="carousel-inner">
+            <div className="carousel-item active carousel1" data-bs-interval="2000">
               <img src={header} alt="Crime Free Bharat" />
             </div>
 
-            <div class="carousel-item carousel1" data-bs-interval="2000">
+            <div className="carousel-item carousel1" data-bs-interval="2000">
               <img src={header1} alt="Crime Free Bharat" />
             </div>
 
-            <div class="carousel-item carousel1" data-bs-interval="2000">
+            <div className="carousel-item carousel1" data-bs-interval="2000">
               <img src={header2} alt="Crime Free Bharat " />
             </div>
           </div>
 
           {/* <!-- Left and right controls --> */}
           <button
-            class="carousel-control-prev"
+            className="carousel-control-prev"
             type="button"
             data-bs-target="#myCarousel"
             data-bs-slide="prev"
           >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
+            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span className="visually-hidden">Previous</span>
           </button>
           <button
-            class="carousel-control-next"
+            className="carousel-control-next"
             type="button"
             data-bs-target="#myCarousel"
             data-bs-slide="next"
           >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
+            <span className="carousel-control-next-icon" aria-hidden="true"></span>
+            <span className="visually-hidden">Next</span>
           </button>
         </div>
       </div>
@@ -73,17 +73,19 @@ const Home = () => {
       {/* section second start  */}
 
       <section id="aboutsection">
-        <div class="homesec1">
-          <div class="div1">
+        <div className="homesec1">
+          <div className="div1">
             <img src={sirimg} alt="Maithili Sharn Gupta's " />
-            <h3>Maithili Sharn Gupta</h3>
-            <p>
-              President of Crime Free Bharat Mission <br />
-              Former DGP, Police Reforms, Madhya Pradesh
-            </p>
+            <div classNameName="mt-1">
+              <h3>Maithili Sharn Gupta</h3>
+              <p>
+                President of Crime Free Bharat Mission <br />
+                Former DGP, Police Reforms, Madhya Pradesh
+              </p>
+            </div>
             <br />
           </div>
-          <div class="div2">
+          <div className="div2">
             <h2>
               <span>About</span> CFB
             </h2>
@@ -105,25 +107,25 @@ const Home = () => {
             <br />
             <button
               type="button"
-              class="btn btn-primary"
+              className="btn btn-primary"
               data-bs-toggle="modal"
               data-bs-target="#ipsmessage"
             >
               View Message
             </button>
-            <div class="modal fade" id="ipsmessage" role="dialog">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h4 class="modal-title">Message From IPS</h4>
+            <div className="modal fade" id="ipsmessage" role="dialog">
+              <div className="modal-dialog">
+                <div className="modal-content">
+                  <div className="modal-header">
+                    <h4 className="modal-title">Message From IPS</h4>
                     <button
                       type="button"
-                      class="btn-close"
+                      className="btn-close"
                       data-bs-dismiss="modal"
                       aria-label="Close"
                     ></button>
                   </div>
-                  <div class="modal-body">
+                  <div className="modal-body">
                     <p>
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                       Morbi ex massa, commodo sit amet neque eget, gravida
@@ -133,10 +135,10 @@ const Home = () => {
                       neque ut odio aliquam auctor a nec nisl.{" "}
                     </p>
                   </div>
-                  <div class="modal-footer">
+                  <div className="modal-footer">
                     <button
                       type="button"
-                      class="btn btn-default"
+                      className="btn btn-default"
                       data-bs-dismiss="modal"
                     >
                       Close
@@ -156,19 +158,19 @@ const Home = () => {
           </div>
           <hr />
 
-          <div class="homesec2">
-            <div class="video">
+          <div className="homesec2">
+            <div className="video">
               <h4>
                 <span> Video Gallery</span>
               </h4>
               <div
                 id="videogallery"
-                class="carousel slide"
+                className="carousel slide"
                 data-ride="carousel"
                 data-interval="0"
               >
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
+                <div className="carousel-inner">
+                  <div className="carousel-item active">
                     <iframe
                       width="620vw"
                       height="270vh"
@@ -177,7 +179,7 @@ const Home = () => {
                     ></iframe>
                   </div>
 
-                  <div class="carousel-item">
+                  <div className="carousel-item">
                     <iframe
                       width="620vw"
                       height="270vw"
@@ -186,7 +188,7 @@ const Home = () => {
                     ></iframe>
                   </div>
 
-                  <div class="carousel-item">
+                  <div className="carousel-item">
                     <iframe
                       width="620vw"
                       height="270vw"
@@ -196,33 +198,33 @@ const Home = () => {
                   </div>
                 </div>
                 <button
-                  class="carousel-control-prev"
+                  className="carousel-control-prev"
                   type="button"
                   data-bs-target="#videogallery"
                   data-bs-slide="prev"
                 >
                   <span
-                    class="carousel-control-prev-icon"
+                    className="carousel-control-prev-icon"
                     aria-hidden="true"
                   ></span>
-                  <span class="visually-hidden">Previous</span>
+                  <span className="visually-hidden">Previous</span>
                 </button>
                 <button
-                  class="carousel-control-next"
+                  className="carousel-control-next"
                   type="button"
                   data-bs-target="#videogallery"
                   data-bs-slide="next"
                 >
                   <span
-                    class="carousel-control-next-icon"
+                    className="carousel-control-next-icon"
                     aria-hidden="true"
                   ></span>
-                  <span class="visually-hidden">Next</span>
+                  <span className="visually-hidden">Next</span>
                 </button>
               </div>
             </div>
 
-            <div class="updates">
+            <div className="updates">
               <h4>
                 <span>Updates</span>
               </h4>
@@ -251,31 +253,31 @@ const Home = () => {
                 </ul>
               </marquee>
             </div>
-            <div class="photogallery"></div>
+            <div className="photogallery"></div>
           </div>
         </div>
       </section>
 
-      <section class="homesec3" id="homecardsection">
+      <section className="homesec3" id="homecardsection">
         <div id="cards">
           <div>
             <h2> Featured Activities</h2>
           </div>
           <hr />
-          <div class="Homecard">
+          <div className="Homecard">
             {items.map((element) => {
               const { id, image, heading, alt, paragraph, hyperLinkRefernce } =
                 element;
               return (
                 <>
-                  <div class="card" key={id}>
-                    <div class="img">
+                  <div className="card" key={id}>
+                    <div className="img">
                       <img src={image} alt={alt} />
                     </div>
-                    <div class="cardcontent">
+                    <div className="cardcontent mt-2">
                       <h5>{heading}</h5>
                       <p>{paragraph}</p>
-                      <div class="readmore">
+                      <div className="readmore">
                         <NavLink to={hyperLinkRefernce}>Read More...</NavLink>
                       </div>
                     </div>
