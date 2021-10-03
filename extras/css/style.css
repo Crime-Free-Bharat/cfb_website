@@ -506,6 +506,11 @@ body {
     background-color: #dd4b39;
     color: white;
   }
+
+  #twitter {
+    background-color: green;
+    color: white;
+  }
   
   .signbtn {
     font-style: normal;
