@@ -1,5 +1,5 @@
 import React from "react";
-import mailSent from "../../img/undraw_Mail_sent_re_0ofv.svg";
+import mailSent from "../../../img/undraw_Mail_sent_re_0ofv.svg";
 
 function Email_Veri() {
   return (

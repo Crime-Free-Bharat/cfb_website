@@ -2,6 +2,8 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle";
+import  "sweetalert2/dist/sweetalert2.js";
+import "sweetalert2/dist/sweetalert2.all";
 import logo from "../img/logo2.png";
 
 const Navbar = () => {
