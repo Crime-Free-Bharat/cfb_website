@@ -2,7 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle";
-import  "sweetalert2/dist/sweetalert2.js";
+import "sweetalert2/dist/sweetalert2.js";
 import "sweetalert2/dist/sweetalert2.all";
 import logo from "../img/logo2.png";
 
@@ -51,14 +51,14 @@ const Navbar = () => {
             </NavLink>
           </div>
         </div>
- 
+
         <div className="nav2 main">
           <NavLink to="#">
             <img src={logo} alt="logo_crime_free_bharat" />
           </NavLink>
 
           <div className="menu">
-          <NavLink to="/home">
+            <NavLink to="/">
               <div className="home nav__items">
                 <i className="bi bi-person-lines-fill"></i>
                 <br />
