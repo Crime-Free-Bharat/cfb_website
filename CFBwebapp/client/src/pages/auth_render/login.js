@@ -1,7 +1,7 @@
 import React from "react";
 import Footer from "../../components/Footer";
 import Navbar from "../../components/Navbar";
-import Login from "../../components/user_auth/Login";
+import Login from "../../components/user_auth/Common/Login";
 const login = () => {
   return (
     <>

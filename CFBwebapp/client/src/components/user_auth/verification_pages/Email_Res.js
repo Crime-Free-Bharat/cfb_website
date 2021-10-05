@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import mailSent from "../../img/undraw_Mail_sent_re_0ofv.svg";
+import mailSent from "../../../img/undraw_Mail_sent_re_0ofv.svg";
 const Email_Res = () => {
   return (
     <>

@@ -36,9 +36,9 @@ const Login = () => {
       <section className="signup">
         <div className="container">
           <h4 className="text-center mt-5 fs-5">
-            Already have an account?
+            Don't have an account?
             <NavLink to="/signup" className="login">
-              Sign up
+               Sign up
             </NavLink>
           </h4>
           <div className="signup-content">

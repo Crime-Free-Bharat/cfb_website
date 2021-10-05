@@ -1,5 +1,5 @@
 import React from "react";
-import otpimg from "../../img/Vikru/undraw_authentication_fsn5.svg";
+import otpimg from "../../../img/Vikru/undraw_authentication_fsn5.svg";
 
 const Otp = () => {
   

@@ -1,5 +1,5 @@
 import React from "react";
-import otpConfImg from '../../img/Vikru/undraw_authentication_fsn5.svg'
+import otpConfImg from '../../../img/Vikru/undraw_authentication_fsn5.svg'
 import { NavLink } from "react-router-dom";
 const Otpconf = () => {
     return (<>
