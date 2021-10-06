@@ -60,7 +60,7 @@ const Navbar = () => {
           <div className="menu">
             <NavLink to="/">
               <div className="home nav__items">
-                <i className="bi bi-person-lines-fill"></i>
+              <i class="bi bi-house-door"></i>
                 <br />
                 <p>Home</p>
               </div>
