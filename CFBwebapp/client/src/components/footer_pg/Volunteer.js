@@ -33,12 +33,12 @@ function Volunteer() {
                           <br />
                         <div className="row">
                             <div className="col-6">
-                                <textarea type="text" className="form-control" style="height: 180px;">
+                                <textarea type="text" className="form-control">
                                   How did you come to know about CFB?
                                 </textarea>
                             </div>
                             <div className="col-6">
-                              <textarea type="text" className="form-control" style="height: 180px;">
+                              <textarea type="text" className="form-control">
                                 Why would you like to volunteer for Crime Free Bharat ? *
                               </textarea>
                           </div>
