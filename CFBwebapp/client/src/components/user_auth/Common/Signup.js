@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { NavLink, useHistory } from "react-router-dom";
 
-const Signup = () => {
+const Signup = (props) => {
   const history = useHistory();
   const [user, setUser] = useState({
     name: "",
@@ -48,7 +48,7 @@ const Signup = () => {
     <>
       <section className="signup">
         <div className="container">
-        <h4 className="text-center mt-5 fs-5">Welcome User</h4> 
+        <h4 className="text-center mt-5 fs-5">Welcome {props.head}</h4> 
           <h4 className="text-center mt-2 fs-5">
             Already have an account?
             <NavLink to="/login" className="login">
