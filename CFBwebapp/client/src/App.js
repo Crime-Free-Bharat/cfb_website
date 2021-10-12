@@ -9,9 +9,11 @@ import FooterMain from "./components/pages/FooterMain";
 const App = () => {
   return (
     <>
+      
       <NavbarMain />
       <AuthMain />
       <FooterMain />
+    
     </>
   );
 };

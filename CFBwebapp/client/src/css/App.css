@@ -3,5 +3,5 @@
 @import "./NavPages.css";
 @import "./Home.css";
 @import "./registers.css";
-
-
+@import "./preauth.css";
+@import "./errorpage.css";

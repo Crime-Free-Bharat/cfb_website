@@ -1,20 +1,19 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
 import Report_crime from "../../pages/Navbar_render/Report";
-import About from "../../pages/Navbar_render/About"; 
+import About from "../../pages/Navbar_render/About";
 import Contact from "../../pages/Navbar_render/Contact";
 import Services from "../../pages/Navbar_render/Services";
 import AnR from "../../pages/Navbar_render/Anr";
 import Media from "../../pages/Navbar_render/Media";
 import Activities from "../../pages/Navbar_render/Activity";
-import Home from "../../pages/Navbar_render/Home";
-
-
+import Home from "../../pages/main_pages/home";
+import Errorpage from "../nav_pages/Errorpage";
 const NavbarMain = () => {
   return (
     <>
       <Switch>
-        <Route exact path="/" component={Home}/>
+        <Route exact path="/" component={Home} />
         <Route exact path="/report" component={Report_crime} />
         <Route exact path="/about" component={About} />
         <Route exact path="/contact" component={Contact} />
@@ -22,6 +21,7 @@ const NavbarMain = () => {
         <Route exact path="/anr" component={AnR} />
         <Route exact path="/activity" component={Activities} />
         <Route exact path="/media" component={Media} />
+        <Route component={Errorpage} />
       </Switch>
     </>
   );

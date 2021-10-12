@@ -1,6 +1,6 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
-import Feedback from "../../pages/Footer_render/feedback";
+import Feedback from "../../pages/Footer_render/feedback"
 import Policies from "../../pages/Footer_render/Polices";
 import RTI from "../../pages/Footer_render/rti";
 import FAQ from "../../pages/Footer_render/faq";
