@@ -6,7 +6,7 @@ import RTI from "../../pages/Footer_render/rti";
 import FAQ from "../../pages/Footer_render/faq";
 import TnC from "../../pages/Footer_render/tnc";
 import Volunteer from "../../pages/Footer_render/vol";
-
+import Errorpage from "../nav_pages/Errorpage";
 const FooterMain = () => {
   return (
     <>
@@ -17,6 +17,7 @@ const FooterMain = () => {
         <Route exact path="/FAQ" component={FAQ} />
         <Route exact path="/TnC" component={TnC} />
         <Route exact path="/Volunteer" component={Volunteer} />
+        <Route exact component={Errorpage} />
       </Switch>
     </>
   );

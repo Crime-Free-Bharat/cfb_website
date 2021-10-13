@@ -8,7 +8,7 @@ import AnR from "../../pages/Navbar_render/Anr";
 import Media from "../../pages/Navbar_render/Media";
 import Activities from "../../pages/Navbar_render/Activity";
 import Home from "../../pages/main_pages/home";
-import Errorpage from "../nav_pages/Errorpage";
+
 const NavbarMain = () => {
   return (
     <>
@@ -21,7 +21,7 @@ const NavbarMain = () => {
         <Route exact path="/anr" component={AnR} />
         <Route exact path="/activity" component={Activities} />
         <Route exact path="/media" component={Media} />
-        <Route component={Errorpage} />
+        
       </Switch>
     </>
   );

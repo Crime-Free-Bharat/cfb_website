@@ -13,7 +13,7 @@ const App = () => {
       <NavbarMain />
       <AuthMain />
       <FooterMain />
-    
+
     </>
   );
 };
