@@ -2,6 +2,10 @@ import React from "react";
 import img from "../../img/user_auth.svg";
 import { NavLink } from "react-router-dom";
 
+window.myRole ="";
+const handleClick = (e) => {
+    window.myRole = e.target.id
+  }
 const Preauth = () => {
   return (
     <>
@@ -21,14 +25,14 @@ const Preauth = () => {
             </div>
             <hr />
             <div className="prelogin-image" style={{ marginTop: "70px" }}>
-              <NavLink to="/signup" className="fbpre btnpre" id="intern">
-                Continue as a Intern
+              <NavLink to="/signup" className="fbpre btnpre" id="intern" onClick={(e)=>handleClick(e)}>
+                Continue as an Intern
               </NavLink>
               <br />
-              <NavLink to="/signup" className="googlepre btnpre" id="member">
+              <NavLink to="/signup" className="googlepre btnpre" id="member" onClick={(e)=>handleClick(e)}>
                 Continue as a Member
               </NavLink>
-              <NavLink to="#" className="twitterpre btnpre" id="volunteer">
+              <NavLink to="/signup" className="twitterpre btnpre" id="volunteer" onClick={(e)=>handleClick(e)}>
                 Continue as a Volunteer
               </NavLink>
             </div>
