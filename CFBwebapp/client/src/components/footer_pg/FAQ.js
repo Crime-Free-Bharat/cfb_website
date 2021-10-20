@@ -54,6 +54,7 @@ function FAQ() {
     ) {
       return val;
     }
+    return [];
   });
   const indexOfLastQuestion = currentPage * questionPerPage;
   const indexOfFirstQuestion = indexOfLastQuestion - questionPerPage;
