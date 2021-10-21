@@ -32,26 +32,26 @@ const Navbar = () => {
 
           <div className="nav1-right">
             <div className="navsocial">
-              <NavLink
-                to="https://twitter.com/bharat_free?s=20"
+              <a
+                href="https://twitter.com/bharat_free?s=20"
                 target="_blank">
                 <i className="bi bi-twitter"></i>
-              </NavLink>
-              <NavLink
-                to="https://www.instagram.com/crimefreebharat_official/"
+              </a>
+              <a
+                href="https://www.instagram.com/crimefreebharat_official/"
                 target="_blank">
                 <i className="bi bi-instagram"></i>
-              </NavLink>
-              <NavLink
-                to="https://www.linkedin.com/company/crimefreebharat/mycompany/"
+              </a>
+              <a
+                href="https://www.linkedin.com/company/crimefreebharat/mycompany/"
                 target="_blank">
                 <i className="bi bi-linkedin"></i>
-              </NavLink>
-              <NavLink
-                to="https://www.youtube.com/channel/UCAmspcG5fQmPgi1LxBprpRg"
+              </a>
+              <a
+                href="https://www.youtube.com/channel/UCAmspcG5fQmPgi1LxBprpRg"
                 target="_blank">
                 <i className="bi bi-youtube"></i>
-              </NavLink>
+              </a>
             </div>
             <NavLink to="#">
               <div className="container">
