@@ -1,11 +1,22 @@
-import React from "react";
-import { NavLink } from "react-router-dom";
+import React, {useEffect} from "react";
+import {NavLink} from "react-router-dom";
 import items from "../api/homecards";
 import header from "../img/header1.jpg";
 import header1 from "../img/poster.png";
 import header2 from "../img/cfb3.png";
 import sirimg from "../img/sir.png";
+import Cookies from "js-cookie";
+import {useTranslation} from "react-i18next";
+import languages from "../api/languages";
+
 const Home = () => {
+  const currentLanguageCode = Cookies.get("i18next");
+  const currentLanguage = languages.find(l => l.code === currentLanguageCode);
+  const {t} = useTranslation();
+  useEffect(() => {
+    document.body.dir = currentLanguage.dir || "ltr";
+  }, [currentLanguage, t]);
+
   return (
     <>
       <div className="homecarousel">
@@ -18,24 +29,25 @@ const Home = () => {
               className="active"
               aria-current="true"
               aria-label="Slide 1"
-            ></button>
+              ></button>
             <button
               type="button"
               data-bs-target="#myCarousel"
               data-bs-slide-to="1"
               aria-label="Slide 2"
-            ></button>
+              ></button>
             <button
               type="button"
               data-bs-target="#myCarousel"
               data-bs-slide-to="2"
-              aria-label="Slide 3"
-            ></button>
+              aria-label="Slide 3"></button>
           </div>
 
           {/* <!-- Wrapper for slides --> */}
           <div className="carousel-inner">
-            <div className="carousel-item active carousel1" data-bs-interval="2000">
+            <div
+              className="carousel-item active carousel1"
+              data-bs-interval="2000">
               <img src={header} alt="Crime Free Bharat" />
             </div>
 
@@ -53,18 +65,20 @@ const Home = () => {
             className="carousel-control-prev"
             type="button"
             data-bs-target="#myCarousel"
-            data-bs-slide="prev"
-          >
-            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+            data-bs-slide="prev">
+            <span
+              className="carousel-control-prev-icon"
+              aria-hidden="true"></span>
             <span className="visually-hidden">Previous</span>
           </button>
           <button
             className="carousel-control-next"
             type="button"
             data-bs-target="#myCarousel"
-            data-bs-slide="next"
-          >
-            <span className="carousel-control-next-icon" aria-hidden="true"></span>
+            data-bs-slide="next">
+            <span
+              className="carousel-control-next-icon"
+              aria-hidden="true"></span>
             <span className="visually-hidden">Next</span>
           </button>
         </div>
@@ -77,10 +91,11 @@ const Home = () => {
           <div className="div1">
             <img src={sirimg} alt="Maithili Sharn Gupta's " />
             <div classNameName="mt-1">
-              <h3>Maithili Sharn Gupta</h3>
+              <h3>{t('Dgp')} </h3>
               <p>
-                President of Crime Free Bharat Mission <br />
-                Former DGP, Police Reforms, Madhya Pradesh
+                {t('small_about')}
+                {/* President of Crime Free Bharat Mission 
+                Former DGP, Police Reforms, Madhya Pradesh */}
               </p>
             </div>
             <br />
@@ -110,11 +125,68 @@ const Home = () => {
               className="btn btn-primary"
               data-bs-toggle="modal"
               data-bs-target="#ipsmessage"
-            >
-              View Message
+              >
+                  View Message
             </button>
+            <button
+              type="button"
+              className="btn btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#ipsacheivement">
+              Acheivements
+            </button>
+            <div className="modal fade" id="ipsacheivement" role="dialog">
+              <div className="modal-dialog modal-dialog-scrollable ipsacheivement ">
+                <div className="modal-content ">
+                  <div className="modal-header">
+                    <h4 className="modal-title">Acheivement of IPS maithili sharan Gupta sir</h4>
+                    <button
+                      type="button"
+                      className="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"></button>
+                  </div>
+                  <div className="modal-body">
+                    <p>
+                    
+There are many <strong>achievements</strong>  and <strong>awards</strong>  that Maithaili Sir have receieved in his career and all of
+that started with his Masters. He did his M.Tech. from Indian Institute of Technology, Delhi in
+Industrial Engineering. His very first achievement was becoming an IPS Officer and was offically
+appointed on 17th Dec 1984 which was one of the biggest milestone and starting point of his
+journey. Though his journey was full of uncertainty, impossibility but he was ready for every
+hardship that might come in his path.
+After working for his country for 36 years with extreme hard work and patience; he was
+appointed as Director General of Police(DGP) after that he has been working in many projects to
+bring positive reforms in India. It is his mission towards Crime Free Bharat, an unwavering resolve
+that will never stop until his dream is achieved.
+<br /><br /> <h4>Currently now he is -</h4>
+<ul>
+  <li>Empowering railway passengers through all India group (A reporting supervisory app, investigator
+app, Railway stakeholders app).</li>
+  <li>Trying to create a responsive and monitoring system for disaster management. A system capable
+of predicting disaster as well as a proactive disaster management such as (mobilizing local
+resources ,shifting population to safer location)</li>
+  <li>An Automated Investigation System for illegal arms mafia, illegal selling of drugs and narcotics
+and also human trafficking mafias to find them and ensure total demolition of their networking
+along its distribution networks.</li>
+  <li>The software checks the safety of road and identifing black spots(death prone spots) using 3Es
+(Engineering, Education and Enforcement) by reducing the risks of accidents to 50%.</li>
+</ul></p>
+                  </div>
+                  <div className="modal-footer">
+                    <button
+                      type="button"
+                      className="btn btn-default"
+                      data-bs-dismiss="modal">
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>  
+          
             <div className="modal fade" id="ipsmessage" role="dialog">
-              <div className="modal-dialog">
+              <div className="modal-dialog ">
                 <div className="modal-content">
                   <div className="modal-header">
                     <h4 className="modal-title">Message From IPS</h4>
@@ -122,8 +194,7 @@ const Home = () => {
                       type="button"
                       className="btn-close"
                       data-bs-dismiss="modal"
-                      aria-label="Close"
-                    ></button>
+                      aria-label="Close"></button>
                   </div>
                   <div className="modal-body">
                     <p>
@@ -139,8 +210,7 @@ const Home = () => {
                     <button
                       type="button"
                       className="btn btn-default"
-                      data-bs-dismiss="modal"
-                    >
+                      data-bs-dismiss="modal">
                       Close
                     </button>
                   </div>
@@ -167,16 +237,14 @@ const Home = () => {
                 id="videogallery"
                 className="carousel slide"
                 data-ride="carousel"
-                data-interval="0"
-              >
+                data-interval="0">
                 <div className="carousel-inner">
                   <div className="carousel-item active">
                     <iframe
                       width="620vw"
                       height="270vh"
                       src="https://www.youtube.com/embed/ky5JsWhlhNk"
-                      title="YouTube video player"
-                    ></iframe>
+                      title="YouTube video player"></iframe>
                   </div>
 
                   <div className="carousel-item">
@@ -184,8 +252,7 @@ const Home = () => {
                       width="620vw"
                       height="270vw"
                       src="https://www.youtube.com/embed/XpVNIE88SXE"
-                      title="YouTube video player"
-                    ></iframe>
+                      title="YouTube video player"></iframe>
                   </div>
 
                   <div className="carousel-item">
@@ -193,32 +260,27 @@ const Home = () => {
                       width="620vw"
                       height="270vw"
                       src="https://www.youtube.com/embed/VK0yooK6G0w"
-                      title="YouTube video player"
-                    ></iframe>
+                      title="YouTube video player"></iframe>
                   </div>
                 </div>
                 <button
                   className="carousel-control-prev"
                   type="button"
                   data-bs-target="#videogallery"
-                  data-bs-slide="prev"
-                >
+                  data-bs-slide="prev">
                   <span
                     className="carousel-control-prev-icon"
-                    aria-hidden="true"
-                  ></span>
+                    aria-hidden="true"></span>
                   <span className="visually-hidden">Previous</span>
                 </button>
                 <button
                   className="carousel-control-next"
                   type="button"
                   data-bs-target="#videogallery"
-                  data-bs-slide="next"
-                >
+                  data-bs-slide="next">
                   <span
                     className="carousel-control-next-icon"
-                    aria-hidden="true"
-                  ></span>
+                    aria-hidden="true"></span>
                   <span className="visually-hidden">Next</span>
                 </button>
               </div>
@@ -232,8 +294,7 @@ const Home = () => {
                 behavior="scroll"
                 direction="up"
                 scrollamount="3"
-                height="70%"
-              >
+                height="70%">
                 <ul>
                   <li>
                     <NavLink to="#">Update 1</NavLink>
@@ -265,8 +326,8 @@ const Home = () => {
           </div>
           <hr />
           <div className="Homecard">
-            {items.map((element) => {
-              const { id, image, heading, alt, paragraph, hyperLinkRefernce } =
+            {items.map(element => {
+              const {id, image, heading, alt, paragraph, hyperLinkRefernce} =
                 element;
               return (
                 <>

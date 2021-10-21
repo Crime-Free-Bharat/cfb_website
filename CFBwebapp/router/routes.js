@@ -5,6 +5,7 @@ const authenticate = require("../middleware/authenticate");
 const { signup } = require("../controllers/registerController");
 const { login } = require("../controllers/loginController");
 const { contact } = require("../controllers/contactController");
+const { reports, getReport } = require("../controllers/reportcrimeController");
 router.post(
     "/signup", [
         body("name", "The name must be of minimum 3 characters length")
@@ -42,5 +43,8 @@ router.get("/about", authenticate, (req, res) => {
     console.log("hello i am about");
     res.send(req.UserRoot);
 });
+
+router.post("/report", authenticate, reports);
+router.route("/getreport").get(authenticate, getReport);
 
 module.exports = router;
