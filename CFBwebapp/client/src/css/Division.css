@@ -1,0 +1,96 @@
+.accordion {
+  width: 80vw;
+  margin: auto;
+  border: none;
+  border: transparent;
+}
+
+.accordion-body {
+  width: 70vw;
+  margin: auto;
+  padding: 0px;
+  text-align: center;
+}
+
+.accordion-item {
+  border: transparent;
+  margin: 10px auto;
+  text-align: center;
+}
+
+.aboutteam {
+  padding: 1.5vh 20px;
+}
+#panelsStayOpen {
+  width: 13vw;
+  margin: auto;
+  text-align: center;
+  border: 1px solid #cdcdcd;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  padding: 0px;
+}
+.about-button {
+  background-color: blue;
+  color: aliceblue;
+  border-radius: 20px 20px 0px 0px;
+  margin: 0px;
+  font-size: 1rem;
+  align-items: center;
+  width: 100%;
+  padding: 1rem 1.25rem;
+  font-size: 1rem;
+  color: white;
+  text-align: center;
+  border: none;
+}
+
+.level-1 .about-button {
+  width: 13vw;
+}
+.level-2 .about-button {
+  width: 13vw;
+  background-image: none;
+}
+.bi-linkedin {
+  color: blue;
+}
+#level-3 {
+  text-align: center;
+  margin: 5vh;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 1vh;
+}
+
+.team {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+}
+
+.team .accordion-item {
+  width: 15vw;
+  margin: 10px auto;
+}
+
+.team .accordion-body {
+  width: 13vw !important;
+  text-align: left !important;
+  background-color: white;
+  z-index: 4;
+  margin: auto;
+  padding: 0px;
+}
+
+.aboutteam img {
+  max-width: 40%;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+/*Commitees*/
+.commitees {
+  width: 80vw;
+  margin: auto;
+  padding: 20px;
+}

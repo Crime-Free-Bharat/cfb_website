@@ -132,7 +132,7 @@ const Navbar = () => {
                 <p>{t("Services")}</p>
               </div>
             </NavLink>
-            <NavLink to="#">
+            <NavLink to="/Division">
               <div className="division nav__items">
                 <i className="bi bi-diagram-3"></i>
                 <br />
