@@ -61,6 +61,13 @@ header {
     box-shadow: 1px 1px 10px rgba(25, 3, 49, 0.432);
 }
 
+.dropdown,
+.dropend,
+.dropstart,
+.dropup {
+    position: inherit !important;
+}
+
 
 /*nav 2 main*/
 
