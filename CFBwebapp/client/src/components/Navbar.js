@@ -34,22 +34,22 @@ const Navbar = () => {
             <div className="navsocial">
               <a
                 href="https://twitter.com/bharat_free?s=20"
-                target="_blank">
+                target="_blank" rel="noreferrer">
                 <i className="bi bi-twitter"></i>
               </a>
               <a
                 href="https://www.instagram.com/crimefreebharat_official/"
-                target="_blank">
+                target="_blank " rel="noreferrer">
                 <i className="bi bi-instagram"></i>
               </a>
               <a
                 href="https://www.linkedin.com/company/crimefreebharat/mycompany/"
-                target="_blank">
+                target="_blank" rel="noreferrer">
                 <i className="bi bi-linkedin"></i>
               </a>
               <a
                 href="https://www.youtube.com/channel/UCAmspcG5fQmPgi1LxBprpRg"
-                target="_blank">
+                target="_blank " rel="noreferrer">
                 <i className="bi bi-youtube"></i>
               </a>
             </div>

@@ -17,7 +17,7 @@ const Division = () => {
                             </button>
                         </h2>
                         <div classname="aboutteam">
-                            <img src="internal1.jpeg"/>
+                            <img src="internal1.jpeg" alt=""/>
                             <h6>IPS Maithili Sharn Gupta</h6>
                             <NavLink to="https://in.linkedin.com/in/maithilisharan-gupta-a2b4a092"><i classname="bi bi-linkedin"></i></NavLink>
                         </div>
@@ -58,7 +58,7 @@ const Division = () => {
                             </button>
                         </h2>
                         <div classname="aboutteam">
-                            <img src="internal1.jpeg"/>
+                            <img src="internal1.jpeg" alt=""/>
                             <h6>CA Harish C</h6>
                             <NavLink to=""><i classname="bi bi-linkedin"></i></NavLink>
                         </div>
@@ -92,7 +92,7 @@ const Division = () => {
                                 </button>
                             </h2>
                             <div classname="aboutteam">
-                                <img src="internal1.jpeg"/>
+                                <img src="internal1.jpeg" alt=""/>
                                 <h6>National Joint Secretary</h6>
                                 <NavLink to=""><i classname="bi bi-linkedin"></i></NavLink>
                             </div>
@@ -120,7 +120,7 @@ const Division = () => {
                                 </button>
                             </h2>
                             <div classname="aboutteam">
-                                <img src="internal1.jpeg"/>
+                                <img src="internal1.jpeg" alt=""/>
                                 <h6>National General Secretary</h6>
                                 <NavLink to=""><i classname="bi bi-linkedin"></i></NavLink>
                             </div>
@@ -147,7 +147,7 @@ const Division = () => {
                                 </button>
                             </h2>
                             <div classname="aboutteam">
-                                <img src="internal1.jpeg"/>
+                                <img src="internal1.jpeg" alt=""/>
                                 <h6>National General Secretary</h6>
                                 <NavLink to=""><i classname="bi bi-linkedin"></i></NavLink>
                             </div>
@@ -174,7 +174,7 @@ const Division = () => {
                                 </button>
                             </h2>
                             <div classname="aboutteam">
-                                <img src="internal1.jpeg"/>
+                                <img src="internal1.jpeg" alt=""/>
                                 <h6>National General Secretary</h6>
                                 <NavLink to=""><i classname="bi bi-linkedin"></i></NavLink>
                             </div>
@@ -201,7 +201,7 @@ const Division = () => {
                                 </button>
                             </h2>
                             <div classname="aboutteam">
-                                <img src="internal1.jpeg"/>
+                                <img src="internal1.jpeg" alt=""/>
                                 <h6>National General Secretary</h6>
                                 <NavLink to=""><i classname="bi bi-linkedin"></i></NavLink>
                             </div>
