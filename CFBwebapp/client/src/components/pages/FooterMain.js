@@ -17,7 +17,7 @@ const FooterMain = () => {
         <Route exact path="/FAQ" component={FAQ} />
         <Route exact path="/TnC" component={TnC} />
         <Route exact path="/Volunteer" component={Volunteer} />
-        <Route exact component={Errorpage} />
+        <Route exact path="/Error" component={Errorpage} />
       </Switch>
     </>
   );
