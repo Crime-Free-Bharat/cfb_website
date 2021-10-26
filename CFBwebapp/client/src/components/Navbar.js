@@ -54,20 +54,20 @@ const Navbar = () => {
               </NavLink>
             </div>
             <NavLink to="#">
-              <div className="container">
+              <div className="container ">
                 <div className="language-select">
                   <div className="d-flex justify-content-center align-items-center language-select-root">
                     <div className="dropdown">
                       <button
-                        style={{textDecoration: "none"}}
-                        className="btn dropdown-toggle"
+                        className="btn-default dropdown-toggle language"
                         type="button"
                         data-bs-toggle="dropdown"
-                        aria-expanded="false">
+                        >
                         {t("language")}
                       </button>
                       <ul
-                        className="dropdown-menu"
+
+                        className="dropdown-menu language"
                         aria-labelledby="dropdownMenuButton1">
                         <li>
                           <span className="dropdown-item-text">
