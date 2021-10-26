@@ -34,10 +34,10 @@
   background-color: blue;
   color: aliceblue;
   border-radius: 20px 20px 0px 0px;
-  margin: 0px;
+  margin: 0px !important;
   font-size: 1rem;
   align-items: center;
-  width: 100%;
+  width: 100% !important;
   padding: 1rem 1.25rem;
   font-size: 1rem;
   color: white;
