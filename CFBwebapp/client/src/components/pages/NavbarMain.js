@@ -7,6 +7,7 @@ import Services from "../../pages/Navbar_render/Services";
 import AnR from "../../pages/Navbar_render/Anr";
 import Media from "../../pages/Navbar_render/Media";
 import Activities from "../../pages/Navbar_render/Activity";
+import Division from "../../pages/Navbar_render/Division";
 import Home from "../../pages/main_pages/home";
 
 const NavbarMain = () => {
@@ -21,7 +22,7 @@ const NavbarMain = () => {
         <Route exact path="/anr" component={AnR} />
         <Route exact path="/activity" component={Activities} />
         <Route exact path="/media" component={Media} />
-        
+        <Route exact path="/Division" component={Division} />
       </Switch>
     </>
   );

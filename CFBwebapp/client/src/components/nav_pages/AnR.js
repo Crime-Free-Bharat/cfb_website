@@ -4,6 +4,7 @@ import act2 from "../../img/act2.svg";
 
 
 
+
 function AnR() {
   return (
     <div>
