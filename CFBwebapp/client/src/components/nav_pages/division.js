@@ -1,6 +1,11 @@
 import React from "react";
 import "./../../css/Division.css";
+import President from '../../img/sir.png'
 import internal1 from '../../img/internal1.jpeg'
+import internal3 from '../../img/internal3.jpg'
+import internal4 from '../../img/internal4.jpeg'
+import internal5 from '../../img/internal5.jpeg'
+
 
 
 
@@ -17,7 +22,7 @@ const Division = () => {
                           </button>
                       </h2>
                       <div className="aboutteam">
-                          <img alt="" src={internal1}/>
+                          <img alt="" src={President}/>
                           <h6>IPS Maithili Sharn Gupta</h6>
                           <a href="https://in.linkedin.com/in/maithilisharan-gupta-a2b4a092"><i className="bi bi-linkedin"></i></a>
                       </div>
