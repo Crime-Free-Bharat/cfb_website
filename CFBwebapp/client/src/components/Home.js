@@ -241,24 +241,24 @@ along its distribution networks.</li>
                 <div className="carousel-inner">
                   <div className="carousel-item active">
                     <iframe
-                      width="620vw"
-                      height="270vh"
+                      width="680vw"
+                      height="370vh"
                       src="https://www.youtube.com/embed/ky5JsWhlhNk"
                       title="YouTube video player"></iframe>
                   </div>
 
                   <div className="carousel-item">
                     <iframe
-                      width="620vw"
-                      height="270vw"
+                     width="680vw"
+                     height="370vh"
                       src="https://www.youtube.com/embed/XpVNIE88SXE"
                       title="YouTube video player"></iframe>
                   </div>
 
                   <div className="carousel-item">
                     <iframe
-                      width="620vw"
-                      height="270vw"
+                    width="680vw"
+                    height="370vh"
                       src="https://www.youtube.com/embed/VK0yooK6G0w"
                       title="YouTube video player"></iframe>
                   </div>

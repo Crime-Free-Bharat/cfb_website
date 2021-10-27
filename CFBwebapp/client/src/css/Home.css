@@ -88,7 +88,7 @@ html {
 }
 
 .homesec2 {
-    padding: 6vh 6vw;
+    /* padding: 6vh 6vw; */
     display: flex;
     width: fit-content;
     margin: auto;
@@ -106,14 +106,27 @@ html {
     margin-left: 1vw;
 }
 
+.carousel-control-prev,
+.carousel-control-next {
+    height: 45vh;
+    width: 50vw;
+}
+
 .updates h4 {
     border-bottom: 2px solid red;
     padding: 1vh 0px;
     margin: 0px 1vw;
 }
 
-.video {
+.video,
+.updates {
     display: block;
+    border: 2px solid black;
+    border-radius: 8px 10px;
+}
+
+#videogallery {
+    padding: 10px;
 }
 
 .homesec2 marquee {
