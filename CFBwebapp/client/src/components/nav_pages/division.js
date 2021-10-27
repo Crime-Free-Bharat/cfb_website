@@ -1,4 +1,5 @@
 import React from "react";
+import "./../../css/Division.css";
 import internal1 from '../../img/internal1.jpeg'
 
 
