@@ -234,17 +234,29 @@ const Division = () => {
                 </ul>
                 <div className="tab-content" id="myTabContent">
                   <div className="tab-pane fade show active" id="NTRDC" role="tabpanel">
-                    <p>Through its funding of forensic science research and development, the Technical and R&D Committee of Crime Free Bharat continues to advance the speed, accuracy, and scope of forensic analysis, which ultimately bolsters the administration of justice. Crime Free Bharat affirms that scientific advancements and technological breakthroughs are essential to the continued growth and strengthening of the forensic sciences. <br/><br/>
-                    Under this portfolio, Crime Free Bharat builds and maintains the forensic science research infrastructure. NIJ's research and development funding enhance the development of:  </p>
-                    <ul>
+                    <p>Through its funding of forensic science research and development, the Technical and R&D Committee of Crime Free Bharat continues to advance the speed, accuracy, and scope of forensic analysis, which ultimately bolsters the administration of justice. Crime Free Bharat affirms that scientific advancements and technological breakthroughs are essential to the continued growth and strengthening of the forensic sciences.</p>
+                    <p>Under this portfolio, Crime Free Bharat builds and maintains the forensic science research infrastructure. NIJ's research and development funding enhance the development of:</p>
+                      <ul>
                       <li>Physical capital by supporting the acquisition, maintenance, and development of laboratory instrumentation. </li>
-                      <li>Intellectual capital by supporting researchers and providing learning and training experiences for scientists at all career stages. </li>
-                      <li>Structural capital by funding projects that support databases and add to the scientific literature</li>
+                      <li>Intellectual capital by supporting researchers and providing learning and training experiences for scientists at all career stages.</li>
+                      <li>Structural capital by funding projects that support databases and add to the scientific literature.</li>
                     </ul>
                   </div>
-                  <div className="tab-pane fade" id="NEC" role="tabpanel" >...</div>
-                  <div className="tab-pane fade" id="NMPC" role="tabpanel" >...</div>
-                  <div className="tab-pane fade" id="NLC" role="tabpanel" >...</div>
+                  <div className="tab-pane fade" id="NEC" role="tabpanel">
+                    <p>The mission of the Executive Committee is to advance and support the core science of forensics by bridging the technology gaps and enabling future forensic technologies through the following strategic goals:</p>
+                     <ol>
+                      <li> Identifying the Research, Development, Technology, and Evaluation (RDT&E) needs and priorities for the forensic community.</li>
+                      <li>Developing recommendations and courses of action.</li>
+                      <li>Advising the Crime Free Bharat's Board of Directors on RDT&E related issues, projects, and processes to support the development of enduring future forensic capabilities.</li>
+                      </ol>
+
+                    </div>
+                  <div className="tab-pane fade" id="NMPC" role="tabpanel" >
+                    <p>The primary role of the Media and Publicity Committee is to establish links with the local media and provide regular reports on breakthroughs in Forensic Science technologies and events and webinars related to crime and forensics.</p>
+                    </div>
+                  <div className="tab-pane fade" id="NLC" role="tabpanel" >
+                    <p>The Legal Committee primarily comprises members from the legal fraternity to provide legal aspects of Forensics. The members are selected based on their experience in litigation, judgement, statement of jurisdiction, legal counseling, teaching, or writing about forensic science evidence in the legal field. The legal responsibilities of a forensic scientist or a forensic student include following procedures strictly, obeying the rules of evidence, and maintaining impartiality at all times.</p>
+                    </div>
                 </div>
 
           </div>
