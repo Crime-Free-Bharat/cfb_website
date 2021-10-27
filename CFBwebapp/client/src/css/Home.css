@@ -45,8 +45,15 @@ html {
     font-size: 20px !important;
 }
 
+.homesec1 .div1 h3:hover {
+    text-decoration: underline;
+    color: green;
+}
+
 .homesec1 .div1 img {
     width: 18vw;
+    border-radius: 25px 13px;
+    box-shadow: 6px 8px 10px#000;
 }
 
 .homesec1 .div2 {
