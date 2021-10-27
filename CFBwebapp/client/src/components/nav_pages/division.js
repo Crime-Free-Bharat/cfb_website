@@ -81,7 +81,7 @@ const Division = () => {
                           <div className="aboutteam">
                               <img alt="" src={internal1}/>
                               <h6>National Joint Secretary</h6>
-                              <a href=""><i className="bi bi-linkedin"></i></a>
+                              <a href="https://www.linkedin.com/in/sumit-o-a30926158/"><i className="bi bi-linkedin"></i></a>
                           </div>
                       </div>
                       <div id="Internal1" className="modal fade" aria-labelledby="panelsStayOpen-headingOne" tabindex="-1" aria-hidden="true">
@@ -107,14 +107,14 @@ const Division = () => {
                           <div className="aboutteam">
                               <img alt="" src={internal1}/>
                               <h6>National General Secretary</h6>
-                              <a href=""><i className="bi bi-linkedin"></i></a>
+                              <a href="https://www.linkedin.com/in/mkumarcyber/"><i className="bi bi-linkedin"></i></a>
                           </div>
                       </div>
                       <div id="Vice-President" className="modal fade" aria-labelledby="panelsStayOpen-headingOne" tabindex="-1" aria-hidden="true">
                       <div className="modal-dialog">
                           <div className="modal-content">
                             <div className="modal-header">
-                              <h5 className="modal-title" id="President">About Vice President</h5>
+                              <h5 className="modal-title" id="President">About National General Secretary</h5>
                               <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div className="modal-body">
@@ -126,20 +126,20 @@ const Division = () => {
                       <div id="panelsStayOpen">
                           <h2 className="accordion-header" >
                               <button className="btn btn-primary about-button" type="button" data-bs-toggle="modal" data-bs-target="#Vice-President">
-                                  Manish Kumar
+                                  Jaspreet Singh
                               </button>
                           </h2>
                           <div className="aboutteam">
-                              <img alt="" src={internal1}/>
-                              <h6>National General Secretary</h6>
-                              <a href=""><i className="bi bi-linkedin"></i></a>
+                              <img alt="../../img/internal3.jpg" src={internal3}/>
+                              <h6>Chief Project Coordinator</h6>
+                              <a href="https://www.linkedin.com/in/jaspreet-singh-89b9a6a5/"><i className="bi bi-linkedin"></i></a>
                           </div>
                       </div>
                       <div id="Vice-President" className="modal fade" aria-labelledby="panelsStayOpen-headingOne" tabindex="-1" aria-hidden="true">
                       <div className="modal-dialog">
                           <div className="modal-content">
                             <div className="modal-header">
-                              <h5 className="modal-title" id="President">About Vice President</h5>
+                              <h5 className="modal-title" id="President">About Chief Project Coordinator</h5>
                               <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div className="modal-body">
@@ -151,20 +151,20 @@ const Division = () => {
                       <div id="panelsStayOpen">
                           <h2 className="accordion-header" >
                               <button className="btn btn-primary about-button" type="button" data-bs-toggle="modal" data-bs-target="#Vice-President">
-                                  Manish Kumar
+                                  Bhupesa Pallai
                               </button>
                           </h2>
                           <div className="aboutteam">
-                              <img alt="" src={internal1}/>
-                              <h6>National General Secretary</h6>
-                              <a href=""><i className="bi bi-linkedin"></i></a>
+                              <img alt="../../img/internal4.jpeg" src={internal4}/>
+                              <h6>Executive Leader</h6>
+                              <a href="https://www.linkedin.com/in/bhupesa-kumar-pallai-5b1341138/"><i className="bi bi-linkedin"></i></a>
                           </div>
                       </div>
-                      <div id="Vice-President" className="modal fade" aria-labelledby="panelsStayOpen-headingOne" tabindex="-1" aria-hidden="true">
+                      <div id="Executive-Leader" className="modal fade" aria-labelledby="panelsStayOpen-headingOne" tabindex="-1" aria-hidden="true">
                       <div className="modal-dialog">
                           <div className="modal-content">
                             <div className="modal-header">
-                              <h5 className="modal-title" id="President">About Vice President</h5>
+                              <h5 className="modal-title" id="President">About Executive Leader</h5>
                               <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div className="modal-body">
@@ -176,20 +176,20 @@ const Division = () => {
                       <div id="panelsStayOpen">
                           <h2 className="accordion-header" >
                               <button className="btn btn-primary about-button" type="button" data-bs-toggle="modal" data-bs-target="#Vice-President">
-                                  Manish Kumar
+                                  Yuvah
                               </button>
                           </h2>
                           <div className="aboutteam">
-                              <img alt="" src={internal1}/>
-                              <h6>National General Secretary</h6>
-                              <a href=""><i className="bi bi-linkedin"></i></a>
+                              <img alt="../../img/internal5.jpeg" src={internal5}/>
+                              <h6>Chief Project Manager</h6>
+                              <a href="https://www.linkedin.com/in/yuvah-l-kumar-a759711a1/"><i className="bi bi-linkedin"></i></a>
                           </div>
                       </div>
-                      <div id="Vice-President" className="modal fade" aria-labelledby="panelsStayOpen-headingOne" tabindex="-1" aria-hidden="true">
+                      <div id="Chief-Project-Manager" className="modal fade" aria-labelledby="panelsStayOpen-headingOne" tabindex="-1" aria-hidden="true">
                       <div className="modal-dialog">
                           <div className="modal-content">
                             <div className="modal-header">
-                              <h5 className="modal-title" id="President">About Vice President</h5>
+                              <h5 className="modal-title" id="President">About Chief Project Manager</h5>
                               <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div className="modal-body">
