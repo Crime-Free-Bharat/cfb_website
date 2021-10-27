@@ -7,7 +7,6 @@ html {
 .homecarousel {
     padding: 0;
     margin: 0;
-    z-index: 0;
 }
 
 .carousel1 img {
@@ -21,17 +20,17 @@ html {
 }
 
 .ipsacheivement {
-    max-width: 70vw !important;
+    max-width: 70vw!important;
 }
 
 .homesec1 {
     display: flex;
     padding: 18vh 15vw;
-    background-color: rgb(231, 231, 231);
+    background-color: rgb(240, 240, 240);
     height: 100vh;
 }
 
-.btn {
+.homebtn {
     width: auto !important;
     margin: 15px !important;
 }
@@ -42,9 +41,8 @@ html {
     margin: 1vw;
 }
 
-.homesec1 .div1 p,
-h3 {
-    font-size: 20px;
+.homesec1 .div1 h3 {
+    font-size: 20px !important;
 }
 
 .homesec1 .div1 img {
@@ -123,13 +121,13 @@ h3 {
     padding-bottom: 10px;
 }
 
-.Homecard {
+.homepagecard {
     display: grid;
     grid-template-columns: auto auto auto;
     grid-gap: 2vw;
 }
 
-.Homecard .card {
+.homepagecard .card {
     width: 28vw;
     border: 1px solid rgb(219, 224, 219);
     padding: 5px;
@@ -137,7 +135,7 @@ h3 {
     box-shadow: 3px 5px 8px #5c5959;
 }
 
-.Homecard .card .img img {
+.homepagecard .card .img img {
     width: 100%;
 }
 
@@ -193,7 +191,8 @@ h3 {
 }
 
 .homesec3 {
-    background-color: rgb(231, 231, 231);
+    background-color: rgb(240, 240, 240);
+    ;
     padding: 10px;
 }
 

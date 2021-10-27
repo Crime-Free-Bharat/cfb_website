@@ -47,15 +47,15 @@ const Home = () => {
           <div className="carousel-inner">
             <div
               className="carousel-item active carousel1"
-              data-bs-interval="2000">
+              data-bs-interval="3000">
               <img src={header} alt="Crime Free Bharat" />
             </div>
 
-            <div className="carousel-item carousel1" data-bs-interval="2000">
+            <div className="carousel-item carousel1" data-bs-interval="4000">
               <img src={header1} alt="Crime Free Bharat" />
             </div>
 
-            <div className="carousel-item carousel1" data-bs-interval="2000">
+            <div className="carousel-item carousel1" data-bs-interval="3000">
               <img src={header2} alt="Crime Free Bharat " />
             </div>
           </div>
@@ -90,13 +90,13 @@ const Home = () => {
         <div className="homesec1">
           <div className="div1">
             <img src={sirimg} alt="Maithili Sharn Gupta's " />
-            <div classNameName="mt-1">
-              <h3>{t('Dgp')} </h3>
-              <p>
+            <div className="mt-3">
+              <h3><b>{t('Dgp')}</b> </h3>
+              <h6>
                 {t('small_about')}
                 {/* President of Crime Free Bharat Mission 
                 Former DGP, Police Reforms, Madhya Pradesh */}
-              </p>
+              </h6>
             </div>
             <br />
           </div>
@@ -122,7 +122,7 @@ const Home = () => {
             <br />
             <button
               type="button"
-              className="btn btn-primary"
+              className="btn homebtn btn-danger"
               data-bs-toggle="modal"
               data-bs-target="#ipsmessage"
               >
@@ -130,7 +130,7 @@ const Home = () => {
             </button>
             <button
               type="button"
-              className="btn btn-primary"
+              className="btn homebtn btn-primary"
               data-bs-toggle="modal"
               data-bs-target="#ipsacheivement">
               Acheivements
@@ -176,7 +176,7 @@ along its distribution networks.</li>
                   <div className="modal-footer">
                     <button
                       type="button"
-                      className="btn btn-default"
+                      className="btn homebtn btn-default"
                       data-bs-dismiss="modal">
                       Close
                     </button>
@@ -209,7 +209,7 @@ along its distribution networks.</li>
                   <div className="modal-footer">
                     <button
                       type="button"
-                      className="btn btn-default"
+                      className="btn homebtn btn-default"
                       data-bs-dismiss="modal">
                       Close
                     </button>
@@ -325,7 +325,7 @@ along its distribution networks.</li>
             <h2> Featured Activities</h2>
           </div>
           <hr />
-          <div className="Homecard">
+          <div className="Homecard homepagecard">
             {items.map(element => {
               const {id, image, heading, alt, paragraph, hyperLinkRefernce} =
                 element;
