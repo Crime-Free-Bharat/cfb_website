@@ -93,6 +93,7 @@
   width: 80vw;
   margin: auto;
   padding: 20px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .commitees .nav-item {
