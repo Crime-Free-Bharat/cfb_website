@@ -42,7 +42,7 @@
   margin: auto;
   width: fit-content;
   padding: 1vw;
-  background: linear-gradient(#6a1b4d, #222222);
+  background: transparent;
 }
 
 .vertical-line {
@@ -171,7 +171,6 @@
 .display-flex-center {
   justify-content: center;
   align-items: center;
-  
 }
 .sectionpara2 {
   font-weight: bold;

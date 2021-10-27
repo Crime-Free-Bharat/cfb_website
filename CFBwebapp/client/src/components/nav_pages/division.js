@@ -1,5 +1,4 @@
 import React from "react";
-import "./../../css/Division.css";
 import internal1 from '../../img/internal1.jpeg'
 
 
@@ -33,21 +32,10 @@ const Division = () => {
                         <div className="modal-body">
                           ...
                         </div>
-                        <div className="modal-footer">
-                          
-                          
-                        </div>
+                        
                       </div>
                     </div>
-                  
-                
-                
-                  <div id="panelsStayOpen-collapseOne" className="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingOne">
-                      <div className="accordion-body">
-                          It is shown by default, until the collapse plugin adds the appropriate classNamees that we use to style each element. These classNamees control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                      </div>
-                  </div>
-              </div>
+                    </div>
               </div>
 
               <div id="level-2">
@@ -72,8 +60,6 @@ const Division = () => {
                         </div>
                         <div className="modal-body">
                           ...
-                        </div>
-                        <div className="modal-footer"> 
                         </div>
                       </div>
                     </div>
@@ -107,8 +93,6 @@ const Division = () => {
                             <div className="modal-body">
                               ...
                             </div>
-                            <div className="modal-footer"> 
-                            </div>
                           </div>
                         </div>
                       </div>
@@ -135,7 +119,30 @@ const Division = () => {
                             <div className="modal-body">
                               ...
                             </div>
-                            <div className="modal-footer"> 
+                          </div>
+                        </div>
+                      </div>
+                      <div id="panelsStayOpen">
+                          <h2 className="accordion-header" >
+                              <button className="btn btn-primary about-button" type="button" data-bs-toggle="modal" data-bs-target="#Vice-President">
+                                  Manish Kumar
+                              </button>
+                          </h2>
+                          <div className="aboutteam">
+                              <img alt="" src={internal1}/>
+                              <h6>National General Secretary</h6>
+                              <a href=""><i className="bi bi-linkedin"></i></a>
+                          </div>
+                      </div>
+                      <div id="Vice-President" className="modal fade" aria-labelledby="panelsStayOpen-headingOne" tabindex="-1" aria-hidden="true">
+                      <div className="modal-dialog">
+                          <div className="modal-content">
+                            <div className="modal-header">
+                              <h5 className="modal-title" id="President">About Vice President</h5>
+                              <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div className="modal-body">
+                              ...
                             </div>
                           </div>
                         </div>
@@ -162,8 +169,6 @@ const Division = () => {
                             <div className="modal-body">
                               ...
                             </div>
-                            <div className="modal-footer"> 
-                            </div>
                           </div>
                         </div>
                       </div>
@@ -188,35 +193,6 @@ const Division = () => {
                             </div>
                             <div className="modal-body">
                               ...
-                            </div>
-                            <div className="modal-footer"> 
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div id="panelsStayOpen">
-                          <h2 className="accordion-header" >
-                              <button className="btn btn-primary about-button" type="button" data-bs-toggle="modal" data-bs-target="#Vice-President">
-                                  Manish Kumar
-                              </button>
-                          </h2>
-                          <div className="aboutteam">
-                              <img alt="" src={internal1}/>
-                              <h6>National General Secretary</h6>
-                              <a href=""><i className="bi bi-linkedin"></i></a>
-                          </div>
-                      </div>
-                      <div id="Vice-President" className="modal fade" aria-labelledby="panelsStayOpen-headingOne" tabindex="-1" aria-hidden="true">
-                      <div className="modal-dialog">
-                          <div className="modal-content">
-                            <div className="modal-header">
-                              <h5 className="modal-title" id="President">About Vice President</h5>
-                              <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div className="modal-body">
-                              ...
-                            </div>
-                            <div className="modal-footer"> 
                             </div>
                           </div>
                         </div>

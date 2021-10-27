@@ -22,7 +22,7 @@
   padding: 1.5vh 20px;
 }
 #panelsStayOpen {
-  width: 13vw;
+  width: 240px;
   margin: auto;
   text-align: center;
   border: 1px solid #cdcdcd;
@@ -64,21 +64,7 @@
 
 .team {
   display: grid;
-  grid-template-columns: auto auto auto auto auto;
-}
-
-.team .accordion-item {
-  width: 15vw;
-  margin: 10px auto;
-}
-
-.team .accordion-body {
-  width: 13vw !important;
-  text-align: left !important;
-  background-color: white;
-  z-index: 4;
-  margin: auto;
-  padding: 0px;
+  grid-template-columns: auto auto auto;
 }
 
 .aboutteam img {
