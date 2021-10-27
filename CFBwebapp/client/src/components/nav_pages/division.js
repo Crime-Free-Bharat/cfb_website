@@ -239,6 +239,7 @@ const Division = () => {
           </div>
 
           <div className="commitees">
+            <h3>National commitees   </h3>
               <ul className="nav nav-tabs" id="myTab" role="tablist">
                   <li className="nav-item" role="presentation">
                     <button className="nav-link active" data-bs-toggle="tab" data-bs-target="#NTRDC" type="button" role="tab" aria-controls="NTRDC" aria-selected="true">NTRDC (National Technical Research and Development commitee)</button>
@@ -255,7 +256,15 @@ const Division = () => {
                   
                 </ul>
                 <div className="tab-content" id="myTabContent">
-                  <div className="tab-pane fade show active" id="NTRDC" role="tabpanel">...</div>
+                  <div className="tab-pane fade show active" id="NTRDC" role="tabpanel">
+                    <p>Through its funding of forensic science research and development, the Technical and R&D Committee of Crime Free Bharat continues to advance the speed, accuracy, and scope of forensic analysis, which ultimately bolsters the administration of justice. Crime Free Bharat affirms that scientific advancements and technological breakthroughs are essential to the continued growth and strengthening of the forensic sciences. </p>
+                    <p>Under this portfolio, Crime Free Bharat builds and maintains the forensic science research infrastructure. NIJ's research and development funding enhance the development of:  </p>
+                    <ul>
+                      <li>Physical capital by supporting the acquisition, maintenance, and development of laboratory instrumentation. </li>
+                      <li>Intellectual capital by supporting researchers and providing learning and training experiences for scientists at all career stages. </li>
+                      <li>Structural capital by funding projects that support databases and add to the scientific literature</li>
+                    </ul>
+                  </div>
                   <div className="tab-pane fade" id="NEC" role="tabpanel" >...</div>
                   <div className="tab-pane fade" id="NMPC" role="tabpanel" >...</div>
                   <div className="tab-pane fade" id="NLC" role="tabpanel" >...</div>

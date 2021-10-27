@@ -96,8 +96,8 @@
 }
 
 .commitees .nav-item {
-  width: 270px;
-  margin: auto;
+  width: 290px;
+  padding-right: 2vw;
 }
 
 .commitees .nav-item .nav-link {
@@ -110,4 +110,11 @@
 .commitees .nav-item .active {
   background-color: blue;
   color: white;
+}
+.commitees h3 {
+  text-align: center;
+  padding: 10px;
+}
+.commitees .tab-content {
+  width: 70vw;
 }
