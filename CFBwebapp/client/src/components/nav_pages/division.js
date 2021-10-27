@@ -234,8 +234,8 @@ const Division = () => {
                 </ul>
                 <div className="tab-content" id="myTabContent">
                   <div className="tab-pane fade show active" id="NTRDC" role="tabpanel">
-                    <p>Through its funding of forensic science research and development, the Technical and R&D Committee of Crime Free Bharat continues to advance the speed, accuracy, and scope of forensic analysis, which ultimately bolsters the administration of justice. Crime Free Bharat affirms that scientific advancements and technological breakthroughs are essential to the continued growth and strengthening of the forensic sciences. </p>
-                    <p>Under this portfolio, Crime Free Bharat builds and maintains the forensic science research infrastructure. NIJ's research and development funding enhance the development of:  </p>
+                    <p>Through its funding of forensic science research and development, the Technical and R&D Committee of Crime Free Bharat continues to advance the speed, accuracy, and scope of forensic analysis, which ultimately bolsters the administration of justice. Crime Free Bharat affirms that scientific advancements and technological breakthroughs are essential to the continued growth and strengthening of the forensic sciences. <br/><br/>
+                    Under this portfolio, Crime Free Bharat builds and maintains the forensic science research infrastructure. NIJ's research and development funding enhance the development of:  </p>
                     <ul>
                       <li>Physical capital by supporting the acquisition, maintenance, and development of laboratory instrumentation. </li>
                       <li>Intellectual capital by supporting researchers and providing learning and training experiences for scientists at all career stages. </li>

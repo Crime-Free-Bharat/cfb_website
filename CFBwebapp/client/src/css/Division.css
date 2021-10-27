@@ -105,3 +105,7 @@
 .commitees .tab-content {
   width: 70vw;
 }
+
+.commitees .tab-content p {
+  padding: 20px 0px;
+}
