@@ -239,19 +239,19 @@ const Division = () => {
           </div>
 
           <div className="commitees">
-              <ul className="nav flex-column nav-pills me-3">
-                  <button className="nav-item">
-                    <a className="nav-link active" aria-current="page" href="#NTRDC">NTRDC</a>
-                  </button>
-                  <button className="nav-item">
-                    <a className="nav-link" href="#NEC">NEC</a>
-                  </button>
-                  <button className="nav-item">
-                    <a className="nav-link" href="#NMPC">NMPC</a>
-                  </button>
-                  <button className="nav-item">
-                      <a className="nav-link" href="#NLC">NLC</a>
-                    </button>
+              <ul className="nav nav-tabs" id="myTab" role="tablist">
+                  <li className="nav-item" role="presentation">
+                    <button className="nav-link active" data-bs-toggle="tab" data-bs-target="#NTRDC" type="button" role="tab" aria-controls="NTRDC" aria-selected="true">NTRDC (National Technical Research and Development commitee)</button>
+                  </li>
+                  <li className="nav-item" role="presentation">
+                    <button className="nav-link" data-bs-toggle="tab" data-bs-target="#NEC" type="button" role="tab" aria-controls="NEC" aria-selected="true">NEC (National Executive commitee)</button>
+                  </li>
+                  <li className="nav-item" role="presentation" >
+                    <button className="nav-link" data-bs-toggle="tab" data-bs-target="#NMPC" type="button" role="tab" aria-controls="NMPC" aria-selected="true">NMPC (National Media and Publicity Committee)</button>
+                  </li>
+                  <li className="nav-item" role="presentation">
+                      <button className="nav-link" data-bs-toggle="tab" data-bs-target="#NLC" type="button" role="tab" aria-controls="NLC" aria-selected="true">NLC (National Legal Committee)</button>
+                    </li>
                   
                 </ul>
                 <div className="tab-content" id="myTabContent">

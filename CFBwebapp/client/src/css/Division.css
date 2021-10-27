@@ -94,3 +94,20 @@
   margin: auto;
   padding: 20px;
 }
+
+.commitees .nav-item {
+  width: 270px;
+  margin: auto;
+}
+
+.commitees .nav-item .nav-link {
+  height: 100px;
+  background-color: #f5eded;
+  color: black;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.commitees .nav-item .active {
+  background-color: blue;
+  color: white;
+}
