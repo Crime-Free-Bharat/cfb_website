@@ -106,16 +106,16 @@ const Home = () => {
             </h2>
             <hr />
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ex
-              massa, commodo sit amet neque eget, gravida tempor est. Integer
-              condimentum ipsum eu ex ornare, vel ullamcorper turpis faucibus.{" "}
+            Mission Crime Free Bharat is a visionary approach by Maithili
+                Sharan Gupta, President CFB mission and former DGP (Police
+                Reform) for India with the aim to eradicate crime from India.
+                <br />
               <br />
-              <br />
-              Fusce fermentum enim et lectus porta, ut faucibus magna
-              sollicitudin. Duis et neque ut odio aliquam auctor a nec nisl.
-              Phasellus ac tortor finibus, dapibus felis eget, elementum massa.
-              Sed aliquet iaculis lorem sed rutrum. Sed laoreet ligula quis
-              ligula efficitur aliquam.
+              With the AISS (Automated Investigation Support System), Shrest,
+                Aatmanirbhar, Evam Apradh Muktikaran Sanstha's goal (purpose) is
+                to build a Crime-Free Nation/Bharat. It may not be possible to
+                have a crime rate of zero. However, with a concerted effort, we
+                can drastically reduce crime.
             </p>
             <NavLink to="./about"> Read More...</NavLink>
             <br />

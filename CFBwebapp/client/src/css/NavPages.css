@@ -459,3 +459,84 @@ header {
 
 
 /*=========================================================== Division styling end ==========================================================*/
+
+
+/*About us*/
+
+.aboutpageSection {
+    color: rgba(16, 0, 81, 1);
+    font-weight: bolder;
+    margin: 10px 15px;
+    margin-left: 10%;
+}
+
+.aboutTagline {
+    font-size: 20px;
+    margin: 2rem;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+}
+
+.aboutupperSection {
+    width: 80%;
+    font-family: sans-serif;
+}
+
+.aboutupperCards {
+    margin: 1rem;
+    border: 2px solid black;
+    box-shadow: 1px 2px 2px #000;
+}
+
+.aboutunderLine {
+    border: 1px solid rgba(255, 107, 23, 1);
+    position: absolute;
+    height: 0px;
+    top: "2rem";
+    width: "20%";
+}
+
+.aboutcertainities {
+    margin: 2%;
+    padding: 0.5rem;
+    box-sizing: border-box;
+}
+
+.aboutcardFont {
+    margin: 6px 0 0 0;
+    text-align: center;
+    font-size: 18px;
+    font-family: Sans-serif;
+    box-shadow: 1px 2px 2px #000000;
+}
+
+.aboutnumberCircle {
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    margin: -20px 40%;
+    background: #fff;
+    border: 2px solid #666;
+    color: #000;
+    text-align: center;
+}
+
+.aboutcertainStyle {
+    font-size: 14px,
+}
+
+.aboutbottomCards {
+    margin: 3rem;
+    font-family: Sans-serif;
+    padding: 2rem;
+    border: 2px solid #DC8C5E;
+    box-sizing: border-box;
+}
+
+.aboutcardHead {
+    color: rgba(16, 0, 81, 1);
+}
+
+
+/*=========================================================== About end ==========================================================*/
