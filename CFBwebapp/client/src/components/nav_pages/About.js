@@ -1,16 +1,25 @@
-import React from "react";
+import React ,{useEffect}from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
+import Cookies from "js-cookie";
+import {useTranslation} from "react-i18next";
+import languages from "../../api/languages";
 
 const About = () => {
+  const currentLanguageCode = Cookies.get("i18next");
+  const currentLanguage = languages.find(l => l.code === currentLanguageCode);
+  const {t} = useTranslation();
+  useEffect(() => {
+    document.body.dir = currentLanguage.dir || "ltr";
+  }, [currentLanguage, t]);
   return (
     <Container fluid className="aboutupperSection">
-      <h1 className="aboutpageSection">About Us</h1>
+      <h1 className="aboutpageSection">{t('About_us')}</h1>
       <p className="aboutTagline">
         {/* Crime Free Bharat is a Creative Flow Bharat */}
-        <i>"Surakshit Bharat Sarvshresth Bharat"</i>
+       "<i>{t('aboutPageTagLine')}</i>"
       </p>
 
       <Card className="aboutupperCards">
@@ -50,7 +59,7 @@ const About = () => {
         </Card.Body>
       </Card>
 
-      <h2 className="aboutpageSection">Certainities</h2>
+      <h2 className="aboutpageSection">{t('Certainities')}</h2>
       <Container fluid style={{width: "140%"}}>
         <Row>
           <Col lg={3} className="aboutcertainities ml-5 ">

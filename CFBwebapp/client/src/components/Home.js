@@ -28,14 +28,12 @@ const Home = () => {
               data-bs-slide-to="0"
               className="active"
               aria-current="true"
-              aria-label="Slide 1"
-              ></button>
+              aria-label="Slide 1"></button>
             <button
               type="button"
               data-bs-target="#myCarousel"
               data-bs-slide-to="1"
-              aria-label="Slide 2"
-              ></button>
+              aria-label="Slide 2"></button>
             <button
               type="button"
               data-bs-target="#myCarousel"
@@ -91,9 +89,9 @@ const Home = () => {
           <div className="div1">
             <img src={sirimg} alt="Maithili Sharn Gupta's " />
             <div className="mt-3">
-              <h3><b>{t('Dgp')}</b> </h3>
+              <h3><b>{t("Dgp")}</b>  </h3>
               <h6>
-                {t('small_about')}
+                {t("small_about")}
                 {/* President of Crime Free Bharat Mission 
                 Former DGP, Police Reforms, Madhya Pradesh */}
               </h6>
@@ -102,20 +100,15 @@ const Home = () => {
           </div>
           <div className="div2">
             <h2>
-              <span>About</span> CFB
+              <span>{t("About_CFB")}</span>
             </h2>
             <hr />
             <p>
-            Mission Crime Free Bharat is a visionary approach by Maithili
-                Sharan Gupta, President CFB mission and former DGP (Police
-                Reform) for India with the aim to eradicate crime from India.
-                <br />
+              {t("aboutparagraph1")}
+
               <br />
-              With the AISS (Automated Investigation Support System), Shrest,
-                Aatmanirbhar, Evam Apradh Muktikaran Sanstha's goal (purpose) is
-                to build a Crime-Free Nation/Bharat. It may not be possible to
-                have a crime rate of zero. However, with a concerted effort, we
-                can drastically reduce crime.
+              <br />
+              {t("aboutparagraph2")}
             </p>
             <NavLink to="./about"> Read More...</NavLink>
             <br />
@@ -124,9 +117,8 @@ const Home = () => {
               type="button"
               className="btn homebtn btn-danger"
               data-bs-toggle="modal"
-              data-bs-target="#ipsmessage"
-              >
-                  View Message
+              data-bs-target="#ipsmessage">
+              View Message
             </button>
             <button
               type="button"
@@ -139,7 +131,9 @@ const Home = () => {
               <div className="modal-dialog modal-dialog-scrollable ipsacheivement ">
                 <div className="modal-content ">
                   <div className="modal-header">
-                    <h4 className="modal-title">Acheivement of IPS maithili sharan Gupta sir</h4>
+                    <h4 className="modal-title">
+                      Acheivement of IPS maithili sharan Gupta sir
+                    </h4>
                     <button
                       type="button"
                       className="btn-close"
@@ -148,30 +142,16 @@ const Home = () => {
                   </div>
                   <div className="modal-body">
                     <p>
-                    
-There are many <strong>achievements</strong>  and <strong>awards</strong>  that Maithaili Sir have receieved in his career and all of
-that started with his Masters. He did his M.Tech. from Indian Institute of Technology, Delhi in
-Industrial Engineering. His very first achievement was becoming an IPS Officer and was offically
-appointed on 17th Dec 1984 which was one of the biggest milestone and starting point of his
-journey. Though his journey was full of uncertainty, impossibility but he was ready for every
-hardship that might come in his path.
-After working for his country for 36 years with extreme hard work and patience; he was
-appointed as Director General of Police(DGP) after that he has been working in many projects to
-bring positive reforms in India. It is his mission towards Crime Free Bharat, an unwavering resolve
-that will never stop until his dream is achieved.
-<br /><br /> <h4>Currently now he is -</h4>
-<ul>
-  <li>Empowering railway passengers through all India group (A reporting supervisory app, investigator
-app, Railway stakeholders app).</li>
-  <li>Trying to create a responsive and monitoring system for disaster management. A system capable
-of predicting disaster as well as a proactive disaster management such as (mobilizing local
-resources ,shifting population to safer location)</li>
-  <li>An Automated Investigation System for illegal arms mafia, illegal selling of drugs and narcotics
-and also human trafficking mafias to find them and ensure total demolition of their networking
-along its distribution networks.</li>
-  <li>The software checks the safety of road and identifing black spots(death prone spots) using 3Es
-(Engineering, Education and Enforcement) by reducing the risks of accidents to 50%.</li>
-</ul></p>
+                      {t("achievementparagraph1")}
+                      <br />
+                      <br /> <h4>{t("achivementheading1")}</h4>
+                      <ul>
+                        <li>{t("achivement_li1")}</li>
+                        <li>{t("achivement_li2")}</li>
+                        <li>{t("achivement_li3")}</li>
+                        <li>{t("achivement_li4")}</li>
+                      </ul>
+                    </p>
                   </div>
                   <div className="modal-footer">
                     <button
@@ -183,8 +163,8 @@ along its distribution networks.</li>
                   </div>
                 </div>
               </div>
-            </div>  
-          
+            </div>
+
             <div className="modal fade" id="ipsmessage" role="dialog">
               <div className="modal-dialog ">
                 <div className="modal-content">
@@ -224,7 +204,7 @@ along its distribution networks.</li>
       <section id="videosection">
         <div id="cards">
           <div>
-            <h2>Gallaries & Updates</h2>
+            <h2>{t("Gallaries&Updates")}</h2>
           </div>
           <hr />
 
@@ -249,16 +229,16 @@ along its distribution networks.</li>
 
                   <div className="carousel-item">
                     <iframe
-                     width="680vw"
-                     height="370vh"
+                      width="680vw"
+                      height="370vh"
                       src="https://www.youtube.com/embed/XpVNIE88SXE"
                       title="YouTube video player"></iframe>
                   </div>
 
                   <div className="carousel-item">
                     <iframe
-                    width="680vw"
-                    height="370vh"
+                      width="680vw"
+                      height="370vh"
                       src="https://www.youtube.com/embed/VK0yooK6G0w"
                       title="YouTube video player"></iframe>
                   </div>
@@ -322,7 +302,7 @@ along its distribution networks.</li>
       <section className="homesec3" id="homecardsection">
         <div id="cards">
           <div>
-            <h2> Featured Activities</h2>
+            <h2>{t("FeaturedActivities")}</h2>
           </div>
           <hr />
           <div className="Homecard homepagecard">
@@ -339,7 +319,9 @@ along its distribution networks.</li>
                       <h5>{heading}</h5>
                       <p>{paragraph}</p>
                       <div className="readmore">
-                        <NavLink to={hyperLinkRefernce}>Read More...</NavLink>
+                        <NavLink to={hyperLinkRefernce}>
+                          {t("ReadMore")}
+                        </NavLink>
                       </div>
                     </div>
                   </div>
