@@ -1,379 +1,415 @@
 /* ====================================== Footer ========================================== */
+
 .footer {
-  width: 100%;
-  background: linear-gradient(#6a1b4d, #222222);
+    width: 100%;
+    background: linear-gradient(#6a1b4d, #222222);
 }
+
 .footer ul li a {
-  text-decoration: none;
-  color: white;
-  display: inline-block;
-  padding: 1vw 01.5vw;
-  margin-left: 3px;
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    padding: 1vw 01.5vw;
 }
+
 .footer ul {
-  margin-bottom: 0;
+    margin-bottom: 0;
 }
+
 .footer ul li a:hover {
-  background-color: rgb(250, 240, 240);
-  color: #100051;
+    background-color: rgb(250, 240, 240);
+    color: #100051;
 }
+
 .footer ul li {
-  display: inline;
-  border-left: 1px white solid;
+    display: inline;
+    border-left: 1px white solid;
 }
+
 .footer .ul {
-  margin: auto;
-  width: fit-content;
-  align-items: center;
-  margin-bottom: 0;
+    margin: auto;
+    width: fit-content;
+    align-items: center;
+    margin-bottom: 0;
 }
+
 .libg {
-  border-right: 1px #ffffff solid;
+    border-right: 1px #ffffff solid;
 }
 
 .footer .content img {
-  width: 100px;
-  height: 100px;
+    width: 100px;
+    height: 100px;
 }
 
 .footer .container {
-  display: flex;
-  align-items: center;
-  margin: auto;
-  width: fit-content;
-  padding: 1vw;
-  background: transparent;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: fit-content;
+    padding: 1vw;
+    background: transparent;
 }
 
 .vertical-line {
-  display: inline-block;
-  border-left: 1px solid #ccc;
-  margin: 1vh 2vh;
-  height: 4vw;
+    display: inline-block;
+    border-left: 1px solid #ccc;
+    margin: 1vh 2vh;
+    height: 4vw;
 }
 
 .footer p {
-  width: 300px;
-  margin: 0px;
-  padding: 0px;
-  color: white;
+    width: 300px;
+    margin: 0px;
+    padding: 0px;
+    color: white;
 }
 
 .footer1 {
-  background-color: #222222;
-  align-items: center;
-  padding: 5px;
+    background-color: #222222;
+    align-items: center;
+    padding: 5px;
 }
+
+
 /* ================================================ Footer styling ends ======================================================*/
 
+
 /*================================================ Feedback styling begin =========================================================*/
+
 .fdsection {
-  padding-top: 50px;
-  background-image: url(../img/background1.png);
-  padding-bottom: 50px;
+    padding-top: 50px;
+    background-image: url(../img/background1.png);
+    padding-bottom: 50px;
 }
+
 .sendbtn {
-  font-style: normal;
-  background: #1d0871;
-  color: white;
-  font-weight: normal;
-  display: flex;
-  font-size: 20px;
-  align-items: center;
-  text-align: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 50px;
-  padding-right: 50px;
-  border: 1px solid #1d0871;
-  box-sizing: border-box;
-  border-radius: 50px;
+    font-style: normal;
+    background: #1d0871;
+    color: white;
+    font-weight: normal;
+    display: flex;
+    font-size: 20px;
+    align-items: center;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border: 1px solid #1d0871;
+    box-sizing: border-box;
+    border-radius: 50px;
 }
+
 .sendbtn:hover {
-  opacity: 0.9;
+    opacity: 0.9;
 }
+
 .sectionhead {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 35px;
-  color: #1d0871;
-  font: roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 35px;
+    color: #1d0871;
+    font: roboto;
 }
+
 .sectionpara {
-  font-weight: bold;
-  font: roboto;
-  color: black;
-  font-size: 36px;
+    font-weight: bold;
+    font: roboto;
+    color: black;
+    font-size: 36px;
 }
+
 .stctionimg {
-  height: 300px;
+    height: 300px;
 }
+
+
 /*=========================================================== Feedback styling end ==========================================================*/
+
 
 /*=========================================================== TnC styling begins ==========================================================*/
 
 .sectionterms {
-  padding-top: 50px;
-  background-image: url(../img/background1.png);
-  padding-bottom: 50px;
+    padding-top: 50px;
+    background-image: url(../img/background1.png);
+    padding-bottom: 50px;
 }
+
 .signbtn {
-  font-style: normal;
-  color: #1d0871;
-  font-weight: normal;
-  display: flex;
-  font-size: 20px;
-  align-items: center;
-  text-align: center;
-  background: #ffffff;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 50px;
-  padding-right: 50px;
-  border: 1px solid #1d0871;
-  box-sizing: border-box;
-  border-radius: 50px;
+    font-style: normal;
+    color: #1d0871;
+    font-weight: normal;
+    display: flex;
+    font-size: 20px;
+    align-items: center;
+    text-align: center;
+    background: #ffffff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border: 1px solid #1d0871;
+    box-sizing: border-box;
+    border-radius: 50px;
 }
+
 .sectionheadact {
-  font-style: normal;
-  font-weight: bold;
-  text-align: center;
-  font-size: 40px;
-  color: #1d0871;
-  font: roboto;
+    font-style: normal;
+    font-weight: bold;
+    text-align: center;
+    font-size: 40px;
+    color: #1d0871;
+    font: roboto;
 }
+
 .sectionparaact {
-  font-weight: bold;
-  font: roboto;
-  text-align: center;
-  color: black;
-  font-size: 25px;
+    font-weight: bold;
+    font: roboto;
+    text-align: center;
+    color: black;
+    font-size: 25px;
 }
+
 .boxstyle {
-  text-align: center;
-  color: white;
-  background-color: #ff6f61;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  margin-bottom: 15px;
+    text-align: center;
+    color: white;
+    background-color: #ff6f61;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
 }
+
 .containerterms {
-  width: 100%;
-  background: #fff;
-  margin: 0 auto;
+    width: 100%;
+    background: #fff;
+    margin: 0 auto;
 }
 
 .display-flex {
-  justify-content: space-between;
-  align-items: center;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .display-flex-center {
-  justify-content: center;
-  align-items: center;
+    justify-content: center;
+    align-items: center;
 }
+
 .sectionpara2 {
-  font-weight: bold;
-  font: roboto;
-  color: black;
-  font-size: 20px;
+    font-weight: bold;
+    font: roboto;
+    color: black;
+    font-size: 20px;
 }
+
 .stctionimg {
-  height: 300px;
+    height: 300px;
 }
+
+
 /*=========================================================== TnC styling end ==========================================================*/
 
+
 /*=========================================================== Policies styling start ==========================================================*/
+
 .Policies {
-  margin-top: 1em;
-  margin-bottom: 1em;
-  height: 80vw;
-  margin-left: 4em;
-  margin-right: 4em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    height: 80vw;
+    margin-left: 4em;
+    margin-right: 4em;
 }
 
 .Policies a {
-  color: #f7505a;
+    color: #f7505a;
 }
 
 a {
-  color: black;
-  text-decoration: none;
+    color: black;
+    text-decoration: none;
 }
 
 p {
-  color: black;
-  font-size: small;
+    color: black;
+    font-size: small;
 }
 
 .currentpage {
-  display: flex;
-  /* font-size: small; */
+    display: flex;
+    /* font-size: small; */
 }
 
 .list {
-  height: 58vw;
+    height: 58vw;
 }
 
 #heading {
-  margin-top: 1em;
-  font-size: 1.3em;
-  border-bottom: 3px solid #f7505a;
-  width: 7.3em;
-  padding-bottom: 0.3em;
-  color: #2f2f2f;
+    margin-top: 1em;
+    font-size: 1.3em;
+    border-bottom: 3px solid #f7505a;
+    width: 7.3em;
+    padding-bottom: 0.3em;
+    color: #2f2f2f;
 }
 
 .policygrid {
-  margin-top: 1em;
-  display: grid;
-  height: 22vw;
-  grid-template-rows: 1fr;
-  grid-row-gap: 2em;
+    margin-top: 1em;
+    display: grid;
+    height: 22vw;
+    grid-template-rows: 1fr;
+    grid-row-gap: 2em;
 }
 
 .item h3 {
-  font-size: 1em;
-  color: #2f2f2f;
+    font-size: 1em;
+    color: #2f2f2f;
 }
 
 .item p {
-  color: #000000;
-  text-align: justify;
-  margin-top: 1em;
-  font-size: 0.8em;
+    color: #000000;
+    text-align: justify;
+    margin-top: 1em;
+    font-size: 0.8em;
 }
+
+
 /*=========================================================== Policies styling end ==========================================================*/
+
 
 /*=========================================================== RTI styling begin ==========================================================*/
 
 .headline {
-  background-color: #d2e5ff;
-  width: 100%;
-  padding-top: 0.3em;
-  height: 3vw;
-  margin-top: 2em;
-  padding-left: 5em;
+    background-color: #d2e5ff;
+    width: 100%;
+    padding-top: 0.3em;
+    height: 3vw;
+    margin-top: 2em;
+    padding-left: 5em;
 }
 
 .headline a {
-  color: #00588f;
-  text-decoration: none;
+    color: #00588f;
+    text-decoration: none;
 }
 
 #nocolor {
-  color: black;
-  cursor: default;
+    color: black;
+    cursor: default;
 }
 
 .grid1 {
-  margin-top: 1em;
-  margin-bottom: 1em;
-  margin-left: 5em;
-  display: grid;
-  grid-template-columns: 1fr 3fr;
-  margin-right: 5em;
-  grid-gap: 2em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 5em;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    margin-right: 5em;
+    grid-gap: 2em;
 }
 
 .item1 {
-  padding: 3em;
+    padding: 3em;
 }
 
 .grid1 p {
-  text-align: justify;
-  margin-top: 1.5em;
+    text-align: justify;
+    margin-top: 1.5em;
 }
 
 #submit {
-  color: #00588f;
+    color: #00588f;
 }
 
 .poster {
-  margin: 1em;
-  border-radius: 10px;
-  border: 12px solid silver;
+    margin: 1em;
+    border-radius: 10px;
+    border: 12px solid silver;
 }
 
 .grid2 {
-  margin-top: 3em;
-  margin-bottom: 3em;
-  margin-left: 5em;
-  margin-right: 5em;
-  display: grid;
-  grid-template-columns: 5fr 5fr;
-  grid-column-gap: 2em;
-  grid-row-gap: 1.2em;
-  grid-auto-rows: 5em;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    margin-left: 5em;
+    margin-right: 5em;
+    display: grid;
+    grid-template-columns: 5fr 5fr;
+    grid-column-gap: 2em;
+    grid-row-gap: 1.2em;
+    grid-auto-rows: 5em;
 }
 
 .item3 {
-  background: #fff;
-  box-shadow: 0 0 20px rgb(0 0 0 / 20%);
-  text-align: center;
-  border-left: 5px solid #0d8ad6;
-  padding-top: 1.7em;
-  transition: 0.1s linear;
+    background: #fff;
+    box-shadow: 0 0 20px rgb(0 0 0 / 20%);
+    text-align: center;
+    border-left: 5px solid #0d8ad6;
+    padding-top: 1.7em;
+    transition: 0.1s linear;
 }
 
 .item3 a {
-  text-decoration: none;
-  color: #777;
+    text-decoration: none;
+    color: #777;
 }
 
 .item3:hover {
-  border-left: 10px solid #0d8ad6;
-  padding-left: 1em;
+    border-left: 10px solid #0d8ad6;
+    padding-left: 1em;
 }
+
+
 /*=========================================================== RTI styling end ==========================================================*/
+
 
 /*=========================================================== Volunteer styling start ==========================================================*/
 
 .section {
-  padding-top: 50px;
-  background-image: url(../img/background1.png);
-  padding-bottom: 50px;
+    padding-top: 50px;
+    background-image: url(../img/background1.png);
+    padding-bottom: 50px;
 }
 
 .sendbtn {
-  font-style: normal;
-  background: #1d0871;
-  color: white;
-  font-weight: normal;
-  display: flex;
-  font-size: 20px;
-  align-items: center;
-  text-align: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 50px;
-  padding-right: 50px;
-  border: 1px solid #1d0871;
-  box-sizing: border-box;
-  border-radius: 50px;
+    font-style: normal;
+    background: #1d0871;
+    color: white;
+    font-weight: normal;
+    display: flex;
+    font-size: 20px;
+    align-items: center;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border: 1px solid #1d0871;
+    box-sizing: border-box;
+    border-radius: 50px;
 }
 
 .sendbtn:hover {
-  opacity: 0.9;
+    opacity: 0.9;
 }
 
 .sectionhead {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 35px;
-  color: #1d0871;
-  font: roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 35px;
+    color: #1d0871;
+    font: roboto;
 }
 
 .sectionpara2 {
-  font-weight: bold;
-  font: roboto;
-  color: black;
-  font-size: 20px;
+    font-weight: bold;
+    font: roboto;
+    color: black;
+    font-size: 20px;
 }
 
 .stctionimg {
-  height: 300px;
+    height: 300px;
 }
+
 
 /*=========================================================== Volunteer styling end ==========================================================*/
