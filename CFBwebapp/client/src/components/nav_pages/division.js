@@ -8,7 +8,6 @@ import internal5 from '../../img/internal5.jpeg'
 
 
 
-
 const Division = () => {
   return (
     <>
@@ -52,7 +51,7 @@ const Division = () => {
                           </button>
                       </h2>
                       <div className="aboutteam">
-                          <img alt="" src={internal1}/>
+                      <img alt="" src={internal1}/>
                           <h6>CA Harish C</h6>
                           <a href=""><i className="bi bi-linkedin"></i></a>
                       </div>
