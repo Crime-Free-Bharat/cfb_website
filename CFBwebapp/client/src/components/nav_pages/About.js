@@ -59,8 +59,8 @@ const About = () => {
         </Card.Body>
       </Card>
 
-      <h2 className="aboutpageSection">{t('Certainities')}</h2>
-      <Container fluid style={{width: "140%"}}>
+      <h2 className="aboutpageSection">{t('Certainities')}</h2><hr />
+      <Container fluid style={{width: "140%",marginLeft:"200px"}}>
         <Row>
           <Col lg={3} className="aboutcertainities ml-5 ">
             <Card
@@ -148,7 +148,7 @@ const About = () => {
           </Col>
           <Col lg={4} className="aboutbottomCards">
             <p className="aboutcertainStyle">
-              <h5> CERTAINTY OF REPORTING </h5>
+              <h5><b> CERTAINTY OF REPORTING </b></h5>
               <ul>
                 <li>
                   Guarantee of no discrimination in (caste, colour, place).
@@ -157,7 +157,7 @@ const About = () => {
                 <li>Guarantee of no language or dialect barrier</li>
                 <li>Guarantee of action against every false complaint.</li>
               </ul>
-              <h5>CERTAINTY OF DETECTION</h5>
+              <h5><b> CERTAINTY OF DETECTION</b></h5>
               <ul>
                 <li>
                   Use of nearby cameras and technology for crime detection.
@@ -167,16 +167,16 @@ const About = () => {
                   technology.
                 </li>
               </ul>
-              <h5>CERTAINTY OF CONVICTION</h5>
+              <h5><b>CERTAINTY OF CONVICTION</b></h5>
               <ul>
                 <li>Guarantee of no innocent getting every punished.</li>
               </ul>
-              <h5>CERTAINTY OF PREVENTION</h5>
+              <h5><b>CERTAINTY OF PREVENTION</b></h5>
               <ul>
                 <li>System that can predict the crime intention. </li>
                 <li>Guarantee of preventing crime before happening. </li>
               </ul>
-              <h5>CERTAINTY OF REHABILITATION OF CRIMINALS</h5>
+              <h5><b>CERTAINTY OF REHABILITATION OF CRIMINALS</b></h5>
               <ul>
                 <li>
                   Guarantee of rehabilitating criminals making them a better
