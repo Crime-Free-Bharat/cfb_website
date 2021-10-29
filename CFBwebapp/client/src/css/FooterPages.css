@@ -9,7 +9,8 @@
     text-decoration: none;
     color: white;
     display: inline-block;
-    padding: 1vw 01.5vw;
+    padding: 0.5vw 1.5vw;
+    margin: 5px;
 }
 
 .footer ul {
