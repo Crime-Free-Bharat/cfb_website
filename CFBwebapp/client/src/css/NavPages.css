@@ -465,9 +465,9 @@ header {
 
 .aboutpageSection {
     color: rgba(16, 0, 81, 1);
-    font-weight: bolder;
-    margin: 10px 15px;
-    margin-left: 10%;
+    font-weight: 900;
+    text-align: center;
+    margin-top: 20px;
 }
 
 .aboutTagline {
@@ -487,6 +487,16 @@ header {
     margin: 1rem;
     border: 2px solid black;
     box-shadow: 1px 2px 2px #000;
+    height: 50vh;
+}
+
+.aboutupperCards p {
+    font-size: 20px;
+}
+
+.aboutupperCards p ul li {
+    padding: 15px;
+    list-style: circle;
 }
 
 .aboutunderLine {
@@ -526,12 +536,14 @@ header {
     font-size: 14px,
 }
 
-.aboutbottomCards {
+div .aboutbottomCards {
     margin: 3rem;
+    width: 40vw;
     font-family: Sans-serif;
     padding: 2rem;
     border: 2px solid #DC8C5E;
     box-sizing: border-box;
+    box-shadow: 2px 7px 8px rgb(230, 145, 19);
 }
 
 .aboutcardHead {
