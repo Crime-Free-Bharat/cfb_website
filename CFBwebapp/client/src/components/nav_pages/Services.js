@@ -52,9 +52,11 @@ const Services = () => {
         <Col xs={12} md={8} lg={6}>
       <h5 style={aboutSection}>Our Services</h5>
       <p style = {servicetext}>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        {/* Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Dolor sit amet
-        consectetur adipiscing elit duis tristique sollicitudin.
+        consectetur adipiscing elit duis tristique sollicitudin. */}
+        Here are the few if not all the services provided by our organization. 
+        With our vision and mission to make Crime Free Bharat this portal serves you as follows
       </p></Col>
       <Col md={2} lg={3}>
       < img style={{height:"200px"}} src = {service2} alt="services2" />
