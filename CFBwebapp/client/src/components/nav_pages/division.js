@@ -313,7 +313,7 @@ const Division = () => {
 
             <div className="voluntearteam">
               {volunteers.map(element => {
-                const {id, buttonname, image, heading6, hyperlink} = element;
+                const {id, buttonname, image, heading6, hyperLinkRefernce} = element;
                 return (
                   <div id="panelsStayOpen" key={id}>
                     <h2 className="accordion-header">
@@ -326,7 +326,7 @@ const Division = () => {
                     <div className="aboutteam">
                       <img alt="" src={image} />
                       <h6>{heading6}</h6>
-                      <a href={hyperlink}>
+                      <a href={hyperLinkRefernce}>
                         <i className="bi bi-linkedin"></i>
                       </a>
                     </div>
