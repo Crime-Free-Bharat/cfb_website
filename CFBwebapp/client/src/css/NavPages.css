@@ -327,7 +327,7 @@ header {
     font-weight: bold;
     font: roboto;
     color: black;
-    font-size: 45px;
+    font-size: 40px;
 }
 
 .stctionimg {
@@ -481,6 +481,7 @@ header {
 .aboutupperSection {
     width: 80%;
     font-family: sans-serif;
+    overflow: hidden;
 }
 
 .aboutupperCards {

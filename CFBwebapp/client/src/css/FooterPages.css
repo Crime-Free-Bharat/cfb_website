@@ -1,7 +1,11 @@
 /* ====================================== Footer ========================================== */
 
+body {
+    overflow-x: hidden;
+}
+
 .footer {
-    width: 100%;
+    width: 100vw;
     background: linear-gradient(#6a1b4d, #222222);
 }
 
@@ -45,6 +49,7 @@
 
 .footer .container {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     margin: auto;
     width: fit-content;
@@ -78,51 +83,121 @@
 
 /*================================================ Feedback styling begin =========================================================*/
 
-.fdsection {
-    padding-top: 50px;
-    background-image: url(../img/background1.png);
-    padding-bottom: 50px;
+.feedbackcontainer {
+    display: grid;
+    grid-template-areas: 'a b b' 'c b b' 'd b b' 'e b b';
+    grid-gap: 20px;
+    margin-bottom: 3rem;
 }
 
-.sendbtn {
+.feedbackcontainer input {
+    height: 50px;
+}
+
+.feedbackitem1 {
+    grid-area: a;
+}
+
+.feedbackitem2 {
+    grid-area: b;
+}
+
+.feedbackitem3 {
+    grid-area: c;
+}
+
+.feedbackitem4 {
+    grid-area: d;
+}
+
+.feedbackitem5 {
+    grid-area: e;
+}
+
+.feedbacksendbtn {
+    grid-area: f;
+    text-align: left;
+}
+
+.sectionfeedback {
+    width: 80rem;
+    margin-bottom: 4rem;
+    padding: 10px 40px;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.sendbtnfeedback {
     font-style: normal;
-    background: #1d0871;
+    background: green;
     color: white;
     font-weight: normal;
-    display: flex;
     font-size: 20px;
-    align-items: center;
-    text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 50px;
-    padding-right: 50px;
+    align-items: flex-start;
+    text-align: end;
+    padding: 10px 50px;
     border: 1px solid #1d0871;
     box-sizing: border-box;
-    border-radius: 50px;
+    border-radius: 10px;
 }
 
-.sendbtn:hover {
+.feedback input,
+.feedback textarea {
+    background-color: #26a8d36a;
+    color: #000000;
+    font-weight: 700;
+}
+
+.feedback input:hover,
+.feedback textarea:hover {
+    box-shadow: 2px 2px 5px 1px grey;
     opacity: 0.9;
 }
 
-.sectionhead {
-    font-style: normal;
-    font-weight: bold;
-    font-size: 35px;
-    color: #1d0871;
-    font: roboto;
+.sendbtnfeedback:hover {
+    opacity: 0.7;
 }
 
-.sectionpara {
+.secondsecfeedback {
+    padding: 50px 15px;
+}
+
+.sectionparaactfeedback1 {
     font-weight: bold;
     font: roboto;
+    text-align: center;
     color: black;
-    font-size: 36px;
+    font-size: 35px;
 }
 
-.stctionimg {
-    height: 300px;
+.sectionparaactfeedback2 {
+    font-weight: 500;
+    font: roboto;
+    margin-bottom: 3rem;
+    text-align: center;
+    color: black;
+    font-size: 20px;
+}
+
+.sectionparaactfeedback p {
+    margin-bottom: 3px;
+}
+
+.adjfeedback {
+    display: flex;
+    flex-direction: column;
+}
+
+.stctionimg2 {
+    height: 400px;
+    width: 1160px;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.feedbackbuttonsend {
+    text-align: end;
 }
 
 
@@ -131,32 +206,22 @@
 
 /*=========================================================== TnC styling begins ==========================================================*/
 
-.sectionterms {
-    padding-top: 50px;
-    background-image: url(../img/background1.png);
-    padding-bottom: 50px;
+.tc,
+.feedback {
+    display: grid;
+    place-items: center;
 }
 
-.signbtn {
-    font-style: normal;
-    color: #1d0871;
-    font-weight: normal;
-    display: flex;
-    font-size: 20px;
-    align-items: center;
+.sectiontc {
+    width: 80rem;
+    margin: 5rem 0rem;
+    padding: 10px 40px;
+    height: 80%;
+    box-shadow: 5px 7px 15px 5px rgba(0, 0, 0, 0.306);
+}
+
+.sectionheadacttc {
     text-align: center;
-    background: #ffffff;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 50px;
-    padding-right: 50px;
-    border: 1px solid #1d0871;
-    box-sizing: border-box;
-    border-radius: 50px;
-}
-
-.sectionheadact {
-    font-style: normal;
     font-weight: bold;
     text-align: center;
     font-size: 40px;
@@ -164,48 +229,20 @@
     font: roboto;
 }
 
-.sectionparaact {
-    font-weight: bold;
-    font: roboto;
-    text-align: center;
-    color: black;
-    font-size: 25px;
+.sectiontc .row2 p {
+    text-align: justify;
+    width: 80%;
+    font-weight: 500;
 }
 
-.boxstyle {
-    text-align: center;
-    color: white;
-    background-color: #ff6f61;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    margin-bottom: 15px;
+.stctionimgtc {
+    height: 200px;
+    margin-right: -10px;
 }
 
-.containerterms {
-    width: 100%;
-    background: #fff;
-    margin: 0 auto;
-}
-
-.display-flex {
-    justify-content: space-between;
-    align-items: center;
-}
-
-.display-flex-center {
-    justify-content: center;
-    align-items: center;
-}
-
-.sectionpara2 {
-    font-weight: bold;
-    font: roboto;
-    color: black;
-    font-size: 20px;
-}
-
-.stctionimg {
-    height: 300px;
+.stctionimgtc2 {
+    margin-left: 15px;
+    height: 200px;
 }
 
 
@@ -316,6 +353,10 @@ p {
 .grid1 p {
     text-align: justify;
     margin-top: 1.5em;
+    font-size: large;
+    color: #000000;
+    font-family: roboto;
+    width: 800px;
 }
 
 #submit {
@@ -323,40 +364,55 @@ p {
 }
 
 .poster {
-    margin: 1em;
-    border-radius: 10px;
-    border: 12px solid silver;
+    margin-top: 2rem;
+    padding: 0;
+}
+
+.poster img {
+    height: auto;
 }
 
 .grid2 {
-    margin-top: 3em;
-    margin-bottom: 3em;
-    margin-left: 5em;
-    margin-right: 5em;
+    margin: 2em 5em;
     display: grid;
     grid-template-columns: 5fr 5fr;
-    grid-column-gap: 2em;
-    grid-row-gap: 1.2em;
+    grid-column-gap: 3em;
+    padding: 5px;
     grid-auto-rows: 5em;
 }
 
+div .item3.RTISubmit {
+    padding: 12px;
+    margin-top: 3rem;
+    width: 900px;
+    height: auto;
+}
+
+#submitRTI {
+    color: #bc1717;
+    text-align: left;
+}
+
 .item3 {
-    background: #fff;
+    display: grid;
+    place-items: center;
+    background-color: #26a8d34c;
     box-shadow: 0 0 20px rgb(0 0 0 / 20%);
-    text-align: center;
+    height: 60px;
     border-left: 5px solid #0d8ad6;
-    padding-top: 1.7em;
+    font-weight: bolder;
     transition: 0.1s linear;
 }
 
 .item3 a {
     text-decoration: none;
-    color: #777;
+    color: rgb(0, 0, 0);
 }
 
 .item3:hover {
     border-left: 10px solid #0d8ad6;
     padding-left: 1em;
+    transition: .3s ease;
 }
 
 
