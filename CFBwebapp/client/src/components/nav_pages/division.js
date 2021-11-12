@@ -6,7 +6,8 @@ import internal1 from "../../img/internal1.jpeg";
 import internal2 from "../../img/internal2.jpeg";
 import internal3 from "../../img/internal3.jpg";
 import internal4 from "../../img/internal4.jpeg";
-import internal5 from "../../img/internal5.jpeg";
+import internal5 from "../../img/internal5.jpeg"; 
+
 
 const Division = () => {
   return (
