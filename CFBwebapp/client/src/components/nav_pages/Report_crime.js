@@ -73,7 +73,7 @@ const Report_crime = () => {
       if (!data || res.status === 400) {
         alert("please Login or Fill all Fields");
       } else {
-        alert("Report Send Hogaya maje kar ab");
+        alert("Report Filed");
         setUserData({
           ...userData,
           category: "",
