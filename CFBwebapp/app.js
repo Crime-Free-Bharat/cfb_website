@@ -14,8 +14,8 @@ app.use(require("./router/routes"));
 const port = process.env.PORT || 5000;
 
 app.get("/", (req, res) => {
-  console.log("ha bhia me hi get hu");
-  res.send("hello bhia me hi hu get home vala ");
+  console.log("this is / route");
+  res.send("confirmation of get home");
 });
 
 app.get("/cors", (req, res) => {

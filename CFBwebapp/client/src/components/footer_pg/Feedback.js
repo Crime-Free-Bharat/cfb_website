@@ -11,12 +11,61 @@ function Feedback() {
   })
 
   const handleInput=(e)=>{
-    console.log(feed);
+    // console.log(feed);
     const name = e.target.name;
     const value = e.target.value;
 
     setFeed({...feed,[name]:value});
   }
+
+  const feedbackForm = async e => {
+    e.preventDefault();
+    const {
+      name,
+      phone,
+      email,
+      subject,
+      message
+    } = feed;
+    if (
+      !name ||
+      !phone ||
+      !email ||
+      !subject ||
+      !message
+    ) {
+      alert("Please Fill The All fields");
+    } else {
+      const res = await fetch("/feedback", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          name,
+          phone,
+          email,
+          subject,
+          message
+        }),
+      });
+      const data = await res.json();
+      setFeed({ ...feed, name: data.name });
+      if (!data || res.status === 400) {
+        alert("please Login or Fill all Fields");
+      } else {
+        alert("Feedback submitted");
+        setFeed({
+          ...feed,
+          name:"",
+          phone:0,
+          email:"",
+          subject:"",
+          message:"",
+        });
+      }
+    }
+  };
   return (
     <>
         <div className="feedback">
@@ -98,7 +147,11 @@ function Feedback() {
                 <div>
                   <div class="row feedbacksendbtn">
                     <div class="">
-                      <button type="submit" class="sendbtnfeedback">
+                      <button 
+                        type="submit" 
+                        className="sendbtnfeedback"
+                        onClick={feedbackForm}
+                      >
                         Submit Feedback
                       </button>
                     </div>
