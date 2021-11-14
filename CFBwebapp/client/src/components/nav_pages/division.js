@@ -316,7 +316,7 @@ const Division = () => {
               {volunteers.map(element => {
                 const {id, volname, image, heading6, hyperLinkRefernce} = element;
                 return (
-                  <div id="panelsStayOpen" key={id}>
+                  <div id="panelsStayOpen" className="volunteers" key={id}>
                     <h2 className="accordion-header">
                       <div
                         className="btn btn-primary about-button"
