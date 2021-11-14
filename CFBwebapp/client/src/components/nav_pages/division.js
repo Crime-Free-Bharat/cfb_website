@@ -314,15 +314,15 @@ const Division = () => {
 
             <div className="voluntearteam">
               {volunteers.map(element => {
-                const {id, buttonname, image, heading6, hyperLinkRefernce} = element;
+                const {id, volname, image, heading6, hyperLinkRefernce} = element;
                 return (
                   <div id="panelsStayOpen" key={id}>
                     <h2 className="accordion-header">
-                      <button
+                      <div
                         className="btn btn-primary about-button"
                         type="button">
-                        {buttonname}
-                      </button>
+                        {volname}
+                      </div>
                     </h2>
                     <div className="aboutteam">
                       <img alt="" src={image} />
