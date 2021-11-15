@@ -12,7 +12,7 @@ import internal5 from "../../img/internal5.jpeg";
 const Division = () => {
   return (
     <>
-      <div>
+      <div className="divisionmain">
         <div className="accordion" id="accordionPanelsStayOpen">
           <div className="accordion-item level-1">
             <div id="panelsStayOpen">
@@ -314,14 +314,14 @@ const Division = () => {
 
             <div className="voluntearteam">
               {volunteers.map(element => {
-                const {id, buttonname, image, heading6, hyperLinkRefernce} = element;
+                const {id, volname, image, heading6, hyperLinkRefernce} = element;
                 return (
                   <div id="panelsStayOpen" key={id}>
                     <h2 className="accordion-header">
                       <button
                         className="btn btn-primary about-button"
                         type="button">
-                        {buttonname}
+                        {volname}
                       </button>
                     </h2>
                     <div className="aboutteam">

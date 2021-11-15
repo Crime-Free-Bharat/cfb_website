@@ -69,7 +69,8 @@
 
 .team {
     display: grid;
-    grid-template-columns: auto auto auto;
+    /* grid-template-columns: auto auto auto; */
+    grid-auto-columns: max-content;
 }
 
 .voluntearteam {
@@ -105,6 +106,8 @@
     height: 100px;
     background-color: #f5eded;
     color: black;
+    margin: 5px;
+    width: 100%;
     border-radius: 20px 20px 0px 0px;
 }
 
@@ -120,12 +123,26 @@
 }
 
 @media(max-width:1180px) {
+    .divisionmain {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 0%;
+    }
+    div#level-3 {
+        margin: 0%;
+        padding: 0%;
+    }
     .voluntearteam {
         place-items: center;
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     }
     .team {
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+    div#accordionPanelsStayOpen.accordion {
+        margin: 0%;
     }
 }
 
