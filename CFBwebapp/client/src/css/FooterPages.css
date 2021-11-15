@@ -1,9 +1,5 @@
 /* ====================================== Footer ========================================== */
 
-body {
-    overflow-x: hidden;
-}
-
 .footer {
     width: 100vw;
     background: linear-gradient(#6a1b4d, #222222);
@@ -90,6 +86,17 @@ body {
     margin-bottom: 3rem;
 }
 
+@media(max-width:1180px) {
+    .feedbackcontainer {
+        grid-template-areas: 'a' 'c' 'd' 'e' 'b' 'f';
+        grid-row-gap: 20px;
+        margin-bottom: 3rem;
+    }
+    .feedbackcontainer input {
+        width: 100%;
+    }
+}
+
 .feedbackcontainer input {
     height: 50px;
 }
@@ -114,16 +121,16 @@ body {
     grid-area: e;
 }
 
-.feedbacksendbtn {
+.feedbackitem6 {
     grid-area: f;
     text-align: left;
 }
 
 .sectionfeedback {
-    width: 80rem;
+    width: 90vw;
     margin-bottom: 4rem;
-    padding: 10px 40px;
-    height: 80%;
+    padding: 10px auto;
+    height: 90%;
     display: flex;
     flex-direction: column;
 }
@@ -213,11 +220,19 @@ body {
 }
 
 .sectiontc {
-    width: 80rem;
-    margin: 5rem 0rem;
+    margin: 5rem 3rem;
     padding: 10px 40px;
-    height: 80%;
+    height: auto;
     box-shadow: 5px 7px 15px 5px rgba(0, 0, 0, 0.306);
+}
+
+@media(max-width:1280px) {
+    .sectiontc {
+        margin: 3rem 1rem;
+        padding: 10px auto;
+        height: auto;
+        box-shadow: 5px 7px 15px 5px rgba(0, 0, 0, 0.306);
+    }
 }
 
 .sectionheadacttc {
@@ -229,9 +244,22 @@ body {
     font: roboto;
 }
 
+.containertc .containerterms {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div.col-sm-4 {
+    align-self: center;
+    display: flex;
+    justify-content: center;
+}
+
 .sectiontc .row2 p {
     text-align: justify;
-    width: 80%;
+    width: 100%;
     font-weight: 500;
 }
 
@@ -251,64 +279,11 @@ body {
 
 /*=========================================================== Policies styling start ==========================================================*/
 
-.Policies {
-    margin-top: 1em;
-    margin-bottom: 1em;
-    height: 80vw;
-    margin-left: 4em;
-    margin-right: 4em;
-}
-
-.Policies a {
-    color: #f7505a;
-}
-
-a {
-    color: black;
-    text-decoration: none;
-}
-
-p {
-    color: black;
-    font-size: small;
-}
-
-.currentpage {
+.policies {
+    margin: 3rem 2rem;
     display: flex;
-    /* font-size: small; */
-}
-
-.list {
-    height: 58vw;
-}
-
-#heading {
-    margin-top: 1em;
-    font-size: 1.3em;
-    border-bottom: 3px solid #f7505a;
-    width: 7.3em;
-    padding-bottom: 0.3em;
-    color: #2f2f2f;
-}
-
-.policygrid {
-    margin-top: 1em;
-    display: grid;
-    height: 22vw;
-    grid-template-rows: 1fr;
-    grid-row-gap: 2em;
-}
-
-.item h3 {
-    font-size: 1em;
-    color: #2f2f2f;
-}
-
-.item p {
-    color: #000000;
-    text-align: justify;
-    margin-top: 1em;
-    font-size: 0.8em;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 
 
@@ -316,6 +291,10 @@ p {
 
 
 /*=========================================================== RTI styling begin ==========================================================*/
+
+.RTImain {
+    overflow-x: hidden;
+}
 
 .headline {
     background-color: #d2e5ff;
@@ -337,26 +316,20 @@ p {
 }
 
 .grid1 {
-    margin-top: 1em;
-    margin-bottom: 1em;
-    margin-left: 5em;
+    width: 90vw;
     display: grid;
-    grid-template-columns: 1fr 3fr;
-    margin-right: 5em;
-    grid-gap: 2em;
-}
-
-.item1 {
-    padding: 3em;
+    margin: auto;
+    grid-template-columns: repeat(2, minmax(250px, 1fr));
 }
 
 .grid1 p {
     text-align: justify;
-    margin-top: 1.5em;
+    margin-top: 2em;
     font-size: large;
     color: #000000;
     font-family: roboto;
-    width: 800px;
+    max-width: 100%;
+    height: auto;
 }
 
 #submit {
@@ -369,47 +342,66 @@ p {
 }
 
 .poster img {
+    max-width: 100%;
+    width: 250px;
     height: auto;
 }
 
 .grid2 {
-    margin: 2em 5em;
+    width: 95vw;
     display: grid;
-    grid-template-columns: 5fr 5fr;
-    grid-column-gap: 3em;
-    padding: 5px;
-    grid-auto-rows: 5em;
+    margin: 2rem auto;
+    grid-template-columns: repeat(2, minmax(250px, 1fr));
+    grid-template-rows: repeat(4, minmax(50px, 1fr));
+    grid-column-gap: 2rem;
+    grid-row-gap: 3rem;
 }
 
-div .item3.RTISubmit {
-    padding: 12px;
-    margin-top: 3rem;
-    width: 900px;
-    height: auto;
+@media(max-width:1180px) {
+    .grid2,
+    .grid1 {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-row-gap: 2rem;
+    }
+    .RTISubmit {
+        margin-bottom: 10px;
+    }
 }
 
-#submitRTI {
+.RTISubmit {
+    margin-bottom: 20px;
+}
+
+.RTISubmit p {
     color: #bc1717;
     text-align: left;
+    padding-left: 1rem;
 }
 
-.item3 {
+.itemRTI,
+.itemRTI1 {
     display: grid;
     place-items: center;
     background-color: #26a8d34c;
     box-shadow: 0 0 20px rgb(0 0 0 / 20%);
-    height: 60px;
     border-left: 5px solid #0d8ad6;
     font-weight: bolder;
     transition: 0.1s linear;
+    max-width: 100%;
+    height: 60px;
 }
 
-.item3 a {
+.itemRTI1 {
+    height: auto;
+}
+
+.itemRTI a {
     text-decoration: none;
     color: rgb(0, 0, 0);
 }
 
-.item3:hover {
+.itemRTI:hover,
+.itemRTI1:hover {
     border-left: 10px solid #0d8ad6;
     padding-left: 1em;
     transition: .3s ease;

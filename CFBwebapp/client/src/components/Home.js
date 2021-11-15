@@ -83,23 +83,12 @@ const Home = () => {
       </div>
 
       {/* section second start  */}
-
-      <section id="aboutsection">
-        <div className="homesec1">
-          <div className="div1">
-            <img src={sirimg} alt="Maithili Sharn Gupta's " />
-            <div className="mt-3">
-              <h3><b>{t("Dgp")}</b>  </h3>
-              <h6>
-                {t("small_about")}
-                {/* President of Crime Free Bharat Mission 
-                Former DGP, Police Reforms, Madhya Pradesh */}
-              </h6>
-            </div>
-            <br />
-          </div>
-          <div className="div2">
-            <h2>
+      <section id="homeaboutsection">
+        <div className="homeaboutpicandname">
+          <div className="homeaboutsirimg"> <img src={sirimg} alt="Maithili Sharn Gupta's " /></div>
+          <div className="homeaboutsirinfor">  {t("small_about1")}<br/> {t("small_about2")}</div>
+        </div>
+        <div className="homeaboutinfo">     <h2>
               <span>{t("About_CFB")}</span>
             </h2>
             <hr />
@@ -115,6 +104,7 @@ const Home = () => {
             <br />
             <button
               type="button"
+              id="homebtn"
               className="btn homebtn btn-danger"
               data-bs-toggle="modal"
               data-bs-target="#ipsmessage">
@@ -122,6 +112,7 @@ const Home = () => {
             </button>
             <button
               type="button"
+              id="homebtn"
               className="btn homebtn btn-primary"
               data-bs-toggle="modal"
               data-bs-target="#ipsacheivement">
@@ -196,11 +187,11 @@ const Home = () => {
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
+            </div></div>
       </section>
 
+
+        
       <section id="videosection">
         <div id="cards">
           <div>

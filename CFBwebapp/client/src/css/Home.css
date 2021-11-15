@@ -7,6 +7,7 @@ html {
 .homecarousel {
     padding: 0;
     margin: 0;
+    height: auto;
 }
 
 .carousel1 img {
@@ -19,57 +20,55 @@ html {
     vertical-align: top;
 }
 
+#homeaboutsection {
+    padding: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(240, 240, 240);
+}
+
+.homeaboutpicandname {
+    margin: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.homeaboutpicandname img {
+    width: 25vw;
+    border-radius: 3px 1px;
+}
+
+#homebtn {
+    width: auto;
+    margin: 15px;
+}
+
 .ipsacheivement {
     max-width: 70vw!important;
 }
 
-.homesec1 {
-    display: flex;
-    padding: 18vh 15vw;
-    background-color: rgb(240, 240, 240);
-    height: 100vh;
-}
-
-.homebtn {
-    width: auto !important;
-    margin: 15px !important;
-}
-
-.homesec1 .div1 {
-    width: 25vw;
-    padding: 12px;
-    margin: 1vw;
-}
-
-.homesec1 .div1 h3 {
-    font-size: 20px !important;
-}
-
-.homesec1 .div1 h3:hover {
-    text-decoration: underline;
-    color: green;
-}
-
-.homesec1 .div1 img {
-    width: 18vw;
-    border-radius: 3px 1px;
-}
-
-.homesec1 .div2 {
-    width: 50vw;
-    padding: 10px 2vw;
-    margin: 1vw;
-}
-
-.homesec1 .div2 h2 {
-    text-align: left;
-    font-weight: bolder;
-    color: black;
-    margin-bottom: 10px;
-}
-
-.homesec1 .div2 p {
-    font-size: large;
+@media(max-width:1280px) {
+    #homeaboutsection {
+        padding: 2rem;
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+    }
+    .homeaboutpicandname .homeaboutsirinfor {
+        font-size: 80%;
+    }
+    .homeaboutpicandname img {
+        max-width: 50vw;
+        border-radius: 3px 1px;
+    }
+    .ipsacheivement {
+        max-width: 100vw!important;
+        text-align: center;
+        height: auto;
+    }
 }
 
 .updates,
@@ -88,9 +87,9 @@ html {
 
 .homesec2 {
     /* padding: 6vh 6vw; */
-    display: flex;
-    width: fit-content;
-    margin: auto;
+    height: auto;
+    display: grid;
+    grid-template-columns: auto auto
 }
 
 #videosection {
@@ -140,13 +139,23 @@ html {
 }
 
 .homepagecard {
+    position: inherit;
     display: grid;
     grid-template-columns: auto auto auto;
     grid-gap: 2vw;
 }
 
+@media(max-width:1180px) {
+    .homepagecard {
+        height: auto;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-gap: 2vw;
+    }
+}
+
 .homepagecard .card {
-    width: 28vw;
+    width: 100%;
+    height: auto;
     border: 1px solid rgb(219, 224, 219);
     padding: 5px;
     background-color: rgb(253, 253, 253);
@@ -210,8 +219,9 @@ html {
 
 .homesec3 {
     background-color: rgb(240, 240, 240);
-    ;
-    padding: 10px;
+    height: auto;
+    margin: 2px;
+    padding: 5px;
 }
 
 .homesec3 h5,

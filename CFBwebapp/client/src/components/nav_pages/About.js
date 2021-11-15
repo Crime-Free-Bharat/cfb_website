@@ -1,4 +1,4 @@
-import React ,{useEffect}from "react";
+import React, {useEffect} from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -16,10 +16,10 @@ const About = () => {
   }, [currentLanguage, t]);
   return (
     <Container fluid className="aboutupperSection">
-      <h1 className="aboutpageSection">{t('About_us')}</h1>
+      <h1 className="aboutpageSection">{t("About_us")}</h1>
       <p className="aboutTagline">
-        {/* Crime Free Bharat is a Creative Flow Bharat */}
-       "<i>{t('aboutPageTagLine')}</i>"
+        {/* Crime Free Bharat is a Creative Flow Bharat */}"
+        <i>{t("aboutPageTagLine")}</i>"
       </p>
 
       <Card className="aboutupperCards">
@@ -59,133 +59,147 @@ const About = () => {
         </Card.Body>
       </Card>
 
-      <h2 className="aboutpageSection">{t('Certainities')}</h2><hr />
-      <Container fluid style={{width: "140%",marginLeft:"200px"}}>
-        <Row>
-          <Col lg={3} className="aboutcertainities ml-5 ">
-            <Card
-              border="light"
-              bg="warning"
-              style={{
-                width: "15rem",
-                height: "3rem",
-                margin: "70px 60px 35px",
-              }}>
-              <div className="numberCircle aboutnumberCircle">1</div>
-              <Card.Body>
-                <Card.Title className="aboutcardFont">
-                  Certainity of Reporting
-                </Card.Title>
-                {/* <Card.Subtitle className="mb-2 text-muted"></Card.Subtitle> */}
-              </Card.Body>
-            </Card>
-            <Card
-              border="light"
-              bg="warning"
-              style={{
-                width: "17rem",
-                height: "3rem",
-                margin: "15px 15px 5px 35px",
-              }}>
-              <div className="numberCircle aboutnumberCircle">2</div>
-              <Card.Body>
-                <Card.Title className="aboutcardFont">
-                  Certainity of Detection
-                </Card.Title>
-              </Card.Body>
-            </Card>
-            <br />
-            <Card
-              border="light"
-              bg="warning"
-              style={{
-                width: "20rem",
-                height: "3rem",
-                margin: "10px 15px 40px 15px",
-              }}>
-              <div className="numberCircle aboutnumberCircle">3</div>
-              <Card.Body>
-                <Card.Title className="aboutcardFont">
-                  Certainity of Conviction
-                </Card.Title>
-              </Card.Body>
-            </Card>
-            <Card
-              border="light"
-              bg="warning"
-              style={{
-                width: "25rem",
-                height: "3rem",
-                margin: "10px -18px 10px",
-              }}>
-              <div className="numberCircle aboutnumberCircle">4</div>
-              <Card.Body>
-                <Card.Title className="aboutcardFont">
-                  Certainity of Prevention
-                </Card.Title>
-              </Card.Body>
-            </Card>
-            <br />
-            <Card
-              border="light"
-              bg="warning"
-              style={{
-                width: "31rem",
-                height: "3.3rem",
-                margin: "10px -60px 0px ",
-              }}>
-              <div className="numberCircle aboutnumberCircle">5</div>
-              <Card.Body>
-                <Card.Title className="aboutcardFont">
-                  Certainity of Rehabilitation of Criminals
-                </Card.Title>
-              </Card.Body>
-            </Card>
+      <h2 className="aboutpageSection">{t("Certainities")}</h2>
+      <hr />
+      <Container fluid style={{width: "auto"  }}>
 
-            {/* <Button href="#" variant="outline-success" size="lg">
+
+        <div className="aboutcontent1">        
+            <Col lg={3} className="aboutcertainities">
+              <Card
+                border="light"
+                bg="warning"
+                style={{
+                  width: "15rem",
+                  height: "3rem",
+                  margin: "70px 60px 35px",
+                }}>
+                <div className="numberCircle aboutnumberCircle">1</div>
+                <Card.Body>
+                  <Card.Title className="aboutcardFont">
+                    Certainity of Reporting
+                  </Card.Title>
+                  {/* <Card.Subtitle className="mb-2 text-muted"></Card.Subtitle> */}
+                </Card.Body>
+              </Card>
+              <Card
+                border="light"
+                bg="warning"
+                style={{
+                  width: "17rem",
+                  height: "3rem",
+                  margin: "15px 15px 5px 35px",
+                }}>
+                <div className="numberCircle aboutnumberCircle">2</div>
+                <Card.Body>
+                  <Card.Title className="aboutcardFont">
+                    Certainity of Detection
+                  </Card.Title>
+                </Card.Body>
+              </Card>
+              <br />
+              <Card
+                border="light"
+                bg="warning"
+                style={{
+                  width: "20rem",
+                  height: "3rem",
+                  margin: "10px 15px 40px 15px",
+                }}>
+                <div className="numberCircle aboutnumberCircle">3</div>
+                <Card.Body>
+                  <Card.Title className="aboutcardFont">
+                    Certainity of Conviction
+                  </Card.Title>
+                </Card.Body>
+              </Card>
+              <Card
+                border="light"
+                bg="warning"
+                style={{
+                  width: "25rem",
+                  height: "3rem",
+                  margin: "10px -18px 10px",
+                }}>
+                <div className="numberCircle aboutnumberCircle">4</div>
+                <Card.Body>
+                  <Card.Title className="aboutcardFont">
+                    Certainity of Prevention
+                  </Card.Title>
+                </Card.Body>
+              </Card>
+              <br />
+              <Card
+                border="light"
+                bg="warning"
+                style={{
+                  width: "31rem",
+                  height: "3.3rem",
+                  margin: "10px -60px 0px ",
+                }}>
+                <div className="numberCircle aboutnumberCircle">5</div>
+                <Card.Body>
+                  <Card.Title className="aboutcardFont">
+                    Certainity of Rehabilitation of Criminals
+                  </Card.Title>
+                </Card.Body>
+              </Card>
+
+              {/* <Button href="#" variant="outline-success" size="lg">
               Learn More
             </Button> */}
-          </Col>
-          <Col lg={4} className="aboutbottomCards">
-            <p className="aboutcertainStyle">
-              <h5><b> CERTAINTY OF REPORTING </b></h5>
-              <ul>
-                <li>
-                  Guarantee of no discrimination in (caste, colour, place).
-                </li>
-                <li>Guarantee of action against every criminal activity.</li>
-                <li>Guarantee of no language or dialect barrier</li>
-                <li>Guarantee of action against every false complaint.</li>
-              </ul>
-              <h5><b> CERTAINTY OF DETECTION</b></h5>
-              <ul>
-                <li>
-                  Use of nearby cameras and technology for crime detection.
-                </li>
-                <li>
-                  Guarantee of collecting evidence with the help of some
-                  technology.
-                </li>
-              </ul>
-              <h5><b>CERTAINTY OF CONVICTION</b></h5>
-              <ul>
-                <li>Guarantee of no innocent getting every punished.</li>
-              </ul>
-              <h5><b>CERTAINTY OF PREVENTION</b></h5>
-              <ul>
-                <li>System that can predict the crime intention. </li>
-                <li>Guarantee of preventing crime before happening. </li>
-              </ul>
-              <h5><b>CERTAINTY OF REHABILITATION OF CRIMINALS</b></h5>
-              <ul>
-                <li>
-                  Guarantee of rehabilitating criminals making them a better
-                  person.
-                </li>
-              </ul>
-            </p>
-          </Col>
-        </Row>
+            </Col>
+            <Col lg={4} className="aboutbottomCards">
+              <p className="aboutcertainStyle">
+                <h5>
+                  <b> CERTAINTY OF REPORTING </b>
+                </h5>
+                <ul>
+                  <li>
+                    Guarantee of no discrimination in (caste, colour, place).
+                  </li>
+                  <li>Guarantee of action against every criminal activity.</li>
+                  <li>Guarantee of no language or dialect barrier</li>
+                  <li>Guarantee of action against every false complaint.</li>
+                </ul>
+                <h5>
+                  <b> CERTAINTY OF DETECTION</b>
+                </h5>
+                <ul>
+                  <li>
+                    Use of nearby cameras and technology for crime detection.
+                  </li>
+                  <li>
+                    Guarantee of collecting evidence with the help of some
+                    technology.
+                  </li>
+                </ul>
+                <h5>
+                  <b>CERTAINTY OF CONVICTION</b>
+                </h5>
+                <ul>
+                  <li>Guarantee of no innocent getting every punished.</li>
+                </ul>
+                <h5>
+                  <b>CERTAINTY OF PREVENTION</b>
+                </h5>
+                <ul>
+                  <li>System that can predict the crime intention. </li>
+                  <li>Guarantee of preventing crime before happening. </li>
+                </ul>
+                <h5>
+                  <b>CERTAINTY OF REHABILITATION OF CRIMINALS</b>
+                </h5>
+                <ul>
+                  <li>
+                    Guarantee of rehabilitating criminals making them a better
+                    person.
+                  </li>
+                </ul>
+              </p>
+            </Col>
+         
+        </div>
       </Container>
       <Card className="aboutupperCards">
         <Card.Body>

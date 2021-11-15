@@ -23,7 +23,7 @@ function TnC(){
                   
                 </div>
             </div>
-            <br /><br />
+        
             <div className="row row2">
                 <div className="col-sm-8">
                     <p ><b>With an earnest endeavor to ensure the accuracy of all the content on this website, the same should not be utilized without the knowledge of the organization for any statement of law or legal purposes.<br/> In case of any uncertainty, the user can always contact the organization for any professional direction. 
