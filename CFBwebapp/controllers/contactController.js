@@ -6,7 +6,7 @@ exports.contact = async(req, res) => {
     try {
         const { name, phone, email, subject, message } = req.body;
         if (!name || !phone || !email || !subject || !message) {
-            return res.json({ error: "plzz filled bhar do yrrr" });
+            return res.json({ error: "please fill all fields" });
         } else {
             const userContact = await User.findOne({ _id: req.userID });
             if (userContact) {

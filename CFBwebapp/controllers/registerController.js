@@ -9,17 +9,17 @@ exports.signup = async (req, res) => {
   try {
     const userExist = await User.findOne({ email: email });
     if (userExist) {
-      console.log("me email chal gya");
+      console.log("email sent");
       return res.status(422).json({ error: "email already exist" });
     } else if (password != cpassword) {
-      console.log("me chal gya password vala");
+      console.log("password function working");
       return res.status(422).json({ error: "recheck password" });
     } else {
       const user = new User({ name, email, phone, password, cpassword });
       // const userRegister = await user.save();
       // =============================hasing =============================
       await user.save();
-      console.log("me chal gya");
+      console.log("working fine");
       res.status(201).json({ message: "successfully saved." });
       //  if(userRegister){
       //   res.status(201).json({ message: "successfully saved." });
