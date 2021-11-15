@@ -82,8 +82,8 @@
 
 .aboutteam img {
     max-width: 40%;
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 75px;
     border-radius: 50%;
 }
 
@@ -134,7 +134,9 @@
         margin: 0%;
         padding: 0%;
     }
-    .voluntearteam {
+    .voluntearteam,
+    .commitees .nav {
+        display: grid;
         place-items: center;
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     }
