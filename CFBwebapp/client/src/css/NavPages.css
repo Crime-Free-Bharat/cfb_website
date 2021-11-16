@@ -128,21 +128,53 @@ header {
 
 /*=========================================================== Report styling Start ==========================================================*/
 
-.sectionheadreport {
-    font-style: normal;
-    font-weight: bold;
-    font-size: 35px;
-    color: #1d0871;
-    font: roboto;
-    text-align: center;
+.reportcontainer {
+    margin: 5rem;
 }
 
-.sectionparareport {
-    font-weight: bold;
-    font: roboto;
-    color: black;
-    font-size: 15px;
-    text-align: center;
+.suspectbox,
+.victimbox {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.reportrow {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(250px, 1fr));
+    grid-column-gap: 2rem;
+}
+
+.reportrow textarea {
+    width: 100%;
+}
+
+.reportrowtext {
+    display: flex;
+    flex-direction: column;
+}
+
+.suspectbox div,
+.victimbox div {
+    margin: 5px;
+}
+
+@media(max-width:1180px) {
+    .reportcontainer {
+        margin: 1%;
+    }
+    .reportrow {
+        display: grid;
+        margin: .2rem;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+    div.victimbox,
+    div.suspectbox {
+        padding: 5px;
+    }
+    .reportrowtext {
+        margin: .2rem;
+    }
 }
 
 .boxstyle {
