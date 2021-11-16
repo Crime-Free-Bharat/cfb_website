@@ -1,8 +1,9 @@
 /* ====================================== Footer ========================================== */
 
 .footer {
-    width: 100vw;
+    width: 100%;
     background: linear-gradient(#6a1b4d, #222222);
+    margin-bottom: 0px;
 }
 
 .footer ul li a {

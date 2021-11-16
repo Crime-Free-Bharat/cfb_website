@@ -214,9 +214,8 @@ header {
 
 /*=========================================================== Act Reg styling start ==========================================================*/
 
-.section {
+.anrsection {
     padding-top: 50px;
-    background-image: url(../img/background1.png);
     padding-bottom: 50px;
 }
 
@@ -229,7 +228,10 @@ header {
     align-items: center;
     text-align: center;
     background: #ffffff;
-    padding: 10px 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
     border: 1px solid #1d0871;
     box-sizing: border-box;
     border-radius: 50px;
@@ -261,22 +263,36 @@ header {
     margin-bottom: 15px;
 }
 
-.containeractnreg {
+.container {
     width: 100%;
     background: #fff;
     margin: 0 auto;
 }
 
 .display-flex {
-    display: flex;
     justify-content: space-between;
+    -moz-justify-content: space-between;
+    -webkit-justify-content: space-between;
+    -o-justify-content: space-between;
+    -ms-justify-content: space-between;
     align-items: center;
+    -moz-align-items: center;
+    -webkit-align-items: center;
+    -o-align-items: center;
+    -ms-align-items: center;
 }
 
 .display-flex-center {
-    display: flex;
     justify-content: center;
+    -moz-justify-content: center;
+    -webkit-justify-content: center;
+    -o-justify-content: center;
+    -ms-justify-content: center;
     align-items: center;
+    -moz-align-items: center;
+    -webkit-align-items: center;
+    -o-align-items: center;
+    -ms-align-items: center;
 }
 
 .sectionpara2 {
@@ -286,8 +302,26 @@ header {
     font-size: 20px;
 }
 
-.stctionimgact {
+.stctionimg {
     height: 300px;
+}
+
+hr.new5 {
+    border: 6px solid #800000;
+    border-radius: 2px;
+}
+
+.anrimgmain {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+@media only screen and (max-width: 1180px) {
+    .anrimgmain {
+        width: 80%;
+    }
 }
 
 
