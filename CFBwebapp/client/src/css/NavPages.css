@@ -212,9 +212,8 @@ header {
 /*=========================================================== Media styling Start ==========================================================*/
 
 .sectionmedia {
-    padding-top: 50px;
-    background-image: url(../img/background1.png);
-    padding-bottom: 50px;
+    padding: 50px 0px;
+    overflow-x: hidden;
 }
 
 .sectionheadact {
@@ -238,6 +237,30 @@ header {
     width: 100%;
     background: #fff;
     margin: 0 auto;
+}
+
+div .containermedia {
+    padding: 15px;
+}
+
+.mediaYoutube {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(300px, 1fr));
+}
+
+.mediaYoutube1 {
+    margin: 1rem;
+}
+
+@media(max-width:1180px) {
+    .mediaYoutube {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+    .sectionmedia.containermdia.row.col-sm-12 p {
+        font-size: 50%;
+    }
 }
 
 
@@ -666,3 +689,31 @@ div .aboutbottomCards {
 
 
 /*=========================================================== About end ==========================================================*/
+
+
+/*=========================================================== Activities Start ==========================================================*/
+
+.ActivitiesUpperSection {
+    width: 80%;
+    font-family: Roboto, Sans-serif
+}
+
+.ActivitiesUpperSection .row .col p {
+    margin: 2rem;
+    text-align: "left";
+}
+
+@media(max-width:1180px) {
+    .ActivitiesUpperSection {
+        width: 100%;
+    }
+    .ActivitiesUpperSection .row .col p {
+        margin: .5rem;
+        padding: 0px;
+        font-size: 80%;
+        text-align: justify;
+    }
+}
+
+
+/*====================================================================== Activities end =============================================================== */

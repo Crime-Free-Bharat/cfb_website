@@ -10,17 +10,14 @@ const Section = {
   color: "#1d0871",
   fontSize: "2rem",
   margin: "2rem",
-  fontWeight: "bolder"
+  fontWeight: "bolder",
+  textAlign:"center",
 };
 const Tagline = {
   fontSize: "1.5rem",
   margin: "2rem",
   textTransform: "capitalize",
   color:"#000"
-};
-const upperSection = {
-  width: "80%",
-  fontFamily: "Roboto,Sans-serif"
 };
 
 const upperCards = {
@@ -30,14 +27,15 @@ const upperCards = {
 
 const Activities = () => {
   return (
-    <Container fluid style={upperSection}>
+    <div className="Activitiescontainer">
+    <Container fluid className="ActivitiesUpperSection" >
       <h4 style={Section}>Our Latest Post</h4>
       <Row style={{ textAlign: "center" }}>
         <Col>
           <p style={Tagline}>massa vitae tortor condimentum lacinia quis</p>
           <Image src="https://picsum.photos/950/500" fluid />
 
-          <p style={{ textAlign: "left", color: "#000", margin: "2rem" }}>
+          <p >
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Maecenas
             accumsan lacus vel facilisis. Magna eget est lorem ipsum dolor. At
@@ -133,6 +131,7 @@ const Activities = () => {
         </Col>
       </Row>
     </Container>
+    </div>
   );
 };
 
