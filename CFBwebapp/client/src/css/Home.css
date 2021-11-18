@@ -1,247 +1,246 @@
 /* ===================================================  HOME ============================================================== */
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 .homecarousel {
-    padding: 0;
-    margin: 0;
-    height: auto;
+  padding: 0;
+  margin: 0;
+  height: auto;
 }
 
 .carousel1 img {
-    width: 100vw;
-    height: 72vh;
-    object-fit: fill;
+  width: 100vw;
+  max-height: 600px;
+  object-fit: fill;
 }
 
 .carousel1 {
-    vertical-align: top;
+  vertical-align: top;
 }
 
 #homeaboutsection {
-    padding: 10rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(240, 240, 240);
+  padding: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(240, 240, 240);
 }
 
 .homeaboutpicandname {
-    margin: 3rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+  margin: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .homeaboutpicandname img {
-    width: 25vw;
-    border-radius: 3px 1px;
+  width: 25vw;
+  border-radius: 3px 1px;
 }
 
 #homebtn {
-    width: auto;
-    margin: 15px;
+  width: auto;
+  margin: 15px;
 }
 
 .ipsacheivement {
-    max-width: 70vw!important;
+  max-width: 70vw !important;
 }
 
-@media(max-width:1280px) {
-    #homeaboutsection {
-        padding: 2rem;
-        flex-direction: column;
-        display: flex;
-        align-items: center;
-    }
-    .homeaboutpicandname .homeaboutsirinfor {
-        font-size: 80%;
-    }
-    .homeaboutpicandname img {
-        max-width: 50vw;
-        border-radius: 3px 1px;
-    }
-    .ipsacheivement {
-        max-width: 100vw!important;
-        text-align: center;
-        height: auto;
-    }
+@media (max-width: 1280px) {
+  #homeaboutsection {
+    padding: 2rem;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+  }
+  .homeaboutpicandname .homeaboutsirinfor {
+    font-size: 80%;
+  }
+  .homeaboutpicandname img {
+    max-width: 50vw;
+    border-radius: 3px 1px;
+  }
+  .ipsacheivement {
+    max-width: 100vw !important;
+    text-align: center;
+    height: auto;
+  }
 }
 
 .updates,
 .video {
-    width: 40vw;
-    padding: 0vh 0vw;
-    margin: 0vh 1vw;
-    background-color: #242b2e;
-    color: white;
+  width: 40vw;
+  padding: 0vh 0vw;
+  margin: 0vh 1vw;
+  background-color: #242b2e;
+  color: white;
 }
 
 .updates li {
-    list-style: inside;
-    font-size: medium;
+  list-style: inside;
+  font-size: medium;
 }
 
 .homesec2 {
-    /* padding: 6vh 6vw; */
-    height: auto;
-    display: grid;
-    grid-template-columns: auto auto
+  /* padding: 6vh 6vw; */
+  height: auto;
+  display: grid;
+  grid-template-columns: auto auto;
 }
 
 #videosection {
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
-    display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
 
 .homesec2 h4 span {
-    margin-bottom: 0;
-    margin-left: 1vw;
+  margin-bottom: 0;
+  margin-left: 1vw;
 }
 
 .carousel-control-prev,
 .carousel-control-next {
-    height: 45vh;
-    width: 50vw;
+  height: 45vh;
+  width: 50vw;
 }
 
 .updates h4 {
-    border-bottom: 2px solid red;
-    padding: 1vh 0px;
-    margin: 0px 1vw;
+  border-bottom: 2px solid red;
+  padding: 1vh 0px;
+  margin: 0px 1vw;
 }
 
 .video,
 .updates {
-    display: block;
-    border: 2px solid black;
+  display: block;
+  border: 2px solid black;
 }
 
 #videogallery {
-    padding: 10px;
+  padding: 10px;
 }
 
 .homesec2 marquee {
-    margin: 1vh 1vw;
+  margin: 1vh 1vw;
 }
 
 .homesec2 marquee li a {
-    color: white;
+  color: white;
 }
 
 .homesec2 marquee li {
-    padding-bottom: 10px;
+  padding-bottom: 10px;
 }
 
 .homepagecard {
-    position: inherit;
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-gap: 2vw;
+  position: inherit;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 2vw;
 }
 
-@media(max-width:1180px) {
-    .homepagecard {
-        height: auto;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        grid-gap: 2vw;
-    }
+@media (max-width: 1180px) {
+  .homepagecard {
+    height: auto;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 2vw;
+  }
 }
 
 .homepagecard .card {
-    width: 100%;
-    height: auto;
-    border: 1px solid rgb(219, 224, 219);
-    padding: 5px;
-    background-color: rgb(253, 253, 253);
-    box-shadow: 3px 5px 8px #5c5959;
+  width: 100%;
+  height: auto;
+  border: 1px solid rgb(219, 224, 219);
+  padding: 5px;
+  background-color: rgb(253, 253, 253);
+  box-shadow: 3px 5px 8px #5c5959;
 }
 
 .homepagecard .card .img img {
-    width: 100%;
+  width: 100%;
 }
 
 #cards {
-    display: block;
-    margin: auto;
-    width: fit-content;
+  display: block;
+  margin: auto;
+  width: fit-content;
 }
 
 #cards h2 {
-    text-align: center;
-    font-weight: bolder;
-    color: black;
-    margin-bottom: 10px;
+  text-align: center;
+  font-weight: bolder;
+  color: black;
+  margin-bottom: 10px;
 }
 
 .cardcontent {
-    padding: 0vh 10px;
-    padding-bottom: 10px;
-    color: #4c4e4e;
-    height: 150px;
-    display: flex;
-    flex-wrap: wrap;
-    align-content: space-between;
+  padding: 0vh 10px;
+  padding-bottom: 10px;
+  color: #4c4e4e;
+  height: 150px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
 }
 
 .card a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .readmore {
-    color: purple;
-    border: 1px solid #d5d5d5;
-    padding: 10px 20px;
-    margin-top: 0;
-    width: fit-content;
-    border-radius: 25px;
-    background-color: #3300fd;
+  color: purple;
+  border: 1px solid #d5d5d5;
+  padding: 10px 20px;
+  margin-top: 0;
+  width: fit-content;
+  border-radius: 25px;
+  background-color: #3300fd;
 }
 
 .readmore:hover {
-    background-color: #1d06a0c0;
-    transition: 0.4s ease-in-out;
+  background-color: #1d06a0c0;
+  transition: 0.4s ease-in-out;
 }
 
 .readmore a {
-    color: white;
+  color: white;
 }
 
 .readmore a:hover {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 
 .homesec3 {
-    background-color: rgb(240, 240, 240);
-    height: auto;
-    margin: 2px;
-    padding: 5px;
+  background-color: rgb(240, 240, 240);
+  height: auto;
+  margin: 2px;
+  padding: 5px;
 }
 
 .homesec3 h5,
 .homesec3 p,
 .homesec3 a {
-    width: 100%;
+  width: 100%;
 }
 
 .homesec3 p {
-    height: 50px;
-    font-weight: 100;
-    font-size: 15px;
-    overflow: hidden;
-    text-overflow: ellipsis;
+  height: 50px;
+  font-weight: 100;
+  font-size: 15px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .homesec3 h5 {
-    font-weight: bold;
-    color: #000;
+  font-weight: bold;
+  color: #000;
 }
-
 
 /* ===================================================  HOME ============================================================== */
