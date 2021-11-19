@@ -1,5 +1,9 @@
 /*====================================================================== header/navbar start =============================================================== */
 
+.nav_bar {
+    position: relative;
+}
+
 .nav1 {
     overflow: hidden;
     padding: 1vh 2vw 1vh 6vw;
@@ -86,7 +90,7 @@ header {
 
 .nav2 {
     overflow: hidden;
-    padding: 0vw 2vw 0vw 6vw;
+    padding: 0vw 2vw 1vw 5vw;
     margin: 0px;
     align-content: space-around;
     border-bottom: rgb(219, 219, 219) solid 1px;
@@ -111,11 +115,27 @@ header {
 }
 
 .nav__items {
-    padding: 2.5vw 1vh 1vh 1vh;
+    padding: 2vw 1vh 1vh 1vh;
     font-weight: 350;
     width: 7vw;
     height: 8vw;
     margin: 1vh 0vh;
+}
+
+@media(max-width:1180px) {
+    .nav__items p {
+        display: none;
+    }
+    i {
+        font-size: 90%;
+    }
+    .nav1 p {
+        font-weight: bolder;
+        margin: 5px;
+        text-align: center;
+        padding-top: 1vh;
+        font-size: 2vw;
+    }
 }
 
 .nav__items:hover {

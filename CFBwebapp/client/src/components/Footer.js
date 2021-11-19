@@ -33,11 +33,11 @@ const Footer = () => {
           </div>
         </div>
         <div className="container">
-          <div className="content">
+          <div className="content footerlastData">
             <img src={logo} alt="logo" />
           </div>
           <span className="vertical-line"></span>
-          <div>
+          <div  className="content footerlastData">
             <p>
               Web Content Developed and Managed by National Technical Research &
               Development Committee, Crime Free Bharat

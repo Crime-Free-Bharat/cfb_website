@@ -46,7 +46,7 @@
 
 .footer .container {
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     align-items: center;
     margin: auto;
     width: fit-content;
@@ -72,6 +72,18 @@
     background-color: #222222;
     align-items: center;
     padding: 5px;
+}
+
+@media(max-width:1180px) {
+    .footer .content img {
+        max-width: 150%;
+        height: auto;
+    }
+    .footer p {
+        width: 100%;
+        height: auto;
+        margin: 2px;
+    }
 }
 
 
