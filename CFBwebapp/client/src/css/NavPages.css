@@ -3,7 +3,11 @@
 .nav_bar {
   position: relative;
 }
-
+header nav {
+  margin: auto;
+  width: 80vw;
+  padding: 0px;
+}
 .nav1 {
   overflow: hidden;
   padding: 1vh 2vw 1vh 6vw;
@@ -12,7 +16,6 @@
   display: flex;
   justify-content: space-between;
   width: 97vw;
-  border-bottom: rgb(219, 219, 219) solid 1px;
   font-size: 1vw;
 }
 
@@ -96,7 +99,6 @@ header {
   padding: 0vw 2vw 1vw 5vw;
   margin: 0px;
   align-content: space-around;
-  border-bottom: rgb(219, 219, 219) solid 1px;
 }
 
 .nav2 img {
@@ -110,11 +112,12 @@ header {
   padding-left: 4vw;
   width: auto;
   display: flex;
+  flex-direction: row !important;
 }
 
 .menu p {
   padding-top: 1vw;
-  font-size: 1vw;
+  font-size: 15px;
 }
 
 .nav__items {
@@ -126,11 +129,8 @@ header {
 }
 
 @media (max-width: 1180px) {
-  .nav__items p {
-    display: none;
-  }
   i {
-    font-size: 90%;
+    font-size: 100%;
   }
   .nav1 p {
     margin: 5px;
@@ -151,7 +151,41 @@ header {
 .nav__items:hover {
   background-color: rgb(250, 240, 240);
 }
+@media (max-width: 992px) {
+  .menu {
+    flex-direction: column !important;
+    padding-top: 50px;
+    padding-left: 0px;
+  }
+  .nav__items {
+    display: flex;
+    align-items: center;
+    line-height: normal;
+    font-size: 20px;
+    margin: 1px;
+    padding: 0px;
+    height: fit-content;
+    width: 100%;
+    padding: 10px;
+  }
+  .nav__items i {
+    padding: 0px 10px;
+  }
+  .nav__items:hover {
+    color: #800000;
+  }
 
+  .menu p {
+    text-align: left;
+    padding: 0px;
+    margin: auto 5px;
+    font-weight: 600;
+    font-size: 12px;
+  }
+  .menu br {
+    display: none;
+  }
+}
 /*====================================================================== header/navbar end =============================================================== */
 
 /*=========================================================== Report styling Start ==========================================================*/

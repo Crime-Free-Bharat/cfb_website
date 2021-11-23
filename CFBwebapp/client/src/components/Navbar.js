@@ -105,16 +105,20 @@ const Navbar = () => {
             </NavLink>
           </div>
         </div>
-       <nav class="navbar navbar-expand-lg">
+       <nav class="navbar navbar-expand-lg ">
         <div className="nav2 main container-fluid">
           <NavLink to="/">
             <img src={logo} alt="logo_crime_free_bharat" />
           </NavLink>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg" >
+          <i class="bi bi-list"></i>
     </button>
 
-          <div className="menu collapse navbar-collapse" id="navbarText">
+          <div className="menu offcanvas offcanvas-end" tabindex="-1" id="navbarOffcanvasLg">
+          <div class="offcanvas-header">
+    <h6 class="offcanvas-title" id="offcanvasExampleLabel">Mission Crime Free Bharat</h6>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
             <NavLink to="/">
               <div className="home nav__items">
                 <i class="bi bi-house-door"></i>
