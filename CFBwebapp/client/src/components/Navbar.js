@@ -105,13 +105,16 @@ const Navbar = () => {
             </NavLink>
           </div>
         </div>
-
-        <div className="nav2 main">
+       <nav class="navbar navbar-expand-lg">
+        <div className="nav2 main container-fluid">
           <NavLink to="/">
             <img src={logo} alt="logo_crime_free_bharat" />
           </NavLink>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-          <div className="menu">
+          <div className="menu collapse navbar-collapse" id="navbarText">
             <NavLink to="/">
               <div className="home nav__items">
                 <i class="bi bi-house-door"></i>
@@ -171,6 +174,7 @@ const Navbar = () => {
             </NavLink>
           </div>
         </div>
+        </nav>
       </header>
     </>
   );

@@ -1,477 +1,463 @@
 /* ====================================== Footer ========================================== */
 
 .footer {
-    width: 100%;
-    background: linear-gradient(#6a1b4d, #222222);
-    margin-bottom: 0px;
+  width: 100%;
+  background: linear-gradient(#6a1b4d, #222222);
+  margin-bottom: 0px;
 }
 
 .footer ul li a {
-    text-decoration: none;
-    color: white;
-    display: inline-block;
-    padding: 0.7vw 1.5vw;
-    margin: 3px;
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  padding: 0.7vw 1.5vw;
+  margin: 3px;
 }
 
 .footer ul {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 .footer ul li a:hover {
-    background-color: rgb(250, 240, 240);
-    color: #100051;
+  background-color: rgb(250, 240, 240);
+  color: #100051;
 }
 
 .footer ul li {
-    display: inline;
-    border-left: 1px white solid;
+  display: inline;
+  border-left: 1px white solid;
 }
 
 .footer .ul {
-    margin: auto;
-    width: fit-content;
-    align-items: center;
-    margin-bottom: 0;
+  margin: auto;
+  width: fit-content;
+  align-items: center;
+  margin-bottom: 0;
 }
 
 .libg {
-    border-right: 1px #ffffff solid;
+  border-right: 1px #ffffff solid;
 }
 
 .footer .content img {
-    width: 100px;
-    height: 100px;
+  width: 100px;
+  height: 100px;
 }
 
 .footer .container {
-    display: flex;
-    /* flex-wrap: wrap; */
-    align-items: center;
-    margin: auto;
-    width: fit-content;
-    padding: 1vw;
-    background: transparent;
+  display: flex;
+  /* flex-wrap: wrap; */
+  align-items: center;
+  margin: auto;
+  width: fit-content;
+  padding: 1vw;
+  background: transparent;
 }
 
 .vertical-line {
-    display: inline-block;
-    border-left: 1px solid #ccc;
-    margin: 1vh 2vh;
-    height: 4vw;
+  display: inline-block;
+  border-left: 1px solid #ccc;
+  margin: 1vh 2vh;
+  height: 4vw;
 }
 
 .footer p {
-    width: 300px;
-    margin: 0px;
-    padding: 0px;
-    color: white;
+  width: 300px;
+  margin: 0px;
+  padding: 0px;
+  color: white;
 }
 
 .footer1 {
-    background-color: #222222;
-    align-items: center;
-    padding: 5px;
+  background-color: #222222;
+  align-items: center;
+  padding: 5px;
 }
 
-@media(max-width:1180px) {
-    .footer .content img {
-        max-width: 150%;
-        height: auto;
-    }
-    .footer p {
-        width: 100%;
-        height: auto;
-        margin: 2px;
-    }
+@media (max-width: 1180px) {
+  .footer .content img {
+    max-width: 150%;
+    height: auto;
+  }
+  .footer p {
+    width: 100%;
+    height: auto;
+    margin: 2px;
+  }
 }
-
 
 /* ================================================ Footer styling ends ======================================================*/
-
 
 /*================================================ Feedback styling begin =========================================================*/
 
 .feedbackcontainer {
-    display: grid;
-    grid-template-areas: 'a b b' 'c b b' 'd b b' 'e b b';
-    grid-gap: 20px;
-    margin-bottom: 3rem;
+  display: grid;
+  grid-template-areas: "a b b" "c b b" "d b b" "e b b";
+  grid-gap: 20px;
+  margin-bottom: 3rem;
 }
 
-@media(max-width:1180px) {
-    .feedbackcontainer {
-        grid-template-areas: 'a' 'c' 'd' 'e' 'b' 'f';
-        grid-row-gap: 20px;
-        margin-bottom: 3rem;
-    }
-    .feedbackcontainer input {
-        width: 100%;
-    }
+@media (max-width: 1180px) {
+  .feedbackcontainer {
+    grid-template-areas: "a" "c" "d" "e" "b" "f";
+    grid-row-gap: 20px;
+    margin-bottom: 3rem;
+  }
+  .sectionfeedback {
+    width: 80vw;
+  }
 }
 
 .feedbackcontainer input {
-    height: 50px;
+  height: 50px;
 }
 
 .feedbackitem1 {
-    grid-area: a;
+  grid-area: a;
 }
 
 .feedbackitem2 {
-    grid-area: b;
+  grid-area: b;
 }
 
 .feedbackitem3 {
-    grid-area: c;
+  grid-area: c;
 }
 
 .feedbackitem4 {
-    grid-area: d;
+  grid-area: d;
 }
 
 .feedbackitem5 {
-    grid-area: e;
+  grid-area: e;
 }
 
 .feedbackitem6 {
-    grid-area: f;
-    text-align: left;
+  grid-area: f;
+  text-align: left;
 }
 
 .sectionfeedback {
-    width: 90vw;
-    margin-bottom: 4rem;
-    padding: 10px auto;
-    height: 90%;
-    display: flex;
-    flex-direction: column;
+  width: 70vw;
+  margin-bottom: 4rem;
+  padding: 10px auto;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
 }
 
 .sendbtnfeedback {
-    font-style: normal;
-    background: green;
-    color: white;
-    font-weight: normal;
-    font-size: 20px;
-    align-items: flex-start;
-    text-align: end;
-    padding: 10px 50px;
-    border: 1px solid #1d0871;
-    box-sizing: border-box;
-    border-radius: 10px;
+  font-style: normal;
+  background: green;
+  color: white;
+  font-weight: normal;
+  font-size: 20px;
+  align-items: flex-start;
+  text-align: end;
+  padding: 10px 50px;
+  border: 1px solid #1d0871;
+  box-sizing: border-box;
+  border-radius: 10px;
 }
 
 .feedback input,
 .feedback textarea {
-    background-color: #26a8d36a;
-    color: #000000;
-    font-weight: 700;
+  color: #000000;
 }
 
 .feedback input:hover,
 .feedback textarea:hover {
-    box-shadow: 2px 2px 5px 1px grey;
-    opacity: 0.9;
+  color: #222222;
 }
 
 .sendbtnfeedback:hover {
-    opacity: 0.7;
+  opacity: 0.7;
 }
 
 .secondsecfeedback {
-    padding: 50px 15px;
+  padding: 50px 15px;
 }
 
 .sectionparaactfeedback1 {
-    font-weight: bold;
-    font: roboto;
-    text-align: center;
-    color: black;
-    font-size: 35px;
+  font-weight: bold;
+  font: roboto;
+  text-align: center;
+  color: black;
+  font-size: 35px;
 }
 
 .sectionparaactfeedback2 {
-    font-weight: 500;
-    font: roboto;
-    margin-bottom: 3rem;
-    text-align: center;
-    color: black;
-    font-size: 20px;
+  font-weight: 500;
+  font: roboto;
+  margin-bottom: 3rem;
+  text-align: center;
+  color: black;
+  font-size: 20px;
 }
 
 .sectionparaactfeedback p {
-    margin-bottom: 3px;
+  margin-bottom: 3px;
 }
 
 .adjfeedback {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .stctionimg2 {
-    height: 400px;
-    width: 1160px;
-    align-items: center;
-    margin-bottom: 3rem;
+  height: 400px;
+  width: 1160px;
+  align-items: center;
+  margin-bottom: 3rem;
 }
 
 .feedbackbuttonsend {
-    text-align: end;
+  text-align: end;
 }
 
-
 /*=========================================================== Feedback styling end ==========================================================*/
-
 
 /*=========================================================== TnC styling begins ==========================================================*/
 
 .tc,
 .feedback {
-    display: grid;
-    place-items: center;
+  display: grid;
+  place-items: center;
 }
 
 .sectiontc {
-    margin: 5rem 3rem;
-    padding: 10px 40px;
-    height: auto;
-    box-shadow: 5px 7px 15px 5px rgba(0, 0, 0, 0.306);
+  margin: 5rem 3rem;
+  padding: 10px 40px;
+  height: auto;
+  box-shadow: 5px 7px 15px 5px rgba(0, 0, 0, 0.306);
 }
 
-@media(max-width:1280px) {
-    .sectiontc {
-        margin: 0rem 0rem;
-        padding: 5px 10px;
-        height: auto;
-        box-shadow: 5px 7px 15px 5px rgba(0, 0, 0, 0.306);
-    }
+@media (max-width: 1280px) {
+  .sectiontc {
+    margin: 0rem 0rem;
+    padding: 5px 10px;
+    height: auto;
+    box-shadow: 5px 7px 15px 5px rgba(0, 0, 0, 0.306);
+  }
 }
 
 .sectionheadacttc {
-    text-align: center;
-    font-weight: bold;
-    text-align: center;
-    font-size: 40px;
-    color: #1d0871;
-    font: roboto;
+  text-align: center;
+  font-weight: bold;
+  text-align: center;
+  font-size: 40px;
+  color: #1d0871;
+  font: roboto;
 }
 
 .containertc .containerterms {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 div.col-sm-4 {
-    align-self: center;
-    display: flex;
-    justify-content: center;
+  align-self: center;
+  display: flex;
+  justify-content: center;
 }
 
 .sectiontc .row2 p {
-    text-align: justify;
-    width: 100%;
-    font-weight: 500;
+  text-align: justify;
+  width: 100%;
+  font-weight: 500;
 }
 
 .stctionimgtc {
-    height: 200px;
-    margin-right: -10px;
+  height: 200px;
+  margin-right: -10px;
 }
 
 .stctionimgtc2 {
-    margin-left: 15px;
-    height: 200px;
+  margin-left: 15px;
+  height: 200px;
 }
 
-
 /*=========================================================== TnC styling end ==========================================================*/
-
 
 /*=========================================================== Policies styling start ==========================================================*/
 
 .policies {
-    margin: 3rem 2rem;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
+  margin: 3rem 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
 
-
 /*=========================================================== Policies styling end ==========================================================*/
-
 
 /*=========================================================== RTI styling begin ==========================================================*/
 
 .RTImain {
-    overflow-x: hidden;
+  overflow-x: hidden;
 }
 
 .headline {
-    background-color: #d2e5ff;
-    width: 100%;
-    padding-top: 0.3em;
-    height: 3vw;
-    margin-top: 2em;
-    padding-left: 5em;
+  background-color: #d2e5ff;
+  width: 100%;
+  padding-top: 0.3em;
+  height: 3vw;
+  margin-top: 2em;
+  padding-left: 5em;
 }
 
 .headline a {
-    color: #00588f;
-    text-decoration: none;
+  color: #00588f;
+  text-decoration: none;
 }
 
 #nocolor {
-    color: black;
-    cursor: default;
+  color: black;
+  cursor: default;
 }
 
 .grid1 {
-    width: 90vw;
-    display: grid;
-    margin: auto;
-    grid-template-columns: repeat(2, minmax(250px, 1fr));
+  width: 90vw;
+  display: grid;
+  margin: auto;
+  grid-template-columns: repeat(2, minmax(250px, 1fr));
 }
 
 .grid1 p {
-    text-align: justify;
-    margin-top: 2em;
-    font-size: large;
-    color: #000000;
-    font-family: roboto;
-    max-width: 100%;
-    height: auto;
+  text-align: justify;
+  margin-top: 2em;
+  font-size: large;
+  color: #000000;
+  font-family: roboto;
+  max-width: 100%;
+  height: auto;
 }
 
 #submit {
-    color: #00588f;
+  color: #00588f;
 }
 
 .poster {
-    margin-top: 2rem;
-    padding: 0;
+  margin-top: 2rem;
+  padding: 0;
 }
 
 .poster img {
-    max-width: 100%;
-    width: 250px;
-    height: auto;
+  max-width: 100%;
+  width: 250px;
+  height: auto;
 }
 
 .grid2 {
-    width: 95vw;
-    display: grid;
-    margin: 2rem auto;
-    grid-template-columns: repeat(2, minmax(250px, 1fr));
-    grid-template-rows: repeat(4, minmax(50px, 1fr));
-    grid-column-gap: 2rem;
-    grid-row-gap: 3rem;
+  width: 95vw;
+  display: grid;
+  margin: 2rem auto;
+  grid-template-columns: repeat(2, minmax(250px, 1fr));
+  grid-template-rows: repeat(4, minmax(50px, 1fr));
+  grid-column-gap: 2rem;
+  grid-row-gap: 3rem;
 }
 
-@media(max-width:1180px) {
-    .grid2,
-    .grid1 {
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        grid-row-gap: 2rem;
-    }
-    .RTISubmit {
-        margin-bottom: 10px;
-    }
+@media (max-width: 1180px) {
+  .grid2,
+  .grid1 {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-row-gap: 2rem;
+  }
+  .RTISubmit {
+    margin-bottom: 10px;
+  }
 }
 
 .RTISubmit {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .RTISubmit p {
-    color: #bc1717;
-    text-align: left;
-    padding-left: 1rem;
+  color: #bc1717;
+  text-align: left;
+  padding-left: 1rem;
 }
 
 .itemRTI,
 .itemRTI1 {
-    display: grid;
-    place-items: center;
-    background-color: #26a8d34c;
-    box-shadow: 0 0 20px rgb(0 0 0 / 20%);
-    border-left: 5px solid #0d8ad6;
-    font-weight: bolder;
-    transition: 0.1s linear;
-    max-width: 100%;
-    height: 60px;
+  display: grid;
+  place-items: center;
+  background-color: #26a8d34c;
+  box-shadow: 0 0 20px rgb(0 0 0 / 20%);
+  border-left: 5px solid #0d8ad6;
+  font-weight: bolder;
+  transition: 0.1s linear;
+  max-width: 100%;
+  height: 60px;
 }
 
 .itemRTI1 {
-    height: auto;
+  height: auto;
 }
 
 .itemRTI a {
-    text-decoration: none;
-    color: rgb(0, 0, 0);
+  text-decoration: none;
+  color: rgb(0, 0, 0);
 }
 
 .itemRTI:hover,
 .itemRTI1:hover {
-    border-left: 10px solid #0d8ad6;
-    padding-left: 1em;
-    transition: .3s ease;
+  border-left: 10px solid #0d8ad6;
+  padding-left: 1em;
+  transition: 0.3s ease;
 }
 
-
 /*=========================================================== RTI styling end ==========================================================*/
-
 
 /*=========================================================== Volunteer styling start ==========================================================*/
 
 .section {
-    padding-top: 50px;
-    background-image: url(../img/background1.png);
-    padding-bottom: 50px;
+  padding-top: 50px;
+  background-image: url(../img/background1.png);
+  padding-bottom: 50px;
 }
 
 .sendbtn {
-    font-style: normal;
-    background: #1d0871;
-    color: white;
-    font-weight: normal;
-    display: flex;
-    font-size: 20px;
-    align-items: center;
-    text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 50px;
-    padding-right: 50px;
-    border: 1px solid #1d0871;
-    box-sizing: border-box;
-    border-radius: 50px;
+  font-style: normal;
+  background: #1d0871;
+  color: white;
+  font-weight: normal;
+  display: flex;
+  font-size: 20px;
+  align-items: center;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
+  border: 1px solid #1d0871;
+  box-sizing: border-box;
+  border-radius: 50px;
 }
 
 .sendbtn:hover {
-    opacity: 0.9;
+  opacity: 0.9;
 }
 
 .sectionhead {
-    font-style: normal;
-    font-weight: bold;
-    font-size: 35px;
-    color: #1d0871;
-    font: roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 35px;
+  color: #1d0871;
+  font: roboto;
 }
 
 .sectionpara2 {
-    font-weight: bold;
-    font: roboto;
-    color: black;
-    font-size: 20px;
+  font-weight: bold;
+  font: roboto;
+  color: black;
+  font-size: 20px;
 }
 
 .stctionimg {
-    height: 300px;
+  height: 300px;
 }
-
 
 /*=========================================================== Volunteer styling end ==========================================================*/
