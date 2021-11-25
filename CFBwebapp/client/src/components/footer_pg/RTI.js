@@ -13,48 +13,39 @@ function RTI() {
         <div rtiitem2>
           <div className="rtiitem2_1">
           <p>
-            DRDO is placed in Second Schedule of RTI Act, 2005 and is exempt
-            from disclosure of information under Section 24(1) except
-            information pertaining to the allegations of corruption and human
-            rights  violations.
+          Right to information, a revolutionary act by the Parliament of India, empowering every citizen of India to secure access to information under the control of public authorities to promote transparency in the Indian democracy. This preliminary act was passed in the year 2005. Though it was passed on the 15th of June, it was enacted only by the 12th of October 2005. This act opens the door for scrutiny and makes a solid defense against corruption, now every public authority is accountable to every citizen who wishes to seek information. It is a major act in establishing democracy making every organization, government official accountable to be questioned by the taxpayers that how their money is being used. 
           </p></div>
           <br />
-          <div className="itemRTI1 RTISubmit">
-          <p>
-            How To Submit RTI Application (Hindi)PDF file that opens in new
-            window.
-          </p></div>
+         
         </div>
       </div>
-
+      <div className="itemRTI1 RTISubmit">
+          <p>
+          Right to information includes: 
+          </p></div>
       <div className="grid2">
         <div className="itemRTI item0">
-          <NavLink to="#">Public Authorities under DRDO</NavLink>
+          <NavLink to="#">	Any document, manuscript, or files </NavLink>
         </div>
         <div className="itemRTI item2">
-          <NavLink to="#">RTI Act, 2005 (Ministry of Law and Justice) </NavLink>
+          <NavLink to="#">	Any microfilm or copy of any document </NavLink>
         </div>
         <div className="itemRTI item3 ">
-          <NavLink to="#">Exemption under RTI Act, 2005 </NavLink>
+          <NavLink to="#">	Any image or copy of an image </NavLink>
         </div>
-        <div className="itemRTI item4">
-          <NavLink to="#">
-            Guidelines for Information Seekers (English {"&"} Hindi)
-          </NavLink>
-        </div>
-        <div className="itemRTI item5">
+               <div className="itemRTI item5">
           <NavLink to="#">How to submit RTI Application </NavLink>
-        </div>
-        <div className="itemRTI item6">
-          <NavLink to="#">Frequently Asked Questions on RTI </NavLink>
-        </div>
-        <div className="itemRTI item7">
-          <NavLink to="#">Suo Motu disclosures u/s 4(1)(b) of the ACT </NavLink>
-        </div>
-        <div className="itemRTI item8">
-          <NavLink to="#">Important Decisions/orders </NavLink>
-        </div>
+        </div>     
+        
       </div>
+      <div className="grid3">
+      <div className="itemRTI2 grid3_item">
+          <NavLink to="#">Any material produced by a computer or any other device 
+RTI is so in favor of the people that even an illiterate person can file it to know the transparent details of his requirement unless it would affect national security, sovereignty, strategic or scientific interest, or something disallowed by court , or violating someone right to privacy . 
+One can easily file RTI, to the PIO (Public information officer) of the department concerned. You can write an application online or offline in any language with a stamp paper of 10 rupees, which is exempted in case of BPL. PIO are obliged to convey back with all the answers within a respected time of 30 days. If due to any reason the response is delayed the PIO can be fined unless he specifies back the reason for delay. 
+ </NavLink>
+        </div>
+        </div>
     </div>
   );
 }
