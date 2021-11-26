@@ -52,7 +52,19 @@ const Division = () => {
                       data-bs-dismiss="modal"
                       aria-label="Close"></button>
                   </div>
-                  <div className="modal-body">...</div>
+                  <div className="modal-body">A man who serves the country can change the system.
+Experience as the highest-ranking police officer as a DGP Mr.
+Maithili Sharan Gupta. It has incredible work in the law
+enforcement industry and has wonderful skills like Analytics
+skills, Operation Management, Team Building, and many other
+features. He has completed the M. Tech course in the Strong
+military and Protective services Professionals from the highly
+reorganized institute IIT Delhi. He worked on several projects
+that can support the transformation of the capability of India. At
+present, he works as a project leader of the study cum
+implementation team of the GRP Help App and Investigation
+Support System, and also as a President of CRIME FREE
+BHARAT. The idea behind this project is beautiful.</div>
                 </div>
               </div>
             </div>
@@ -132,7 +144,7 @@ const Division = () => {
                 <div className="modal-dialog">
                   <div className="modal-content">
                     <div className="modal-header">
-                      <h5 className="modal-title" id="President">
+                      <h5 className="modal-title" id="sumitkumar">
                         About Sumit Sir
                       </h5>
                       <button
@@ -141,7 +153,18 @@ const Division = () => {
                         data-bs-dismiss="modal"
                         aria-label="Close"></button>
                     </div>
-                    <div className="modal-body">...</div>
+                    <div className="modal-body"> Mr. Sumit Kumar is a cybercrime expert
+at Delhi police and a National Joint Secretary of National
+Technical Research and Development Committee (NTRDC) at
+Crime Free Bharat (CFB). He is a member of the Global
+Advisory Board of Threat Intelligence CTIA and also a certified
+Threat Intelligence Analyst in IMEA. He is a founder of Noob
+Hackers community, NHC. Being a bug hunter at Bug crowd
+and HackerOne, he did several bug bounty hunting. He has also
+achieved various certifications like CISA, Access Data certified
+investigator, Black bag certified mobilize operation, Google
+cloud platform (GCP), Splunk could infrastructure, and many
+others.</div>
                   </div>
                 </div>
               </div>
@@ -152,7 +175,7 @@ const Division = () => {
                     className="btn btn-primary about-button"
                     type="button"
                     data-bs-toggle="modal"
-                    data-bs-target="#Vice-President">
+                    data-bs-target="#internal2">
                     Manish Kumar
                   </button>
                 </h2>
@@ -165,7 +188,7 @@ const Division = () => {
                 </div>
               </div>
               <div
-                id="Vice-President"
+                id="internal2"
                 className="modal fade"
                 aria-labelledby="panelsStayOpen-headingOne"
                 tabindex="-1"
@@ -182,7 +205,15 @@ const Division = () => {
                         data-bs-dismiss="modal"
                         aria-label="Close"></button>
                     </div>
-                    <div className="modal-body">...</div>
+                    <div className="modal-body">A man with his laptop who thinks he
+can change the world. Mr. Manish Kumar is served as a National
+General Secretary in the CRIME FREE BHARAT. He is CEO of
+the VIEH group, where they serve various posts. He also works
+as a Chief Information Security officer. His skills are Wireless
+Networking, Kali Linux, and Ethical Hacking. He has various
+industrial knowledge like Penetration testing, Cyber security,
+web development, and many other things.
+</div>
                   </div>
                 </div>
               </div>
@@ -232,7 +263,7 @@ const Division = () => {
                     className="btn btn-primary about-button"
                     type="button"
                     data-bs-toggle="modal"
-                    data-bs-target="#Vice-President">
+                    data-bs-target="#Executive-Leader">
                     Bhupesa Pallai
                   </button>
                 </h2>
@@ -253,7 +284,7 @@ const Division = () => {
                 <div className="modal-dialog">
                   <div className="modal-content">
                     <div className="modal-header">
-                      <h5 className="modal-title" id="President">
+                      <h5 className="modal-title" id="Executive-Leader">
                         About Executive Leader
                       </h5>
                       <button
@@ -262,7 +293,24 @@ const Division = () => {
                         data-bs-dismiss="modal"
                         aria-label="Close"></button>
                     </div>
-                    <div className="modal-body">...</div>
+                    <div className="modal-body">Mr. Bhupesa Kumar Pallai, a
+proud veteran, brighten himself by serving in the Indian Army,
+where he executed several complex projects to empower the
+nation, and he is the Co-founder and director of AACSL, a cyber
+security company in Odisha, with over two decades of
+experience in cyber security. As he is a part of a major mission,
+Crime Free Bharat, he is an executive leader of the National
+Technical Research and Development Committee (NTRDC). He
+also got various medals and honors, like General Officer
+Commendation Card, for devotion to his duty towards the
+Nation. He is now a certified and listed member of the Microsoft
+company. Age is not a barrier to learn and achieve something
+new, it’s only a limitation you put on your mind. He proved this
+beautifully by achieving over 200 National and International
+certifications through an online portal after his retirement. One
+of the proudest moments in his life is making a record under the
+INDIA BOOK OF RECORDS by completing 200 technical
+courses from January 30, 2020, to July 28, 2021</div>
                   </div>
                 </div>
               </div>
@@ -272,7 +320,7 @@ const Division = () => {
                     className="btn btn-primary about-button"
                     type="button"
                     data-bs-toggle="modal"
-                    data-bs-target="#Vice-President">
+                    data-bs-target="#Chief-Project-Manager">
                     Yuvah
                   </button>
                 </h2>
@@ -302,7 +350,16 @@ const Division = () => {
                         data-bs-dismiss="modal"
                         aria-label="Close"></button>
                     </div>
-                    <div className="modal-body">...</div>
+                    <div className="modal-body">Man love to facing the challenges in
+life. Mr. Yuvah L Kumar is highly experienced in cyber
+technology. He is completing his diploma in electronics and
+communication from the Guru Nanak Institute of technology. He
+is a highly focused person and hardworking and can add to any
+team he is a part of His energy to make things happen was
+contagious and it helped us achieve great goals. One of the best
+project leaders and he is CEO and Founder of the YCL NET
+SURAKSHA and also serves as a Chief project manager at
+CRIME FREE BHARAT</div>
                   </div>
                 </div>
               </div>
