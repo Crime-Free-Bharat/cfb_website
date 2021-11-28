@@ -1,8 +1,8 @@
 import React from "react";
 import {NavLink} from "react-router-dom";
-import cfb1 from "../../img/cfb1.png";
-import cfb2 from "../../img/cfb2.png";
-import cfb3 from "../../img/cfb3.png";
+import cfb1 from "../../img/youtubemediaimg1.png";
+import cfb2 from "../../img/youtubemediaimg2.png";
+import cfb3 from "../../img/youtubemediaimg3.png";
 import cfb4 from "../../img/cfb4.png";
 import cfb5 from "../../img/cfb5.png";
 import cfb6 from "../../img/cfb6.png";
@@ -36,11 +36,11 @@ function Media() {
                 <div
                   class="bg-image hover-overlay ripple shadow-1-strong rounded"
                   data-ripple-color="light">
-                  <img src={cfb1} class="w-100" alt="" />
+                 
                   <NavLink
-                    to="#!"
+                    to="/activity/#mediayoutubevideo1"
                     data-mdb-toggle="modal"
-                    data-mdb-target="#exampleModal1">
+                    data-mdb-target="#exampleModal1"> <img src={cfb1} class="w-100 mediaYoutubeimg" alt="" />
                     <div
                       class="mask"
                       style={{
@@ -54,11 +54,11 @@ function Media() {
                 <div
                   class="bg-image hover-overlay ripple shadow-1-strong rounded"
                   data-ripple-color="light">
-                  <img src={cfb2} class="w-100" alt="" />
+                 
                   <NavLink
-                    to="#!"
+                    to="/activity/#mediayoutubevideo2"
                     data-mdb-toggle="modal"
-                    data-mdb-target="#exampleModal2">
+                    data-mdb-target="#exampleModal2"> <img src={cfb2} class="w-100 mediaYoutubeimg" alt="" />
                     <div
                       class="mask"
                       style={{
@@ -72,11 +72,11 @@ function Media() {
                 <div
                   class="bg-image hover-overlay ripple shadow-1-strong rounded"
                   data-ripple-color="light">
-                  <img src={cfb3} class="w-100" alt="" />
+                 
                   <NavLink
-                    to="#!"
+                    to="/activity/#mediayoutubevideo3"
                     data-mdb-toggle="modal"
-                    data-mdb-target="#exampleModal3">
+                    data-mdb-target="#exampleModal3"> <img src={cfb3} class="w-100 mediaYoutubeimg" alt="" />
                     <div
                       class="mask"
                       style={{
@@ -86,6 +86,13 @@ function Media() {
                 </div>
               </div>
             </div>
+       
+
+
+
+
+
+
        
           {/* <!-- Section: Images --> */}
 
@@ -191,26 +198,8 @@ function Media() {
           </div>
           {/* <!-- Gallery --> */}
           <div class="mediaYoutube">
-            <div class="mediaYoutube1">
-              <img
-                src={cfb1}
-                class="w-100 shadow-1-strong rounded mb-4"
-                alt=""
-              />
-               </div> <div class="mediaYoutube1">
-              <img
-                src={cfb2}
-                class="w-100 shadow-1-strong rounded mb-4"
-                alt=""
-              />
-            </div>
-            <div class="mediaYoutube1">
-              <img
-                src={cfb3}
-                class="w-100 shadow-1-strong rounded mb-4"
-                alt=""
-              />
-               </div> <div class="mediaYoutube1">
+         
+                <div class="mediaYoutube1">
               <img
                 src={cfb4}
                 class="w-100 shadow-1-strong rounded mb-4"
