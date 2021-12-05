@@ -554,6 +554,30 @@ hr.new5 {
     height: 250px;
 }
 
+.contactformitems {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.contactformitems .contactformitem1,
+.contactformitem2 {
+    width: 48%;
+    margin: .5rem;
+}
+
+@media (max-width: 1180px) {
+    .contactformitems {
+        display: block;
+    }
+    .contactformitems .contactformitem1,
+    .contactformitem2 {
+        width: 90%;
+        text-align: center;
+    }
+}
+
 
 /*=========================================================== Contact styling end ==========================================================*/
 
