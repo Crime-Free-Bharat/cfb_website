@@ -507,7 +507,7 @@ const Report_crime = () => {
               className="form-control"
               rows="5"
               placeholder="report with  Village name and district name"
-              name="suspectReport"
+              name="victimReport"
               onChange={handleInputs}></textarea>
           </div>
         </div>
