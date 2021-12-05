@@ -70,8 +70,8 @@ const Contact = () => {
             </div>
             <div className="col-sm-6 secondsec">
               <form method="POST">
-                <div className="row">
-                  <div className="col-6">
+              <div className="contactformitems">
+                  <div className="contactformitem1">
                     <input
                       type="text"
                       className="form-control"
@@ -82,7 +82,7 @@ const Contact = () => {
                       required
                     />
                   </div>
-                  <div className="col-6">
+                  <div className="contactformitem2">
                     <input
                       type="number"
                       className="form-control"
@@ -94,9 +94,9 @@ const Contact = () => {
                     />
                   </div>
                 </div>
-                <br />
-                <div className="row">
-                  <div className="col-6">
+               
+                <div className="contactformitems">
+                  <div className="contactformitem1">
                     <input
                       type="text"
                       className="form-control"
@@ -107,7 +107,7 @@ const Contact = () => {
                       required
                     />
                   </div>
-                  <div className="col-6">
+                  <div className="contactformitem2">
                     <input
                       type="text"
                       className="form-control"
@@ -118,9 +118,7 @@ const Contact = () => {
                       required
                     />
                   </div>
-                </div>
-                <br />
-                <div className="row">
+                </div> <div className="row">
                   <div className="col-12">
                     <textarea
                       type="text"
@@ -147,6 +145,9 @@ const Contact = () => {
                     </button>
                   </div>
                 </div>
+
+
+              
               </form>
             </div>
           </div>
