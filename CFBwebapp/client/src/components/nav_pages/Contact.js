@@ -43,9 +43,9 @@ const Contact = () => {
       });
       const data = await res.json();
       if (!data || res.status === 400) {
-        alert("data not send");
+        alert("Failed or Unable to not send Please try again");
       } else {
-        alert("message send khush hoja");
+        alert("Contact Details Received");
         setUserData({ ...userData, message: "" });
       }
     }
