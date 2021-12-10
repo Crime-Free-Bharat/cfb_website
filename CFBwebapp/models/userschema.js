@@ -93,6 +93,28 @@ const userSchema = new mongoose.Schema({
             required: true,
         },
     }, ],
+    feedbacks: [{
+        fname: {
+            type: String,
+            required: true,
+        },
+        fphone: {
+            type: Number,
+            required: true,
+        },
+        femail: {
+            type: String,
+            required: true,
+        },
+        fsubject: {
+            type: String,
+            required: true,
+        },
+        fmessage: {
+            type: String,
+            required: true,
+        },
+    }, ],
     tokens: [{
         token: {
             type: String,
@@ -155,6 +177,22 @@ userSchema.methods.addReport = async function(category, date, state, district, p
         });
         await this.save();
         return this.reports;
+    } catch (err) {
+        console.log(err);
+    }
+};
+//===================================== store the feedback ============================
+userSchema.methods.addFeedback = async function(fname, fphone, femail, fsubject, fmessage) {
+    try {
+        this.feedbacks = this.feedbacks.concat({
+            fname,
+            fphone,
+            femail,
+            fsubject,
+            fmessage,
+        });
+        await this.save();
+        return this.feedbacks;
     } catch (err) {
         console.log(err);
     }

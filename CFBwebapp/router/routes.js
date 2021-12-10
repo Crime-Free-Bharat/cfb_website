@@ -5,6 +5,7 @@ const authenticate = require("../middleware/authenticate");
 const { signup } = require("../controllers/registerController");
 const { login } = require("../controllers/loginController");
 const { contact } = require("../controllers/contactController");
+const { feedback } = require("../controllers/feedbackController");
 const { reports, getReport } = require("../controllers/reportcrimeController");
 router.post(
     "/signup", [
@@ -38,6 +39,7 @@ router.post(
 );
 
 router.post("/contact", authenticate, contact);
+router.post("/feedback", authenticate, feedback);
 
 router.get("/about", authenticate, (req, res) => {
     console.log("hello i am about");

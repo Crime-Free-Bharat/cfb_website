@@ -1,6 +1,6 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
-// import Login from "../user_auth/Login_pages/Login";
+import Login from "../user_auth/AUTH/Common/Login";
 import Signup from "../../pages/auth_render/signup";
 import email from "../user_auth/verification_pages/Email_Res";
 import emailver from "../user_auth/verification_pages/Email_Veri";
@@ -17,7 +17,7 @@ const AuthMain = () => {
         <Route exact path="/email" component={email} />
         <Route exact path="/emailver" component={emailver} />
         <Route exact path="/signup" component={Signup} />
-        {/* <Route exact path="/login" component={Login} />  */}
+        <Route exact path="/login" component={Login} /> 
         <Route exact path="/preauth" component={Preauth} />
       </Switch>
     </>
