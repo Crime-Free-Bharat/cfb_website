@@ -73,7 +73,7 @@ const Report_crime = () => {
       if (!data || res.status === 400) {
         alert("please Login or Fill all Fields");
       } else {
-        alert("Report Filed");
+        alert("Report Send");
         setUserData({
           ...userData,
           category: "",

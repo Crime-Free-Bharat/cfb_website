@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, {useState} from "react";
 import contactus from "../../img/contactus.svg";
 
 const Contact = () => {
@@ -11,7 +11,7 @@ const Contact = () => {
   });
 
   //we are storing data
-  const handleinputs = (e) => {
+  const handleinputs = e => {
     const name = e.target.name;
     const value = e.target.value;
 
@@ -22,9 +22,9 @@ const Contact = () => {
   };
 
   //=== send data to backend ==========
-  const contactForm = async (e) => {
+  const contactForm = async e => {
     e.preventDefault();
-    const { name, phone, email, subject, message } = userData;
+    const {name, phone, email, subject, message} = userData;
     if (!name || !phone || !email || !subject || !message) {
       alert("fill data");
     } else {
@@ -46,7 +46,7 @@ const Contact = () => {
         alert("Failed or Unable to not send Please try again");
       } else {
         alert("Contact Details Received");
-        setUserData({ ...userData, message: "" });
+        setUserData({name: "", phone: "", email: "", subject: "", message: ""});
       }
     }
   };
@@ -70,7 +70,7 @@ const Contact = () => {
             </div>
             <div className="col-sm-6 secondsec">
               <form method="POST">
-              <div className="contactformitems">
+                <div className="contactformitems">
                   <div className="contactformitem1">
                     <input
                       type="text"
@@ -94,7 +94,6 @@ const Contact = () => {
                     />
                   </div>
                 </div>
-               
                 <div className="contactformitems">
                   <div className="contactformitem1">
                     <input
@@ -118,7 +117,8 @@ const Contact = () => {
                       required
                     />
                   </div>
-                </div> <div className="row">
+                </div>{" "}
+                <div className="row">
                   <div className="col-12">
                     <textarea
                       type="text"
@@ -127,8 +127,7 @@ const Contact = () => {
                       rows="7"
                       name="message"
                       value={userData.message}
-                      onChange={handleinputs}
-                    ></textarea>
+                      onChange={handleinputs}></textarea>
                   </div>
                 </div>
                 <br />
@@ -139,15 +138,11 @@ const Contact = () => {
                       className="sendbtn"
                       name="submit"
                       value="submit"
-                      onClick={contactForm}
-                    >
+                      onClick={contactForm}>
                       SUBMIT
                     </button>
                   </div>
                 </div>
-
-
-              
               </form>
             </div>
           </div>
