@@ -222,3 +222,14 @@
   .stctionimgpre {
     height: 300px;
     }
+.btnlogin{
+    padding: 0.5rem 0.5rem 0.5rem 1rem;
+    color: #0c0000;
+    background:#fff ;
+    border: none;
+    border-radius: 4px;
+}
+.btnlogin:hover{
+  color:#3b5998;
+  letter-spacing: 1px;
+}

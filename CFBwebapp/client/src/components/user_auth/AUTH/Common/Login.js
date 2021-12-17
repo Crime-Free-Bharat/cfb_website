@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { NavLink, useHistory } from "react-router-dom";
 
-const Login = () => {
+const Login = (props) => {
   const history = useHistory();
   const [email, setEmail] = useState("");
   const [password, setpassword] = useState("");
@@ -35,6 +35,7 @@ const Login = () => {
     <>
       <section className="signup">
         <div className="container">
+        <h4 className="text-center mt-5 fs-5">Welcome Login {props.head}</h4> 
           <h4 className="text-center mt-5 fs-5">
             Don't have an account?
             <NavLink to="/signup" className="login">

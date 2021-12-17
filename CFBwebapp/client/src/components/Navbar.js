@@ -100,7 +100,7 @@ const Navbar = () => {
               </div>
               {/* <div className="nav1lang">language</div> */}
             </NavLink>
-            <NavLink to="/signup">
+            <NavLink to="/preauth">
               <div className="nav1login">{t("login/signup")}</div>
             </NavLink>
           </div>
