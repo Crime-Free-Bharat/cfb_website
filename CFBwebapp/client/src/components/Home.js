@@ -8,6 +8,7 @@ import sirimg from "../img/sir.png";
 import Cookies from "js-cookie";
 import {useTranslation} from "react-i18next";
 import languages from "../api/languages";
+import updates from "../api/data_updates";
 
 const Home = () => {
   const currentLanguageCode = Cookies.get("i18next");
@@ -28,24 +29,28 @@ const Home = () => {
               data-bs-slide-to="0"
               className="active"
               aria-current="true"
-              aria-label="Slide 1"></button>
+              aria-label="Slide 1"
+            ></button>
             <button
               type="button"
               data-bs-target="#myCarousel"
               data-bs-slide-to="1"
-              aria-label="Slide 2"></button>
+              aria-label="Slide 2"
+            ></button>
             <button
               type="button"
               data-bs-target="#myCarousel"
               data-bs-slide-to="2"
-              aria-label="Slide 3"></button>
+              aria-label="Slide 3"
+            ></button>
           </div>
 
           {/* <!-- Wrapper for slides --> */}
           <div className="carousel-inner">
             <div
               className="carousel-item active carousel1"
-              data-bs-interval="3000">
+              data-bs-interval="3000"
+            >
               <img src={header} alt="Crime Free Bharat" />
             </div>
 
@@ -63,20 +68,24 @@ const Home = () => {
             className="carousel-control-prev"
             type="button"
             data-bs-target="#myCarousel"
-            data-bs-slide="prev">
+            data-bs-slide="prev"
+          >
             <span
               className="carousel-control-prev-icon"
-              aria-hidden="true"></span>
+              aria-hidden="true"
+            ></span>
             <span className="visually-hidden">Previous</span>
           </button>
           <button
             className="carousel-control-next"
             type="button"
             data-bs-target="#myCarousel"
-            data-bs-slide="next">
+            data-bs-slide="next"
+          >
             <span
               className="carousel-control-next-icon"
-              aria-hidden="true"></span>
+              aria-hidden="true"
+            ></span>
             <span className="visually-hidden">Next</span>
           </button>
         </div>
@@ -85,113 +94,139 @@ const Home = () => {
       {/* section second start  */}
       <section id="homeaboutsection">
         <div className="homeaboutpicandname">
-          <div className="homeaboutsirimg"> <img src={sirimg} alt="Maithili Sharn Gupta's " /></div>
-          <div className="homeaboutsirinfor">  {t("small_about1")}<br/> {t("small_about2")}</div>
+          <div className="homeaboutsirimg">
+            {" "}
+            <img src={sirimg} alt="Maithili Sharn Gupta's " />
+          </div>
+          <div className="homeaboutsirinfor">
+            {" "}
+            {t("small_about1")}
+            <br /> {t("small_about2")}
+          </div>
         </div>
-        <div className="homeaboutinfo">     <h2>
-              <span>{t("About_CFB")}</span>
-            </h2>
-            <hr />
-            <p>
-              {t("aboutparagraph1")}
+        <div className="homeaboutinfo">
+          {" "}
+          <h2>
+            <span>{t("About_CFB")}</span>
+          </h2>
+          <hr />
+          <p>
+            {t("aboutparagraph1")}
 
-              <br />
-              <br />
-              {t("aboutparagraph2")}
-            </p>
-            <NavLink to="./about"> Read More...</NavLink>
             <br />
             <br />
-            <button
-              type="button"
-              id="homebtn"
-              className="btn homebtn btn-danger"
-              data-bs-toggle="modal"
-              data-bs-target="#ipsmessage">
-              View Message
-            </button>
-            <button
-              type="button"
-              id="homebtn"
-              className="btn homebtn btn-primary"
-              data-bs-toggle="modal"
-              data-bs-target="#ipsacheivement">
-              Acheivements
-            </button>
-            <div className="modal fade" id="ipsacheivement" role="dialog">
-              <div className="modal-dialog modal-dialog-scrollable ipsacheivement ">
-                <div className="modal-content ">
-                  <div className="modal-header">
-                    <h4 className="modal-title">
-                      Acheivement of IPS maithili sharan Gupta sir
-                    </h4>
-                    <button
-                      type="button"
-                      className="btn-close"
-                      data-bs-dismiss="modal"
-                      aria-label="Close"></button>
-                  </div>
-                  <div className="modal-body">
-                    <p>
-                      {t("achievementparagraph1")}
-                      <br />
-                      <br /> <h4>{t("achivementheading1")}</h4>
-                      <ul>
-                        <li>{t("achivement_li1")}</li>
-                        <li>{t("achivement_li2")}</li>
-                        <li>{t("achivement_li3")}</li>
-                        <li>{t("achivement_li4")}</li>
-                      </ul>
-                    </p>
-                  </div>
-                  <div className="modal-footer">
-                    <button
-                      type="button"
-                      className="btn homebtn btn-default"
-                      data-bs-dismiss="modal">
-                      Close
-                    </button>
-                  </div>
+            {t("aboutparagraph2")}
+          </p>
+          <NavLink to="./about"> Read More...</NavLink>
+          <br />
+          <br />
+          <button
+            type="button"
+            id="homebtn"
+            className="btn homebtn btn-danger"
+            data-bs-toggle="modal"
+            data-bs-target="#ipsmessage"
+          >
+            View Message
+          </button>
+          <button
+            type="button"
+            id="homebtn"
+            className="btn homebtn btn-primary"
+            data-bs-toggle="modal"
+            data-bs-target="#ipsacheivement"
+          >
+            Acheivements
+          </button>
+          <div className="modal fade" id="ipsacheivement" role="dialog">
+            <div className="modal-dialog modal-dialog-scrollable ipsacheivement ">
+              <div className="modal-content ">
+                <div className="modal-header">
+                  <h4 className="modal-title">
+                    Acheivement of IPS maithili sharan Gupta sir
+                  </h4>
+                  <button
+                    type="button"
+                    className="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div className="modal-body">
+                  <p>
+                    {t("achievementparagraph1")}
+                    <br />
+                    <br /> <h4>{t("achivementheading1")}</h4>
+                    <ul>
+                      <li>{t("achivement_li1")}</li>
+                      <li>{t("achivement_li2")}</li>
+                      <li>{t("achivement_li3")}</li>
+                      <li>{t("achivement_li4")}</li>
+                    </ul>
+                  </p>
+                </div>
+                <div className="modal-footer">
+                  <button
+                    type="button"
+                    className="btn homebtn btn-default"
+                    data-bs-dismiss="modal"
+                  >
+                    Close
+                  </button>
                 </div>
               </div>
             </div>
-
-            <div className="modal fade" id="ipsmessage" role="dialog">
-              <div className="modal-dialog ">
-                <div className="modal-content">
-                  <div className="modal-header">
-                    <h4 className="modal-title">Message From IPS</h4>
-                    <button
-                      type="button"
-                      className="btn-close"
-                      data-bs-dismiss="modal"
-                      aria-label="Close"></button>
-                  </div>
-                  <div className="modal-body">
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Morbi ex massa, commodo sit amet neque eget, gravida
-                      tempor est. Integer condimentum ipsum eu ex ornare, vel
-                      ullamcorper turpis faucibus. Fusce fermentum enim et
-                      lectus porta, ut faucibus magna sollicitudin. Duis et
-                      neque ut odio aliquam auctor a nec nisl.{" "}
-                    </p>
-                  </div>
-                  <div className="modal-footer">
-                    <button
-                      type="button"
-                      className="btn homebtn btn-default"
-                      data-bs-dismiss="modal">
-                      Close
-                    </button>
-                  </div>
+          </div>
+          <div className="modal fade" id="ipsmessage" role="dialog">
+            <div className="modal-dialog ">
+              <div className="modal-content">
+                <div className="modal-header">
+                  <h4 className="modal-title">Message From IPS</h4>
+                  <button
+                    type="button"
+                    className="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div className="modal-body">
+                  <p>
+                    We are working for the following to ensure gainful
+                    employment for all:
+                    <br />
+                    1. Job and services Rich Bharat with trained and specialized
+                    manpower.
+                    <br />
+                    2. Green, Herbal, Medicine Free, and Healthy Bharat.
+                    <br />
+                    3. Milk Rich Bharat with a cow as mother cow and Vedic
+                    culture.
+                    <br />
+                    4. Machine, Equipment and tool Rich Bharat by pooling
+                    resources from owners clubs.
+                    <br />
+                    5. Creative, Innovative and dynamic Bharat.
+                    <br />
+                    6. Aatm Nirbhar and Samarth Bharat
+                    <br />
+                    7. Ground water Rich Bharat{" "}
+                  </p>
+                </div>
+                <div className="modal-footer">
+                  <button
+                    type="button"
+                    className="btn homebtn btn-default"
+                    data-bs-dismiss="modal"
+                  >
+                    Close
+                  </button>
                 </div>
               </div>
-            </div></div>
+            </div>
+          </div>
+        </div>
       </section>
 
-
-        
       <section id="videosection">
         <div id="cards">
           <div>
@@ -208,14 +243,16 @@ const Home = () => {
                 id="videogallery"
                 className="carousel slide"
                 data-ride="carousel"
-                data-interval="0">
+                data-interval="0"
+              >
                 <div className="carousel-inner">
                   <div className="carousel-item active">
                     <iframe
                       width="680vw"
                       height="370vh"
                       src="https://www.youtube.com/embed/ky5JsWhlhNk"
-                      title="YouTube video player"></iframe>
+                      title="YouTube video player"
+                    ></iframe>
                   </div>
 
                   <div className="carousel-item">
@@ -223,7 +260,8 @@ const Home = () => {
                       width="680vw"
                       height="370vh"
                       src="https://www.youtube.com/embed/XpVNIE88SXE"
-                      title="YouTube video player"></iframe>
+                      title="YouTube video player"
+                    ></iframe>
                   </div>
 
                   <div className="carousel-item">
@@ -231,27 +269,32 @@ const Home = () => {
                       width="680vw"
                       height="370vh"
                       src="https://www.youtube.com/embed/VK0yooK6G0w"
-                      title="YouTube video player"></iframe>
+                      title="YouTube video player"
+                    ></iframe>
                   </div>
                 </div>
                 <button
                   className="carousel-control-prev"
                   type="button"
                   data-bs-target="#videogallery"
-                  data-bs-slide="prev">
+                  data-bs-slide="prev"
+                >
                   <span
                     className="carousel-control-prev-icon"
-                    aria-hidden="true"></span>
+                    aria-hidden="true"
+                  ></span>
                   <span className="visually-hidden">Previous</span>
                 </button>
                 <button
                   className="carousel-control-next"
                   type="button"
                   data-bs-target="#videogallery"
-                  data-bs-slide="next">
+                  data-bs-slide="next"
+                >
                   <span
                     className="carousel-control-next-icon"
-                    aria-hidden="true"></span>
+                    aria-hidden="true"
+                  ></span>
                   <span className="visually-hidden">Next</span>
                 </button>
               </div>
@@ -265,7 +308,8 @@ const Home = () => {
                 behavior="scroll"
                 direction="up"
                 scrollamount="3"
-                height="70%">
+                height="70%"
+              >
                 <ul>
                   <li>
                     <NavLink to="#">Update 1</NavLink>
@@ -297,8 +341,8 @@ const Home = () => {
           </div>
           <hr />
           <div className="Homecard homepagecard">
-            {items.map(element => {
-              const {id, image, heading, alt, paragraph, hyperLinkRefernce} =
+            {items.map((element) => {
+              const { id, image, heading, alt, paragraph, hyperLinkRefernce } =
                 element;
               return (
                 <>
