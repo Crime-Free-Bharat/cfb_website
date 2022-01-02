@@ -9,40 +9,40 @@ import cfb6 from "../../img/cfb6.png";
 
 function Media() {
   return (
-    <section id="" class=" sectionmedia">
-      <div class="containermdia">
+    <section id="" className=" sectionmedia">
+      <div className="containermdia">
         <br />
-        <div class="row">
-          <div class="col-sm-12">
-            <h3 class="sectionheadact">Media And Gallery</h3>
-            <p class="sectionparaact">
+        <div className="row">
+          <div className="col-sm-12">
+            <h3 className="sectionheadact">Media And Gallery</h3>
+            <p className="sectionparaact">
               It is more important to click with people than to click the
               shutter.
             </p>
           </div>
         </div>
         
-        <div class="row">
-          <div class="col-sm-12">
-            <h5 class="sectionheadact" style={{fontSize: "28px"}}>
+        <div className="row">
+          <div className="col-sm-12">
+            <h5 className="sectionheadact" style={{fontSize: "28px"}}>
               Youtube Videos
             </h5>
           </div>
           {/* <!-- Modal gallery --> */}
           {/* <!-- Section: Images --> */}
           
-            <div class="mediaYoutube">
-              <div class="mediaYoutube1">
+            <div className="mediaYoutube">
+              <div className="mediaYoutube1">
                 <div
-                  class="bg-image hover-overlay ripple shadow-1-strong rounded"
+                  className="bg-image hover-overlay ripple shadow-1-strong rounded"
                   data-ripple-color="light">
                  
                   <NavLink
                     to="/activity/#mediayoutubevideo1"
                     data-mdb-toggle="modal"
-                    data-mdb-target="#exampleModal1"> <img src={cfb1} class="w-100 mediaYoutubeimg" alt="" />
+                    data-mdb-target="#exampleModal1"> <img src={cfb1} className="w-100 mediaYoutubeimg" alt="" />
                     <div
-                      class="mask"
+                      className="mask"
                       style={{
                         backgroundColor: "rgba(251, 251, 251, 0.2)",
                       }}></div>
@@ -50,17 +50,17 @@ function Media() {
                 </div>
               </div>
 
-              <div class="mediaYoutube1">
+              <div className="mediaYoutube1">
                 <div
-                  class="bg-image hover-overlay ripple shadow-1-strong rounded"
+                  className="bg-image hover-overlay ripple shadow-1-strong rounded"
                   data-ripple-color="light">
                  
                   <NavLink
                     to="/activity/#mediayoutubevideo2"
                     data-mdb-toggle="modal"
-                    data-mdb-target="#exampleModal2"> <img src={cfb2} class="w-100 mediaYoutubeimg" alt="" />
+                    data-mdb-target="#exampleModal2"> <img src={cfb2} className="w-100 mediaYoutubeimg" alt="" />
                     <div
-                      class="mask"
+                      className="mask"
                       style={{
                         backgroundColor: "rgba(251, 251, 251, 0.2)",
                       }}></div>
@@ -68,17 +68,17 @@ function Media() {
                 </div>
               </div>
 
-              <div class="mediaYoutube1">
+              <div className="mediaYoutube1">
                 <div
-                  class="bg-image hover-overlay ripple shadow-1-strong rounded"
+                  className="bg-image hover-overlay ripple shadow-1-strong rounded"
                   data-ripple-color="light">
                  
                   <NavLink
                     to="/activity/#mediayoutubevideo3"
                     data-mdb-toggle="modal"
-                    data-mdb-target="#exampleModal3"> <img src={cfb3} class="w-100 mediaYoutubeimg" alt="" />
+                    data-mdb-target="#exampleModal3"> <img src={cfb3} className="w-100 mediaYoutubeimg" alt="" />
                     <div
-                      class="mask"
+                      className="mask"
                       style={{
                         backgroundColor: "rgba(251, 251, 251, 0.2)",
                       }}></div>
@@ -97,17 +97,17 @@ function Media() {
           {/* <!-- Section: Images --> */}
 
           {/* <!-- Section: Modals --> */}
-          <section class="">
+          <section className="">
             {/* <!-- Modal 1 --> */}
             <div
-              class="modal fade"
+              className="modal fade"
               id="exampleModal1"
               tabindex="-1"
               aria-labelledby="exampleModal1Label"
               aria-hidden="true">
-              <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                  <div class="ratio ratio-16x9">
+              <div className="modal-dialog modal-lg">
+                <div className="modal-content">
+                  <div className="ratio ratio-16x9">
                     <iframe
                       src="https://www.youtube.com/embed/wcmnpkZzEkQ"
                       title="YouTube video player"
@@ -116,10 +116,10 @@ function Media() {
                       allowfullscreen></iframe>
                   </div>
 
-                  <div class="text-center py-3">
+                  <div className="text-center py-3">
                     <button
                       type="button"
-                      class="btn btn-secondary"
+                      className="btn btn-secondary"
                       data-mdb-dismiss="modal">
                       Close
                     </button>
@@ -129,14 +129,14 @@ function Media() {
             </div>
             {/* <!-- Modal 2 --> */}
             <div
-              class="modal fade"
+              className="modal fade"
               id="exampleModal2"
               tabindex="-1"
               aria-labelledby="exampleModal2Label"
               aria-hidden="true">
-              <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                  <div class="ratio ratio-16x9">
+              <div className="modal-dialog modal-lg">
+                <div className="modal-content">
+                  <div className="ratio ratio-16x9">
                     <iframe
                       src="https://www.youtube.com/embed/ZpXOxW3BXYU"
                       title="YouTube video player"
@@ -145,10 +145,10 @@ function Media() {
                       allowfullscreen></iframe>
                   </div>
 
-                  <div class="text-center py-3">
+                  <div className="text-center py-3">
                     <button
                       type="button"
-                      class="btn btn-secondary"
+                      className="btn btn-secondary"
                       data-mdb-dismiss="modal">
                       Close
                     </button>
@@ -158,14 +158,14 @@ function Media() {
             </div>
             {/* <!-- Modal 3 --> */}
             <div
-              class="modal fade"
+              className="modal fade"
               id="exampleModal3"
               tabindex="-1"
               aria-labelledby="exampleModal3Label"
               aria-hidden="true">
-              <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                  <div class="ratio ratio-16x9">
+              <div className="modal-dialog modal-lg">
+                <div className="modal-content">
+                  <div className="ratio ratio-16x9">
                     <iframe
                       src="https://www.youtube.com/embed/LF0CtXGPB_o"
                       title="YouTube video player"
@@ -174,10 +174,10 @@ function Media() {
                       allowfullscreen></iframe>
                   </div>
 
-                  <div class="text-center py-3">
+                  <div className="text-center py-3">
                     <button
                       type="button"
-                      class="btn btn-secondary"
+                      className="btn btn-secondary"
                       data-mdb-dismiss="modal">
                       Close
                     </button>
@@ -190,31 +190,31 @@ function Media() {
         </div>
         <br />
         <br />
-        <div class="row">
-          <div class="col-sm-12">
-            <h5 class="sectionheadact" style={{fontSize: "28px"}}>
+        <div className="row">
+          <div className="col-sm-12">
+            <h5 className="sectionheadact" style={{fontSize: "28px"}}>
               CFB Gallery
             </h5>
           </div>
           {/* <!-- Gallery --> */}
-          <div class="mediaYoutube">
+          <div className="mediaYoutube">
          
-                <div class="mediaYoutube1">
+                <div className="mediaYoutube1">
               <img
                 src={cfb4}
-                class="w-100 shadow-1-strong rounded mb-4"
+                className="w-100 shadow-1-strong rounded mb-4"
                 alt=""
               />
             </div>
-            <div class="mediaYoutube1">
+            <div className="mediaYoutube1">
               <img
                 src={cfb5}
-                class="w-100 shadow-1-strong rounded mb-4"
+                className="w-100 shadow-1-strong rounded mb-4"
                 alt=""
-              /> </div> <div class="mediaYoutube1"> 
+              /> </div> <div className="mediaYoutube1"> 
               <img
                 src={cfb6}
-                class="w-100 shadow-1-strong rounded mb-4"
+                className="w-100 shadow-1-strong rounded mb-4"
                 alt=""
               />
             </div>

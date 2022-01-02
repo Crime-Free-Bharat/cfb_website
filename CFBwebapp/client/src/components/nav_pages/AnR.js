@@ -7,23 +7,23 @@ import lawimg from "../../img/law.png";
 
 function AnR() {
   return (
-    <section id="" class="anrsection">
-        <div class="container">
+    <section id="" className="anrsection">
+        <div className="container">
             <br/>
-            <div class="row">
-                <div class="col-sm-12">
-                    <h3 class="sectionheadact">Acts {"&"} Regulations</h3>
-                    <p class="sectionparaact">When you disobey the rule, you sell your freedom.</p>
+            <div className="row">
+                <div className="col-sm-12">
+                    <h3 className="sectionheadact">Acts {"&"} Regulations</h3>
+                    <p className="sectionparaact">When you disobey the rule, you sell your freedom.</p>
                 </div>
             </div>
             <br/>
-            <div class="row">
-                <div class="col-sm-4">
-                  <div class="anrimgmain">
+            <div className="row">
+                <div className="col-sm-4">
+                  <div className="anrimgmain">
                     <img src={logoimg} alt=""/>
                   </div>
                   </div>
-                <div class="col-sm-8">
+                <div className="col-sm-8">
                     <p style={{textAlign: "justify"}}>
                       The term <b>“Arrest”</b> is very common term that we pick up a lot in our day today life. Normally, we see a person, who do or have done something against the law, get <b>arrested</b>. Generally, the term <b>“arrest”</b> in its ordinary sense, means the apprehension or restraint or the deprivation of one’s personal liberty. in Indian law, Criminal procedure Code, 1973 in its chapter V (section 41 to 60) deals with Arrest of a person. 
                     </p>
@@ -36,8 +36,8 @@ function AnR() {
                 </div>
             </div>
             <br/><br/>
-            <div class="row">
-                <div class="col-sm-8">
+            <div className="row">
+                <div className="col-sm-8">
                     <h3>Acts under which citizen can arrested</h3>
                         <ul>
                             <li>The code exempts the members of Armed forces from being arrested for anything done by them in discharge of their official duties except after obtaining the consent of the government (Sec. 45).</li>
@@ -50,13 +50,13 @@ function AnR() {
                             <li>Arrest to be made strictly according to the code (Sec 60A) – “No arrest shall be made except in accordance with provision of this code or any other law for time being in force providing the arrest”.</li>
                           </ul>
                 </div>
-                <div class="col-sm-4">
-                  <div class="anrimgmain">
+                <div className="col-sm-4">
+                  <div className="anrimgmain">
                     <img src={lawimg}alt=""/><br/><br/><br/>
                   </div>
                 </div> 
-                <br/><br/><hr class="new5"/><br/><br/>
-            <div class="col-md-12">
+                <br/><br/><hr className="new5"/><br/><br/>
+            <div className="col-md-12">
               <h3>Human Rights Act’s</h3>
               <p style={{"textAlign": "justify", "color": "black"}}>In India NHRC( NATIONAL HUMAN RIGHTS COMMISSION ) is a statutory public body Constituted on 12th October 1993. Under the protection of human rights ordinance of 28th September 1993. It was given a statutory basis by the Protection of Human Rights Act, 1993 (PHRA). The NHRC is the National Human Rights Commission of India, responsible for the protection and promotion of human rights, defined by the Act as "Rights Relating To Life, liberty, equality and dignity of the individual guaranteed by the constitution or embodied in the International Covenants and enforceable by courts in India".</p>
               <ul>

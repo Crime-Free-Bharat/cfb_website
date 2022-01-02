@@ -68,7 +68,7 @@ const Services = () => {
           <Card style={upperCards}>
             <Card.Body>
               <Button variant="link"href="/report" style={click}>
-                <i style={cardImg} class="bi bi-journal-check"></i>
+                <i style={cardImg} className="bi bi-journal-check"></i>
                 
                 <Card.Title>Report Crime Online</Card.Title>
               </Button>
@@ -86,7 +86,7 @@ const Services = () => {
           <Card style={upperCards}>
             <Card.Body>
               <Button variant="link" href="/" style={click}>
-                <i style={cardImg} class="bi bi-award"></i>
+                <i style={cardImg} className="bi bi-award"></i>
                 <Card.Title>Crime Mukt Bharat</Card.Title>
               </Button>
               <Card.Text style = {servicetext}>
@@ -102,7 +102,7 @@ const Services = () => {
           <Card style={upperCards}>
             <Card.Body>
               <Button variant="link" style={click}>
-                <i style={cardImg} class="bi bi-chat-square-quote"></i>
+                <i style={cardImg} className="bi bi-chat-square-quote"></i>
                 <Card.Title>Interaction with IPS</Card.Title>
               </Button>
               <Card.Text style = {servicetext}>
@@ -117,7 +117,7 @@ const Services = () => {
           <Card style={upperCards}>
             <Card.Body>
               <Button variant="link"  style={click}>
-                <i style={cardImg} class="bi bi-window"></i>
+                <i style={cardImg} className="bi bi-window"></i>
                 <Card.Title>Cyber Crime</Card.Title>
               </Button>
               <Card.Text style = {servicetext}>
@@ -133,7 +133,7 @@ const Services = () => {
           <Card style={upperCards}>
             <Card.Body>
               <Button variant="link" style={click}>
-                <i style={cardImg}class="bi bi-shield-lock"></i>
+                <i style={cardImg}className="bi bi-shield-lock"></i>
                 <Card.Title>Railway Crime</Card.Title>
               </Button>
               <Card.Text style = {servicetext}>
@@ -147,7 +147,7 @@ const Services = () => {
           <Card style={upperCards}>
             <Card.Body>
               <Button variant="link" style={click}>
-                <i style={cardImg} class="bi bi-laptop"></i>
+                <i style={cardImg} className="bi bi-laptop"></i>
                 <Card.Title>Web Portal</Card.Title>
               </Button>
               <Card.Text style = {servicetext}>
