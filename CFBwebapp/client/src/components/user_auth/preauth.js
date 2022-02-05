@@ -55,51 +55,9 @@ const Preauth = () => {
             </div>
           </div>
           <h6 style={{ textAlign: "center", marginTop: "50px" }}>
-            Already have an account?
-            <button
-              class="btnlogin"
-              data-bs-toggle="modal"
-              data-bs-target="#exampleModal"
-            >
-              Login
-            </button>
+            Don't have an account?
+            <NavLink to="/signup">SIGNUP</NavLink>
           </h6>
-        </div>
-
-        <div
-          class="modal fade"
-          id="exampleModal"
-          tabindex="-1"
-          aria-labelledby="exampleModalLabel"
-          aria-hidden="true"
-        >
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">
-                 LOGIN
-                </h5>
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="modal"
-                  aria-label="Close"
-                ></button>
-              </div>
-              <div class="modal-footer">
-                <NavLink to="/login" class="btn"  id="intern"  onClick={(e) => handleClick(e)}>
-                  Login as Intern
-
-                </NavLink>
-                <NavLink to="/login" class="btn" id="member"  onClick={(e) => handleClick(e)}>
-                  Login as Member
-                </NavLink>
-                <NavLink to="/login" class="btn" id="volunteer"  onClick={(e) => handleClick(e)}>
-                  login as Volunteer
-                </NavLink>
-              </div>
-            </div>
-          </div>
         </div>
       </section>
       <Footer />

@@ -51,7 +51,7 @@ const Signup = (props) => {
         <h4 className="text-center mt-5 fs-5">Welcome {props.head}</h4> 
           <h4 className="text-center mt-2 fs-5">
             Already have an account?
-            <NavLink to="/login" className="login">
+            <NavLink to="/preauth" className="login">
               Log In
             </NavLink>
           </h4>
